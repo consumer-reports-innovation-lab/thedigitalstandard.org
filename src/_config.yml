@@ -1,13 +1,14 @@
 # Site settings
-title: Ocupop Project Template
+client: Consumer Reports
+title: Digital Standard
 email: dev@ocupop.com
-url: "http://client_url.com"
+url: "https://ocupop.github.io"
 permalink: pretty
 
 # Social sharing
-description:
+description: The Digital Standard is a framework to evaluate consumer technologies and how they respect people’s interests and needs.
 socialshare:
-  featured_image: img/socialshare.png
+  featured_image:
   twitter:
     username:
     image:

@@ -1,7 +1,7 @@
 {
-  "name": "jekyll-cloudcannon-template",
-  "version": "1.0.0",
-  "description": "Cloudcannon Suite Template is a starting point for sites hosted on Cloudcannon and built using Jekyll.",
+  "name": "digital-standard",
+  "version": "0.0.1",
+  "description": "The Digital Standard is a framework to evaluate consumer technologies and how they respect people’s interests and needs.",
   "private": true,
   "repository": {
     "type": "git",
@@ -10,6 +10,7 @@
   "scripts": {
     "start": "gulp dev",
     "dev": "concurrently 'npm:watch-scripts' 'npm:start' ",
+    "deploy": "",
     "watch-scripts": "gulp scripts",
     "postinstall": "gulp dev:install"
   },
