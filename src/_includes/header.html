@@ -7,17 +7,9 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Examples
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              {% for example in site.examples %}
-                <a class="dropdown-item" href="{{ example.url }}">{{ example.title }}</a>
-              {% endfor %}
-            </div>
+        <ul class="navbar-nav d-none">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
           </li>
         </ul>
       </div>

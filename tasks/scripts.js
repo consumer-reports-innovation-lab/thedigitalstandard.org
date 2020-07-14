@@ -10,3 +10,4 @@ gulp.task('scripts', function () {
     }))
     .pipe(gulp.dest('./src'));
 })
+
