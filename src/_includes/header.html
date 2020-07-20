@@ -1,18 +1,55 @@
 <header id="pageHeader" class="bg-dark text-white">
   <div class="container">
-    <nav id="mainnav" class="navbar navbar-expand-md navbar-dark">
-      <a class="navbar-brand" href="/">{{ site.title }}</a>
+    <nav id="mainnav" class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="/">
+
+      <img
+      id="tds-nav-lockup"
+      alt="The Digital Standard"
+      src="/img/global/tds-lockup.svg"
+      />
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
-        <ul class="navbar-nav d-none">
+        <ul class="navbar-nav ">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link {% if page.url contains 'overview' %} active{% endif %}" href="/overview/">
+              Overview
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if page.url contains 'contribute' %} active{% endif %}" href="/contribute/">Contribute </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if page.url contains 'contact' %} active{% endif %}" href="/contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " target="_blank" href="###">
+              <img
+              class="nav-icon"
+              alt="The Digital Standard on Github"
+              src="/img/global/github-ico.svg"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="###">
+              <img
+              class="nav-icon"
+              alt="The Digital Standard on Medium"
+              src="/img/global/medium-ico.svg" />
+            </a>
+          </li>
+          <li class="nav-item ml-md-3">
+            <a class="nav-link {% if page.url contains 'documentation' %} active{% endif %}" href="/documentation/" id="nav-the-standard">The Standard</a>
           </li>
         </ul>
       </div>
     </nav>
+
+
   </div>
 </header>

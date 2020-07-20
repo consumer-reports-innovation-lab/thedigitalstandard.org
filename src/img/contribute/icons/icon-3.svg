@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="67" viewBox="0 0 52 67">
+  <g id="Group_169" data-name="Group 169" transform="translate(-1022 -1601)">
+    <g id="Rectangle_344" data-name="Rectangle 344" transform="translate(1022 1601)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="52" height="67" stroke="none"/>
+      <rect x="1" y="1" width="50" height="65" fill="none"/>
+    </g>
+    <g id="Rectangle_345" data-name="Rectangle 345" transform="translate(1057 1601)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="17" height="17" stroke="none"/>
+      <rect x="1" y="1" width="15" height="15" fill="none"/>
+    </g>
+    <path id="Intersection_1" data-name="Intersection 1" d="M-8729,25.5l15,15Z" transform="translate(9787 1576.5)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="Line_46" data-name="Line 46" x2="28" transform="translate(1034.5 1630.5)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="Line_47" data-name="Line 47" x2="28" transform="translate(1034.5 1641.5)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="Line_48" data-name="Line 48" x2="28" transform="translate(1034.5 1652.5)" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+</svg>

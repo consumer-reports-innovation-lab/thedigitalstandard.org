@@ -38,12 +38,23 @@ $blue: #007bff !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
-$red: #dc3545 !default;
+$red: #eb7767 !default;
 $orange: #fd7e14 !default;
-$yellow: #ffc107 !default;
+$yellow: #f9ca87 !default;
 $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
+
+$tds-green-100: #d8f2a7;
+$tds-green-200: #6cca8e;
+$tds-orange-100: #f4aa84;
+$tds-orange-200: #e8ac88;
+$tds-grey-100: #f1f2f2;
+$tds-grey-200: #bcbec0;
+$tds-grey-300: #939598;
+$tds-blue-100: #0f5d74;
+$tds-blue-200: #2c5c72;
+$tds-blue-300: #0d2d33;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default

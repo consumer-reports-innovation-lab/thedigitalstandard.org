@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57.001" height="67" viewBox="0 0 57.001 67">
+  <g id="Group_168" data-name="Group 168" transform="translate(-590 -1601)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="2.5" cy="2.5" r="2.5" transform="translate(609 1609)" fill="#fff"/>
+    <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(618 1601)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+      <circle cx="4.5" cy="4.5" r="3.5" fill="none"/>
+    </g>
+    <g id="Union_1" data-name="Union 1" transform="translate(9355 1621)" fill="none">
+      <path d="M-8765,47l20.584-26.679V-2h15.833V20.322L-8708,47Z" stroke="none"/>
+      <path d="M -8712.068359375 45.00012969970703 L -8730.166015625 21.54328727722168 L -8730.5830078125 21.00342750549316 L -8730.5830078125 20.32155799865723 L -8730.5830078125 0.0004480096395127475 L -8742.416015625 0.0004480096395127475 L -8742.416015625 20.32155799865723 L -8742.416015625 21.00342750549316 L -8742.8330078125 21.54328727722168 L -8760.9306640625 45.00012969970703 L -8712.068359375 45.00012969970703 M -8707.9990234375 47.00012969970703 L -8765 47.00012969970703 L -8744.416015625 20.32155799865723 L -8744.416015625 -1.999552011489868 L -8728.5830078125 -1.999552011489868 L -8728.5830078125 20.32155799865723 L -8707.9990234375 47.00012969970703 Z" stroke="none" fill="#fff"/>
+    </g>
+    <line id="Line_44" data-name="Line 44" x2="30" transform="translate(603.5 1619.5)" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+</svg>

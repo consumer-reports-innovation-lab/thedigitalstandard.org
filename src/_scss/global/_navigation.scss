@@ -1,0 +1,36 @@
+#pageHeader {
+  background-color: $tds-grey-100 !important;
+  .container {
+    max-width: none;
+  }
+  a {
+    border: none;
+    color: $tds-grey-300;
+    font-size: 0.875rem;
+    padding: 8px 3px;
+    margin: 0px 15px;
+    &:hover {
+      color: $tds-blue-300 !important;
+    }
+  }
+  .active {
+    color: $tds-blue-300 !important;
+    border-bottom: 3px solid $tds-orange-200;
+  }
+}
+
+#tds-nav-lockup {
+  width: 200px;
+}
+
+.nav-icon {
+  width: 25px;
+  height: 25px;
+}
+
+#nav-the-standard {
+  color: $white !important;
+  background-color: $tds-green-200;
+  padding: 8px 15px !important;
+  margin: 0px !important;
+}

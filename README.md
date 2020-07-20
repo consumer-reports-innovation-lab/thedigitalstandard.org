@@ -17,10 +17,5 @@ The Digital Standard is a framework to evaluate consumer technologies and how th
 
 ============
 
-Update project name the following files
-.ruby-gemset
-config.yml
-package.json
-README.md
 
 Generate favicon: https://favicon.io
