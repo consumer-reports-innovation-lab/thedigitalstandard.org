@@ -20,16 +20,16 @@ analytics:
 
 # Collections
 collections:
-  examples:
+  tests:
     output: true
-    permalink: /examples/:path/
+    permalink: /standard/:path
 
 defaults:
   -
     scope:
-      type: 'examples'
+      type: 'tests'
     values:
-      layout: example
+      layout: test
       # variable_name: value
 
 # Build settings
@@ -41,4 +41,23 @@ plugins:
   - jekyll-sitemap
 
 placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
+
+# Cloudcannon Configuration
+_array_structures:
+  criteria:
+    - label: Criteria
+      icon: share
+      _options:
+        content:
+          bold: true
+      value:
+        summary:
+        indicators_html:
+        procedure_overview_html:
+  test_categories:
+    - label: Test Category
+      icon: link
+      value:
+        title:
+        tests:
 

@@ -34,3 +34,19 @@
   padding: 8px 15px !important;
   margin: 0px !important;
 }
+
+#standardnav {
+  padding-left: 25px;
+  background-color: $tds-blue-300;
+  .nav-link {
+    padding: 0.5rem 0.75rem;
+    color: $mid;
+    border: 0;
+    font-size: 0.85rem;
+    font-family: sofia-pro, sans-serif;
+    &.active,
+    &:hover {
+      color: $white;
+    }
+  }
+}

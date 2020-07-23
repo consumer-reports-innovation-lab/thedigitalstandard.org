@@ -1,0 +1,7 @@
+.standard-layout {
+  .sidebar {
+    width: 300px;
+    min-height: calc(100vh - 100px);
+    background-color: $tds-blue-100;
+  }
+}
