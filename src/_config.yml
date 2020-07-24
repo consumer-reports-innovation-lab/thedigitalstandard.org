@@ -59,7 +59,7 @@ _array_structures:
     - label: Indicators
       icon: share
       value:
-        indicator_summary:
+        indicator:
         procedure_overview:
   test_categories:
     - label: Test Category
