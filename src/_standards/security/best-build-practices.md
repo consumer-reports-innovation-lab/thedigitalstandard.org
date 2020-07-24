@@ -15,5 +15,19 @@ criteria:
           etc.)</p><p>Are those safety features well implemented and/or enabled
           with optimal settings? (E.g., High Entropy ASLR, rather than just
           Dynamic Base on Windows 10)</p><p>Are the binaries 32 or 64 bit?</p>
+      - indicator: The software does not make use of unsafe functions or libraries.
+        procedure_html: >-
+          <p>Pull out data from the binary that speaks to developer
+          hygiene.</p><p>Do they use strcpy and other historically unsafe
+          functions?</p><p>Did the developers use older, less historically safe
+          functions, or newer, safer replacements for those
+          functions?</p><p>What risks are introduced via the libraries that the
+          binary links to, either directly or indirectly?</p>
+      - indicator: The software is not overly complex.
+        procedure_html: >-
+          <p>Pull out data from the binary that speaks to code
+          complexity.</p><p>What is the branch density?</p><p>How many stack
+          adjusts, function calls, etc are there?</p><p>How complex is the
+          code?</p>
 ---
 
