@@ -20,16 +20,16 @@ analytics:
 
 # Collections
 collections:
-  tests:
+  standards:
     output: true
     permalink: /standard/:path
 
 defaults:
   -
     scope:
-      type: 'tests'
+      type: 'standards'
     values:
-      layout: test
+      layout: standard
       # variable_name: value
 
 # Build settings
