@@ -53,9 +53,14 @@ _array_structures:
         content:
           bold: true
       value:
-        summary:
-        indicators_html:
-        procedure_overview_html:
+        criteria_summary:
+        indicators:
+  indicators:
+    - label: Indicators
+      icon: share
+      value:
+        indicator_summary:
+        procedure_overview:
   test_categories:
     - label: Test Category
       icon: link
