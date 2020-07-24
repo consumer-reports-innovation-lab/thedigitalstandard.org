@@ -1,6 +1,5 @@
 ---
 title:
-description:
-document_state:
+test_state:
 criteria:
 ---
