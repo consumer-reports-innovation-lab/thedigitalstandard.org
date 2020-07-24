@@ -60,7 +60,7 @@ _array_structures:
       icon: share
       value:
         indicator:
-        procedure_overview:
+        procedure_html:
   test_categories:
     - label: Test Category
       icon: link
