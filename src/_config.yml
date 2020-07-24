@@ -42,7 +42,7 @@ plugins:
 
 placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
 
-test_states: ['1', '2', '3']
+test_states: ['1: Green', '2: Yellow', '3: Red']
 
 # Cloudcannon Configuration
 _array_structures:
