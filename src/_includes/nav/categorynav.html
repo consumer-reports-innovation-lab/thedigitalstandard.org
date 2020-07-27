@@ -1,1 +1,9 @@
 <!-- Enter logic for category navigation -->
+<ul class="nav flex-column">
+  {% for object in site.data.standards %}
+    <li class="nav-item">
+      <!-- <a class="nav-link" href="{{ standard.url }}">{{ standard.title }}</a> -->
+      {{ object }}
+    </li>
+  {% endfor %}
+</ul>
