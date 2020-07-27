@@ -46,12 +46,18 @@ standard_states: ['1: Green', '2: Yellow', '3: Red']
 
 # Cloudcannon Configuration
 _array_structures:
+  categories:
+    - label: Standard Categories
+      icon: folder
+      value:
+        label:
+        links:
   links:
-    - label: Links
+    - label: Standards
       icon: link
       value:
-        link:
         label:
+        standard:
         links:
   criteria:
     - label: Criteria
