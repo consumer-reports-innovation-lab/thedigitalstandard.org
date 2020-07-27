@@ -51,14 +51,7 @@ _array_structures:
       icon: folder
       value:
         label:
-        links:
-  links:
-    - label: Standards
-      icon: link
-      value:
-        label:
-        standard:
-        links:
+        standards:
   criteria:
     - label: Criteria
       icon: share
