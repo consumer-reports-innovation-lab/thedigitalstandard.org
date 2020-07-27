@@ -1,6 +1,6 @@
 ---
 title: Best Build Practices
-test_state: '1: Green'
+standard_state: '1: Green'
 criteria:
   - criteria_summary: >-
       The software was built and developed according to the industry's best

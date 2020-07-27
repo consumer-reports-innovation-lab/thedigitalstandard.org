@@ -1,5 +1,5 @@
 ---
 title:
-test_state:
+standard_state:
 criteria:
 ---
