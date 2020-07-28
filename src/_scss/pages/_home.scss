@@ -3,7 +3,7 @@
   width: 100vw;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "intro intro" "get-involved-wrapper get-involved-wrapper" "featured-use-wrapper featured-use-wrapper";
+  grid-template-areas: "intro intro" "get-involved-wrapper get-involved-wrapper" "featured-use-wrapper featured-use-wrapper" "start-now start-now";
   color: $white;
 }
 
@@ -76,6 +76,18 @@
     grid-area: featured-image;
   }
 }
+.start-now {
+  display: grid;
+  width: 100vw;
+  height: 540px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-area: start-now;
+  background-image: url(/img/home/start-now-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 @media screen and (max-width: 992px) {
   .grid-container {
@@ -114,7 +126,27 @@
   color: $tds-green-200;
   background-color: $white;
   font-weight: 600;
-  border: 1px solid $white;
-  padding: 10px 30px;
-  // margin: 15px;
+  border: 2px solid $white;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  .human-value-icon {
+    background-size: cover;
+    background-position: center center;
+    height: 70px;
+    margin-right: 20px;
+    width: 95px;
+  }
+  #security-icon {
+    background-image: url("/img/home/icons/security.svg");
+  }
+  #privacy-icon {
+    background-image: url("/img/home/icons/privacy.svg");
+  }
+  #ownership-icon {
+    background-image: url("/img/home/icons/ownership.svg");
+  }
+  #governance-icon {
+    background-image: url("/img/home/icons/governance.svg");
+  }
 }

@@ -3,4 +3,20 @@
 #pageContent {
 }
 #pageFooter {
+  display: flex;
+  align-items: center;
+  height: 540px;
+  background-color: $tds-blue-300;
+  color: $white;
+  .footer-social {
+    border: none;
+    padding: 0px;
+  }
+  .footer-links {
+    list-style: none;
+    a {
+      color: $white !important;
+      border: none;
+    }
+  }
 }
