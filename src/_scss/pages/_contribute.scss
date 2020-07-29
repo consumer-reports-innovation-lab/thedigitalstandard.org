@@ -4,7 +4,6 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "help-wrapper help-wrapper" "tds-values tds-values" "current-partners current-partners" "share-feedback share-feedback";
-  // color: $white;
 }
 
 .help-wrapper {
@@ -64,5 +63,13 @@
 
 @media screen and (max-width: 992px) {
   .contribute-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "help-wrapper" "tds-values" "current-partners" "share-feedback";
+  }
+  .help-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "help-title" "help-content";
   }
 }

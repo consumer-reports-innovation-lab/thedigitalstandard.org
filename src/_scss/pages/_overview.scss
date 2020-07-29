@@ -142,13 +142,13 @@
 @media screen and (max-width: 768px) {
   .overview-grid-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1050px 3200px 850px 750px 750px 750px;
+    grid-template-rows: 500px 3200px 850px 750px 750px 750px;
     grid-template-areas: "overview-intro-wrapper" "benefits-wrapper" "how-to" "overview-why" "overview-vision" "race-to-top";
   }
   .overview-intro-wrapper {
     grid-template-columns: 1fr;
-    grid-template-rows: 550px 500px;
-    grid-template-areas: "overview-graphic" "overview-intro";
+    grid-template-rows: 500px;
+    grid-template-areas: "overview-intro";
   }
   .benefits-wrapper {
     grid-template-columns: 1fr;
@@ -156,6 +156,11 @@
     grid-template-areas: "security-left" "security-right" "privacy-right" "privacy-left" "ownership-left" "ownership-right" "governance-right" "governance-left";
     .overview-benefit-bg {
       padding: 30px;
+    }
+    .grid-item {
+      text-align: center;
+      display: flex;
+      justify-content: end;
     }
   }
   .how-to {
