@@ -9,8 +9,9 @@
     font-size: 0.875rem;
     padding: 8px 3px;
     margin: 0px 15px;
-    &:hover {
-      color: $tds-blue-300 !important;
+    &:hover,
+    &:focus {
+      color: $white !important;
     }
   }
   .active {
@@ -23,9 +24,31 @@
   width: 200px;
 }
 
+.nav-icon-wrapper {
+  box-shadow: inset 0px 0px 0px transparent;
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px 0px 0px transparent;
+  }
+}
+
 .nav-icon {
   width: 25px;
   height: 25px;
+  transition: 0.2s;
+  &:hover {
+    filter: brightness(1%) saturate(100%) invert(82%) sepia(20%) saturate(4891%) hue-rotate(312deg) brightness(120%)
+      contrast(91%);
+  }
+}
+
+.medium-icon,
+.github-icon {
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    fill: $tds-orange-200;
+  }
 }
 
 #nav-the-standard {

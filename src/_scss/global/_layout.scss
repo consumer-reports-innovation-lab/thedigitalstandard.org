@@ -5,18 +5,36 @@
 #pageFooter {
   display: flex;
   align-items: center;
-  height: 540px;
+  height: 500px;
   background-color: $tds-blue-300;
   color: $white;
   .footer-social {
     border: none;
     padding: 0px;
+    box-shadow: inset 0px 0px 0px transparent;
+    &:hover,
+    &:focus {
+      box-shadow: inset 0px 0px 0px transparent;
+    }
   }
   .footer-links {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     a {
-      color: $white !important;
       border: none;
+      color: $tds-grey-300;
+      font-size: 0.875rem;
+      padding: 8px 3px;
+      margin: 0px 15px;
+      box-shadow: inset 0px 0px 0px transparent;
+
+      &:hover,
+      &:focus {
+        color: $white !important;
+        box-shadow: inset 0px 0px 0px transparent;
+      }
     }
   }
 }

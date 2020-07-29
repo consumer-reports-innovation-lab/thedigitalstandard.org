@@ -2,10 +2,8 @@
   display: grid;
   width: 100vw;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: minmax(1fr, 1080px) 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "overview-intro-wrapper overview-intro-wrapper" "benefits-wrapper benefits-wrapper" "how-to how-to" "overview-why overview-why" "overview-vision overview-vision"
-    "race-to-top race-to-top";
+  grid-template-rows: minmax(1fr, 1080px) 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "overview-intro-wrapper overview-intro-wrapper" "benefits-wrapper benefits-wrapper" "how-to how-to" "overview-why overview-why" "overview-vision overview-vision" "race-to-top race-to-top";
 }
 
 .overview-intro-wrapper {
@@ -139,4 +137,40 @@
   color: $white !important;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .overview-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1050px 3200px 850px 750px 750px 750px;
+    grid-template-areas: "overview-intro-wrapper" "benefits-wrapper" "how-to" "overview-why" "overview-vision" "race-to-top";
+  }
+  .overview-intro-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 550px 500px;
+    grid-template-areas: "overview-graphic" "overview-intro";
+  }
+  .benefits-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 400px);
+    grid-template-areas: "security-left" "security-right" "privacy-right" "privacy-left" "ownership-left" "ownership-right" "governance-right" "governance-left";
+    .overview-benefit-bg {
+      padding: 30px;
+    }
+  }
+  .how-to {
+    grid-area: how-to;
+    padding: 15px;
+    .container {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .overview-why {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+  }
 }

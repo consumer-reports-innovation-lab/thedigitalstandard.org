@@ -2,7 +2,8 @@
   display: grid;
   width: 100vw;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  // grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "intro intro" "get-involved-wrapper get-involved-wrapper" "featured-use-wrapper featured-use-wrapper" "start-now start-now";
   color: $white;
 }
@@ -79,7 +80,7 @@
 .start-now {
   display: grid;
   width: 100vw;
-  height: 540px;
+  // height: 540px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-area: start-now;
@@ -90,9 +91,10 @@
 }
 
 @media screen and (max-width: 992px) {
-  .grid-container {
+  .home-grid-container {
     grid-template-columns: 1fr;
-    grid-template-areas: "intro" "get-involved-wrapper" "featured-use-wrapper";
+    grid-template-rows: 1fr 600px 600px 540px;
+    grid-template-areas: "intro" "get-involved-wrapper" "featured-use-wrapper" "start-now";
   }
   .intro {
     grid-template-columns: 1fr, 1fr;
@@ -102,22 +104,31 @@
 }
 
 @media screen and (max-width: 768px) {
-  .grid-container {
-    grid-template-areas: "intro" "get-involved-wrapper" "featured-use-wrapper";
+  .home-grid-container {
+    grid-template-rows: 1800px 900px 850px 540px;
+    grid-template-areas: "intro" "get-involved-wrapper" "featured-use-wrapper" "start-now";
   }
   .intro {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 700px 500px 600px;
     grid-template-areas: "shield" "top" "bot";
+    .shield {
+      .container {
+        padding: 35px;
+        margin: 0 auto;
+        height: 95%;
+        min-width: 90vw;
+      }
+    }
   }
   .get-involved-wrapper {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 250px 650px;
     grid-template-areas: "image-one" "get-involved";
   }
   .featured-use-wrapper {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 550px 300px;
     grid-template-areas: "featured-use" "featured-image";
   }
 }
@@ -133,9 +144,9 @@
   .human-value-icon {
     background-size: cover;
     background-position: center center;
-    height: 70px;
+    height: 55px;
     margin-right: 20px;
-    width: 95px;
+    width: 75px;
   }
   #security-icon {
     background-image: url("/img/home/icons/security.svg");
