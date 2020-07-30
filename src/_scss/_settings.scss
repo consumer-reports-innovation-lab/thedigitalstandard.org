@@ -1,3 +1,14 @@
+$tds-green-100: #d8f2a7;
+$tds-green-200: #6cca8e;
+$tds-orange-100: #f4aa84;
+$tds-orange-200: #e8ac88;
+$tds-grey-100: #f1f2f2;
+$tds-grey-200: #bcbec0;
+$tds-grey-300: #939598;
+$tds-blue-100: #0f5d74;
+$tds-blue-200: #2c5c72;
+$tds-blue-300: #0d2d33;
+
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -8,7 +19,7 @@
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
+$gray-300: $tds-grey-300;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
@@ -40,21 +51,10 @@ $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
 $red: #eb7767 !default;
 $orange: #fd7e14 !default;
-$yellow: #f9ca87 !default;
+$yellow: $tds-green-100;
 $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
-
-$tds-green-100: #d8f2a7;
-$tds-green-200: #6cca8e;
-$tds-orange-100: #f4aa84;
-$tds-orange-200: #e8ac88;
-$tds-grey-100: #f1f2f2;
-$tds-grey-200: #bcbec0;
-$tds-grey-300: #939598;
-$tds-blue-100: #0f5d74;
-$tds-blue-200: #2c5c72;
-$tds-blue-300: #0d2d33;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -77,15 +77,15 @@ $colors: map-merge(
   $colors
 );
 
-$primary: $blue !default;
-$secondary: $gray-600 !default;
+$primary: $tds-green-200;
+$secondary: $tds-orange-200;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
-$light: $gray-100 !default;
-$mid: $tds-grey-300;
-$dark: $gray-800 !default;
+$light: $gray-200;
+$mid: $tds-blue-100;
+$dark: $tds-blue-300;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -97,9 +97,12 @@ $theme-colors: map-merge(
     "info": $info,
     "warning": $warning,
     "danger": $danger,
+    "white": $white,
     "light": $light,
     "mid": $mid,
     "dark": $dark,
+    "black": $black,
+    "yellow": $yellow,
   ),
   $theme-colors
 );
@@ -213,7 +216,8 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-) !default;
+  xxl: 1440px,
+);
 
 // Grid containers
 //
@@ -277,6 +281,7 @@ $embed-responsive-aspect-ratios: join(((21 9), (16 9), (4 3), (1 1)), $embed-res
 $font-family-sans-serif: sofia-pro, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
   "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-serif: serif;
 $font-family-base: $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 

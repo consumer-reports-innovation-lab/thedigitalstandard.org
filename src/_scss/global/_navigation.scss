@@ -6,17 +6,40 @@
   a {
     border: none;
     color: $tds-grey-300;
+    text-transform: uppercase;
     font-size: 0.875rem;
     padding: 8px 3px;
     margin: 0px 15px;
+    box-shadow: inset 0px 0px 0px $secondary;
     &:hover,
     &:focus {
-      color: $white !important;
+      color: $white;
+      box-shadow: inset 0px -80px 0px $secondary;
     }
   }
   .active {
-    color: $tds-blue-300 !important;
+    color: $tds-blue-300;
     border-bottom: 3px solid $tds-orange-200;
+    pointer-events: none;
+  }
+  #nav-the-standard {
+    color: $white;
+    padding: 8px 15px;
+    font-weight: 600;
+    background-color: $tds-green-200;
+    &.active {
+      background-color: $dark;
+      color: $white;
+      pointer-events: none;
+      border-bottom: 3px solid transparent;
+    }
+  }
+  .navbar-brand {
+    box-shadow: inset 0px 0px 0px transparent;
+    &:hover,
+    &:focus {
+      box-shadow: inset 0px -80px 0px transparent;
+    }
   }
 }
 
@@ -66,13 +89,6 @@
   &:focus {
     fill: $tds-orange-200;
   }
-}
-
-#nav-the-standard {
-  color: $white !important;
-  background-color: $tds-green-200;
-  padding: 8px 15px !important;
-  margin: 0px !important;
 }
 
 #standardnav {

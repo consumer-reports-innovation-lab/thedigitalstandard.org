@@ -1,0 +1,92 @@
+// TODO: Enter all Bootstrap overrides here...
+.btn {
+  text-transform: uppercase;
+  font-family: $font-family-base;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 33px;
+  border-radius: 0;
+  display: inline-block;
+  text-align: center;
+  transition: 0.5s;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.btn-outline-primary {
+  box-shadow: inset 0px 0px 0px $primary;
+  &:hover,
+  &:focus {
+    color: $white;
+    box-shadow: inset 0px -80px 0px $primary;
+  }
+}
+
+.btn-outline-secondary {
+  box-shadow: inset 0px 0px 0px $secondary;
+  &:hover,
+  &:focus {
+    color: $white;
+    box-shadow: inset 0px -80px 0px $secondary;
+  }
+}
+
+.btn-outline-white {
+  box-shadow: inset 0px 0px 0px $white;
+  &:hover,
+  &:focus {
+    color: $dark;
+    box-shadow: inset 0px -80px 0px $white;
+  }
+}
+
+.btn-outline-yellow {
+  box-shadow: inset 0px 0px 0px $yellow;
+  &:hover,
+  &:focus {
+    color: $dark;
+    box-shadow: inset 0px -80px 0px $yellow;
+  }
+}
+
+.border-right {
+  @include media-breakpoint-down(md) {
+    border-right: 0 !important;
+    border-bottom: 1px solid $tds-grey-300;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.border-left {
+  @include media-breakpoint-down(md) {
+    border-left: 0 !important;
+    border-top: 1px solid $tds-grey-300;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.container {
+  @include media-breakpoint-down(md) {
+    max-width: 95%;
+    width: auto;
+  }
+  @include media-breakpoint-up(xxl) {
+    max-width: 1400px;
+  }
+}
+
+.container-fluid {
+  padding: 0;
+  .row {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(md) {
+      min-height: 0;
+    }
+  }
+}

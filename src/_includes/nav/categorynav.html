@@ -1,9 +1,16 @@
 <!-- Enter logic for category navigation -->
+{% assign standard_category =  page.url | split: '/' | slice: 2 %}
+{% assign nav = site.data.standards['security'] %}
+
+{% for category in nav.categories %}
+<h4>{{ category.label }}</h4>
 <ul class="nav flex-column">
-  {% for object in site.data.standards %}
-    <li class="nav-item">
-      <!-- <a class="nav-link" href="{{ standard.url }}">{{ standard.title }}</a> -->
-      {{ object }}
-    </li>
+  {% for object in category.standards %}
+  {% assign standard = site.standards | where: 'slug', object | first %}
+  <li class="nav-item">
+    <a class="nav-link" href="{{ standard.url }}">{{ standard.title }}</a>
+  </li>
   {% endfor %}
 </ul>
+{% endfor %}
+
