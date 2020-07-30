@@ -1,5 +1,5 @@
 <!-- TODO: Enter logic for category navigation -->
-{% assign standard_category =  page.url | split: '/' | slice: 1 %}
+{% assign standard_category =  page.url | split: '/' | slice: 2 %}
 <!-- {{ standard_category }} -->
 <!-- This is not getting passed as string below -->
 {% assign nav = site.data.standards['security'] %}
