@@ -6,8 +6,6 @@ layout: default
     <div class="sidebar">
       {% include nav/categorynav.html %}
     </div>
-    <div class="content">
-      {% include standard/criteria.html %}
-      {{ content }}
-    </div>
+    {% include standard/criteria.html %}
+    {{ content }}
   </div>

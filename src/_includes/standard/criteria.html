@@ -1,1 +1,60 @@
-<!-- Enter logic for standard criteria / indicators -->
+<!-- TODO: Enter logic for standard criteria / indicators -->
+
+{% case page.standard_state %}
+  {% when '1: Green' %}
+    {% assign status = 'bg-success' %}
+  {% when '2: Yellow' %}
+    {% assign status = 'bg-warning' %}
+  {% else %}
+    {% assign status = 'bg-danger' %}
+{% endcase %}
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex align-items-center">
+        <h1 class="text-serif mr-5">{{ page.category }}</h1>
+        <span class="bg-status mr-2 {{ status }}"></span>
+        <h2 class="text-dark">
+          {{ page.title }}
+        </h2>
+        <!-- TODO: Add Github Icon -->
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex align-items-center">
+        <h3 class="text-uppercase text-black-50 mr-4">Criteria</h3>
+        <!-- TODO: Add Tabbed Navigation -->
+        <div class="text-primary">
+          1/2
+        </div>
+      </div>
+    </div>
+  </div>
+  {% for criteria in page.criteria %}
+  <div class="row">
+    <div class="col-12">
+      <p>{{ criteria_summary }}</p>
+
+      {% for item in criteria.indicators %}
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="p-3 bg-primary text-white text-uppercase">
+            Indicator
+          </div>
+          <p class="p-3">{{ item.indicator }}</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="p-3 bg-mid-grey text-white text-uppercase">
+            Procedure Overview
+          </div>
+          <div class="p-3">{{ item.procedure_html }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

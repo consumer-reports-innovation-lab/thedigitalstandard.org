@@ -133,6 +133,17 @@
 }
 
 // Background Utilities
+.bg-status {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: $dark;
+  .bg-status-lg {
+    height: 28px;
+    width: 28px;
+  }
+}
 .bg-fill {
   height: 100%;
   display: flex;

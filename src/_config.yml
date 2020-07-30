@@ -43,6 +43,10 @@ plugins:
 placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
 
 standard_states: ['1: Green', '2: Yellow', '3: Red']
+categories:
+  - Data Security
+  - Build Quality
+  - User Safety
 
 # Cloudcannon Configuration
 _array_structures:
