@@ -1,6 +1,6 @@
 ---
 title: Best Build Practices
-category: Build Quality
+standard_category: Build Quality
 standard_state: '1: Green'
 criteria:
   - criteria_summary: >-
