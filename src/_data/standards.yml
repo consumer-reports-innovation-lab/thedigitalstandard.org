@@ -2,11 +2,11 @@ security:
   categories:
     - label: Build Quality
       standards:
-        - security/best-build-practices
+        - best-build-practices
     - label: Data Security
       standards:
-        - security/authentication
-        - security/encryption
+        - authentication
+        - encryption
     - label: User Safety
       standards:
 privacy:

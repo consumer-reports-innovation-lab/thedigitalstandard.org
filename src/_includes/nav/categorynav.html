@@ -1,30 +1,32 @@
 <!-- TODO: Enter logic for category navigation -->
 {% assign standard_category =  page.url | split: '/' | slice: 2 %}
-<!-- {{ standard_category }} -->
 <!-- This is not getting passed as string below -->
-{% assign nav = site.data.standards['security'] %}
 
-{% for category in nav.categories %}
+{% assign side_nav = site.data.standards | where: [0], standard_category | first %}
+{% for item in side_nav %}
+{% for category in item.categories %}
 <h4>{{ category.label }}</h4>
 <ul class="nav flex-column">
   <!-- TODO: Fix this logic -->
   {% for object in category.standards %}
-  {% assign standard = site.standards | where: 'slug', object | first %}
-  <!-- <li class="nav-item">
-    <a class="nav-link" href="{{ standard.url }}">{{ standard.title }}</a>
-  </li> -->
+  {% assign object_slug_formatted = object | split: '/' | slice: 1 %}
+  {{ object_slug_formatted }}
+  {% assign stand = site.standards | where: 'slug', object | first %}
+  <li class="nav-item">
+    <a class="nav-link" href="{{ stand.url }}.html">{{ stand.title }}</a>
+  </li>
   {% endfor %}
 
   <!-- TODO: Remove hard coded values -->
-  <li class="nav-item">
+  <!-- <li class="nav-item">
     <a class="nav-link" href="standard/security/authentication/">Authentication</a>
   </li>
 
   <li class="nav-item">
     <a class="nav-link" href="standard/security/encryption/">Encryption</a>
-  </li>
+  </li> -->
 </ul>
 {% endfor %}
-
+{% endfor %}
 
 
