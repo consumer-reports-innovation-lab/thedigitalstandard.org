@@ -1,6 +1,6 @@
 ---
 title: Authentication
-category: Build Quality
+category: Data Security
 standard_state: '1: Green'
 criteria:
 ---
