@@ -1,4 +1,6 @@
-<!-- TODO: Enter logic for standard criteria / indicators -->
+
+{% assign current_standards = "" | split: ',' %}
+{% assign num_standards = 0 %}
 
 {% case page.standard_state %}
   {% when '1: Green' %}
@@ -26,9 +28,54 @@
     <div class="col-12">
       <div class="d-flex align-items-center">
         <h3 class="text-uppercase text-black-50 mr-4">Criteria</h3>
+        {% for object in site.data.standards %}
+          {% for item in object %}
+            {% for category in item.categories %}
+              {% if category.label contains page.standard_category %}
+                {% assign num_standards = category.standards | size %}
+                {% for object in category.standards %}
+                  {% assign object_slug_formatted = object | split: '/' | slice: 1 %}
+                  {% assign instance = object_slug_formatted | array_to_sentence_string | strip %}
+                  {% assign standard = site.standards | where: 'slug', instance | first %}
+                  {% assign current_standards = current_standards | push: standard %}
+                  <!-- {{ standard.title }} -->
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        {% endfor %}
+        {% if current_standards.size > 1 %}
+          {% assign prevurl = current_standards.last.url %}
+          {% assign nexturl = current_standards.first.url %}
+        {% endif %}
+        {% for standard in current_standards %}
+        {% if standard.slug == page.slug %}
+          {% unless forloop.first %}
+            {% assign prevurl = prev.url %}
+          {% endunless %}
+          {% if forloop.first %}
+            {% assign prevurl = null %}
+          {% endif %}
+          {% unless forloop.last %}
+            {% assign next = current_standards[forloop.index] %}
+            {% assign nexturl = next.url %}
+          {% endunless %}
+          {% if forloop.last %}
+            {% assign nexturl = null %}
+          {% endif %}
+        {% endif %}
+        {% assign prev = standard %}
+        {% endfor %}
         <!-- TODO: Add Tabbed Navigation to switch between criteria. This is heavily dependent on the direction that design takes, but I think it is a flexible solution. -->
         <div class="text-primary">
-          1/{{ page.criteria.size }}
+          1/{{ num_standards }}
+        </div>
+
+        <div class="ml-4 d-flex">
+          {% if current_standards.size > 1 %}
+          {% if prevurl %}<a href="{{ prevurl }}.html" class="prev mr-3"><small>&lt; Prev</small></a>{% endif %}
+          {% if nexturl %}<a href="{{ nexturl }}.html" class="next"><small>Next &gt;</small></a>{% endif %}
+          {% endif %}
         </div>
       </div>
     </div>
@@ -36,7 +83,7 @@
   {% for criteria in page.criteria %}
   <div class="row">
     <div class="col-12">
-      <p>{{ criteria_summary }}</p>
+      <p>{{ criteria.criteria_summary }}</p>
 
       {% for item in criteria.indicators %}
       <div class="row">

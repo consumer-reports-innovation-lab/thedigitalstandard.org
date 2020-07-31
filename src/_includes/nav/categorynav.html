@@ -2,13 +2,10 @@
 {% assign standard_category =  page.url | split: '/' | slice: 2 %}
 <!-- {{ standard_category }} -->
 {% assign cat = standard_category | array_to_sentence_string | strip %}
-<!-- This is not getting passed as string below -->
 
-<!-- {{ side_nav }} -->
 {% for object in site.data.standards %}
   {% assign key = object[0] %}
   {% if key contains cat %}
-    <!-- <h1>Success</h1> -->
     {% assign side_nav = object %}
   {% endif %}
 {% endfor %}
@@ -16,7 +13,6 @@
 {% for category in item.categories %}
 <h4>{{ category.label }}</h4>
 <ul class="nav flex-column">
-  <!-- TODO: Fix this logic -->
   {% for object in category.standards %}
   {% assign object_slug_formatted = object | split: '/' | slice: 1 %}
   {% assign instance = object_slug_formatted | array_to_sentence_string | strip %}
@@ -25,15 +21,6 @@
     <a class="nav-link" href="{{ standard.url }}.html">{{ standard.title }}</a>
   </li>
   {% endfor %}
-
-  <!-- TODO: Remove hard coded values -->
-  <!-- <li class="nav-item">
-    <a class="nav-link" href="standard/security/authentication/">Authentication</a>
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link" href="standard/security/encryption/">Encryption</a>
-  </li> -->
 </ul>
 {% endfor %}
 {% endfor %}
