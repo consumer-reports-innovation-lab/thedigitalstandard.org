@@ -282,8 +282,9 @@ $embed-responsive-aspect-ratios: join(((21 9), (16 9), (4 3), (1 1)), $embed-res
 $font-family-sans-serif: sofia-pro, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
   "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-// TODO: Add custom font
-$font-family-serif: serif;
+
+$font-family-serif: faidherbev, serif;
+
 $font-family-base: $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
