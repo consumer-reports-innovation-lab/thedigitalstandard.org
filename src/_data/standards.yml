@@ -10,6 +10,7 @@ security:
         - security/encryption
     - label: User Safety
       standards:
+        - security/personal-safety
 privacy:
   categories:
 ownership:
