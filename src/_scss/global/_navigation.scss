@@ -65,10 +65,10 @@
 }
 
 .nav-icon-wrapper {
-  box-shadow: inset 0px 0px 0px transparent;
+  box-shadow: inset 0px 0px 0px transparent !important;
   &:hover,
   &:focus {
-    box-shadow: inset 0px 0px 0px transparent;
+    box-shadow: inset 0px 0px 0px transparent !important;
   }
 }
 
