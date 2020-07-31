@@ -99,10 +99,9 @@ partners:
       </div>
       <div class="col-12 col-md-6">
         <nav class="nav flex-column">
-          <!-- TODO: Add logo and url data in Frontmatter -->
           {% for partner in page.partners %}
-            <a class="nav-link" ref="{{ partner.url}}" target="_blank" title="{{ partner.name }}">
-              <img src="{{ partner.logo }}" alt="{{ partner.name }}" />
+            <a class="nav-link my-3 px-5" ref="{{ partner.url}}" target="_blank" title="{{ partner.name }}">
+              <img src="{{ partner.logo_path }}" alt="{{ partner.name }}" />
             </a>
           {% endfor %}
         </nav>
