@@ -5,6 +5,8 @@ security:
         - security/best-build-practices
     - label: Data Security
       standards:
+        - security/authentication
+        - security/encryption
     - label: User Safety
       standards:
 privacy:

@@ -19,10 +19,10 @@
   <!-- TODO: Fix this logic -->
   {% for object in category.standards %}
   {% assign object_slug_formatted = object | split: '/' | slice: 1 %}
-  {{ object_slug_formatted }}
-  {% assign stand = site.standards | where: 'slug', object | first %}
+  {% assign instance = object_slug_formatted | array_to_sentence_string | strip %}
+  {% assign standard = site.standards | where: 'slug', instance | first %}
   <li class="nav-item">
-    <a class="nav-link" href="{{ stand.url }}.html">{{ stand.title }}</a>
+    <a class="nav-link" href="{{ standard.url }}.html">{{ standard.title }}</a>
   </li>
   {% endfor %}
 
