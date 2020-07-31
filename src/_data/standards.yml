@@ -3,6 +3,7 @@ security:
     - label: Build Quality
       standards:
         - security/best-build-practices
+        - security/product-stablity
     - label: Data Security
       standards:
         - security/authentication
