@@ -8,6 +8,10 @@ security:
       standards:
         - security/authentication
         - security/encryption
+        - security/known-exploit-resistance
+        - security/security-oversight
+        - security/security-over-time
+        - security/vulnerability-disclosure-program
     - label: User Safety
       standards:
         - security/personal-safety
