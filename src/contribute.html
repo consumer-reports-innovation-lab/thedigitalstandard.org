@@ -3,7 +3,7 @@ layout: page
 title: Contribute
 partners:
   - name: Consumer Reports
-    logo_path:
+    logo_path: /img/contribute/partners/consumer-reports.svg
     url:
   - name: Disconnect
     logo_path:
@@ -24,6 +24,7 @@ partners:
     logo_path:
     url:
 ---
+
 <section class="p-0">
   <div class="row">
     <div class="col-12 col-lg-6 pr-lg-0">
@@ -101,7 +102,7 @@ partners:
           <!-- TODO: Add logo and url data in Frontmatter -->
           {% for partner in page.partners %}
             <a class="nav-link" ref="{{ partner.url}}" target="_blank" title="{{ partner.name }}">
-              <img src="{{ partner.logo }}" alt="{{ partner.name }}"/>
+              <img src="{{ partner.logo }}" alt="{{ partner.name }}" />
             </a>
           {% endfor %}
         </nav>
