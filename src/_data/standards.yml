@@ -1,4 +1,4 @@
-- name: security
+security:
   categories:
     - label: Build Quality
       standards:
@@ -9,9 +9,9 @@
         - encryption
     - label: User Safety
       standards:
-- name: privacy
+privacy:
   categories:
-- name: ownership
+ownership:
   categories:
-- name: governance
+governance:
   categories:
