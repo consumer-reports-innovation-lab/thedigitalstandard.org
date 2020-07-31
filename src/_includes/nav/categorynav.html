@@ -1,8 +1,17 @@
 <!-- TODO: Enter logic for category navigation -->
 {% assign standard_category =  page.url | split: '/' | slice: 2 %}
+{{ standard_category }}
+{% assign cat = standard_category | array_to_sentence_string | strip %}
 <!-- This is not getting passed as string below -->
 
-{% assign side_nav = site.data.standards | where: [0], standard_category | first %}
+{% assign side_nav = site.data.standards | where: 'name', cat %}
+{{ side_nav }}
+{% for object in site.data.standards %}
+  {% assign key = object.name %}
+  {% if key contains cat %}
+    <h1>Success</h1>
+  {% endif %}
+{% endfor %}
 {% for item in side_nav %}
 {% for category in item.categories %}
 <h4>{{ category.label }}</h4>
