@@ -7,3 +7,57 @@
     }
   }
 }
+
+.animated-wrapper {
+  position: relative;
+  max-width: 450px;
+  min-height: 150px;
+  .animated-bg {
+    padding: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+  }
+  .animated-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 250px;
+  }
+  #security-bg {
+    fill: transparent !important;
+    stroke: #000000;
+    stroke-width: 3.855;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 1300px;
+    stroke-dashoffset: 1300px;
+    animation-name: draw;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+  }
+}
+
+@media (max-width: 992px) {
+  .animated-wrapper {
+    .animated-bg {
+      max-width: 400px;
+    }
+    .animated-icon {
+    }
+  }
+}
+@media (max-width: 768px) {
+  .animated-wrapper {
+    .animated-bg {
+      max-width: 250px;
+    }
+    .animated-icon {
+      height: 150px;
+    }
+  }
+}
