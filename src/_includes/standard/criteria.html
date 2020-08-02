@@ -10,18 +10,18 @@
   {% else %}
     {% assign status = 'bg-danger' %}
 {% endcase %}
-<div class="container my-5">
+<div class="container m-5">
   <div class="row">
     <div class="col-12">
       <div class="d-flex align-items-center">
-        <h1 class="text-serif mr-5">{{ page.standard_category }}</h1>
+        <h1 class="text-serif text-thin mr-5 mb-0">{{ page.standard_category }}</h1>
         <span class="bg-status mr-2 {{ status }}"></span>
-        <h2 class="text-dark">
+        <h2 class="blue text-uppercase">
           {{ page.title }}
         </h2>
         <!-- TODO add github link-->
         <i class="ri-github-fill text-mid-grey ml-3"></i>
- 
+
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
   <div class="row">
     <div class="col-12">
       <div class="d-flex align-items-center">
-        <h3 class="text-uppercase text-black-50 mr-4">Criteria</h3>
+        <h3 class="text-uppercase text-black-50 mr-4 mb-2">Criteria</h3>
         {% for object in site.data.standards %}
           {% for item in object %}
             {% for category in item.categories %}
@@ -69,14 +69,14 @@
         {% assign prev = standard %}
         {% endfor %}
         <!-- TODO: Add Tabbed Navigation to switch between criteria. This is heavily dependent on the direction that design takes, but I think it is a flexible solution. -->
-        <div class="text-primary">
+        <div class="text-primary mb-2">
           1/{{ num_standards }}
         </div>
 
-        <div class="ml-4 d-flex">
+        <div class="ml-4 d-flex mb-2">
           {% if current_standards.size > 1 %}
           {% if prevurl %}<a href="{{ prevurl }}.html" class="prev mr-3"><small>&lt; Prev</small></a>{% endif %}
-          {% if nexturl %}<a href="{{ nexturl }}.html" class="next"><small>Next &gt;</small></a>{% endif %}
+          {% if nexturl %}<a href="{{ nexturl }}.html" class="next "><small>Next &gt;</small></a>{% endif %}
           {% endif %}
         </div>
       </div>
@@ -90,14 +90,14 @@
       {% for item in criteria.indicators %}
       <div class="row">
         <div class="col-12 col-md-6">
-          <div class="p-3 bg-primary text-white text-uppercase">
+          <div class="p-2 bg-primary text-white text-uppercase">
             Indicator
           </div>
           <p class="p-3">{{ item.indicator }}</p>
         </div>
         {% if item.procedure_html %}
         <div class="col-12 col-md-6">
-          <div class="p-3 bg-mid-grey text-white text-uppercase">
+          <div class="p-2 bg-mid-grey text-white text-uppercase">
             Procedure Overview
           </div>
           <div class="p-3">{{ item.procedure_html }}</div>

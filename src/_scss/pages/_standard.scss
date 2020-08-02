@@ -1,7 +1,7 @@
 .standard-layout {
   .sidebar {
     padding: 1.5rem;
-    width: 300px;
+    width: 325px;
     min-height: calc(100vh - 100px);
     background-color: $tds-blue-100;
     color: $white;
@@ -17,17 +17,19 @@
     }
     .nav-link {
       position: relative;
-      padding: 0.1rem;
+      padding: 0.3rem;
       padding-left: 1rem;
       text-transform: uppercase;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: $white;
+      letter-spacing: 1px;
+      opacity: 0.5;
       @include transition();
       &::before {
         content: "";
         display: block;
         position: absolute;
-        top: 8px;
+        top: 12px;
         left: 0;
         height: 7px;
         width: 7px;
@@ -39,6 +41,7 @@
       .active {
         color: $primary;
         font-weight: 600;
+        opacity: 1;
         &::before {
           background-color: $primary;
         }
