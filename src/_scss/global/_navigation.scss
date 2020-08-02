@@ -24,14 +24,21 @@
   }
   #nav-the-standard {
     color: $white;
-    padding: 8px 15px;
+    padding: 10px 15px 8px 15px;
     font-weight: 600;
     background-color: $tds-green-200;
+    box-shadow: inset 0px 0px 0px $tds-blue-300;
+    &:hover {
+      box-shadow: inset 0px -80px 0px $tds-blue-300;
+    }
     &.active {
       background-color: $dark;
       color: $white;
       pointer-events: none;
       border-bottom: 3px solid transparent;
+    }
+    &:hover::before {
+      border-bottom: 0px;
     }
   }
   .navbar-brand {
@@ -62,6 +69,7 @@
 
 #tds-nav-lockup {
   width: 200px;
+  height: 30px;
 }
 
 .nav-icon-wrapper {
@@ -69,6 +77,9 @@
   &:hover,
   &:focus {
     box-shadow: inset 0px 0px 0px transparent !important;
+  }
+  &:hover::before {
+    border-bottom: 0px !important;
   }
 }
 
@@ -87,7 +98,43 @@
   transition: 0.2s;
   &:hover,
   &:focus {
-    fill: $tds-orange-200;
+    fill: $primary;
+  }
+  &:hover::before {
+    border-bottom: 0px;
+  }
+}
+#primarynav {
+  .nav-link {
+    box-shadow: inset 0px 0px 0px transparent;
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+    height: 100%;
+    z-index: 1;
+    &:hover {
+      box-shadow: inset 0px 0px 0px transparent;
+      color: $tds-blue-300;
+    }
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      width: 0%;
+      left: 50%;
+      margin: 0 auto;
+      transition: all 0.5s;
+      z-index: -1;
+    }
+    &:hover::before {
+      border-bottom: solid 2px $secondary;
+      width: 100%;
+      left: 0%;
+    }
   }
 }
 
