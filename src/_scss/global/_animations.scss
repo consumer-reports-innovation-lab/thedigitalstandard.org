@@ -1,15 +1,179 @@
-.fade-up {
+// Home page animations
+
+// #shield-sreen-blue {
+//   background-color: transparent !important;
+//   box-shadow: inset 0px 00px 0px $tds-blue-300;
+//   transition: 0.8s;
+// }
+
+// .shield-sreen-blue-fill {
+//   box-shadow: inset 0px -700px 0px $tds-blue-300 !important;
+// }
+
+// #human-values-green {
+//   background-color: transparent !important;
+//   box-shadow: inset 0px 00px 0px $primary;
+//   transition: 0.8s;
+// }
+
+// .human-values-green-fill {
+//   box-shadow: inset 0px -700px 0px $primary !important;
+// }
+
+// .animate {
+//   opacity: 0;
+// }
+
+// .fade-up-large {
+//   opacity: 0;
+//   transform: scale(0.9);
+//   transform: translatey(50px);
+//   animation: fade-up-lg 0.8s;
+//   animation-fill-mode: forwards;
+//   &:nth-child(1) {
+//     animation-delay: 0.5s !important;
+//   }
+//   &:nth-child(2) {
+//     animation-delay: 1s !important;
+//   }
+//   &:nth-child(3) {
+//     animation-delay: 1.5s !important;
+//   }
+//   &:nth-child(4) {
+//     animation-delay: 2s !important;
+//   }
+//   &:nth-child(5) {
+//     animation-delay: 2.5s !important;
+//   }
+//   &:nth-child(6) {
+//     animation-delay: 2.2s !important;
+//   }
+// }
+
+// @keyframes fade-up-lg {
+//   from {
+//     opacity: 0;
+//     transform: scale(0.9);
+//     transform: translatey(50px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: scale(1);
+//     transform: translatey(0px);
+//   }
+// }
+
+.animate-text-fade-up,
+.animate-opacity-fade {
   opacity: 0;
-  transform: scale(0.9);
-  transform: translatey(50px);
-  transition: all 0.8s;
 }
-.fade-up.visible {
-  opacity: 1;
-  transform: none;
+.opacity-fade-in {
+  animation: opacityFadeIn 0.8s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s !important;
 }
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
+.text-fade-up {
+  animation: textFadeUp 0.8s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s !important;
+  &:nth-child(1) {
+    animation-delay: 0s !important;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.2s !important;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.4s !important;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.5s !important;
+  }
+  &:nth-child(5) {
+    animation-delay: 0.6s !important;
   }
 }
+
+.animate-blue-bg-fill {
+  animation: blueBgFill 0.8s;
+  animation-fill-mode: forwards;
+  background-color: transparent !important;
+}
+.animate-green-bg-fill {
+  animation: greenBgFill 0.8s;
+  animation-fill-mode: forwards;
+  background-color: transparent !important;
+}
+
+@keyframes blueBgFill {
+  from {
+    background-color: transparent !important;
+    box-shadow: inset 0px 0px 0px $tds-blue-300;
+  }
+  to {
+    box-shadow: inset 0px -700px 0px $tds-blue-300;
+  }
+}
+@keyframes greenBgFill {
+  from {
+    background-color: transparent !important;
+    box-shadow: inset 0px 0px 0px $primary;
+  }
+  to {
+    box-shadow: inset 0px -600px 0px $primary;
+  }
+}
+@keyframes textFadeUp {
+  from {
+    opacity: 0;
+    transform: translatey(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+@keyframes opacityFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// .fade-up-small {
+//   opacity: 0;
+//   transform: translatey(30px);
+//   transition: all 1.5s;
+// }
+
+// .text-visible {
+//   opacity: 1;
+//   transform: scale(1);
+//   transform: translatey(0px);
+// }
+
+// #security-img {
+//   opacity: 0;
+//   top: 120%;
+//   transition: all 0.8s;
+// }
+
+// .visible {
+//   opacity: 1 !important;
+//   top: 50% !important;
+// }
+
+// .draw {
+//   animation-name: draw;
+//   animation-duration: 1.5s;
+//   animation-fill-mode: forwards; // Stay on the last frame
+//   animation-iteration-count: 1; // Run only once
+//   animation-timing-function: linear;
+//   stroke-dashoffset: 0;
+// }
+// @keyframes draw {
+//   to {
+//     stroke-dashoffset: 0;
+//   }
+// }
