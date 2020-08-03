@@ -18,4 +18,3 @@ document
   .querySelectorAll('.__react-component')
   .forEach(renderComponentInElement)
 
-

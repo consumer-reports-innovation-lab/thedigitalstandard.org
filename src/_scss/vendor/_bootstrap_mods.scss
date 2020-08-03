@@ -34,6 +34,17 @@
   }
 }
 
+.btn-outline-dark {
+  background-color: transparent;
+  box-shadow: inset 0px 0px 0px $dark;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: transparent;
+    box-shadow: inset 0px -80px 0px $dark;
+  }
+}
+
 .btn-outline-white {
   box-shadow: inset 0px 0px 0px $white;
   &:hover,
@@ -90,4 +101,30 @@
       min-height: 0;
     }
   }
+}
+
+// Carousels
+.carousel-control-prev,
+.carousel-control-next {
+  position: relative;
+  color: inherit;
+  display: block;
+  width: 20px;
+  background-color: transparent;
+  font-size: 2rem;
+  &:hover {
+    color: $dark;
+  }
+}
+
+// // Collapsible
+i.caret {
+  transform: scale(1.6);
+  opacity: 0.5;
+  margin-left: 0.5rem;
+  display: block;
+}
+
+.collapse-toggle[aria-expanded="true"] > .caret {
+  transform: scale(1.6) rotate(90deg);
 }

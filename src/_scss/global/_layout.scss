@@ -8,15 +8,6 @@
   height: 500px;
   background-color: $tds-blue-300;
   color: $white;
-  .footer-social {
-    border: none;
-    padding: 0px;
-    box-shadow: inset 0px 0px 0px transparent;
-    &:hover,
-    &:focus {
-      box-shadow: inset 0px 0px 0px transparent;
-    }
-  }
   .footer-links {
     list-style: none;
     display: flex;

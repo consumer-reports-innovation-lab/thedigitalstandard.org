@@ -38,7 +38,7 @@
         @include transition();
       }
       &:hover,
-      .active {
+      &.active {
         color: $primary;
         font-weight: 600;
         opacity: 1;

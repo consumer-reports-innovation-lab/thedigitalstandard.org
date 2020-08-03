@@ -1,28 +1,36 @@
-<!-- TODO: Enter logic for category navigation -->
-{% assign standard_category =  page.url | split: '/' | slice: 2 %}
-<!-- {{ standard_category }} -->
-{% assign cat = standard_category | array_to_sentence_string | strip %}
+{% assign route =  page.url | split: '/' | slice: 2 %}
+{% assign active_standard =  page.url | split: '/' | slice: 2 %}
+{% assign navigation = site.data.standards[route.first] %}
 
-{% for object in site.data.standards %}
-  {% assign key = object[0] %}
-  {% if key contains cat %}
-    {% assign side_nav = object %}
-  {% endif %}
-{% endfor %}
-{% for item in side_nav %}
-{% for category in item.categories %}
-<h4>{{ category.label }}</h4>
-<ul class="nav flex-column">
-  {% for object in category.standards %}
-  {% assign object_slug_formatted = object | split: '/' | slice: 1 %}
-  {% assign instance = object_slug_formatted | array_to_sentence_string | strip %}
-  {% assign standard = site.standards | where: 'slug', instance | first %}
-  <li class="nav-item">
-    <a class="nav-link" href="{{ standard.url }}.html">{{ standard.title }}</a>
-  </li>
+{% for category in navigation.categories %}
+  {% assign active = false %}
+  {% assign category_slug = category.label | slugify %}
+  {% for string in category.standards %}
+    {% if page.url contains string %}
+      {% assign active = true %}
+    {% endif %}
   {% endfor %}
-</ul>
-{% endfor %}
+<div
+  data-toggle="collapse"
+  href="#{{ category.label | slugify }}"
+  aria-expanded="{{ active }}"
+  class="collapse-toggle d-flex align-items-center">
+  <h4>{{ category.label }}</h4>
+  <i class="caret ri-arrow-right-s-fill"></i>
+</div>
+
+<div id="{{ category.label | slugify }}" class="collapse {% if active %}show{% endif %}">
+  <ul class="nav flex-column">
+    {% for string in category.standards %}
+    {% assign slug = string | split: '/' | slice: 1 | first %}
+    {% assign standard = site.standards | where: 'slug', slug | first %}
+
+    <li class="nav-item">
+      <a class="nav-link {% if page.url contains string %}active{% endif %}" href="{{ standard.url }}">{{ standard.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 {% endfor %}
 
 

@@ -2,10 +2,14 @@
 layout: default
 ---
 {% include nav/standardnav.html %}
-  <div class="d-flex">
-    <div class="sidebar">
-      {% include nav/categorynav.html %}
-    </div>
-    {% include standard/criteria.html %}
-    {{ content }}
+
+<div class="d-flex">
+  <div class="sidebar">
+    {% include nav/categorynav.html %}
   </div>
+  {% if page.standard_category %}
+    {% include standard/criteria.html %}
+  {% else %}
+    {{ content }}
+  {% endif %}
+</div>

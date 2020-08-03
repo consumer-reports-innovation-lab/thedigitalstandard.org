@@ -3,7 +3,7 @@
   .container {
     max-width: none;
   }
-  a {
+  .nav-link {
     border: none;
     color: $tds-grey-300;
     text-transform: uppercase;
@@ -93,17 +93,18 @@
   }
 }
 
-.medium-icon,
-.github-icon {
-  transition: 0.2s;
+.social-link {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+  color: $tds-grey-300;
   &:hover,
   &:focus {
-    fill: $primary;
-  }
-  &:hover::before {
-    border-bottom: 0px;
+    color: $primary;
+    text-decoration: none;
   }
 }
+
 #primarynav {
   .nav-link {
     box-shadow: inset 0px 0px 0px transparent;
