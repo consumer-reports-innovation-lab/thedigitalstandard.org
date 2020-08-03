@@ -35,9 +35,6 @@ $(document).ready(function () {
   })
     .setClassToggle('.intro .animate-green-bg', 'animate-green-bg-fill')
     .addTo(controller);
-
-
-
   // Section Two
   var homeScene = new ScrollMagic.Scene({
     triggerElement: '#get-involved-wrapper',
@@ -79,19 +76,106 @@ $(document).ready(function () {
   })
     .setClassToggle('#learn-how .animate-text-fade-up', 'text-fade-up')
     .addTo(controller);
+
+
+
+
+
+
+
+
+
+
+
+
   // Section Two
-  var overviewScene = new ScrollMagic.Scene({
-    triggerElement: '#benefits',
+  // Security background animate
+  var bgScene = new ScrollMagic.Scene({
+    triggerElement: '#security-bg',
+    // duration: '50%'
     reverse: false
   })
-    .setClassToggle('#benefits .animate-text-fade-up', 'text-fade-up')
+    .setClassToggle('#security-bg', 'draw')
     .addTo(controller);
+  // Security text animate
   var overviewScene = new ScrollMagic.Scene({
-    triggerElement: '#benefits',
+    triggerElement: '#security-trigger',
+    // duration: '50%'
     reverse: false
   })
-    .setClassToggle('#benefits .animate-benefits-image', 'benefits-image-fade-up')
+    .setClassToggle('#security-trigger .animate-text-fade-up', 'text-fade-up')
     .addTo(controller);
+  // Security icon animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#security-trigger',
+    // duration: '50%'
+    reverse: false
+  })
+    .setClassToggle('#security-trigger .animate-benefits-image', 'benefits-image-fade-up')
+    .addTo(controller);
+  // Security fade in and out animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#privacy-trigger',
+  })
+    .setClassToggle('#security-trigger.animate-section-fadeout', 'fade-out')
+    .addIndicators()
+    .addTo(controller);
+
+
+
+
+  // Privacy fade in
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#privacy-trigger',
+  })
+    .setClassToggle('#privacy-trigger.animate-section-fadein', 'fade-in')
+    .addIndicators()
+    .addTo(controller);
+  // Privacy background animate
+  var bgScene = new ScrollMagic.Scene({
+    triggerElement: '#privacy-trigger',
+    // duration: '50%'
+    reverse: false
+  })
+    .setClassToggle('#privacy-bg', 'draw')
+    .addTo(controller);
+  // Privacy icon animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#privacy-trigger',
+    // duration: '50%'
+    reverse: false
+  })
+    .setClassToggle('#privacy-trigger .animate-benefits-image', 'benefits-image-fade-up')
+    .addTo(controller);
+  // Privacy text animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#privacy-trigger',
+    // duration: '50%'
+    reverse: false
+  })
+    .setClassToggle('#privacy-trigger .animate-text-fade-up', 'text-fade-up')
+    .addTo(controller);
+  // Privacy fade in and out animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#ownership-trigger',
+  })
+    .setClassToggle('#privacy-trigger.animate-section-fadeout', 'fade-out')
+    .addIndicators()
+    .addTo(controller);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // Section Three
   var overviewScene = new ScrollMagic.Scene({
     triggerElement: '#how-to',
@@ -162,34 +246,6 @@ $(document).ready(function () {
 
 
 
-  // background animate
-  var bgScene = new ScrollMagic.Scene({
-    triggerElement: '#security-bg',
-    reverse: false
-  })
-    .setClassToggle('#security-bg', 'draw')
-    .addTo(controller);
 
-  var bgScene = new ScrollMagic.Scene({
-    triggerElement: '#security-bg',
-    reverse: false
-  })
-    .setClassToggle('#security-img', 'visible')
-    .addTo(controller);
 
-  // text animate
-  var bgScene = new ScrollMagic.Scene({
-    triggerElement: '#security-bg',
-    reverse: false
-  })
-    .setClassToggle('.fade-up-large', 'text-visible')
-    .addTo(controller);
-
-  // btn animate
-  var bgScene = new ScrollMagic.Scene({
-    triggerElement: '#security-bg',
-    reverse: false
-  })
-    .setClassToggle('.fade-up-small', 'text-visible')
-    .addTo(controller);
 });

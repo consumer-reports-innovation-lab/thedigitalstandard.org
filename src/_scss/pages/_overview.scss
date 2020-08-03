@@ -34,11 +34,22 @@
     stroke-miterlimit: 10;
     stroke-dasharray: 1300px;
     stroke-dashoffset: 1300px;
-    //     animation-name: draw;
-    // animation-duration: 3s;
-    // animation-fill-mode: forwards; // Stay on the last frame
-    // animation-iteration-count: 1; // Run only once
-    // animation-timing-function: linear;
+    stroke-linecap: round;
+  }
+  #privacy-bg {
+    // fill: transparent !important;
+    // stroke: #000000;
+    stroke-width: 3.855;
+    // stroke-miterlimit: 10;
+    // stroke-dasharray: 1300px;
+    // stroke-dashoffset: 1300px;
+    fill: none;
+    stroke: #000000;
+    // stroke-width: 2.9752;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 2400px;
+    stroke-dashoffset: 2400px;
   }
 }
 
