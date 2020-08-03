@@ -21,6 +21,12 @@ $(document).ready(function () {
     triggerElement: '#shield-sreen-blue',
     reverse: false
   })
+    .setClassToggle('.intro .animate-text-fade-up-delay-long', 'text-fade-up-delay-long')
+    .addTo(controller);
+  var homeScene = new ScrollMagic.Scene({
+    triggerElement: '#shield-sreen-blue',
+    reverse: false
+  })
     .setClassToggle('.intro .animate-blue-bg', 'animate-blue-bg-fill')
     .addTo(controller);
   var homeScene = new ScrollMagic.Scene({
@@ -29,6 +35,9 @@ $(document).ready(function () {
   })
     .setClassToggle('.intro .animate-green-bg', 'animate-green-bg-fill')
     .addTo(controller);
+
+
+
   // Section Two
   var homeScene = new ScrollMagic.Scene({
     triggerElement: '#get-involved-wrapper',

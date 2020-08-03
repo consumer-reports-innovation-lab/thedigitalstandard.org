@@ -168,6 +168,22 @@
   max-height: 40px;
 }
 
+.standards-button {
+  .human-value {
+    box-shadow: inset 0px 0px 0px $secondary;
+    transition: 0.4s;
+    &:hover {
+      box-shadow: inset 0px -80px 0px $secondary;
+      border: 2px solid $secondary;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 // .bg-half {
 //   min-height: 50vh;
 //   display: flex;

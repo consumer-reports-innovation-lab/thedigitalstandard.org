@@ -29,7 +29,8 @@
   .shield {
     grid-area: shield;
     height: 100%;
-    background-image: url("/img/home/intro-bg.png");
+    background-color: #002e34;
+
     .container {
       background-color: $tds-blue-300;
       padding: 90px;
