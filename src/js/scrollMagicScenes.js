@@ -91,12 +91,13 @@ $(document).ready(function () {
   // Section Two
   // Security background animate
   var bgScene = new ScrollMagic.Scene({
-    triggerElement: '#security-bg',
-    // duration: '50%'
+    triggerElement: '#security-trigger',
     reverse: false
   })
     .setClassToggle('#security-bg', 'draw')
+    // .addIndicators()
     .addTo(controller);
+
   // Security text animate
   var overviewScene = new ScrollMagic.Scene({
     triggerElement: '#security-trigger',
@@ -118,7 +119,7 @@ $(document).ready(function () {
     triggerElement: '#privacy-trigger',
   })
     .setClassToggle('#security-trigger.animate-section-fadeout', 'fade-out')
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
 
@@ -129,7 +130,7 @@ $(document).ready(function () {
     triggerElement: '#privacy-trigger',
   })
     .setClassToggle('#privacy-trigger.animate-section-fadein', 'fade-in')
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
   // Privacy background animate
   var bgScene = new ScrollMagic.Scene({
@@ -160,7 +161,107 @@ $(document).ready(function () {
     triggerElement: '#ownership-trigger',
   })
     .setClassToggle('#privacy-trigger.animate-section-fadeout', 'fade-out')
-    .addIndicators()
+    // .addIndicators()
+    .addTo(controller);
+
+
+
+
+  // Ownership fade in
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#ownership-trigger',
+  })
+    .setClassToggle('#ownership-trigger.animate-section-fadein', 'fade-in')
+    // .addIndicators()
+    .addTo(controller);
+
+  // Ownership background animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#ownership-trigger',
+    // duration: '50%'
+    reverse: false
+  })
+    .setClassToggle('#ownership-bg', 'draw')
+    // .addIndicators()
+    .addTo(controller);
+
+  // Ownership icon animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#ownership-trigger',
+    // duration: '50%'
+    reverse: false
+  })
+    .setClassToggle('#ownership-trigger .animate-benefits-image', 'benefits-image-fade-up')
+    .addTo(controller);
+
+  // Ownership text animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#ownership-trigger',
+    // duration: '50%'
+    reverse: false
+  })
+    .setClassToggle('#ownership-trigger .animate-text-fade-up', 'text-fade-up')
+    .addTo(controller);
+
+  // Ownership fade in and out animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#governance-trigger',
+  })
+    .setClassToggle('#ownership-trigger.animate-section-fadeout', 'fade-out')
+    // .addIndicators()
+    .addTo(controller);
+
+
+
+
+
+
+
+
+
+
+  // overnance  fade in
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#governance-trigger',
+  })
+    .setClassToggle('#governance-trigger.animate-section-fadein', 'fade-in')
+    // .addIndicators()
+    .addTo(controller);
+
+  // governance background animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#governance-trigger',
+    // duration: '50%'
+    reverse: false
+  })
+    .setClassToggle('#governance-bg', 'draw')
+    // .addIndicators()
+    .addTo(controller);
+
+  // governance icon animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#governance-trigger',
+    // duration: '50%'
+    reverse: false
+  })
+    .setClassToggle('#governance-trigger .animate-benefits-image', 'benefits-image-fade-up')
+    .addTo(controller);
+
+  // governance text animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#governance-trigger',
+    // duration: '50%'
+    reverse: false
+  })
+    .setClassToggle('#governance-trigger .animate-text-fade-up', 'text-fade-up')
+    .addTo(controller);
+
+  // governance fade in and out animate
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#how-to',
+  })
+    .setClassToggle('#governance-trigger.animate-section-fadeout', 'fade-out')
+    // .addIndicators()
     .addTo(controller);
 
 

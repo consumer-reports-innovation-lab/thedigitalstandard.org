@@ -143,15 +143,17 @@
 //---------------------------------------
 .animate-section-fadein {
   opacity: 0;
-  transition: 1s;
+  transition: 0.5s;
+  transform: translatey(150px);
 }
 .fade-in {
   opacity: 1;
+  transform: translatey(0px);
 }
 //---------------------------------------
 .animate-section-fadeout {
   // opacity: 1;
-  transition: 1s;
+  transition: 0.5s;
 }
 .fade-out {
   opacity: 0;
@@ -198,7 +200,7 @@
 .benefits-image-fade-up {
   animation: benefitsImageFadeUp 1.2s;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 //---------------------------------------
 
