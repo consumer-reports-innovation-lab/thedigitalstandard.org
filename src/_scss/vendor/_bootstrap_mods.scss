@@ -116,3 +116,15 @@
     color: $dark;
   }
 }
+
+// // Collapsible
+i.caret {
+  transform: scale(1.6);
+  opacity: 0.5;
+  margin-left: 0.5rem;
+  display: block;
+}
+
+.collapse-toggle[aria-expanded="true"] > .caret {
+  transform: scale(1.6) rotate(90deg);
+}
