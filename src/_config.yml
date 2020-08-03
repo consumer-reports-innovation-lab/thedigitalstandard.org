@@ -22,7 +22,7 @@ analytics:
 collections:
   standards:
     output: true
-    permalink: /standard/:path
+    permalink: /standard/:path/
 
 defaults:
   -
