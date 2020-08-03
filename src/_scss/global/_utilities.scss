@@ -129,7 +129,6 @@
 // Layout Utilities
 .content {
   max-width: 600px;
-  // min-height: 100vh;
   margin: auto;
   padding: 2rem;
 }
@@ -180,17 +179,4 @@
 //   display: flex;
 //   align-items: center;
 //   justify-content: center;
-// }
-
-// // Responsive Cards
-// .responsive-card-deck {
-//   @include make-responsive-cards();
-// }
-
-// //can use a utitlity like this to animate when lazyloading
-// [data-lazy-type] {
-//   opacity: 0.1;
-//   &.active {
-//     @include animation(fadeIn, 1.3s);
-//   }
 // }
