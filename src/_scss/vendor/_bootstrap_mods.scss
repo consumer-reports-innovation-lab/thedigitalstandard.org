@@ -102,3 +102,22 @@
     }
   }
 }
+
+// Carousels
+.carousel-control-prev,
+.carousel-control-next {
+  position: relative;
+  color: inherit;
+  display: block;
+  width: 20px;
+  background-color: transparent;
+  font-size: 2rem;
+  &:hover {
+    color: $dark;
+  }
+  &.active {
+    &:hover {
+      color: transparent;
+    }
+  }
+}
