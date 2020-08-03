@@ -29,96 +29,57 @@
       <div class="d-flex align-items-center">
         <h3 class="text-uppercase text-black-50 mr-4 mb-2">Criteria</h3>
         <div class="d-flex align-items-center text-primary mb-1">
+          {% if page.criteria.size > 1 %}
           <a class="carousel-control-prev mt-1" href="#criteriaControls" role="button" data-slide="prev">
             <i class="ri-arrow-left-s-fill"></i>
             <span class="sr-only">Previous</span>
           </a>
-          <div class="ml-1">#/{{ page.criteria.size }}</div>
+          <div class="ml-1"><span data-slide-index>1</span>/{{ page.criteria.size }}</div>
           <a class="carousel-control-next mt-1" href="#criteriaControls" role="button" data-slide="next">
             <i class="ri-arrow-right-s-fill"></i>
             <span class="sr-only">Next</span>
           </a>
+          {% else %}
+            <div class="ml-1">{{ page.criteria.size }}/{{ page.criteria.size }}</div>
+          {% endif %}
+
         </div>
       </div>
     </div>
   </div>
 
-<div id="criteriaControls" class="carousel slide" data-interval="false" data-wrap="false">
-  <div class="carousel-inner">
-    {% for criteria in page.criteria %}
-    <div class="carousel-item {% if forloop.first %}active{% endif %}">
-      <div class="row">
-        <div class="col-12">
-          <p>{{ criteria.criteria_summary }}</p>
+  <div id="criteriaControls" class="carousel slide" data-interval="false" data-wrap="false">
+    <div class="carousel-inner">
+      {% for criteria in page.criteria %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <div class="row">
+          <div class="col-12">
+            <p>{{ criteria.criteria_summary }}</p>
 
-          {% for item in criteria.indicators %}
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="p-2 bg-primary text-white text-uppercase">
-                Indicator
+            {% for item in criteria.indicators %}
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="p-2 bg-primary text-white text-uppercase">
+                  Indicator
+                </div>
+                <p class="p-3">{{ item.indicator }}</p>
               </div>
-              <p class="p-3">{{ item.indicator }}</p>
-            </div>
-            {% if item.procedure_html %}
-            <div class="col-12 col-md-6">
-              <div class="p-2 bg-mid-grey text-white text-uppercase">
-                Procedure Overview
+              {% if item.procedure_html %}
+              <div class="col-12 col-md-6">
+                <div class="p-2 bg-mid-grey text-white text-uppercase">
+                  Procedure Overview
+                </div>
+                <div class="p-3">{{ item.procedure_html }}</div>
               </div>
-              <div class="p-3">{{ item.procedure_html }}</div>
+              {% endif %}
             </div>
-            {% endif %}
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
+
+
 </div>
-
-
-
-  {% for criteria in page.criteria %}
-
-  {% endfor %}
-</div>
-
-
-        <!-- {% for object in site.data.standards %}
-        {% for item in object %}
-        {% for category in item.categories %}
-        {% if category.label contains page.standard_category %}
-        {% assign num_standards = category.standards | size %}
-        {% for object in category.standards %}
-        {% assign object_slug_formatted = object | split: '/' | slice: 1 %}
-        {% assign instance = object_slug_formatted | array_to_sentence_string | strip %}
-        {% assign standard = site.standards | where: 'slug', instance | first %}
-        {% assign current_standards = current_standards | push: standard %}
-
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
-        {% endfor %}
-        {% endfor %}
-        {% if current_standards.size > 1 %}
-        {% assign prevurl = current_standards.last.url %}
-        {% assign nexturl = current_standards.first.url %}
-        {% endif %}
-        {% for standard in current_standards %}
-        {% if standard.slug == page.slug %}
-        {% unless forloop.first %}
-        {% assign prevurl = prev.url %}
-        {% endunless %}
-        {% if forloop.first %}
-        {% assign prevurl = null %}
-        {% endif %}
-        {% unless forloop.last %}
-        {% assign next = current_standards[forloop.index] %}
-        {% assign nexturl = next.url %}
-        {% endunless %}
-        {% if forloop.last %}
-        {% assign nexturl = null %}
-        {% endif %}
-        {% endif %}
-        {% assign prev = standard %}
-        {% endfor %} -->
