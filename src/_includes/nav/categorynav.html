@@ -1,24 +1,32 @@
-{% assign standard_category =  page.url | split: '/' | slice: 2 %}
-{% assign navigation = site.data.standards[standard_category.first] %}
+{% assign route =  page.url | split: '/' | slice: 2 %}
+{% assign active_standard =  page.url | split: '/' | slice: 2 %}
+{% assign navigation = site.data.standards[route.first] %}
 
 {% for category in navigation.categories %}
+  {% assign active = false %}
+  {% assign category_slug = category.label | slugify %}
+  {% for string in category.standards %}
+    {% if page.url contains string %}
+      {% assign active = true %}
+    {% endif %}
+  {% endfor %}
 <div
   data-toggle="collapse"
   href="#{{ category.label | slugify }}"
-  aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
+  aria-expanded="{{ active }}"
   class="collapse-toggle d-flex align-items-center">
   <h4>{{ category.label }}</h4>
   <i class="caret ri-arrow-right-s-fill"></i>
 </div>
 
-<div id="{{ category.label | slugify }}" class="collapse {% if forloop.first %}show{% endif %}">
+<div id="{{ category.label | slugify }}" class="collapse {% if active %}show{% endif %}">
   <ul class="nav flex-column">
     {% for string in category.standards %}
     {% assign slug = string | split: '/' | slice: 1 | first %}
     {% assign standard = site.standards | where: 'slug', slug | first %}
 
     <li class="nav-item">
-      <a class="nav-link" href="{{ standard.url }}">{{ standard.title }}</a>
+      <a class="nav-link {% if page.url contains string %}active{% endif %}" href="{{ standard.url }}">{{ standard.title }}</a>
     </li>
     {% endfor %}
   </ul>
