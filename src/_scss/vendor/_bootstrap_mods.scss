@@ -115,9 +115,4 @@
   &:hover {
     color: $dark;
   }
-  &.active {
-    &:hover {
-      color: transparent;
-    }
-  }
 }
