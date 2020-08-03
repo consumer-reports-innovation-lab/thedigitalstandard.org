@@ -6,6 +6,9 @@ layout: default
     <div class="sidebar">
       {% include nav/categorynav.html %}
     </div>
-    {% include standard/criteria.html %}
-    {{ content }}
+    {% if page.standard_category %}
+      {% include standard/criteria.html %}
+    {% else %}
+      {{ content }}
+    {% endif %}
   </div>
