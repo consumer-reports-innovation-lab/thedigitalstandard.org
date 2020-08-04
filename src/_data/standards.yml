@@ -19,6 +19,7 @@ privacy:
   categories:
     - label: Access and Control
       standards:
+        - privacy/data-control
     - label: Data Use and Sharing
       standards:
     - label: Data retention
