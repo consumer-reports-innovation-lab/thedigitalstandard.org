@@ -56,7 +56,6 @@ governance:
         - governance/business-model
     - label: Human Rights & Corporate Social Responsibility
       standards:
-        - governance/index
         - governance/governance
     - label: Open
       standards:
