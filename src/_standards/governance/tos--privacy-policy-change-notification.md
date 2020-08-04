@@ -9,7 +9,7 @@ criteria:
     indicators:
       - indicator: Commitment to notify users about changes to the terms of service
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses.</p>
       - indicator: >-
           Disclosure of how users will be directly notified of changes to the

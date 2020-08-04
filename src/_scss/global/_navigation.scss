@@ -19,7 +19,7 @@
   }
   .active {
     color: $tds-blue-300;
-    border-bottom: 3px solid $tds-orange-200;
+    border-bottom: 2px solid $tds-orange-200;
     pointer-events: none;
   }
   #nav-the-standard {
@@ -34,8 +34,8 @@
     &.active {
       background-color: $dark;
       color: $white;
-      pointer-events: none;
-      border-bottom: 3px solid transparent;
+      pointer-events: visible;
+      border-bottom: 2px solid transparent;
     }
     &:hover::before {
       border-bottom: 0px;

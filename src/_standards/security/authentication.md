@@ -97,7 +97,7 @@ criteria:
           The product notifies users when account security settings have
           changed.
         procedure_html: >-
-          <p>&nbsp;</p><p>Create an account and attempt to change various
+          <p>Create an account and attempt to change various
           security settings, such as MFA or password, and make note of whether
           or not the user is notified.</p>
       - indicator: >-

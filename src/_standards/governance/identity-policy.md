@@ -12,7 +12,7 @@ criteria:
           government-issued identification, or with other forms of
           identification that could be connected to their offline identity.
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses.</p>
 ---
 

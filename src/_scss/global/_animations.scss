@@ -91,6 +91,12 @@
   &:nth-child(5) {
     animation-delay: 0.6s !important;
   }
+  &:nth-child(6) {
+    animation-delay: 0.68s !important;
+  }
+  &:nth-child(7) {
+    animation-delay: 0.71s !important;
+  }
 }
 .text-fade-up-delay {
   animation: textFadeUp 0.8s;
@@ -148,7 +154,7 @@
 }
 .fade-in {
   opacity: 1;
-  transform: translatey(-150px);
+  // transform: translatey(-150px);
 }
 //---------------------------------------
 .animate-section-fadeout {

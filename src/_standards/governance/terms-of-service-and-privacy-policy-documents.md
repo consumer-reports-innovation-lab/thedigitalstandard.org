@@ -11,7 +11,7 @@ criteria:
           The company clearly discloses which Terms of Service (ToS) apply to
           the product/service in question.
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses.</p>
       - indicator: The ToS are easy to find.
         procedure_html:

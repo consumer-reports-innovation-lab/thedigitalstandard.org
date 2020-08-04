@@ -10,7 +10,7 @@ criteria:
           and listed by the Open Source Initiative.
           (https://opensource.org/licenses/alphabetical)
         procedure_html: >-
-          <p>&nbsp;</p><p>Determine if code is available. Determine type of open
+          <p>Determine if code is available. Determine type of open
           source license.</p>
 ---
 

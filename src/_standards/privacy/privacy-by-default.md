@@ -9,7 +9,7 @@ criteria:
     indicators:
       - indicator: Targeted advertising is off by default.
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses.</p>
       - indicator: >-
           User interface settings which are optimal for privacy are set by

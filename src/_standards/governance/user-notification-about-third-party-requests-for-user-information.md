@@ -11,7 +11,7 @@ criteria:
           The company notifies users when government entities (including courts
           or other judicial bodies) request their user information.
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses.</p>
       - indicator: >-
           The company notifies users when private parties request their user

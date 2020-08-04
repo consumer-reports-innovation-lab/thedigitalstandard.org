@@ -11,7 +11,7 @@ criteria:
           The company or organization clearly explains what types of activities
           it does not permit.
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses.</p>
       - indicator: >-
           The company or organization clearly explains why it may restrict a

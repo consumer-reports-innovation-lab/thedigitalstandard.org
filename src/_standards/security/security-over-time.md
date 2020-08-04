@@ -14,7 +14,7 @@ criteria:
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses.</p>
       - indicator: Software updates are authenticated.
-        procedure_html: <p>&nbsp;</p><p>TBD</p>
+        procedure_html: <p>TBD</p>
       - indicator: Automatic software updates
         procedure_html: >-
           <p>Examine software settings and product documentation to determine if

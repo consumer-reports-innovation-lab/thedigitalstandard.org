@@ -40,7 +40,7 @@
   &:hover,
   &:focus {
     color: $white;
-    background-color: transparent;
+    background-color: $dark;
     box-shadow: inset 0px -80px 0px $dark;
   }
 }

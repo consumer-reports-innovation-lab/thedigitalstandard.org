@@ -11,7 +11,7 @@ criteria:
           The company will notify the relevant authorities without undue delay
           when a data breach occurs.
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses.</p>
       - indicator: >-
           The company clearly discloses its process for notifying data subjects

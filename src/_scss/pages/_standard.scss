@@ -15,6 +15,16 @@
         opacity: 1;
       }
     }
+    .collapse-toggle {
+      justify-content: space-between;
+      cursor: pointer;
+      &:hover {
+        h4,
+        i {
+          opacity: 1;
+        }
+      }
+    }
     .nav-link {
       position: relative;
       padding: 0.3rem;

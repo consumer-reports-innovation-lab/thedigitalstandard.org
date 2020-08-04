@@ -11,7 +11,7 @@ criteria:
           Explicit and clearly articulated policy commitment to human rights,
           including freedom of expression and privacy
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses</p>
   - criteria_summary: >-
       The company or organization's senior leadership exercises oversight over
@@ -21,7 +21,7 @@ criteria:
           The board of directors exercises formal oversight over how company
           practices affect freedom of expression and privacy.
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses</p>
       - indicator: >-
           An executive-level committee, team, program or officer oversees how
@@ -39,7 +39,7 @@ criteria:
           Provides employee, volunteers or other staff training on freedom of
           expression and privacy issues
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses</p>
       - indicator: >-
           Maintains a whistleblower program through which employees, volunteers
@@ -56,7 +56,7 @@ criteria:
           As part of its decision-making, considers how laws affect freedom of
           expression and privacy in jurisdictions where it operates
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses</p>
       - indicator: >-
           Regularly assesses free expression and privacy risks associated with
@@ -91,7 +91,7 @@ criteria:
           that represent, advocate on behalf of, or are people directly and
           adversely impacted by the company’s business
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses</p>
   - criteria_summary: >-
       The company or organization should have grievance and remedy mechanisms to
@@ -102,7 +102,7 @@ criteria:
           that represent, advocate on behalf of, or are people directly and
           adversely impacted by the company’s business
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
+          <p>Investigation and analysis of publicly available
           documentation to determine what the company clearly discloses</p>
       - indicator: Clear disclosure of processes for receiving complaints
         procedure_html:
