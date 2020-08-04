@@ -98,9 +98,9 @@ partners:
         </div>
       </div>
       <div class="col-12 col-md-6 animate-text-fade-up">
-        <nav class="nav flex-column">
+        <nav class="nav flex-column d-flex">
           {% for partner in page.partners %}
-            <a class="nav-link my-3 px-5 animate-text-fade-up" ref="{{ partner.url}}" target="_blank" title="{{ partner.name }}">
+            <a class="nav-link my-3 animate-text-fade-up text-center text-md-left" ref="{{ partner.url}}" target="_blank" title="{{ partner.name }}">
               <img class="partner-logo " src="{{ partner.logo_path }}" alt="{{ partner.name }}" />
             </a>
           {% endfor %}

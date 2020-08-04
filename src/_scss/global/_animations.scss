@@ -164,6 +164,14 @@
 .fade-out {
   opacity: 0;
 }
+//---------------------------------------
+.card-fade {
+  opacity: 0;
+  transition: 0.5s;
+}
+.fade-out {
+  opacity: 1;
+}
 
 //---------------------------------------
 .opacity-fade-in {
@@ -273,6 +281,7 @@
   animation-fill-mode: forwards; // Stay on the last frame
   animation-iteration-count: 1; // Run only once
   animation-timing-function: linear;
+  animation-delay: 0.5s;
   stroke-dashoffset: 0;
 }
 @keyframes draw {

@@ -95,6 +95,11 @@
   }
 }
 
+.c-editor,
+select {
+  background-color: $white !important;
+}
+
 /*
   Apply "spin" animation to the image inside the preloader.
    -  animation-duration is set to "3s" and so each

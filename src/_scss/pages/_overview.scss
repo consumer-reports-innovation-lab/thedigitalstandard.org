@@ -46,6 +46,7 @@
 .animated-wrapper {
   position: relative;
   max-width: 450px;
+  min-width: 50%;
   min-height: 150px;
   .animated-bg {
     padding: 25px;
@@ -122,6 +123,42 @@
     }
     .animated-icon {
       height: 150px;
+    }
+  }
+}
+
+// NEW STYPLES ----------------------
+#badge-wrapper {
+  height: 1500px;
+  .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .row {
+      height: 500px;
+      width: 100%;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    #security-wrapper {
+      background-color: white;
+    }
+    #privacy-wrapper {
+      background-color: orange;
+      margin-top: 100px;
+    }
+    #ownership-wrapper {
+      background-color: blueviolet;
+      margin-top: 600px;
+    }
+    #governance-wrapper {
+      background-color: gray;
+      margin-top: 75px;
     }
   }
 }

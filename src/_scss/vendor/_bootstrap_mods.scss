@@ -64,7 +64,7 @@
 }
 
 .border-right {
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     border-right: 0 !important;
     border-bottom: 1px solid $tds-grey-300;
     padding-bottom: 0.5rem;
