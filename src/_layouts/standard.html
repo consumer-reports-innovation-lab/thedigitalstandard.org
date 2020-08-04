@@ -2,9 +2,18 @@
 layout: default
 ---
 {% include nav/standardnav.html %}
+<script>
+  function toggleSidebar() {
+    document.getElementById("standardSidebar").classList.toggle('active');
+  }
+</script>
 
 <div class="d-flex">
-  <div class="sidebar">
+  <div id="standardSidebar" class="sidebar">
+
+    <button class="sidebar-toggle" onclick="toggleSidebar()">
+      <i class="ri-more-2-fill"></i>
+    </button>
     {% include nav/categorynav.html %}
   </div>
   {% if page.standard_category %}

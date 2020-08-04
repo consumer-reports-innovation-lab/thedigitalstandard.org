@@ -1,11 +1,13 @@
 .standard-layout {
   .sidebar {
     position: fixed;
-    z-index: 999;
-    left: -310px;
-    padding: 1.5rem;
+    z-index: 9;
+    left: -295px;
+    padding: 1.75rem;
     width: 325px;
-    min-height: calc(100vh - 100px);
+    min-width: 325px;
+    min-height: calc(100vh);
+    height: 100%;
     background-color: $tds-blue-100;
     color: $white;
     @include transition(0.5s);
@@ -15,6 +17,30 @@
     @include media-breakpoint-up(lg) {
       position: relative;
       left: 0;
+      padding-top: 1.5rem;
+    }
+    .sidebar-toggle {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      top: 0.45rem;
+      right: 0.25rem;
+      height: 24px;
+      width: 24px;
+      background-color: transparent;
+      border: 0;
+      font-size: 1.5rem;
+      color: $light;
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
+      @include media-breakpoint-up(lg) {
+        display: none;
+        pointer-events: none;
+      }
     }
     h4 {
       color: $white;
@@ -83,6 +109,12 @@
           background-color: $primary;
         }
       }
+    }
+  }
+  .standard-content {
+    border-left: 2rem solid $mid;
+    @include media-breakpoint-up(lg) {
+      border-left: 0;
     }
   }
 }
