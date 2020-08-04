@@ -10,7 +10,7 @@
     {% assign status = 'bg-danger' %}
 {% endcase %}
 <div class="standard-content">
-  <div class="container m-5">
+  <div class="m-5">
     <div class="row">
       <div class="col-12">
         <div class="d-flex align-items-center flex-wrap">
@@ -68,20 +68,18 @@
 
               {% for item in criteria.indicators %}
               <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12">
                   <div class="p-2 bg-primary text-white text-uppercase">
                     Indicator
                   </div>
                   <p class="p-3">{{ item.indicator }}</p>
-                </div>
-                {% if item.procedure_html %}
-                <div class="col-12 col-lg-6">
-                  <div class="p-2 bg-mid-grey text-white text-uppercase">
-                    Procedure Overview
+                  {% if item.procedure_html %}
+                  <div class="p-4 mb-3 bg-light">
+                    <small class="text-uppercase text-mid-grey">Procedure Overview</small>
+                    <div class="my-3">{{ item.procedure_html }}</div>
                   </div>
-                  <div class="p-3">{{ item.procedure_html }}</div>
+                  {% endif %}
                 </div>
-                {% endif %}
               </div>
               {% endfor %}
             </div>
