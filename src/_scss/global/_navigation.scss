@@ -1,5 +1,8 @@
 #pageHeader {
   background-color: $tds-grey-100 !important;
+  #mainnav {
+    background-color: $white;
+  }
   .container {
     max-width: none;
   }
@@ -95,7 +98,7 @@
 
 .social-link {
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   margin-right: 0.5rem;
   color: $tds-grey-300;
   &:hover,
