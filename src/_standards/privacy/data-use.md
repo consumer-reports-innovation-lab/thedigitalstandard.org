@@ -1,6 +1,6 @@
 ---
 title: Data Use
-standard_category:
+standard_category: Data Use and Sharing
 standard_state: '1: Green'
 criteria:
   - criteria_summary: >-
