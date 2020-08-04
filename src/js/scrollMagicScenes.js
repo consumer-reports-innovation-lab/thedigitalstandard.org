@@ -297,13 +297,36 @@ $(document).ready(function () {
   })
     .setClassToggle('#overview-why .animate-text-fade-up', 'text-fade-up')
     .addTo(controller);
+
+
+
   // Section Five
+  // fade in title
   var overviewScene = new ScrollMagic.Scene({
     triggerElement: '#overview-vision',
     reverse: false
   })
-    .setClassToggle('#overview-vision .animate-text-fade-up', 'text-fade-up')
+    .setClassToggle('.overview-vision-title.animate-text-fade-up', 'text-fade-up')
     .addTo(controller);
+
+  // fix title
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#overview-vision',
+    duration: '1000px'
+  })
+    .setClassToggle('.overview-vision-title', 'fixed')
+    .addIndicators()
+    .addTo(controller);
+
+
+
+
+
+
+
+
+
+
   // Section Six
   var overviewScene = new ScrollMagic.Scene({
     triggerElement: '#race-to-top',
