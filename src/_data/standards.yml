@@ -53,11 +53,24 @@ governance:
   categories:
     - label: Business Model
       standards:
+        - governance/business-model
     - label: Human Rights & Corporate Social Responsibility
       standards:
+        - governance/index
+        - governance/governance
     - label: Open
       standards:
+        - governance/open-innovation
+        - governance/open-source
     - label: Privacy Policy & Terms of Service
       standards:
+        - governance/terms-of-service-and-privacy-policy-documents
+        - governance/tos--privacy-policy-change-notification
     - label: Transparency
       standards:
+        - governance/3rd-party-requests-for-user-data
+        - governance/identity-policy
+        - governance/threat-notification
+        - governance/transparency-reporting
+        - >-
+          governance/user-notification-about-third-party-requests-for-user-information
