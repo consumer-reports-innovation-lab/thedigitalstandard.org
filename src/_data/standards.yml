@@ -38,8 +38,8 @@ ownership:
     - label: Ownership
       standards:
         - ownership/interoperability
-        - ownership/resale
         - ownership/ownership
+        - ownership/resale
     - label: Permanence
       standards:
         - ownership/functionality-over-time
