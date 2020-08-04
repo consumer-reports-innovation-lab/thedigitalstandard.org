@@ -17,7 +17,31 @@ security:
         - security/personal-safety
 privacy:
   categories:
+    - label: Access and Control
+      standards:
+    - label: Data Use and Sharing
+      standards:
+    - label: Data retention
+      standards:
+    - label: Overreach - Collecting Too Much Data
+      standards:
 ownership:
   categories:
+    - label: Ownership
+      standards:
+    - label: Permanence
+      standards:
+    - label: Right to Repair
+      standards:
 governance:
   categories:
+    - label: Business Model
+      standards:
+    - label: Human Rights & Corporate Social Responsibility
+      standards:
+    - label: Open
+      standards:
+    - label: Privacy Policy & Terms of Service
+      standards:
+    - label: Transparency
+      standards:
