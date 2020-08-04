@@ -310,13 +310,13 @@ $(document).ready(function () {
     .addTo(controller);
 
   // fix title
-  var overviewScene = new ScrollMagic.Scene({
-    triggerElement: '#overview-vision',
-    duration: '1000px'
-  })
-    .setClassToggle('.overview-vision-title', 'fixed')
-    .addIndicators()
-    .addTo(controller);
+  // var overviewScene = new ScrollMagic.Scene({
+  //   triggerElement: '#overview-vision',
+  //   duration: '1000px'
+  // })
+  //   .setClassToggle('.overview-vision-title', 'fixed')
+  //   .addIndicators()
+  //   .addTo(controller);
 
 
 
