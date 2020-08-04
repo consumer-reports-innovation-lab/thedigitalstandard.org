@@ -76,6 +76,13 @@ $(document).ready(function () {
   })
     .setClassToggle('#learn-how .animate-text-fade-up', 'text-fade-up')
     .addTo(controller);
+  // Section One illustration
+  var overviewScene = new ScrollMagic.Scene({
+    triggerElement: '#learn-how',
+    reverse: false
+  })
+    .setClassToggle('#overview-illustration', 'draw')
+    .addTo(controller);
 
 
 
