@@ -1,10 +1,21 @@
 .standard-layout {
   .sidebar {
+    position: fixed;
+    z-index: 999;
+    left: -310px;
     padding: 1.5rem;
     width: 325px;
     min-height: calc(100vh - 100px);
     background-color: $tds-blue-100;
     color: $white;
+    @include transition(0.5s);
+    &.active {
+      left: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      position: relative;
+      left: 0;
+    }
     h4 {
       color: $white;
       font-family: $font-family-serif;
@@ -13,6 +24,22 @@
       font-weight: 600;
       .active {
         opacity: 1;
+      }
+    }
+    i.caret {
+      transform: scale(1.6);
+      opacity: 0.5;
+      margin-left: 0.5rem;
+      display: block;
+    }
+
+    .collapse-toggle[aria-expanded="true"] {
+      h4 {
+        opacity: 1;
+      }
+      > .caret {
+        opacity: 1;
+        transform: scale(1.6) rotate(90deg);
       }
     }
     .collapse-toggle {
