@@ -2,6 +2,7 @@
 title: Terms of Service and Privacy Policy documents
 standard_category: Privacy Policy & Terms of Service
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       I can easily find, read, and understand the privacy policy and/or terms of

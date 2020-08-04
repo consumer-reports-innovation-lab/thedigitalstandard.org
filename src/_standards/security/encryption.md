@@ -2,6 +2,7 @@
 title: Encryption
 standard_category: Data Security
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       Information I provide is encrypted so that it can't be easily read or used

@@ -2,6 +2,7 @@
 title: Transparency reporting
 standard_category: Transparency
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       The company is transparent about its practices for sharing user data with

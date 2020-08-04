@@ -2,6 +2,7 @@
 title: Privacy by default
 standard_category: Overreach - Collecting Too Much Data
 standard_state: '2: Yellow'
+github_url:
 criteria:
   - criteria_summary: >-
       The default settings in this product prioritize my privacy; to give up

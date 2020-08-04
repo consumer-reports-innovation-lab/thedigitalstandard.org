@@ -1,10 +1,47 @@
 .standard-layout {
   .sidebar {
-    padding: 1.5rem;
+    position: fixed;
+    z-index: 9;
+    left: -295px;
+    padding: 1.75rem;
     width: 325px;
-    min-height: calc(100vh - 100px);
+    min-width: 325px;
+    min-height: calc(100vh);
+    height: 100%;
     background-color: $tds-blue-100;
     color: $white;
+    @include transition(0.5s);
+    &.active {
+      left: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      position: relative;
+      left: 0;
+      padding-top: 1.5rem;
+    }
+    .sidebar-toggle {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      top: 0.45rem;
+      right: 0.25rem;
+      height: 24px;
+      width: 24px;
+      background-color: transparent;
+      border: 0;
+      font-size: 1.5rem;
+      color: $light;
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
+      @include media-breakpoint-up(lg) {
+        display: none;
+        pointer-events: none;
+      }
+    }
     h4 {
       color: $white;
       font-family: $font-family-serif;
@@ -13,6 +50,22 @@
       font-weight: 600;
       .active {
         opacity: 1;
+      }
+    }
+    i.caret {
+      transform: scale(1.6);
+      opacity: 0.5;
+      margin-left: 0.5rem;
+      display: block;
+    }
+
+    .collapse-toggle[aria-expanded="true"] {
+      h4 {
+        opacity: 1;
+      }
+      > .caret {
+        opacity: 1;
+        transform: scale(1.6) rotate(90deg);
       }
     }
     .collapse-toggle {
@@ -56,6 +109,12 @@
           background-color: $primary;
         }
       }
+    }
+  }
+  .standard-content {
+    border-left: 2rem solid $mid;
+    @include media-breakpoint-up(lg) {
+      border-left: 0;
     }
   }
 }

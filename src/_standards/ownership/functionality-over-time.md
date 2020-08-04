@@ -2,6 +2,7 @@
 title: Functionality Over Time
 standard_category: Permanence
 standard_state: '3: Red'
+github_url:
 criteria:
   - criteria_summary: >-
       The company commits to maintain the intended functionality of the product

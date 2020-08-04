@@ -10,6 +10,13 @@ section {
   }
 }
 
+a,
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
 ::selection {
   background: $tds-green-100;
 }

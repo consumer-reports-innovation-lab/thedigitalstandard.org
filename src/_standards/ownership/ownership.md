@@ -2,6 +2,7 @@
 title: Ownership
 standard_category: Ownership
 standard_state:
+github_url:
 criteria:
   - criteria_summary: 'When I buy a product, I own every part of it.'
     indicators:

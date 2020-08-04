@@ -2,6 +2,7 @@
 title: Repair Accessibility
 standard_category: Right to Repair
 standard_state: '3: Red'
+github_url:
 criteria:
   - criteria_summary: The product can be fixed by parties other than the manufacturer.
     indicators:

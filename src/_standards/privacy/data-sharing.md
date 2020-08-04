@@ -2,6 +2,7 @@
 title: Data Sharing
 standard_category: Data Use and Sharing
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: Data sharing is reasonably scoped and transparent.
     indicators:

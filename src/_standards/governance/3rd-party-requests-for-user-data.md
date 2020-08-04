@@ -2,6 +2,7 @@
 title: 3rd party requests for user data
 standard_category: Transparency
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       The company complies only with legal and ethical third-party requests for
