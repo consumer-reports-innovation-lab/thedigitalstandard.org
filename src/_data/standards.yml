@@ -22,10 +22,17 @@ privacy:
         - privacy/data-control
     - label: Data Use and Sharing
       standards:
+        - privacy/data-sharing
+        - privacy/data-use
     - label: Data retention
       standards:
+        - privacy/data-retention-and-deletion
     - label: Overreach - Collecting Too Much Data
       standards:
+        - privacy/data-benefits
+        - privacy/data-collection
+        - privacy/minimal-data-collection
+        - privacy/privacy-by-default
 ownership:
   categories:
     - label: Ownership
