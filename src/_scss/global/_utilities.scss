@@ -174,11 +174,11 @@
 
 .standards-button {
   .human-value {
-    box-shadow: inset 0px 0px 0px $secondary;
+    box-shadow: inset 0px 0px 0px $tds-blue-300;
     transition: 0.4s;
     &:hover {
-      box-shadow: inset 0px -80px 0px $secondary;
-      border: 2px solid $secondary;
+      box-shadow: inset 0px -80px 0px $tds-blue-300;
+      border: 2px solid $tds-blue-300;
       text-decoration: none;
       color: $white;
     }

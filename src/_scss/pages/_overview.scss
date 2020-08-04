@@ -8,40 +8,21 @@
   }
 }
 
-// #benefits {
-//   .container-fluid {
-//     scroll-snap-type: y mandatory;
-
-//     height: 3000px;
-//     overflow: scroll;
-//     border: 1px solid grey;
-//     #security-trigger {
-//       scroll-snap-align: center;
-//       border: 1px solid;
-//       scroll-snap-stop: always;
-//       // height: 100vh;
-//     }
-//     #privacy-trigger {
-//       scroll-snap-align: center;
-//       border: 1px dashed salmon;
-//       scroll-snap-stop: always;
-//       // height: 100vh;
-//       scroll-margin-top: 50px;
-//     }
-//     #ownership-trigger {
-//       scroll-snap-align: center;
-//       border: 1px solid;
-//       scroll-snap-stop: always;
-//       height: 100vh;
-//     }
-//     #governance-trigger {
-//       scroll-snap-align: center;
-//       border: 1px solid;
-//       scroll-snap-stop: always;
-//       height: 100vh;
-//     }
-//   }
-// }
+#illustration-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  #overview-illustration {
+    max-width: 100%;
+    fill: transparent !important;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 1100px;
+    stroke-dashoffset: 1100px;
+    stroke-linecap: round;
+  }
+}
 
 .animated-wrapper {
   position: relative;
@@ -90,7 +71,7 @@
   #ownership-bg {
     fill: transparent !important;
     stroke: #000000;
-    stroke-width: 1 !important;
+    stroke-width: 2 !important;
     stroke-miterlimit: 10;
     stroke-dasharray: 1300px;
     stroke-dashoffset: 1300px;
@@ -128,41 +109,5 @@
 }
 
 .overview-row {
-  height: 40vh;
+  height: 500px;
 }
-
-// NEW STYPLES ----------------------
-// #badge-wrapper {
-//   height: 1500px;
-//   .container {
-//     position: relative;
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     .row {
-//       height: 500px;
-//       width: 100%;
-//       position: absolute;
-//       margin-left: auto;
-//       margin-right: auto;
-//       left: 0;
-//       right: 0;
-//       text-align: center;
-//     }
-//     #security-wrapper {
-//       background-color: white;
-//     }
-//     #privacy-wrapper {
-//       background-color: orange;
-//       margin-top: 100px;
-//     }
-//     #ownership-wrapper {
-//       background-color: blueviolet;
-//       margin-top: 600px;
-//     }
-//     #governance-wrapper {
-//       background-color: gray;
-//       margin-top: 75px;
-//     }
-//   }
-// }
