@@ -112,6 +112,13 @@
     }
   }
   .standard-content {
+    h1 {
+      font-size: 2rem;
+    }
+    h2,
+    h3 {
+      font-size: 1rem;
+    }
     @include media-breakpoint-up(lg) {
       margin-left: 325px;
     }
