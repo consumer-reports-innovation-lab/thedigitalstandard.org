@@ -11,17 +11,17 @@ partners:
   - name: Ranking Digital Rights
     logo_path: /img/contribute/partners/ranking-digital-rights.svg
     url:
-  - name: Cyber ITL
-    logo_path: /img/contribute/partners/cyber-itl-.svg
-    url:
-  - name: Aspiration
-    logo_path: /img/contribute/partners/aspiration.svg
-    url:
   - name: Ford Foundation
     logo_path: /img/contribute/partners/ford-foundation.svg
     url:
   - name: Craig Newmark Philanthropies
     logo_path: /img/contribute/partners/craig-newmark.svg
+    url:
+  - name: Cyber ITL
+    logo_path: /img/contribute/partners/cyber-itl-.svg
+    url:
+  - name: Aspiration
+    logo_path: /img/contribute/partners/aspiration.svg
     url:
 ---
 
@@ -100,7 +100,7 @@ partners:
       <div class="col-12 col-md-6 animate-text-fade-up">
         <nav class="nav flex-column d-flex">
           {% for partner in page.partners %}
-            <a class="nav-link my-3 animate-text-fade-up text-center text-md-left" ref="{{ partner.url}}" target="_blank" title="{{ partner.name }}">
+            <a class="nav-link my-3 animate-text-fade-up d-flex" ref="{{ partner.url}}" target="_blank" title="{{ partner.name }}">
               <img class="partner-logo " src="{{ partner.logo_path }}" alt="{{ partner.name }}" />
             </a>
           {% endfor %}

@@ -170,6 +170,12 @@
 .partner-logo {
   max-height: 40px;
   max-width: 80vw;
+  transition: 0.4s;
+  cursor: pointer;
+  filter: grayscale(100%);
+  &:hover {
+    filter: grayscale(0%);
+  }
 }
 
 .standards-button {
