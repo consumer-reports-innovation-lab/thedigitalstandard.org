@@ -14,7 +14,7 @@ criteria:
           for accessing those accounts
         procedure_html: >-
           <p>Start product and note whether users are prompted to authenticate
-          to access account data</p>
+          to access account data&nbsp;</p>
       - indicator: >-
           If a product is packaged with an account with default credentials,
           those credentials are unique to the instance of the product
