@@ -37,10 +37,18 @@ ownership:
   categories:
     - label: Ownership
       standards:
+        - ownership/interoperability
+        - ownership/index
+        - ownership/resale
     - label: Permanence
       standards:
+        - ownership/functionality-over-time
+        - ownership/process-for-terms-of-service-enforcement
+        - ownership/transparency-about-terms-of-service-enforcement
     - label: Right to Repair
       standards:
+        - ownership/repair-penalty
+        - ownership/repair-accessibility
 governance:
   categories:
     - label: Business Model
