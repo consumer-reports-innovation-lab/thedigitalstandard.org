@@ -14,9 +14,15 @@
 
 <script>
   // TODO: Refactor
-  // var currentCritera = $("#criteriaControls .carousel-item.active");
-  // var currentIndex = $('#criteriaControls .carousel-item').index(currentCritera) + 2;
-  // $('#criteriaControls').on('slid.bs.carousel', function () {
-  //   $('[data-slide-index]').html(currentIndex)
-  // })
+  var criteria = Array.prototype.slice.call(document.querySelectorAll('.carousel-item'));
+  var currentCriteria = Array.prototype.slice.call(document.querySelectorAll('.carousel-item.active'))
+
+  function checkActive(item) {
+    return item.classList.contains('active')
+  }
+
+  $('#criteriaControls').on('slid.bs.carousel', function () {
+    var currentIndex = criteria.findIndex(checkActive);
+    $('[data-slide-index]').text(currentIndex + 1)
+  })
 </script>
