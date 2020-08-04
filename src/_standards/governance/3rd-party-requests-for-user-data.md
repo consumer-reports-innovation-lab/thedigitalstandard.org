@@ -11,8 +11,8 @@ criteria:
           The company explains its process for responding to non-judicial
           government requests.
         procedure_html: >-
-          <p>&nbsp;</p><p>Investigation and analysis of publicly available
-          documentation to determine what the company clearly discloses.</p>
+          <p>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</p>
       - indicator: The company explains its process for responding to court orders.
         procedure_html:
       - indicator: >-
