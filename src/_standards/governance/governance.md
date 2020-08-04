@@ -2,6 +2,7 @@
 title: Governance
 standard_category: Human Rights & Corporate Social Responsibility
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       The company or organization publicly commits to respect users' human

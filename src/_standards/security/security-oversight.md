@@ -2,6 +2,7 @@
 title: Security Oversight
 standard_category: Data Security
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: The company is a responsible caretaker of my data.
     indicators:

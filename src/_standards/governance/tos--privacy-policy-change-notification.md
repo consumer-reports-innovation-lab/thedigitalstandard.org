@@ -2,6 +2,7 @@
 title: ToS & Privacy Policy change notification
 standard_category: Privacy Policy & Terms of Service
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       The company provides clear notification when it changes its privacy policy

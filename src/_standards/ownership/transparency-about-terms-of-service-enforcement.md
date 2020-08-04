@@ -2,6 +2,7 @@
 title: Transparency about Terms of Service enforcement
 standard_category: Permanence
 standard_state: '2: Yellow'
+github_url:
 criteria:
   - criteria_summary: >-
       I know how often the company or organization unilaterally closes user

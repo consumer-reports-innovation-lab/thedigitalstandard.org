@@ -2,6 +2,7 @@
 title: Process for terms of service enforcement
 standard_category: Permanence
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       I know how, when, and why the company or organization unilaterally closes

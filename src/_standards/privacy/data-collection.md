@@ -2,6 +2,7 @@
 title: Data collection
 standard_category: Overreach - Collecting Too Much Data
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: I know what user information this company is collecting and when.
     indicators:

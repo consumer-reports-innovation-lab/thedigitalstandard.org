@@ -2,6 +2,7 @@
 title: User notification about third-party requests for user information
 standard_category: Transparency
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       The company tells me if the government or other third parties ask for my

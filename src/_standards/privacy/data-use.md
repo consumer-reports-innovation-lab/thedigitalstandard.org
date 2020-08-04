@@ -2,6 +2,7 @@
 title: Data Use
 standard_category: Data Use and Sharing
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       Data usage is consistent with the context of the relationship with the

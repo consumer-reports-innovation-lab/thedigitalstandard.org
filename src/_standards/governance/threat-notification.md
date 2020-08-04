@@ -2,6 +2,7 @@
 title: Threat Notification
 standard_category: Transparency
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       The company notifies appropriate authorities and those affected when a

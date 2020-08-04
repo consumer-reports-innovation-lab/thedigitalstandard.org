@@ -2,6 +2,7 @@
 title: Identity policy
 standard_category: Transparency
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       I can register using any name and identifying characteristics I wish, or

@@ -2,6 +2,7 @@
 title: Open Source
 standard_category: Open
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: The product's software is publicly available.
     indicators:

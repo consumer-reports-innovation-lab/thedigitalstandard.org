@@ -2,6 +2,7 @@
 title: Repair Penalty
 standard_category: Right to Repair
 standard_state: '3: Red'
+github_url:
 criteria:
   - criteria_summary: >-
       I am not penalized for getting the product properly repaired by a third

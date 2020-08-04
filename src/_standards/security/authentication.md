@@ -2,6 +2,7 @@
 title: Authentication
 standard_category: Data Security
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       A product has an authentication system that corresponds to the sensitivity

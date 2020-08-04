@@ -2,6 +2,7 @@
 title: Security Over Time
 standard_category: Data Security
 standard_state: '2: Yellow'
+github_url:
 criteria:
   - criteria_summary: >-
       The product is kept protected with software updates for a clearly defined

@@ -2,6 +2,7 @@
 title: Interoperability
 standard_category: Ownership
 standard_state: '3: Red'
+github_url:
 criteria:
   - criteria_summary: >-
       The company does not prohibit use of the product with other,

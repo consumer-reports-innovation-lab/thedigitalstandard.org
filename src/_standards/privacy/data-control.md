@@ -2,6 +2,7 @@
 title: Data Control
 standard_category: Access and Control
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: I can see and control everything the company knows about me.
     indicators:

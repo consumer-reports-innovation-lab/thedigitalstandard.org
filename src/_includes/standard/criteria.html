@@ -23,9 +23,11 @@
               <h2 class="blue text-uppercase m-0 text-nowrap">
                 {{ page.title }}
               </h2>
+              {% if page.github_url %}
               <a href="{{ page.github_url }}" class="social-link">
                 <i class="ri-github-fill text-mid-grey text-medium ml-3"></i>
               </a>
+              {% endif %}
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
 title: Minimal data collection
 standard_category: Overreach - Collecting Too Much Data
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       The only information the company collects about me is what's needed to

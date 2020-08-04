@@ -2,6 +2,7 @@
 title: Data retention and deletion
 standard_category: Data retention
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       The company retains data only as long as relevant and reasonably necessary

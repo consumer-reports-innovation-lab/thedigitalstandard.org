@@ -2,6 +2,7 @@
 title: Best Build Practices
 standard_category: Build Quality
 standard_state: '1: Green'
+github_url:
 criteria:
   - criteria_summary: >-
       The software was built and developed according to the industry's best
