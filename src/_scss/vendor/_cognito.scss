@@ -60,3 +60,62 @@
 .c-label::after {
   display: none;
 }
+
+.btn-primary {
+  background-color: $white !important;
+  border-color: $secondary !important;
+}
+
+/* Set the preloader to be invisible by default */
+.preloader {
+  display: none;
+  position: relative;
+  img {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, 50%);
+  }
+}
+
+/* Override the default invisibility if the preloader doesn't have a form after it. */
+.preloader:last-child {
+  display: block;
+}
+
+/* Create a spinning animation and name it "spin" */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+  Apply "spin" animation to the image inside the preloader.
+   -  animation-duration is set to "3s" and so each
+      rotation will last 3 seconds.
+   -  animation-timing-function is set to "linear"
+      and so the speed of rotation is constant.
+   -  animation-iteration-count is set to "infinite"
+      which means what it says.
+*/
+.preloader img {
+  // &:nth-child(1) {
+  //   width: 60px;
+  //   height: 60px;
+  // }
+  // &:nth-child(1) {
+  //   width: 30px;
+  //   height: 30px;
+  // }
+  display: block;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

@@ -8,6 +8,41 @@
   }
 }
 
+// #benefits {
+//   .container-fluid {
+//     scroll-snap-type: y mandatory;
+
+//     height: 3000px;
+//     overflow: scroll;
+//     border: 1px solid grey;
+//     #security-trigger {
+//       scroll-snap-align: center;
+//       border: 1px solid;
+//       scroll-snap-stop: always;
+//       // height: 100vh;
+//     }
+//     #privacy-trigger {
+//       scroll-snap-align: center;
+//       border: 1px dashed salmon;
+//       scroll-snap-stop: always;
+//       // height: 100vh;
+//       scroll-margin-top: 50px;
+//     }
+//     #ownership-trigger {
+//       scroll-snap-align: center;
+//       border: 1px solid;
+//       scroll-snap-stop: always;
+//       height: 100vh;
+//     }
+//     #governance-trigger {
+//       scroll-snap-align: center;
+//       border: 1px solid;
+//       scroll-snap-stop: always;
+//       height: 100vh;
+//     }
+//   }
+// }
+
 .animated-wrapper {
   position: relative;
   max-width: 450px;

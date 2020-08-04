@@ -144,11 +144,11 @@
 .animate-section-fadein {
   opacity: 0;
   transition: 0.5s;
-  transform: translatey(150px);
+  transform: translatey(0%);
 }
 .fade-in {
   opacity: 1;
-  transform: translatey(0px);
+  transform: translatey(-150px);
 }
 //---------------------------------------
 .animate-section-fadeout {
