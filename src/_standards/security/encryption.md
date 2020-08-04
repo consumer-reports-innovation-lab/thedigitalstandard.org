@@ -1,8 +1,9 @@
 ---
 title: Encryption
 standard_category: Data Security
-standard_state: '1: Green'
-github_url:
+standard_state: '2: Yellow'
+github_url: >-
+  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Security%20(Is%20it%20safe%3F)%2FData%20security%2FEncryption.yaml
 criteria:
   - criteria_summary: >-
       Information I provide is encrypted so that it can't be easily read or used
@@ -19,12 +20,12 @@ criteria:
           unique keys.
         procedure_html: <p>Inspect traffic to determine if SSL encryption is used.</p>
       - indicator: Users can secure their content using end-to-end encryption.
-        procedure_html:
+        procedure_html: <p>Inspect traffic to determine if SSL encryption is used.</p>
       - indicator: End-to-end encryption is enabled by default.
-        procedure_html:
+        procedure_html: <p>Inspect traffic to determine if SSL encryption is used.</p>
       - indicator: >-
           User information and communications are encrypted by default when at
           rest.
-        procedure_html:
+        procedure_html: <p>Inspect traffic to determine if SSL encryption is used.</p>
 ---
 
