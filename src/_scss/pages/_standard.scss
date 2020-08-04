@@ -10,6 +10,7 @@
     height: 100%;
     background-color: $tds-blue-100;
     color: $white;
+    margin-top: 53px;
     @include transition(0.5s);
     &.active {
       left: 0;
