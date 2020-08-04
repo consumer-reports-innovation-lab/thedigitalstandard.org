@@ -7,22 +7,22 @@ partners:
     url: 'https://www.consumerreports.org/cro/index.htm'
   - name: Disconnect
     logo_path: /disconnect.svg
-    url: 'https://disconnect.me/'
+    url: 'https://www.disconnect.me/'
   - name: Ranking Digital Rights
     logo_path: /img/contribute/partners/ranking-digital-rights.svg
-    url: 'https://rankingdigitalrights.org/'
+    url: 'https://www.rankingdigitalrights.org/'
   - name: Ford Foundation
     logo_path: /img/contribute/partners/ford-foundation.svg
     url: 'https://www.fordfoundation.org/'
   - name: Craig Newmark Philanthropies
     logo_path: /img/contribute/partners/craig-newmark.svg
-    url: 'https://craignewmarkphilanthropies.org/'
+    url: 'https://www.craignewmarkphilanthropies.org/'
   - name: Cyber ITL
     logo_path: /img/contribute/partners/cyber-itl-.svg
-    url: 'https://cyber-itl.org/'
+    url: 'https://www.cyber-itl.org/'
   - name: Aspiration
     logo_path: /img/contribute/partners/aspiration.svg
-    url: 'https://aspirationtech.org/'
+    url: 'https://www.aspirationtech.org/'
 ---
 
 <section class="p-0" id="help-build">
@@ -100,7 +100,7 @@ partners:
       <div class="col-12 col-md-6 animate-text-fade-up">
         <nav class="nav flex-column d-flex">
           {% for partner in page.partners %}
-            <a class="nav-link my-3 animate-text-fade-up d-flex" ref="{{ partner.url}}" target="_blank" title="{{ partner.name }}">
+            <a class="nav-link my-3 animate-text-fade-up d-flex" href="{{ partner.url }}" target="_blank" title="{{ partner.name }}">
               <img class="partner-logo " src="{{ partner.logo_path }}" alt="{{ partner.name }}" />
             </a>
           {% endfor %}
