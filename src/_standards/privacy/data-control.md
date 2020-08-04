@@ -1,6 +1,6 @@
 ---
 title: Data Control
-standard_category: Data Security
+standard_category: Access and Control
 standard_state: '1: Green'
 criteria:
   - criteria_summary: I can see and control everything the company knows about me.
