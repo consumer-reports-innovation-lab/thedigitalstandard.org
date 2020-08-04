@@ -132,7 +132,7 @@
   color: $tds-grey-300;
   &:hover,
   &:focus {
-    color: $primary;
+    color: $primary !important;
     text-decoration: none;
   }
 }
