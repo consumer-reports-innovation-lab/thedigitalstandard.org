@@ -1,8 +1,9 @@
 ---
 title: Authentication
 standard_category: Data Security
-standard_state: '1: Green'
-github_url:
+standard_state: '2: Yellow'
+github_url: >-
+  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Security%20(Is%20it%20safe%3F)%2FData%20security%2FAuthentication.yaml
 criteria:
   - criteria_summary: >-
       A product has an authentication system that corresponds to the sensitivity
@@ -98,9 +99,9 @@ criteria:
           The product notifies users when account security settings have
           changed.
         procedure_html: >-
-          <p>Create an account and attempt to change various
-          security settings, such as MFA or password, and make note of whether
-          or not the user is notified.</p>
+          <p>Create an account and attempt to change various security settings,
+          such as MFA or password, and make note of whether or not the user is
+          notified.</p>
       - indicator: >-
           If the product has an authentication system, it also has a system to
           prevent brute-force/dictionary attacks
