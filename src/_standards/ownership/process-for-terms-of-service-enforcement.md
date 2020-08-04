@@ -2,7 +2,8 @@
 title: Process for terms of service enforcement
 standard_category: Permanence
 standard_state: '1: Green'
-github_url:
+github_url: >-
+  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Ownership%20(Is%20it%20mine%3F)%2FPermanence%2FProcess%20for%20terms%20of%20service%20enforcement.yaml
 criteria:
   - criteria_summary: >-
       I know how, when, and why the company or organization unilaterally closes
@@ -12,29 +13,39 @@ criteria:
           The company or organization clearly explains what types of activities
           it does not permit.
         procedure_html: >-
-          <p>Investigation and analysis of publicly available
-          documentation to determine what the company clearly discloses.</p>
+          <p>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</p>
       - indicator: >-
           The company or organization clearly explains why it may restrict a
           user’s account.
-        procedure_html:
+        procedure_html: >-
+          <p>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</p>
       - indicator: >-
           The company or organization clearly discloses the mechanisms it uses
           to identify accounts that violate the rules.
-        procedure_html:
+        procedure_html: >-
+          <p>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</p>
       - indicator: >-
           The company or organization clearly discloses whether any
           non-government and non-judicial entities receive priority
           consideration when identifying accounts to be restricted for violating
           the company’s rules, and if so, how that priority status is conferred.
-        procedure_html:
+        procedure_html: >-
+          <p>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</p>
       - indicator: >-
           The company or organization clearly explains its process for enforcing
           its rules.
-        procedure_html:
+        procedure_html: >-
+          <p>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</p>
       - indicator: >-
           The company or organization provides clear examples to help the user
           understand what the rules are and how they are enforced.
-        procedure_html:
+        procedure_html: >-
+          <p>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</p>
 ---
 
