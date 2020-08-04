@@ -2,7 +2,8 @@
 title: Best Build Practices
 standard_category: Build Quality
 standard_state: '1: Green'
-github_url:
+github_url: >-
+  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Security%20(Is%20it%20safe%3F)%2FBuild%20Quality%2FBest%20Build%20Practices.yaml
 criteria:
   - criteria_summary: >-
       The software was built and developed according to the industry's best
