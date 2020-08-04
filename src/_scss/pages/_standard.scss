@@ -15,7 +15,7 @@
       left: 0;
     }
     @include media-breakpoint-up(lg) {
-      position: relative;
+      // position: relative;
       left: 0;
       padding-top: 1.5rem;
     }
@@ -112,9 +112,13 @@
     }
   }
   .standard-content {
-    border-left: 2rem solid $mid;
     @include media-breakpoint-up(lg) {
-      border-left: 0;
+      margin-left: 325px;
+    }
+  }
+  #pageFooter {
+    @include media-breakpoint-up(lg) {
+      padding-left: 325px;
     }
   }
 }

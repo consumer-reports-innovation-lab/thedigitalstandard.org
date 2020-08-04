@@ -1,8 +1,6 @@
-#pageHeader {
+#mainnav {
   background-color: $tds-grey-100 !important;
-  .container {
-    max-width: none;
-  }
+  max-width: none;
   .nav-link {
     border: none;
     color: $tds-grey-300;
@@ -46,6 +44,40 @@
     &:hover,
     &:focus {
       box-shadow: inset 0px -80px 0px transparent;
+    }
+  }
+}
+
+#primarynav {
+  .nav-link {
+    box-shadow: inset 0px 0px 0px transparent;
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+    height: 100%;
+    z-index: 1;
+    &:hover {
+      box-shadow: inset 0px 0px 0px transparent;
+      color: $tds-blue-300;
+    }
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      width: 0%;
+      left: 50%;
+      margin: 0 auto;
+      transition: all 0.5s;
+      z-index: -1;
+    }
+    &:hover::before {
+      border-bottom: solid 2px $secondary;
+      width: 100%;
+      left: 0%;
     }
   }
 }
@@ -102,40 +134,6 @@
   &:focus {
     color: $primary;
     text-decoration: none;
-  }
-}
-
-#primarynav {
-  .nav-link {
-    box-shadow: inset 0px 0px 0px transparent;
-    display: inline-block;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-    transition: all 0.5s;
-    height: 100%;
-    z-index: 1;
-    &:hover {
-      box-shadow: inset 0px 0px 0px transparent;
-      color: $tds-blue-300;
-    }
-    &:before {
-      content: " ";
-      display: block;
-      position: absolute;
-      bottom: 0px;
-      width: 0%;
-      left: 50%;
-      margin: 0 auto;
-      transition: all 0.5s;
-      z-index: -1;
-    }
-    &:hover::before {
-      border-bottom: solid 2px $secondary;
-      width: 100%;
-      left: 0%;
-    }
   }
 }
 

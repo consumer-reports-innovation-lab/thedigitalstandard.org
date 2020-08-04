@@ -1,6 +1,13 @@
 #pageHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 99;
 }
 #pageContent {
+  margin-top: 108px;
 }
 #pageFooter {
   display: flex;

@@ -1,6 +1,6 @@
 <header id="pageHeader" class="bg-dark text-white">
-  <div class="container">
-    <nav id="mainnav" class="navbar navbar-expand-lg navbar-dark  || px-0">
+  <div id="mainnav" class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark  || px-0">
       <a class="navbar-brand nav-icon-wrapper || mx-0" href="/">
 
       <img
@@ -37,4 +37,7 @@
       </div>
     </nav>
   </div>
+  {% if page.layout == 'standard' %}
+    {% include nav/standardnav.html %}
+  {% endif %}
 </header>
