@@ -1,7 +1,7 @@
 ---
 title: Authentication
 standard_category: Data Security
-standard_state: '1: Green'
+standard_state: '2: Yellow'
 github_url: >-
   https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Security%20(Is%20it%20safe%3F)%2FData%20security%2FAuthentication.yaml
 criteria:
