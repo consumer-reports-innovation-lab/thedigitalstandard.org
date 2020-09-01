@@ -12,14 +12,14 @@ criteria:
       - indicator: >-
           The company on its own deletes outdated and unnecessary personal
           information, or renders that data to be reasonably deidentified.
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses.</p>
       - indicator: >-
           The company provides specific retention periods for different types of
           information that are reasonably scoped to get rid of outdated and
           unnecessary personal information.
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses.</p>
   - criteria_summary: >-
@@ -29,7 +29,7 @@ criteria:
       - indicator: >-
           The company offers easy-to-find and -use controls that allow users to
           delete data not necessary to render service.
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses.</p><p>Investigation of
           deletion tools offered by the company.</p>
@@ -38,7 +38,7 @@ criteria:
       - indicator: >-
           All user information is deleted when the user's service is terminated,
           or the service no longer operates
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses.</p><p>Terminate a test
           account, remove service from a device, or perform a factory reset on

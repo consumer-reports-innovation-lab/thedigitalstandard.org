@@ -2,20 +2,41 @@
 {% assign num_standards = 0 %}
 
 {% case page.standard_state %}
-  {% when '1: Green' %}
-    {% assign status = 'bg-success' %}
-  {% when '2: Yellow' %}
-    {% assign status = 'bg-warning' %}
-  {% else %}
-    {% assign status = 'bg-danger' %}
+{% when '1: Green' %}
+{% assign status = 'bg-success' %}
+{% when '2: Yellow' %}
+{% assign status = 'bg-warning' %}
+{% else %}
+{% assign status = 'bg-danger' %}
 {% endcase %}
 <div class="standard-content" style="margin-top: 53px;">
   <div class="m-5">
+    <div class="row d-none d-md-flex" id="standardBreadCrumbs">
+      <div class="col-12 d-none d-md-flex">
+
+
+        <!-- TODO: How is this working with scrollspy when the sections are updating? -->
+        <a href="#">
+          {% if page.url contains '/security/' %}Security{% endif %}
+          {% if page.url contains '/privacy/' %}Privacy{% endif %}
+          {% if page.url contains '/ownership/' %}Ownership{% endif %}
+          {% if page.url contains '/governance/' %}Governance{% endif %}
+        </a>&nbsp;/&nbsp;
+        <a href="#">
+          {{ page.standard_category }}
+        </a>&nbsp;/&nbsp;
+        <!-- TODO: fix active state -->
+        <a href="#" class="{% if page.url contains '{{ page.title }}' %}active{% endif %}">
+          {{ page.title }}
+        </a>
+
+      </div>
+    </div>
     <div class="row">
       <div class="col-12">
         <div class="d-flex align-items-center flex-wrap">
           <div>
-            <h1 class="text-serif text-thin mr-5 mb-0">{{ page.standard_category }}</h1>
+            <h1 class="text-serif text-thin mr-5 mb-n1">{{ page.standard_category }}</h1>
           </div>
           <div>
             <div class="d-flex align-items-center">
@@ -25,7 +46,7 @@
               </h2>
               {% if page.github_url %}
               <a href="{{ page.github_url }}" target="_blank" class="social-link">
-                <i class="ri-github-fill  text-medium ml-3"></i>
+                <i class="ri-github-fill  text-medium ml-2"></i>
               </a>
               {% endif %}
             </div>
@@ -34,7 +55,49 @@
       </div>
     </div>
     <hr>
-    <div class="row">
+
+    {% for criteria in page.criteria %}
+    <div class="row standard-wrapper">
+      <div class="col-12 col-lg-4 criteria-wrapper ">
+        <div class="sticky-top">
+          <h3 class="text-uppercase text-black-50 mr-4 mb-2">Criteria</h3>
+          <p>{{ criteria.criteria_summary }}</p>
+        </div>
+
+      </div>
+      <div class="col-12 col-lg-8 indicator-wrapper">
+        <!-- TODO: if no indecator (user safety > personal safety) -->
+        {% for item in criteria.indicators %}
+        <div class="row">
+          <div class="col-12">
+            <h4 class="text-uppercase text-black-50 mr-4 mb-2">Indicators</h4>
+            <ul>
+              <li>{{ item.indicator }}</li>
+            </ul>
+            {% if item.procedure_html %}
+            <div class="procedure-wrapper">
+              <h4 class="text-uppercase text-black-50 mr-4 mb-2">PROCEDURE</h4>
+              <ul>
+                {{ item.procedure_html }}
+              </ul>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% if forloop.last %}
+        {% else %}
+        <hr class="my-5">
+        {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+
+
+
+    <!-- <div class="row">
+
       <div class="col-12">
         <div class="d-flex align-items-center">
           <h3 class="text-uppercase text-black-50 mr-4 mb-2">Criteria</h3>
@@ -75,8 +138,8 @@
                   <p class="p-3 mb-0">{{ item.indicator }}</p>
                   {% if item.procedure_html %}
                   <div class="p-4 mb-5 bg-light">
-                    <small class="text-uppercase text-mid-grey">Procedure Overview</small>
-                    <div class="my-3">{{ item.procedure_html }}</div>
+                    <small class="text-uppercase text-mid-grey">Procedure</small>
+                    <div class="my-3">{{ item.procedure }}</div>
                   </div>
                   {% endif %}
                 </div>
@@ -87,6 +150,6 @@
         </div>
         {% endfor %}
       </div>
-    </div>
+    </div> -->
   </div>
 </div>

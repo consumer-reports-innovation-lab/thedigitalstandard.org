@@ -12,7 +12,7 @@ criteria:
       - indicator: >-
           Explicit and clearly articulated policy commitment to human rights,
           including freedom of expression and privacy
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
   - criteria_summary: >-
@@ -22,19 +22,19 @@ criteria:
       - indicator: >-
           The board of directors exercises formal oversight over how company
           practices affect freedom of expression and privacy.
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: >-
           An executive-level committee, team, program or officer oversees how
           company practices affect freedom of expression and privacy.
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: >-
           A management-level committee, team, program or officer oversees how
           company practices affect freedom of expression and privacy.
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
   - criteria_summary: >-
@@ -44,14 +44,14 @@ criteria:
       - indicator: >-
           Provides employee, volunteers or other staff training on freedom of
           expression and privacy issues
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: >-
           Maintains a whistleblower program through which employees, volunteers
           or other staff can report concerns related to how the company treats
           its users’ freedom of expression and privacy rights
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
   - criteria_summary: >-
@@ -63,43 +63,43 @@ criteria:
       - indicator: >-
           As part of its decision-making, considers how laws affect freedom of
           expression and privacy in jurisdictions where it operates
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: >-
           Regularly assesses free expression and privacy risks associated with
           existing products and services
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: >-
           Assesses free expression and privacy risks associated with a new
           activity, including the launch and/or acquisition of new products or
           services or entry into new markets
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: >-
           Assesses free expression and privacy risks associated with the
           processes and mechanisms used to enforce its Terms of Service
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: >-
           Conducts in-depth due diligence wherever the company’s risk
           assessments identify concerns
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: >-
           Senior executives and/or members of the company’s board of directors
           review and consider the results of assessments and due diligence in
           decision-making for the company
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: Conducts assessments on a regular schedule
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
   - criteria_summary: >-
@@ -110,7 +110,7 @@ criteria:
           The company initiates or participates in meetings with stakeholders
           that represent, advocate on behalf of, or are people directly and
           adversely impacted by the company’s business
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
   - criteria_summary: >-
@@ -121,29 +121,29 @@ criteria:
           The company initiates or participates in meetings with stakeholders
           that represent, advocate on behalf of, or are people directly and
           adversely impacted by the company’s business
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: Clear disclosure of processes for receiving complaints
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: >-
           Process includes complaints related to freedom of expression and
           privacy
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: Clear disclosure of process for responding to complaints
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: The company reports on the number of complaints received.
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
       - indicator: The company provides evidence that it is responding to complaints.
-        procedure_html: >-
+        procedure: >-
           <p>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses</p>
 ---

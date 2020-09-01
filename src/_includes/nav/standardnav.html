@@ -1,4 +1,14 @@
 <nav id="standardnav">
+  <!-- TODO: ADD VERSIONING -->
+<div class="dropdown mr-3">
+  <button class="btn btn-secondary dropdown-toggle d-none d-sm-flex align-items-center" type="button" id="versionDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    v1.0
+  </button>
+  <div class="dropdown-menu" aria-labelledby="versionDropDown">
+    <a class="dropdown-item" href="#">version 0.9</a>
+  </div>
+</div>
+
   <ul class="nav py-2">
     <li class="nav-item">
       <a class="nav-link {% if page.url contains 'security' %} active{% endif %}" href="/standard/security/best-build-practices/">
@@ -22,4 +32,8 @@
       </a>
     </li>
   </ul>
+
+  <!-- TODO: ADD IN CSV GEN  -->
+  <a class="edtiable d-none d-md-flex" id="downloadCTA" href="#">Download the Digital Standard (.csv)</a>
+
 </nav>

@@ -4,11 +4,11 @@
   font-family: $font-family-base;
   font-weight: 600;
   font-size: 1rem;
-  padding: 24px 33px;
+  padding: 16px 33px;
   border-radius: 0;
   display: inline-block;
   text-align: center;
-  transition: 0.5s;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   // display: inline-block;
   &:hover,
   &:focus {
@@ -40,7 +40,7 @@
   &:hover,
   &:focus {
     color: $white;
-    background-color: $dark;
+    // background-color: $dark;
     box-shadow: inset 0px -80px 0px $dark;
   }
 }

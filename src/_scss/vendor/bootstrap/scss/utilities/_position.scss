@@ -2,7 +2,9 @@
 
 // Common values
 @each $position in $positions {
-  .position-#{$position} { position: $position !important; }
+  .position-#{$position} {
+    position: $position !important;
+  }
 }
 
 // Shorthand
@@ -25,8 +27,9 @@
 
 .sticky-top {
   @supports (position: sticky) {
-    position: sticky;
-    top: 0;
-    z-index: $zindex-sticky;
+    position: sticky !important;
+    top: 75px;
+    // z-index: $zindex-sticky;
+    z-index: 0;
   }
 }
