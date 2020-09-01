@@ -3,15 +3,7 @@ layout: standard
 title: Security
 permalink: /standard/security/
 ---
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-12">
-      <div class="bg-full bg-primary my-3 text-white">
 
-      </div>
-    </div>
-  </div>
-</div> -->
 
 <div class="d-flex">
   <div id="standardSidebar" class="sidebar">
@@ -22,12 +14,19 @@ permalink: /standard/security/
     {% include nav/categorynav.html %}
   </div>
 
-  {% for security in site.data.standards %}
-    {{ standard.title }}
+  {% for standard in site.data.standards.security %}
+
+    {% if page.standard_category %}
+      {% include standard/criteria.html %}
+    {% else %}
+      {{ content }}
+    {% endif %}
+
   {% endfor %}
 
 
-
-
 </div>
+
+
+
 

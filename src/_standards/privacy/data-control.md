@@ -39,7 +39,7 @@ criteria:
         procedure_html: >-
           <li>Investigation and analysis of publicly available documentation to
           determine what the company clearly discloses.</li>
-      - indicator_html: >-
+      - indicator: >-
           Users can obtain all public-facing and private user information the
           company hold about them.
         procedure_html: >-

@@ -1,0 +1,6 @@
+---
+layout: null
+---
+Test Name, Crieria, Indicators, Procedure
+{% for standard in site.standards %}"{{ standard.title }}","{{standard.criteria.criteria_summary | replace: '"', '""' | strip_newlines }}","{{standard.criteria.indicators.indicator | replace: '"', '""' | strip_newlines }}","{{standard.criteria.indicators.procedure_html | replace: '"', '""' | strip_newlines }}","
+{% endfor %}
