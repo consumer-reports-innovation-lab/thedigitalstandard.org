@@ -12,14 +12,14 @@ criteria:
       - indicator: >-
           The user information collected is only that which is directly relevant
           and necessary for the service.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: >-
           Product still works when all permissions not relevant to product's
           functionality are declined.
-        procedure: >-
-          <p>Decline permissions not relevant to the product's functionality,
-          verify that product is still functional</p>
+        procedure_html: >-
+          <li>Decline permissions not relevant to the product's functionality,
+          verify that product is still functional</li>
 ---
 

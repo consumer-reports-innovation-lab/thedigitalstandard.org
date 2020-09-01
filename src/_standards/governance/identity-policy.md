@@ -13,8 +13,8 @@ criteria:
           The company does not require users to verify their identity with their
           government-issued identification, or with other forms of
           identification that could be connected to their offline identity.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
 ---
 

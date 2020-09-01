@@ -13,6 +13,6 @@ criteria:
           The company does not penalize consumers (voided warranty, etc.) if
           they get the product repaired by someone other than the original
           manufacturer or their authorized representatives.
-        procedure:
+        procedure_html: TBD
 ---
 

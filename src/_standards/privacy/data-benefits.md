@@ -12,10 +12,10 @@ criteria:
       - indicator: >-
           The company clearly discloses its purpose for collecting each type of
           user information.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p><p>Compare app
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li><li>Compare app
           documentation, app features, requested permissions, and observed
-          network data to see if they align.</p>
+          network data to see if they align.</li>
 ---
 

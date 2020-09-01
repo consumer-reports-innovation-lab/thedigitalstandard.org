@@ -11,8 +11,8 @@ criteria:
           Software is open source, meaning published under a license approved
           and listed by the Open Source Initiative.
           (https://opensource.org/licenses/alphabetical)
-        procedure: >-
-          <p>Determine if code is available. Determine type of open source
-          license.</p>
+        procedure_html: >-
+          <li>Determine if code is available. Determine type of open source
+          license.</li>
 ---
 

@@ -10,16 +10,16 @@ criteria:
       privacy, I actually need to change the settings.
     indicators:
       - indicator: Targeted advertising is off by default.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: >-
           User interface settings which are optimal for privacy are set by
           default.
-        procedure: >-
-          <p>Review settings available from the user interface, and determine
+        procedure_html: >-
+          <li>Review settings available from the user interface, and determine
           which options would be optimal for privacy
-          considerations.</p><p>Determine whether those options are selected by
-          default.</p>
+          considerations.</li><li>Determine whether those options are selected by
+          default.</li>
 ---
 

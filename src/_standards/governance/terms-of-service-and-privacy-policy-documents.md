@@ -12,42 +12,42 @@ criteria:
       - indicator: >-
           The company clearly discloses which Terms of Service (ToS) apply to
           the product/service in question.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: The ToS are easy to find.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: >-
           The ToS are available in the language(s) most commonly spoken by the
           company's users.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: The ToS are presented in an understandable manner.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: >-
           The company clearly discloses which privacy policies apply to the
           product/service in question.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: The privacy policies are easy to find.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: >-
           The privacy policies are available in the languages(s) most commonly
           spoken by the company's users.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: The privacy policies are presented in an understandable manner.
-        procedure: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+        procedure_html: >-
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
 ---
 
