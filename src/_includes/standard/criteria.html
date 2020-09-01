@@ -9,13 +9,13 @@
 {% else %}
 {% assign status = 'bg-danger' %}
 {% endcase %}
-<div class="standard-content" style="margin-top: 53px;">
+<!-- <div class="standard-content" style="margin-top: 53px;"> -->
   <div class="m-5">
     <div class="row d-none d-md-flex" id="standardBreadCrumbs">
       <div class="col-12 d-none d-md-flex">
 
-
         <!-- TODO: How is this working with scrollspy when the sections are updating? -->
+        <!-- TODO INCLUDE -->
         <a href="#">
           {% if page.url contains '/security/' %}Security{% endif %}
           {% if page.url contains '/privacy/' %}Privacy{% endif %}
@@ -152,4 +152,4 @@
       </div>
     </div> -->
   </div>
-</div>
+<!-- </div> -->

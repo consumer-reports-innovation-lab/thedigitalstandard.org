@@ -3,12 +3,3 @@ layout: standard
 title: Privacy
 permalink: /standard/privacy/
 ---
-{% for standard in site.data.standards.security %}
-
-{% if page.standard_category %}
-{% include standard/criteria.html %}
-{% else %}
-{{ content }}
-{% endif %}
-
-{% endfor %}
