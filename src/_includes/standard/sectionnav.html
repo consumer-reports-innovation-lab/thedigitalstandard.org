@@ -1,0 +1,19 @@
+{% for principle in section.principles %}
+
+  <div class=" d-flex align-items-center">
+    <h4>{{ principle.label }}</h4>
+  </div>
+
+  <div class="">
+    <ul class="nav flex-column">
+      {% for string in principle.standards %}
+        {% assign slug = string | split: '/' | slice: 1 | first %}
+        {% assign standard = site.standards | where: 'slug', slug | first %}
+
+        <li class="nav-item">
+          <a class="nav-link" href="#{{ slug }}">{{ standard.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}

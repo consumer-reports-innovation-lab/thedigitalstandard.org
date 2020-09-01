@@ -1,0 +1,14 @@
+<!-- TODO: Refactor breadcrumb logic -->
+<div class="row d-none d-md-flex" id="standardBreadCrumbs">
+  <div class="col-12 d-none d-md-flex">
+    <a href="#">
+      {% if page.url contains '/security/' %}Security{% endif %}
+      {% if page.url contains '/privacy/' %}Privacy{% endif %}
+      {% if page.url contains '/ownership/' %}Ownership{% endif %}
+      {% if page.url contains '/governance/' %}Governance{% endif %}
+    </a>&nbsp;/&nbsp;
+    <a href="#">
+      {{ page.standard_category }}
+    </a>&nbsp;/&nbsp;
+  </div>
+</div>

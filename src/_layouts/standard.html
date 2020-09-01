@@ -7,132 +7,63 @@ layout: default
   }
 </script>
 
-{% assign route =  page.url | split: '/' | slice: 2 %}
-{% assign navigation = site.data.standards[route.first] %}
+{% assign section = site.data.standards[page.slug] %}
+
 
 <div class="d-flex">
   <div id="standardSidebar" class="sidebar">
     <button class="sidebar-toggle" onclick="toggleSidebar()">
       <i class="ri-more-2-fill"></i>
     </button>
-    <!-- {% include nav/categorynav.html %} -->
-
-    {% for category in navigation.categories %}
-    {% assign category_slug = category.label | slugify %}
-    <div href="#{{ category.label | slugify }}" class=" d-flex align-items-center">
-      <h4>{{ category.label }}</h4>
-    </div>
-
-    <div id="{{ category.label | slugify }}" class="">
-      <ul class="nav flex-column">
-        {% for string in category.standards %}
-        {% assign slug = string | split: '/' | slice: 1 | first %}
-        {% assign standard = site.standards | where: 'slug', slug | first %}
-
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains string %}active{% endif %}" href="{{ standard.url }}">{{ standard.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endfor %}
-
-
+    {% include standard/sectionnav.html %}
   </div>
 
-
   <div class="standard-content" style="margin-top: 53px;">
-
-    {% for category in navigation.categories %}
-    {% assign category_slug = category.label | slugify %}
-
-    {% for string in category.standards %}
-    {% assign slug = string | split: '/' | slice: 1 | first %}
-    {% assign standard = site.standards | where: 'slug', slug | first %}
     <div class="m-5">
-      <div class="row">
-        <div class="col-12">
-          <div class="d-flex align-items-center flex-wrap">
-            <div>
-              <h1 class="text-serif text-thin mr-5 mb-n1">{{ category.label }}</h1>
-            </div>
-            <div>
-              <div class="d-flex align-items-center">
-                <span class="bg-status mr-2 {{ status }}"></span>
-                <h2 class="blue text-uppercase m-0 text-nowrap">
-                  {{ page.title }}
-                </h2>
-                {% if page.github_url %}
-                <a href="{{ page.github_url }}" target="_blank" class="social-link">
-                  <i class="ri-github-fill  text-medium ml-2"></i>
-                </a>
-                {% endif %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr>
+      {% for principle in section.principles %}
+        {% for string in principle.standards %}
+          {% assign slug = string | split: '/' | slice: 1 | first %}
+          {% assign standard = site.standards | where: 'slug', slug | first %}
+          {% case standard.standard_state %}
+            {% when '1: Green' %}
+              {% assign status = 'bg-success' %}
+            {% when '2: Yellow' %}
+              {% assign status = 'bg-warning' %}
+            {% else %}
+              {% assign status = 'bg-danger' %}
+          {% endcase %}
 
-      {% for criteria in page.criteria %}
-      <div class="row standard-wrapper">
-        <div class="col-12 col-lg-4 criteria-wrapper ">
-          <div class="sticky-top">
-            <h3 class="text-uppercase text-black-50 mr-4 mb-2">Criteria</h3>
-            <p>{{ criteria.criteria_summary }}</p>
-          </div>
+          {% include standard/breadcrumbs.html %}
 
-        </div>
-        <div class="col-12 col-lg-8 indicator-wrapper">
-          <!-- TODO: if no indecator (user safety > personal safety) -->
-          {% for item in criteria.indicators %}
-          <div class="row">
+          <div id="#{{ slug }}" class="row">
             <div class="col-12">
-              <h4 class="text-uppercase text-black-50 mr-4 mb-2">Indicators</h4>
-              <ul>
-                <li>{{ item.indicator }}</li>
-              </ul>
-              {% if item.procedure_html %}
-              <div class="procedure-wrapper">
-                <h4 class="text-uppercase text-black-50 mr-4 mb-2">PROCEDURE</h4>
-                <ul>
-                  {{ item.procedure_html }}
-                </ul>
+              <div class="d-flex align-items-center flex-wrap">
+                <div>
+                  <h1 class="text-serif text-thin mr-5 mb-n1">{{ principle.label }}</h1>
+                </div>
+                <div>
+                  <div class="d-flex align-items-center">
+                    <span class="bg-status mr-2 {{ status }}"></span>
+                    <h2 class="blue text-uppercase m-0 text-nowrap">
+                      {{ standard.title }}
+                    </h2>
+                    {% if standard.github_url %}
+                    <a href="{{ page.github_url }}" target="_blank" class="social-link">
+                      <i class="ri-github-fill  text-medium ml-2"></i>
+                    </a>
+                    {% endif %}
+                  </div>
+                </div>
               </div>
-              {% endif %}
             </div>
           </div>
-          {% if forloop.last %}
-          {% else %}
-          <hr class="my-5">
-          {% endif %}
-
+          <hr>
+          {% for criteria in standard.criteria %}
+            {% include standard/criteria.html %}
           {% endfor %}
-        </div>
-      </div>
-      {% endfor %}
 
-    </div>
-    {% endfor %}
-
-
-    <div href="#{{ category.label | slugify }}" class=" d-flex align-items-center">
-      <h4>{{ category.label }}</h4>
-    </div>
-
-    <div id="{{ category.label | slugify }}" class="">
-      <ul class="nav flex-column">
-        {% for string in category.standards %}
-        {% assign slug = string | split: '/' | slice: 1 | first %}
-        {% assign standard = site.standards | where: 'slug', slug | first %}
-
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains string %}active{% endif %}" href="{{ standard.url }}">{{ standard.title }}</a>
-        </li>
         {% endfor %}
-      </ul>
+      {% endfor %}
     </div>
-    {% endfor %}
-
   </div>
 </div>
