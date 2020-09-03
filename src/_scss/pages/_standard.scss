@@ -10,7 +10,7 @@
     height: 100%;
     background-color: $tds-blue-100;
     color: $white;
-    margin-top: 53px;
+    margin-top: -23px;
     overflow-y: scroll;
     @include transition(0.5s);
     &.active {
@@ -129,6 +129,10 @@
           text-decoration: none;
           color: $tds-blue-300;
         }
+      }
+      .active {
+        color: $tds-blue-300;
+        font-weight: 600;
       }
     }
     h1 {

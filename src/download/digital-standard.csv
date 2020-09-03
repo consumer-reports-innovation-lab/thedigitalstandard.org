@@ -1,6 +1,6 @@
 ---
 layout: null
 ---
-Test Name, Crieria, Indicators, Procedure
-{% for standard in site.standards %}"{{ standard.title }}","{{standard.criteria.criteria_summary | replace: '"', '""' | strip_newlines }}","{{standard.criteria.indicators.indicator | replace: '"', '""' | strip_newlines }}","{{standard.criteria.indicators.procedure_html | replace: '"', '""' | strip_newlines }}","
+Test Name, Criteria, Indicator, Procedure
+{% for standard in site.standards %}”{{ standard.title }}”,{% for criteria in standard.criteria %}“{{ criteria.criteria_summary | remove: ',' }}”,{% for indicator in criteria.indictors %}“{{ indicator.indicator | remove: ','  }}”{% endfor %},{% for procedure in criteria.indictors %}“{{ procedure.procedure_html | remove: ',' , '<li>' , '</li>' , '<p>' , '</p>'  }}”{% endfor %},{% endfor %}
 {% endfor %}

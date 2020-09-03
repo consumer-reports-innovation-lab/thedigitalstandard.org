@@ -10,15 +10,15 @@ layout: default
 {% assign section = site.data.standards[page.slug] %}
 
 
-<div class="d-flex">
+<!-- <div class="d-flex"> -->
+<div class="my-5" data-spy="scroll" data-target="#sectionNav">
   <div id="standardSidebar" class="sidebar">
     <button class="sidebar-toggle" onclick="toggleSidebar()">
       <i class="ri-more-2-fill"></i>
     </button>
     {% include standard/sectionnav.html %}
   </div>
-
-  <div class="standard-content" style="margin-top: 53px;">
+  <div class="standard-content" style="margin-top: 130px;">
     <div class="m-5">
       {% for principle in section.principles %}
         {% for string in principle.standards %}
@@ -35,11 +35,11 @@ layout: default
 
           {% include standard/breadcrumbs.html %}
 
-          <div id="#{{ slug }}" class="row">
+          <div id="#{{ slug }}" class="row ">
             <div class="col-12">
               <div class="d-flex align-items-center flex-wrap">
                 <div>
-                  <h1 class="text-serif text-thin mr-5 mb-n1">{{ principle.label }}</h1>
+                  <h1 class="text-serif text-thin mr-5 mb-n1" id="{{ principle.label | slugify }}">{{ principle.label }}</h1>
                 </div>
                 <div>
                   <div class="d-flex align-items-center">
@@ -65,5 +65,15 @@ layout: default
         {% endfor %}
       {% endfor %}
     </div>
+      <div class="container mx-5">
+        <div class="row">
+          <div class="col-12">
+                  <div>ioarhs</div>
+
+          </div>
+        </div>
+      </div>
   </div>
+
+
 </div>

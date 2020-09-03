@@ -7,5 +7,7 @@ github_url: >-
 criteria:
   - criteria_summary: 'The company helps me protect myself from grief, abuse, and harassment.'
     indicators:
+      - indicator: TBD
+        procedure_html: TBD
 ---
 

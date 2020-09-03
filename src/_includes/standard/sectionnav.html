@@ -4,8 +4,8 @@
     <h4>{{ principle.label }}</h4>
   </div>
 
-  <div class="">
-    <ul class="nav flex-column">
+  <div>
+    <ul class="nav flex-column" id="sectionNav">
       {% for string in principle.standards %}
         {% assign slug = string | split: '/' | slice: 1 | first %}
         {% assign standard = site.standards | where: 'slug', slug | first %}
