@@ -2,10 +2,10 @@
   .sidebar {
     position: fixed;
     z-index: 9;
-    left: -295px;
+    left: -275px;
     padding: 1.75rem;
-    width: 325px;
-    min-width: 325px;
+    width: 300px;
+    min-width: 300px;
     min-height: calc(100vh);
     height: 100%;
     background-color: $tds-blue-100;
@@ -20,6 +20,9 @@
       // position: relative;
       left: 0;
       padding-top: 1.5rem;
+    }
+    #sectionNav {
+      padding-bottom: 100px;
     }
     .sidebar-toggle {
       position: absolute;
@@ -44,13 +47,20 @@
         pointer-events: none;
       }
     }
-    h4 {
+    h4.nav-link {
       color: $white;
       font-family: $font-family-serif;
       margin-top: 1.125rem;
       margin-bottom: 0px;
       opacity: 0.5;
       font-weight: 600;
+      font-size: 1.1rem !important;
+      text-transform: none;
+      padding-left: 0;
+      &::before {
+        height: 0px;
+        width: 0px;
+      }
       .active {
         opacity: 1;
       }
@@ -81,6 +91,7 @@
         }
       }
     }
+
     .nav-link {
       position: relative;
       padding: 0.3rem;
@@ -143,12 +154,12 @@
       font-size: 1rem;
     }
     @include media-breakpoint-up(lg) {
-      margin-left: 325px;
+      margin-left: 300px;
     }
   }
   #pageFooter {
     @include media-breakpoint-up(lg) {
-      padding-left: 325px;
+      padding-left: 300px;
     }
   }
 }

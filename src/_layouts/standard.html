@@ -64,16 +64,29 @@ layout: default
 
         {% endfor %}
       {% endfor %}
-    </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <!-- TODO add logic to next section -->
-                  <a href="#" class="btn btn-full-width">Next Test Category</a>
+      <div class="row">
+        <div class="col-12">
+          <!-- TODO add logic to next section -->
+          <a href="
+            {% if page.url contains '/standard/security/' %}/standard/privacy/{% endif %}
+            {% if page.url contains '/standard/privacy/' %}/standard/ownership/{% endif %}
+            {% if page.url contains '/standard/ownership/' %}/standard/governance/{% endif %}
+            {% if page.url contains '/standard/governance/' %}/standard/security/{% endif %}
 
-          </div>
+
+          " class="btn btn-full-width">Next Test Category:&nbsp;
+        <span class="font-weight-bold">
+          {% if page.url contains '/standard/security/' %}privacy {% endif %}
+          {% if page.url contains '/standard/privacy/' %}ownership {% endif %}
+          {% if page.url contains '/standard/ownership/' %}governance{% endif %}
+          {% if page.url contains '/standard/governance/' %}security{% endif %}
+          &nbsp; &#9654;
+        </span>
+        </a>
+
         </div>
       </div>
+    </div>
   </div>
 
 

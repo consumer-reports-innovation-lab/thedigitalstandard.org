@@ -94,7 +94,7 @@
 .btn-full-width {
   width: 100%;
   background-color: $tds-orange-100;
-  font-weight: 400;
+  font-weight: 400 !important;
   box-shadow: inset 0px 0px 0px $tds-blue-300;
   border: 0px;
   &:hover,
