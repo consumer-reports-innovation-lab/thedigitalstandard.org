@@ -11,7 +11,7 @@ layout: default
 
 
 <!-- <div class="d-flex"> -->
-<div class="my-5" data-spy="scroll" data-target="#sectionNav">
+<div class="my-5" >
   <div id="standardSidebar" class="sidebar">
     <button class="sidebar-toggle" onclick="toggleSidebar()">
       <i class="ri-more-2-fill"></i>
@@ -35,7 +35,7 @@ layout: default
 
           {% include standard/breadcrumbs.html %}
 
-          <div id="#{{ slug }}" class="row ">
+          <div id="{{ slug }}" class="row" >
             <div class="col-12">
               <div class="d-flex align-items-center flex-wrap">
                 <div>
@@ -65,7 +65,7 @@ layout: default
         {% endfor %}
       {% endfor %}
     </div>
-      <div class="container mx-5">
+      <div class="container">
         <div class="row">
           <div class="col-12">
             <!-- TODO add logic to next section -->

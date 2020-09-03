@@ -1,0 +1,12 @@
+---
+layout: null
+---
+[
+{% for standard in site.standards %}
+TEST NAME: {{ standard.title }}
+  {% for criteria in standard.criteria %}
+    CRITERIA: {{ criteria.criteria_summary | jsonify }}
+
+  {% endfor %}
+{% endfor %}
+]
