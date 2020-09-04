@@ -1,0 +1,7 @@
+---
+layout: none
+permalink: /download/standard
+---
+Section,Area,Category,Status,Criteria,Indicator,Procedure
+{% for section in site.data.standards %}{% for principle in section[1].principles %}{% for string in principle.standards %}{% assign slug = string | split: '/' | slice: 1 | first %}{% assign standard = site.standards | where: 'slug', slug | first %}{% for criteria in standard.criteria %}{% for item in criteria.indicators %}{{ section[0] }},{{ standard['title'] | jsonify }},{{ standard['standard_category'] | jsonify }},{{ standard['standard_state'] | jsonify }},{{ criteria['criteria_summary'] | jsonify }},{{ item['indicator'] | jsonify}},"{{ item['procedure_html'] | strip_html | replace: '"', ' ' | replace: ',', ' '  | jsonify }}"
+{% endfor %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}
