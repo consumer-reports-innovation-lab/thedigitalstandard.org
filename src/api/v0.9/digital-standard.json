@@ -2,36 +2,39 @@
 layout: none
 permalink: api/v0.9/standard
 ---
-
 [
   {% for section in site.data.standards %}
-    {% for principle in section[1].principles %}
-      {% for string in principle.standards %}
-        {% assign slug = string | split: '/' | slice: 1 | first %}
-        {% assign standard = site.standards | where: 'slug', slug | first %}
-        {
-          "title": {{ standard['title'] | jsonify }},
-          "category": {{ standard['standard_category'] | jsonify }},
-          "status": {{ standard['standard_state'] | jsonify }},
-          "criteria": [
-            {% for criteria in standard.criteria %}
-              {
-                "summary": {{ criteria['criteria_summary'] | jsonify }},
-                "indicators": [
-                  {% for item in criteria.indicators %}
-                    {
-                      "indicator": {{ item['indicator'] | jsonify}},
-                      "procedure": {{ item['procedure_html'] | strip_html | jsonify}}
-                    }{% unless forloop.last %},{% endunless %}
-                  {% endfor %}
-                ]
-              }{% unless forloop.last %},{% endunless %}
-            {% endfor %}
-          ]
-        }{% unless forloop.last %},{% endunless %}
+  {
+    "section": {{ section[0] | jsonify }},
+    "areas": [
+      {% for principle in section[1].principles %}
+        {% for string in principle.standards %}
+          {% assign slug = string | split: '/' | slice: 1 | first %}
+          {% assign standard = site.standards | where: 'slug', slug | first %}
+          {
+            "title": {{ standard['title'] | jsonify }},
+            "category": {{ standard['standard_category'] | jsonify }},
+            "status": {{ standard['standard_state'] | jsonify }},
+            "criteria": [
+              {% for criteria in standard.criteria %}
+                {
+                  "summary": {{ criteria['criteria_summary'] | jsonify }},
+                  "indicators": [
+                    {% for item in criteria.indicators %}
+                      {
+                        "indicator": {{ item['indicator'] | jsonify}},
+                        "procedure": {{ item['procedure_html'] | strip_html | jsonify}}
+                      }{% unless forloop.last %},{% endunless %}
+                    {% endfor %}
+                  ]
+                }{% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ]
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        {% unless forloop.last %},{% endunless %}
       {% endfor %}
-      {% unless forloop.last %},{% endunless %}
-    {% endfor %}
-    {% unless forloop.last %},{% endunless %}
+    ]
+  }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
