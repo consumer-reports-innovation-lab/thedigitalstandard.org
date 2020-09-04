@@ -13,13 +13,13 @@ criteria:
           The user information collected is only that which is directly relevant
           and necessary for the service.
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: >-
           Product still works when all permissions not relevant to product's
           functionality are declined.
         procedure_html: >-
-          <p>Decline permissions not relevant to the product's functionality,
-          verify that product is still functional</p>
+          <li>Decline permissions not relevant to the product's functionality,
+          verify that product is still functional</li>
 ---
 

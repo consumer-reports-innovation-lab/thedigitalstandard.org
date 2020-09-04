@@ -14,6 +14,6 @@ criteria:
           restrict the use of products and services that would otherwise be
           possible to use with your existing products (e.g., set-top boxes,
           third party applications, etc.).
-        procedure_html:
+        procedure_html: TBD
 ---
 

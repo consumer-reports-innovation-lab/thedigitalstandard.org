@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 135px;
+}
 body {
   color: $body-color;
 }
@@ -6,7 +10,7 @@ section {
   padding: 40px 0;
   overflow: hidden;
   @include media-breakpoint-up(md) {
-    padding: 10% 0;
+    padding: 5% 0;
   }
 }
 

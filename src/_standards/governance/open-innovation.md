@@ -9,5 +9,7 @@ criteria:
       The company works to advance all technology and innovation, not just its
       own interests.
     indicators:
+      - indicator: TBD
+        procedure_html: TBD
 ---
 

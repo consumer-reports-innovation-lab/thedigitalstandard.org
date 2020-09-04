@@ -11,15 +11,15 @@ criteria:
     indicators:
       - indicator: Targeted advertising is off by default.
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: >-
           User interface settings which are optimal for privacy are set by
           default.
         procedure_html: >-
-          <p>Review settings available from the user interface, and determine
+          <li>Review settings available from the user interface, and determine
           which options would be optimal for privacy
-          considerations.</p><p>Determine whether those options are selected by
-          default.</p>
+          considerations.</li><li>Determine whether those options are selected by
+          default.</li>
 ---
 

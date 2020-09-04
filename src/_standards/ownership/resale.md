@@ -11,8 +11,8 @@ criteria:
           If a consumer sells the product on the private market, the new owner
           has access to the full functionality of the original product.? Or does
           the company restrict the transfer of ownership
-        procedure_html:
+        procedure_html: TBD
       - indicator: The company does not restrict the transfer of ownership.
-        procedure_html:
+        procedure_html: TBD
 ---
 

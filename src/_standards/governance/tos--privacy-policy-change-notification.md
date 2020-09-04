@@ -11,43 +11,43 @@ criteria:
     indicators:
       - indicator: Commitment to notify users about changes to the terms of service
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: >-
           Disclosure of how users will be directly notified of changes to the
           terms of service
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: >-
           Disclosure of timeframe for notification prior to changes to the terms
           of service coming into effect
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: Maintains a public archive or change log of the terms of service
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: Commitment to notify users about change to the privacy policy
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: >-
           Disclosure of how users will be directly notified of changes to the
           privacy policy
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: >-
           Disclosure of timeframe for notification prior to changes to the
           privacy policy coming into effect
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: Maintains a public archive or change log of the privacy policy
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
 ---
 

@@ -87,6 +87,9 @@
     stroke-dashoffset: 300px;
   }
 }
+#overview-vision {
+  overflow: visible;
+}
 
 @media (max-width: 992px) {
   .animated-wrapper {
@@ -110,4 +113,12 @@
 
 .overview-row {
   height: 500px;
+}
+
+#how-to {
+  p {
+    small {
+      font-size: 1rem;
+    }
+  }
 }

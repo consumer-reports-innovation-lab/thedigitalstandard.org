@@ -10,12 +10,12 @@ criteria:
       - indicator: >-
           The company does not use technical, feature-level, or legal means to
           block a consumer's ability to get a device repaired.
-        procedure_html:
+        procedure_html: TBD
       - indicator: There is a competitive market of repair shops.
-        procedure_html:
+        procedure_html: TBD
       - indicator: >-
           Repair shops, other than the manufacturer's, are supported by the
           original manufacturer.
-        procedure_html:
+        procedure_html: TBD
 ---
 

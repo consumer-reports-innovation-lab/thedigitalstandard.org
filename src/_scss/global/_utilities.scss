@@ -91,6 +91,19 @@
   }
 }
 
+.btn-full-width {
+  width: 100%;
+  background-color: $tds-orange-100;
+  font-weight: 400 !important;
+  box-shadow: inset 0px 0px 0px $tds-blue-300;
+  border: 0px;
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px -80px 0px $tds-blue-300;
+    color: $white;
+  }
+}
+
 // Background utlities
 .bg-image {
   background-repeat: no-repeat;
@@ -113,7 +126,7 @@
   font-weight: 600;
 }
 .text-medium {
-  font-size: 1.85rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 

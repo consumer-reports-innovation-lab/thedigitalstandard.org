@@ -13,11 +13,11 @@ criteria:
           The company puts limits on the use of my data that are consistent with
           the purpose for which the data is collected.
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: The company explicitly discloses every way in which it uses my data.
         procedure_html: >-
-          <p>Interact with the service to evaluate how personal information is
-          being used.</p>
+          <li>Interact with the service to evaluate how personal information is
+          being used.</li>
 ---
 

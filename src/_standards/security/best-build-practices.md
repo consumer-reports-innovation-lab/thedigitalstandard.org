@@ -11,26 +11,26 @@ criteria:
     indicators:
       - indicator: The product was built with effectively implemented safety features.
         procedure_html: >-
-          <p>Run static analysis software to determine what application armoring
-          features are present.</p><p>Are there Stack Guards, and if so, are
-          they effectively implemented?</p><p>Are all safety features available
+          <li>Run static analysis software to determine what application armoring
+          features are present.</li><li>Are there Stack Guards, and if so, are
+          they effectively implemented?</li><li>Are all safety features available
           in the pertinent OS enabled? (e.g., ASLR, CFI, RELRO, DEP,
-          etc.)</p><p>Are those safety features well implemented and/or enabled
+          etc.)</li><li>Are those safety features well implemented and/or enabled
           with optimal settings? (E.g., High Entropy ASLR, rather than just
-          Dynamic Base on Windows 10)</p><p>Are the binaries 32 or 64 bit?</p>
+          Dynamic Base on Windows 10)</li><li>Are the binaries 32 or 64 bit?</li>
       - indicator: The software does not make use of unsafe functions or libraries.
         procedure_html: >-
-          <p>Pull out data from the binary that speaks to developer
-          hygiene.</p><p>Do they use strcpy and other historically unsafe
-          functions?</p><p>Did the developers use older, less historically safe
+          <li>Pull out data from the binary that speaks to developer
+          hygiene.</li><li>Do they use strcpy and other historically unsafe
+          functions?</li><li>Did the developers use older, less historically safe
           functions, or newer, safer replacements for those
-          functions?</p><p>What risks are introduced via the libraries that the
-          binary links to, either directly or indirectly?</p>
+          functions?</li><li>What risks are introduced via the libraries that the
+          binary links to, either directly or indirectly?</li>
       - indicator: The software is not overly complex.
         procedure_html: >-
-          <p>Pull out data from the binary that speaks to code
-          complexity.</p><p>What is the branch density?</p><p>How many stack
-          adjusts, function calls, etc are there?</p><p>How complex is the
-          code?</p>
+          <li>Pull out data from the binary that speaks to code
+          complexity.</li><li>What is the branch density?</li><li>How many stack
+          adjusts, function calls, etc are there?</li><li>How complex is the
+          code?</li>
 ---
 

@@ -1,25 +1,38 @@
 <nav id="standardnav">
+  <!-- TODO: ADD VERSIONING -->
+<!-- <div class="dropdown mr-3">
+  <button class="btn btn-secondary dropdown-toggle d-none d-sm-flex align-items-center" type="button" id="versionDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    v1.0
+  </button>
+  <div class="dropdown-menu" aria-labelledby="versionDropDown">
+    <a class="dropdown-item" href="#">version 0.9</a>
+  </div>
+</div> -->
+
   <ul class="nav py-2">
     <li class="nav-item">
-      <a class="nav-link {% if page.url contains 'security' %} active{% endif %}" href="/standard/security/best-build-practices/">
+      <a class="nav-link {% if page.url contains 'security' %} active{% endif %}" href="/standard/security/">
         Security
       </a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link {% if page.url contains 'privacy' %} active{% endif %}" href="/standard/privacy/data-control/">
+      <a class="nav-link {% if page.url contains 'privacy' %} active{% endif %}" href="/standard/privacy/">
         Privacy
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link {% if page.url contains 'ownership' %} active{% endif %}" href="/standard/ownership/interoperability/">
+      <a class="nav-link {% if page.url contains 'ownership' %} active{% endif %}" href="/standard/ownership/">
         Ownership
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link {% if page.url contains 'governance' %} active{% endif %}" href="/standard/governance/business-model/">
+      <a class="nav-link {% if page.url contains 'governance' %} active{% endif %}" href="/standard/governance/">
         Governance
       </a>
     </li>
   </ul>
+
+  <a class="editable d-none" id="downloadCTA" href="/download/digital-standard.csv">Download the Digital Standard (.csv)</a>
+
 </nav>

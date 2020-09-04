@@ -13,29 +13,29 @@ criteria:
           The product life cycle is communicated to the potential owner before
           purchase.
         procedure_html: >-
-          <p>Investigation and analysis of publicly available documentation to
-          determine what the company clearly discloses.</p>
+          <li>Investigation and analysis of publicly available documentation to
+          determine what the company clearly discloses.</li>
       - indicator: Software updates are authenticated.
-        procedure_html: <p>TBD</p>
+        procedure_html: <li>TBD</li>
       - indicator: Automatic software updates
         procedure_html: >-
-          <p>Examine software settings and product documentation to determine if
+          <li>Examine software settings and product documentation to determine if
           automatic software updates are enabled by default or can be enabled by
-          the user.</p>
+          the user.</li>
       - indicator: Notification of software updates
         procedure_html: >-
-          <p>If updates are not automatic, examine software settings and product
+          <li>If updates are not automatic, examine software settings and product
           documentation to determine if the product notifies the user if a
           software update is available, and if that notification is persistent,
           or if the user can easily determine if a software update is
-          available.</p>
+          available.</li>
       - indicator: Ease of installation of software updates
         procedure_html: >-
-          <p>Execute the procedure to install a software update and evaluate the
-          ease of installation by comparing against established references.</p>
+          <li>Execute the procedure to install a software update and evaluate the
+          ease of installation by comparing against established references.</li>
       - indicator: Software can be kept up-to-date for security issues.
         procedure_html: >-
-          <p>Check if a later version of software exists but the product cannot
-          be updated to it (e.g. Android devices with pre-KitKat versions).</p>
+          <li>Check if a later version of software exists but the product cannot
+          be updated to it (e.g. Android devices with pre-KitKat versions).</li>
 ---
 

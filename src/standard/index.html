@@ -2,34 +2,36 @@
 layout: page
 title: The Standard
 ---
-<!-- TODO: Update background image -->
-<section class="bg-primary bg-image" style="background-image: url(/img/contribute/feedback-bg.jpg)">
+    {% include nav/standardnav.html %}
+
+<section class="bg-primary bg-image" style="background-image: url(/img/contribute/feedback-bg.jpg)" id="standard-landing-wrapper">
   <div class="container bg-white">
     <div class="row">
       <div class="col-12 col-lg-7">
-        <div class="py-lg-5 m-3 m-md-5">
-          <p class="editable">Select a test category to view the current documentation of the Digital Standard. You can click on the Test Name to view
+        <div class="py-lg-5 m-3 m-md-5 editable">
+          <h1 >Select a test category to view the current documentation of the Digital Standard.</h1>
+          <p > You can click on the Test Name to view
             and comment on a section on Github. There you can propose a change, run a test and report results, or start a
             conversation about how to tackle one of the open questions. Please note that you will need to be logged into your GitHub
             account to see the GitHub pages.</p>
 
           <div class="row">
             <div class="col-12 col-sm-6 my-3">
-              <a href="/standard/security/best-build-practices/" class="btn btn-outline-dark btn-block">Security</a>
+              <a href="/standard/security/" class="btn btn-outline-dark btn-block">Security</a>
             </div>
             <div class="col-12 col-sm-6 my-3">
-              <a href="/standard/privacy/data-control/" class="btn btn-outline-dark btn-block">Ownership</a>
+              <a href="/standard/privacy/" class="btn btn-outline-dark btn-block">Ownership</a>
             </div>
             <div class="col-12 col-sm-6 my-3">
-              <a href="/standard/ownership/interoperability/" class="btn btn-outline-dark btn-block">Privacy</a>
+              <a href="/standard/ownership/" class="btn btn-outline-dark btn-block">Privacy</a>
             </div>
             <div class="col-12 col-sm-6  my-3">
-              <a href="/standard/governance/business-model/" class="btn btn-outline-dark btn-block">Governance</a>
+              <a href="/standard/governance/" class="btn btn-outline-dark btn-block">Governance</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-5">
+      <div class="col-12 col-lg-5 aside">
         <div class="py-lg-5 m-3 m-md-5">
           <h2 class="editable">Each criteria has been color-coded to help direct your contribution and participation.</h2>
           <div class="d-flex align-items-center my-3">
