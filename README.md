@@ -10,12 +10,3 @@ The Digital Standard is a framework to evaluate consumer technologies and how th
 2. Start environment: `yarn dev`
 3. Navigate to [http://localhost:4000/](http://localhost:4000/)
 
-## Deployment ##
-1. `cd` to project directory
-2. Start environment: `yarn deploy`
-
-
-============
-
-
-Generate favicon: https://favicon.io
