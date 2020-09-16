@@ -28,8 +28,7 @@ collections:
     permalink: /case-studies/:path/
 
 defaults:
-  -
-    scope:
+  - scope:
       type: 'standards'
     values:
       layout: standard
