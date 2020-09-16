@@ -30,7 +30,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3.7.0-8
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site/standard
+          publish_dir: ./_site/data
           destination_dir: ./${{ steps.version.outputs.VERSION }}
           allow_empty_commit: true
           commit_message: VERSION - ${{ steps.version.outputs.VERSION }}
