@@ -23,6 +23,9 @@ collections:
   standards:
     output: true
     permalink: /standard/:path/
+  case-studies:
+    output: true
+    permalink: /case-studies/:path/
 
 defaults:
   -
