@@ -1,0 +1,1550 @@
+[
+  
+  {
+    "section": "security",
+    "areas": [
+      
+        
+          
+          
+          {
+            "title": "Best Build Practices",
+            "category": "Build Quality",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The software was built and developed according to the industry's best practices for security.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The product was built with effectively implemented safety features.",
+                        "procedure": "Run static analysis software to determine what application armoring features are present.Are there Stack Guards, and if so, are they effectively implemented?Are all safety features available in the pertinent OS enabled? (e.g., ASLR, CFI, RELRO, DEP, etc.)Are those safety features well implemented and/or enabled with optimal settings? (E.g., High Entropy ASLR, rather than just Dynamic Base on Windows 10)Are the binaries 32 or 64 bit?"
+                      },
+                    
+                      {
+                        "indicator": "The software does not make use of unsafe functions or libraries.",
+                        "procedure": "Pull out data from the binary that speaks to developer hygiene.Do they use strcpy and other historically unsafe functions?Did the developers use older, less historically safe functions, or newer, safer replacements for those functions?What risks are introduced via the libraries that the binary links to, either directly or indirectly?"
+                      },
+                    
+                      {
+                        "indicator": "The software is not overly complex.",
+                        "procedure": "Pull out data from the binary that speaks to code complexity.What is the branch density?How many stack adjusts, function calls, etc are there?How complex is the code?"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Product Stablity",
+            "category": "Build Quality",
+            "status": "2: Yellow",
+            "criteria": [
+              
+                {
+                  "summary": "The software is reliable.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The software is not susceptible to crashes.",
+                        "procedure": "Fuzz software to see if and how it crashes."
+                      },
+                    
+                      {
+                        "indicator": "If the program is forced to unexpectedly terminate, it shuts down in a safe and responsible fashion.",
+                        "procedure": "Under appropriate fuzz testing, what was the code coverage, number of crashes, and type(s) of crashes.Are crashes exploitable, or do they simply allow a disruption of service?"
+                      },
+                    
+                      {
+                        "indicator": "The software is not vulnerable to algorithmic complexity attacks.",
+                        "procedure": "Perform modified fuzzing to determine the software's vulnerability to algorithmic complexity attacks."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        ,
+      
+        
+          
+          
+          {
+            "title": "Authentication",
+            "category": "Data Security",
+            "status": "2: Yellow",
+            "criteria": [
+              
+                {
+                  "summary": "A product has an authentication system that corresponds to the sensitivity of the user data it manages",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "If a product supports user accounts, it has an authentication system for accessing those accounts",
+                        "procedure": "Start product and note whether users are prompted to authenticate to access account data&nbsp;"
+                      },
+                    
+                      {
+                        "indicator": "If a product is packaged with an account with default credentials, those credentials are unique to the instance of the product",
+                        "procedure": "If the product has default credentials, make note their uniqueness, and watch out for credentials like, \"default\", \"admin\", or \"12345678\"."
+                      },
+                    
+                      {
+                        "indicator": "If a product has an authentication system, the user must authenticate each time they want to use the product",
+                        "procedure": "Start &amp; stop the product multiple times, and make note of when user is prompted to authenticate."
+                      },
+                    
+                      {
+                        "indicator": "If a product has an authentication system, it requires at least two pieces of information to authenticate users",
+                        "procedure": "Create an account and make note of information needed to do so *for authentication*. e.g. username + password"
+                      },
+                    
+                      {
+                        "indicator": "For products that handle sufficiently sensitive data, users can choose to use multi-factor authentication.",
+                        "procedure": "Create an account and look for settings to enable MFA."
+                      },
+                    
+                      {
+                        "indicator": "For products that handle sufficiently sensitive data, users can choose to use multi-factor authentication whenever product is activated, or when a device is unrecognized.",
+                        "procedure": "Create an account, enable MFA, and try using product multiple times on one device to see if MFA is required each time.Create an account, enable MFA, and try using product multiple times on different devices to see if MFA is required each time."
+                      },
+                    
+                      {
+                        "indicator": "If the product uses a password/passphrase for authentication, it requires that passwords are at least 8 characters long",
+                        "procedure": "Create an account and make note minimum password lengths. Try passwords such as \"a\" and \"a1b2c3\"."
+                      },
+                    
+                      {
+                        "indicator": "If the product uses a password/passphrase for authentication, the password/passphrase may be at least 20 characters long",
+                        "procedure": "Create an account and make note maximum password lengths. Try passphrases such as \"i love sufficiently long passwords\"."
+                      },
+                    
+                      {
+                        "indicator": "If the product uses a password/passphrase for authentication, it requires that passwords are reasonably complex",
+                        "procedure": "Create an account and make note complexity limitations. Try passwords such as \"aaaaaaaa\" and \"12345678\"."
+                      },
+                    
+                      {
+                        "indicator": "If the product uses a password/passphrase for authentication, it allows all reasonable characters as input",
+                        "procedure": "Create an account and make note character restrictions. Try passwords such as \")a!aaaaa$a%\" and \"p 4 5 5 w 0 R d !\"."
+                      },
+                    
+                      {
+                        "indicator": "If the product uses a password/passphrase for authentication, it is compatible with popular password managers.",
+                        "procedure": "With a password manager installed, create an account. See if password manager can be used as expected."
+                      }
+                    
+                  ]
+                },
+              
+                {
+                  "summary": "A product that has an authentication system resists attempts to break it",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The product allows users to be notified via an out-of-band medium when account security settings are changed.",
+                        "procedure": "Create an account and make note of whether or not users are able to use email, SMS, or push notifications to be notified when changes occur or account credentials need to be reset."
+                      },
+                    
+                      {
+                        "indicator": "To change a password/passphrase/pin, a user must enter the previous password/passphrase/pin, or have access to a secondary system that is used to reset it.",
+                        "procedure": "Create an account and attempt to change the password/passphrase/pin associated with it. Make note of whether or not users are required to enter old credentials, or look toward their email/phone/etc. to reset them."
+                      },
+                    
+                      {
+                        "indicator": "The product notifies users when account security settings have changed.",
+                        "procedure": "Create an account and attempt to change various security settings, such as MFA or password, and make note of whether or not the user is notified."
+                      },
+                    
+                      {
+                        "indicator": "If the product has an authentication system, it also has a system to prevent brute-force/dictionary attacks",
+                        "procedure": "Try to login to product using various incorrect credentials and note whether you have limited attempts to do so, or if it would take far too long to test every combination of allowed or common characters/strings/phrases."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Encryption",
+            "category": "Data Security",
+            "status": "2: Yellow",
+            "criteria": [
+              
+                {
+                  "summary": "Information I provide is encrypted so that it can't be easily read or used by attackers.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "Transmission of user communications or information is encrypted by default.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Transmission of user communications or information is encrypted using unique keys.",
+                        "procedure": "Inspect traffic to determine if SSL encryption is used."
+                      },
+                    
+                      {
+                        "indicator": "Users can secure their content using end-to-end encryption.",
+                        "procedure": "Inspect traffic to determine if SSL encryption is used."
+                      },
+                    
+                      {
+                        "indicator": "End-to-end encryption is enabled by default.",
+                        "procedure": "Inspect traffic to determine if SSL encryption is used."
+                      },
+                    
+                      {
+                        "indicator": "User information and communications are encrypted by default when at rest.",
+                        "procedure": "Inspect traffic to determine if SSL encryption is used."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Known Exploit Resistance",
+            "category": "Data Security",
+            "status": "2: Yellow",
+            "criteria": [
+              
+                {
+                  "summary": "The product is protected from known software vulnerabilities that present a danger from attackers.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The software is secure against known bugs and types of attacks.",
+                        "procedure": "Browsers:Identify publicly known vulnerabilities for each browser.Use the original proof of concept code (if known) or devise custom code where necessary, to test the browser for the issue identified in the vulnerability notice.Check if the browser is now protected from the identified vulnerabilities.Apps:Root/jailbreak the device, configure web proxy and network traffic monitor.Launch target app, create accounts, sign-in, launch any activities available from user interface.Monitor communication between the application on the device and any backend services.Examine file system, database, and logs on the mobile device to determine if sensitive information is stored in a way that could lead to compromise of user data.Connected Devices:Check if using latest version of software.Configure web proxy and network traffic monitor.Create account and sign-in to the installed \"out of the box\" applications.Launch any activities available from the user interface.Monitor communication between the applications on the device, the device itself, and any backend services.Examine file system, database, and logs to determine if sensitive information is stored in a way that could lead to compromise of user data.\""
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Security Oversight",
+            "category": "Data Security",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The company is a responsible caretaker of my data.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company has systems in place to limit and monitor employee access to user information.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company has an internal security team that conducts security audits on the company's products and services.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company commissions third-party security audits on its products and services. The company ensures that third-parties who process data on behalf of the company implement the required technical and organizational measures to protect user data.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Security Over Time",
+            "category": "Data Security",
+            "status": "2: Yellow",
+            "criteria": [
+              
+                {
+                  "summary": "The product is kept protected with software updates for a clearly defined and communicated period of time (i.e., the product life cycle).",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The product life cycle is communicated to the potential owner before purchase.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Software updates are authenticated.",
+                        "procedure": "TBD"
+                      },
+                    
+                      {
+                        "indicator": "Automatic software updates",
+                        "procedure": "Examine software settings and product documentation to determine if automatic software updates are enabled by default or can be enabled by the user."
+                      },
+                    
+                      {
+                        "indicator": "Notification of software updates",
+                        "procedure": "If updates are not automatic, examine software settings and product documentation to determine if the product notifies the user if a software update is available, and if that notification is persistent, or if the user can easily determine if a software update is available."
+                      },
+                    
+                      {
+                        "indicator": "Ease of installation of software updates",
+                        "procedure": "Execute the procedure to install a software update and evaluate the ease of installation by comparing against established references."
+                      },
+                    
+                      {
+                        "indicator": "Software can be kept up-to-date for security issues.",
+                        "procedure": "Check if a later version of software exists but the product cannot be updated to it (e.g. Android devices with pre-KitKat versions)."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Vulnerability Disclosure Program",
+            "category": "Data Security",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The company is willing and able to address reports of vulnerabilities.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company has a mechanism (ex: a bug bounty program) through which security researchers can submit vulnerabilities they discover. The company discloses the timeframe in which it will review reports of vulnerabilities. The company commits not to pursue legal action against security researchers.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        ,
+      
+        
+          
+          
+          {
+            "title": "Personal Safety",
+            "category": "User Safety",
+            "status": "3: Red",
+            "criteria": [
+              
+                {
+                  "summary": "The company helps me protect myself from grief, abuse, and harassment.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "TBD",
+                        "procedure": "TBD"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        
+      
+    ]
+  },
+  
+  {
+    "section": "privacy",
+    "areas": [
+      
+        
+          
+          
+          {
+            "title": "Data Control",
+            "category": "Access and Control",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "I can see and control everything the company knows about me.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The definition of 'user information' includes information collected from third-parties.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Users can control the collection of their information.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Users can control how their information is used to target advertising.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Clear explanation of how users can control whether their information is used for targeted advertising.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Users can obtain a copy of their information.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Disclosure of what user information users can obtain",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Users can obtain their information in a structured data format.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Users can obtain all public-facing and private user information the company hold about them.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Privacy controls exist and are effective.",
+                        "procedure": "Look in the product's user interface to see what privacy controls exist and what the options are. If relevant, analyze network traffic to see if they are effective."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        ,
+      
+        
+          
+          
+          {
+            "title": "Data Sharing",
+            "category": "Data Use and Sharing",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "Data sharing is reasonably scoped and transparent.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company only shares information with third parties as is reasonably necessary to deliver service to consumers.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company clearly discloses what user information it shares with whom.",
+                        "procedure": "Analyze network traffic to see what third party domains are contacted by the product."
+                      },
+                    
+                      {
+                        "indicator": "The company clearly discloses the types of third parties with which it shares user information.",
+                        "procedure": "Analyze network traffic to see what third party domains are contacted by the product."
+                      },
+                    
+                      {
+                        "indicator": "The company clearly discloses the names of third parties with which it shares user information.",
+                        "procedure": "Analyze network traffic to see what third party domains are contacted by the product."
+                      },
+                    
+                      {
+                        "indicator": "The company clearly discloses whether it shares user information with government or legal authorities.",
+                        "procedure": "Analyze network traffic to see what third party domains are contacted by the product."
+                      },
+                    
+                      {
+                        "indicator": "Third party domains contacted by the product are named in the privacy policy.",
+                        "procedure": "Analyze network traffic to see what third party domains are contacted by the product."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Data Use",
+            "category": "Data Use and Sharing",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "Data usage is consistent with the context of the relationship with the user and is transparent.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company puts limits on the use of my data that are consistent with the purpose for which the data is collected.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company explicitly discloses every way in which it uses my data.",
+                        "procedure": "Interact with the service to evaluate how personal information is being used."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        ,
+      
+        
+          
+          
+          {
+            "title": "Data retention and deletion",
+            "category": "Data retention",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The company retains data only as long as relevant and reasonably necessary to provide service to me.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company on its own deletes outdated and unnecessary personal information, or renders that data to be reasonably deidentified.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company provides specific retention periods for different types of information that are reasonably scoped to get rid of outdated and unnecessary personal information.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                },
+              
+                {
+                  "summary": "I can delete the data the company has about me that is not needed to provide the service.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company offers easy-to-find and -use controls that allow users to delete data not necessary to render service.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses.Investigation of deletion tools offered by the company."
+                      }
+                    
+                  ]
+                },
+              
+                {
+                  "summary": "My account and information are deleted when I leave the service.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "All user information is deleted when the user's service is terminated, or the service no longer operates",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses.Terminate a test account, remove service from a device, or perform a factory reset on the device."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        ,
+      
+        
+          
+          
+          {
+            "title": "Data benefits",
+            "category": "Overreach - Collecting Too Much Data",
+            "status": "3: Red",
+            "criteria": [
+              
+                {
+                  "summary": "Every piece of data I share brings me a benefit; it doesn't just help the company.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company clearly discloses its purpose for collecting each type of user information.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses.Compare app documentation, app features, requested permissions, and observed network data to see if they align."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Data collection",
+            "category": "Overreach - Collecting Too Much Data",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "I know what user information this company is collecting and when.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "Disclosure of the type of user information collected",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Disclosure of how user information is collected",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": null,
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Minimal data collection",
+            "category": "Overreach - Collecting Too Much Data",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The only information the company collects about me is what's needed to make the product or service work correctly.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The user information collected is only that which is directly relevant and necessary for the service.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Product still works when all permissions not relevant to product's functionality are declined.",
+                        "procedure": "Decline permissions not relevant to the product's functionality, verify that product is still functional"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Privacy by default",
+            "category": "Overreach - Collecting Too Much Data",
+            "status": "2: Yellow",
+            "criteria": [
+              
+                {
+                  "summary": "The default settings in this product prioritize my privacy; to give up privacy, I actually need to change the settings.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "Targeted advertising is off by default.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "User interface settings which are optimal for privacy are set by default.",
+                        "procedure": "Review settings available from the user interface, and determine which options would be optimal for privacy considerations.Determine whether those options are selected by default."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        
+      
+    ]
+  },
+  
+  {
+    "section": "ownership",
+    "areas": [
+      
+        
+          
+          
+          {
+            "title": "Interoperability",
+            "category": "Ownership",
+            "status": "3: Red",
+            "criteria": [
+              
+                {
+                  "summary": "The company does not prohibit use of the product with other, complementary, products.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The manufacturer does not use software, copyright, or other devices to restrict the use of products and services that would otherwise be possible to use with your existing products (e.g., set-top boxes, third party applications, etc.).",
+                        "procedure": "TBD"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Ownership",
+            "category": "Ownership",
+            "status": "3: Red",
+            "criteria": [
+              
+                {
+                  "summary": "When I buy a product, I own every part of it.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company does not retain any control or ownership over the operation, use, inputs, or outputs of the product after it has been purchased by the consumer.",
+                        "procedure": "TBD"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Resale",
+            "category": "Ownership",
+            "status": "3: Red",
+            "criteria": [
+              
+                {
+                  "summary": "I can resell the product to someone and it will still work.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "If a consumer sells the product on the private market, the new owner has access to the full functionality of the original product.? Or does the company restrict the transfer of ownership",
+                        "procedure": "TBD"
+                      },
+                    
+                      {
+                        "indicator": "The company does not restrict the transfer of ownership.",
+                        "procedure": "TBD"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        ,
+      
+        
+          
+          
+          {
+            "title": "Functionality Over Time",
+            "category": "Permanence",
+            "status": "3: Red",
+            "criteria": [
+              
+                {
+                  "summary": "The company commits to maintain the intended functionality of the product for a clearly defined and communicated period of time (i.e., the product life cycle).",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The product life cycle is communicated to the potential owner before purchase.",
+                        "procedure": "TBD"
+                      },
+                    
+                      {
+                        "indicator": "Every feature of the product will continue to work the stated product life cycle; that is, the manufacturer will not 'brick' certain parts of the product during that time frame.",
+                        "procedure": "TBD"
+                      },
+                    
+                      {
+                        "indicator": "The manufacturer will not cease to support the functionality I come to expect during the product life cycle.",
+                        "procedure": "TBD"
+                      },
+                    
+                      {
+                        "indicator": "Replacement services will exist if the manufacturer ceases to support the functionality during the product life cycle.",
+                        "procedure": "TBD"
+                      },
+                    
+                      {
+                        "indicator": "The company commits that, in the event the company is sold or acquired, the new owner will maintain the intended functionality for the full product life cycle.",
+                        "procedure": "TBD"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Process for terms of service enforcement",
+            "category": "Permanence",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "I know how, when, and why the company or organization unilaterally closes user account sand/or restricts access to services.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company or organization clearly explains what types of activities it does not permit.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company or organization clearly explains why it may restrict a user’s account.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company or organization clearly discloses the mechanisms it uses to identify accounts that violate the rules.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company or organization clearly discloses whether any non-government and non-judicial entities receive priority consideration when identifying accounts to be restricted for violating the company’s rules, and if so, how that priority status is conferred.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company or organization clearly explains its process for enforcing its rules.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company or organization provides clear examples to help the user understand what the rules are and how they are enforced.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Transparency about Terms of Service enforcement",
+            "category": "Permanence",
+            "status": "2: Yellow",
+            "criteria": [
+              
+                {
+                  "summary": "I know how often the company or organization unilaterally closes user accounts",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company or organization publishes data about the number of accounts it restricts or closes on its own initiative.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company or organization publishes data about the number of accounts it restricts or closes as a result of a government request.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company or organization publishes data about the number of accounts it restricts or closes as a result of a request from private third-parties.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company or organization clearly discloses that it notifies users when it restricts or closes user accounts.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        ,
+      
+        
+          
+          
+          {
+            "title": "Repair Penalty",
+            "category": "Right to Repair",
+            "status": "3: Red",
+            "criteria": [
+              
+                {
+                  "summary": "I am not penalized for getting the product properly repaired by a third party or for repairing it myself.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company does not penalize consumers (voided warranty, etc.) if they get the product repaired by someone other than the original manufacturer or their authorized representatives.",
+                        "procedure": "TBD"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Repair Accessibility",
+            "category": "Right to Repair",
+            "status": "3: Red",
+            "criteria": [
+              
+                {
+                  "summary": "The product can be fixed by parties other than the manufacturer.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company does not use technical, feature-level, or legal means to block a consumer's ability to get a device repaired.",
+                        "procedure": "TBD"
+                      },
+                    
+                      {
+                        "indicator": "There is a competitive market of repair shops.",
+                        "procedure": "TBD"
+                      },
+                    
+                      {
+                        "indicator": "Repair shops, other than the manufacturer's, are supported by the original manufacturer.",
+                        "procedure": "TBD"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        
+      
+    ]
+  },
+  
+  {
+    "section": "governance",
+    "areas": [
+      
+        
+          
+          
+          {
+            "title": "Business model",
+            "category": "Business Model",
+            "status": "3: Red",
+            "criteria": [
+              
+                {
+                  "summary": "I understand how the company earns its revenue.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "TBD",
+                        "procedure": "TBD"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        ,
+      
+        
+          
+          
+          {
+            "title": "Governance",
+            "category": "Human Rights & Corporate Social Responsibility",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The company or organization publicly commits to respect users' human rights to freedom of expression and privacy.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "Explicit and clearly articulated policy commitment to human rights, including freedom of expression and privacy",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      }
+                    
+                  ]
+                },
+              
+                {
+                  "summary": "The company or organization's senior leadership exercises oversight over how its policies and practices affect freedom of expression and privacy.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The board of directors exercises formal oversight over how company practices affect freedom of expression and privacy.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "An executive-level committee, team, program or officer oversees how company practices affect freedom of expression and privacy.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "A management-level committee, team, program or officer oversees how company practices affect freedom of expression and privacy.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      }
+                    
+                  ]
+                },
+              
+                {
+                  "summary": "The company or organization should have mechanisms in place to implement its commitments to freedom of expression and privacy internally.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "Provides employee, volunteers or other staff training on freedom of expression and privacy issues",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "Maintains a whistleblower program through which employees, volunteers or other staff can report concerns related to how the company treats its users’ freedom of expression and privacy rights",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      }
+                    
+                  ]
+                },
+              
+                {
+                  "summary": "The company or organization implements due diligence processes, such as human rights impact assessments, to identify how all aspects of its activities affect freedom of expression and privacy and to mitigate any risks posed by those impacts.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "As part of its decision-making, considers how laws affect freedom of expression and privacy in jurisdictions where it operates",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "Regularly assesses free expression and privacy risks associated with existing products and services",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "Assesses free expression and privacy risks associated with a new activity, including the launch and/or acquisition of new products or services or entry into new markets",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "Assesses free expression and privacy risks associated with the processes and mechanisms used to enforce its Terms of Service",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "Conducts in-depth due diligence wherever the company’s risk assessments identify concerns",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "Senior executives and/or members of the company’s board of directors review and consider the results of assessments and due diligence in decision-making for the company",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "Conducts assessments on a regular schedule",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      }
+                    
+                  ]
+                },
+              
+                {
+                  "summary": "The company or organization engages with a range of stakeholders on freedom of expression and privacy issues.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company initiates or participates in meetings with stakeholders that represent, advocate on behalf of, or are people directly and adversely impacted by the company’s business",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      }
+                    
+                  ]
+                },
+              
+                {
+                  "summary": "The company or organization should have grievance and remedy mechanisms to address user's freedom of expression and privacy concerns.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company initiates or participates in meetings with stakeholders that represent, advocate on behalf of, or are people directly and adversely impacted by the company’s business",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "Clear disclosure of processes for receiving complaints",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "Process includes complaints related to freedom of expression and privacy",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "Clear disclosure of process for responding to complaints",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "The company reports on the number of complaints received.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      },
+                    
+                      {
+                        "indicator": "The company provides evidence that it is responding to complaints.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        ,
+      
+        
+          
+          
+          {
+            "title": "Open Innovation",
+            "category": "Open",
+            "status": "3: Red",
+            "criteria": [
+              
+                {
+                  "summary": "The company works to advance all technology and innovation, not just its own interests.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "TBD",
+                        "procedure": "TBD"
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Open Source",
+            "category": "Open",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The product's software is publicly available.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "Software is open source, meaning published under a license approved and listed by the Open Source Initiative. (https://opensource.org/licenses/alphabetical)",
+                        "procedure": "Determine if code is available. Determine type of open source license."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        ,
+      
+        
+          
+          
+          {
+            "title": "Terms of Service and Privacy Policy documents",
+            "category": "Privacy Policy & Terms of Service",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "I can easily find, read, and understand the privacy policy and/or terms of service.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company clearly discloses which Terms of Service (ToS) apply to the product/service in question.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The ToS are easy to find.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The ToS are available in the language(s) most commonly spoken by the company's users.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The ToS are presented in an understandable manner.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company clearly discloses which privacy policies apply to the product/service in question.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The privacy policies are easy to find.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The privacy policies are available in the languages(s) most commonly spoken by the company's users.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The privacy policies are presented in an understandable manner.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "ToS & Privacy Policy change notification",
+            "category": "Privacy Policy & Terms of Service",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The company provides clear notification when it changes its privacy policy and/or terms of service.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "Commitment to notify users about changes to the terms of service",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Disclosure of how users will be directly notified of changes to the terms of service",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Disclosure of timeframe for notification prior to changes to the terms of service coming into effect",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Maintains a public archive or change log of the terms of service",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Commitment to notify users about change to the privacy policy",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Disclosure of how users will be directly notified of changes to the privacy policy",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Disclosure of timeframe for notification prior to changes to the privacy policy coming into effect",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "Maintains a public archive or change log of the privacy policy",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        ,
+      
+        
+          
+          
+          {
+            "title": "3rd party requests for user data",
+            "category": "Transparency",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The company complies only with legal and ethical third-party requests for user information.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company explains its process for responding to non-judicial government requests.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company explains its process for responding to court orders.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company explains its process for responding to requests from foreign jurisdictions.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company explains its process for responding to requests made by private parties.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company’s explanations include the legal basis under which it may comply.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company commits to carry out due diligence on requests before deciding how to respond and to push back on unlawful requests.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company provides guidance or examples of implementation of its process.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Identity policy",
+            "category": "Transparency",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "I can register using any name and identifying characteristics I wish, or keep my identity completely anonymous.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company does not require users to verify their identity with their government-issued identification, or with other forms of identification that could be connected to their offline identity.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Threat Notification",
+            "category": "Transparency",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The company notifies appropriate authorities and those affected when a data breach occurs.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company will notify the relevant authorities without undue delay when a data breach occurs.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company clearly discloses its process for notifying data subjects who might be affected by a data breach.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company clearly discloses what kinds of steps it will take to address the impact of a data breach on its users.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "Transparency reporting",
+            "category": "Transparency",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The company is transparent about its practices for sharing user data with the government and other third parties.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company lists the number of requests it receives by country.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company lists the number of requests it receives for stored user information and for real-time communications access.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company lists the number of accounts affected.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company lists whether a demand sought communications content or non-content or both.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company identifies the specific legal authority or type of legal process through which law enforcement and national security demands are made.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company includes requests that come from court orders.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company list the number of requests it receives from private parties.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company lists the number of requests it complied with, broken down by category of demand.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company lists what types of government requests it is prohibited by law from disclosing.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company reports this data at least once per year.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The data reported by the company can be exported as a structured data file.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          },
+        
+          
+          
+          {
+            "title": "User notification about third-party requests for user information",
+            "category": "Transparency",
+            "status": "1: Green",
+            "criteria": [
+              
+                {
+                  "summary": "The company tells me if the government or other third parties ask for my information.",
+                  "indicators": [
+                    
+                      {
+                        "indicator": "The company notifies users when government entities (including courts or other judicial bodies) request their user information.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company notifies users when private parties request their user information.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      },
+                    
+                      {
+                        "indicator": "The company clearly discloses situations when it might not notify users, including a description of the types of government requests it is prohibited by law from disclosing to users.",
+                        "procedure": "Investigation and analysis of publicly available documentation to determine what the company clearly discloses."
+                      }
+                    
+                  ]
+                }
+              
+            ]
+          }
+        
+        
+      
+    ]
+  }
+  
+]
