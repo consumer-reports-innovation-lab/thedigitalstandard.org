@@ -1,6 +1,27 @@
 .case-study-label {
   h1 {
+    text-transform: uppercase;
+    color: $tds-green-200;
+    font-size: 1.75rem;
   }
   h2 {
+    font-family: $font-family-serif;
+    font-weight: 400;
+    margin-top: 0.5rem;
+  }
+  p {
+    opacity: 0.9;
+    margin-bottom: 2rem;
+  }
+  a {
+    color: $black;
+    text-decoration: underline;
+    opacity: 0.9;
+    transition: 0.2s;
+    &:focus,
+    &:hover {
+      opacity: 1;
+      color: $tds-orange-100;
+    }
   }
 }

@@ -4,13 +4,14 @@ layout: default
 <section class="bg-secondary">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label">
-        <h2>Case Study</h2>
-        <p>{{ page.title }}</p>
+      <div class="col-12 col-md-3 col-lg-4">
+        <h2 class="text-white ">Case Study</h2>
+        <p class="text-large mt-4 text-thin">{{ page.title }}</p>
       </div>
       <div class="col-12 col-md-9 col-lg-8">
-        <h2>Project Timeframe</h2>
-        <p>{{ page.title }}</p>
+        <h2 class="text-white">Project Timeframe</h2>
+        <p class="text-sans-serif mt-4">First Test Scores: {{ page.first_test_date }}</p>
+        <p class="text-sans-serif mt-n2">Latest Update: {{ page.latest_update_date }}</p>
       </div>
     </div>
   </div>
@@ -18,13 +19,17 @@ layout: default
 
 <section>
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label  || d-flex justify-content-end text-right">
-        <h2>Problem</h2>
+    <div class="row case-study-label">
+      <div class="col-12 col-md-3 col-lg-4 || d-flex justify-content-end text-right">
+        <h1 class="">Problem</h1>
       </div>
       <div class="col-12 col-md-9 col-lg-8">
         {{ page.problem_html }}
+        {% if page.problem_image %}
+        <img class="img-fluid mt-4" alt="" src="{{ page.problem_image }}" />
+        {% endif %}
       </div>
+
     </div>
   </div>
 </section>
@@ -80,4 +85,3 @@ layout: default
     </div>
   </div>
 </section>
-

@@ -34,6 +34,12 @@ defaults:
       layout: standard
       # variable_name: value
 
+process_methods:
+  - full testing
+  - full ratings
+  - comparative analysis
+  - qualitative interviews
+
 # Build settings
 safe: false
 sass:
@@ -86,3 +92,6 @@ _array_structures:
         indicator:
         procedure_html:
 
+_options:
+  layout:
+    hidden: true
