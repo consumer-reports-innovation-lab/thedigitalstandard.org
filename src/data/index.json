@@ -1,6 +1,6 @@
 ---
 layout: none
-permalink: api/v0.9/standard
+permalink: /data/
 ---
 [
   {% for section in site.data.standards %}
