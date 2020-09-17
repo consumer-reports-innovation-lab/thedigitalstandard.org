@@ -1,9 +1,8 @@
 ---
 layout: case-study
-_hide_content: true
 title: Connected Cameras
 lead_organiziation: Consumer Reports
-featured_image:
+featured_image: 'https://via.placeholder.com/500x500/333333/000000?text=Placeholder'
 timeline:
   first_test_date: 2019-12-18 00:00:00
   latest_update_date: 2020-06-09 00:00:00
@@ -25,7 +24,7 @@ problem:
     even after a password change. At the end of December 2019, it was also
     reported that Wyze had suffered a breach of their customer data, leaving
     customers open to unauthorized access of their cameras.</p>
-  problem_image:
+  problem_image: 'https://via.placeholder.com/1000x300/333333/000000?text=Placeholder'
 process:
   process_methods:
     - full testing
@@ -37,7 +36,7 @@ process:
     a set of Consumer Reports ratings for home security cameras available to
     consumers (image left) which incorporated data privacy and security
     categories. Consumer Reports also reviewed cameras in 2019.</p>
-  process_image:
+  process_image: 'https://via.placeholder.com/1000x300/333333/000000?text=Placeholder'
 impact:
   impact_html: >-
     <h2>Created Campaign Strategy</h2><p>In order to organize our efforts, the
@@ -45,13 +44,13 @@ impact:
     hacking incidents in the month of December 2019, reviewed the IP camera
     testing report from August 2019 and assembled a list of company contacts at
     the 25 manufacturers of connected camera products we have reviewed.</p>
-  impact_image:
+  impact_image: 'https://via.placeholder.com/1000x300/333333/000000?text=Placeholder'
 standard_mapping:
   standard_mapping_html: >-
     <p>This work incorporated several specific elements from the larger Digital
     Standard. Specifically, the comparative analysis used elements from the
     Privacy and Governance sections of the Standard:</p>
-  digital_standard_criteria_image:
+  digital_standard_criteria_image: 'https://via.placeholder.com/1000x300/333333/000000?text=Placeholder'
 who_was_involved:
   who_was_involved_html: >-
     <p>Katie McInnis, Justin Brookman were involved with leading the research,

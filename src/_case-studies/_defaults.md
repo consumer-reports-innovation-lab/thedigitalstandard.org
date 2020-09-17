@@ -1,6 +1,5 @@
 ---
 layout: case-study
-_hide_content: true
 title:
 lead_organiziation:
 featured_image:

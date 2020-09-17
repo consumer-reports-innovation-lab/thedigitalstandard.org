@@ -10,8 +10,9 @@ layout: default
       </div>
       <div class="col-12 col-md-9 col-lg-8">
         <h2 class="text-white">Project Timeframe</h2>
-        <p class="text-sans-serif mt-4">First Test Scores: {{ page.first_test_date }}</p>
-        <p class="text-sans-serif mt-n2">Latest Update: {{ page.latest_update_date }}</p>
+        {% assign date = page.timeline %}
+        <p class="text-sans-serif mt-4">First Test Scores: {{ date.first_test_date | date: "%B %y" }}</p>
+        <p class="text-sans-serif mt-n2">Latest Update: {{ date.latest_update_date | date: "%B %y" }}</p>
       </div>
     </div>
   </div>
@@ -24,9 +25,11 @@ layout: default
         <h1 class="">Problem</h1>
       </div>
       <div class="col-12 col-md-9 col-lg-8">
-        {{ page.problem_html }}
-        {% if page.problem_image %}
-        <img class="img-fluid mt-4" alt="" src="{{ page.problem_image }}" />
+        {% assign problem = page.problem %}
+        {{ problem.problem_html }}
+
+        {% if problem.problem_image %}
+        <img class="img-fluid mt-4" alt="The Problem" src="{{ problem.problem_image }}" />
         {% endif %}
       </div>
 
@@ -37,16 +40,19 @@ layout: default
 <section class="bg-grey">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-flex justify-content-end text-right">
-        <h1>Process/Method</h1>
-        {% for method in page.process_methods %}
-        <h2>{{ method.process_methods }}</h2>
+      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-flex text-right flex-column">
+        <h1>Process/Method:</h1>
+        {% assign process = page.process %}
+        {% assign methods = process.process_methods %}
+        {% for method in methods %}
+         <h2 class="m-2">{{method }}</h2>
         {% endfor %}
+
       </div>
       <div class="col-12 col-md-9 col-lg-8">
-        {{ page.process_html }}
-        {% if page.process_image %}
-        <img class="img-fluid mt-4" alt="" src="{{ page.process_image }}" />
+        {{ process.process_html }}
+        {% if process.process_image %}
+        <img class="img-fluid mt-4" alt="" src="{{ process.process_image }}" />
         {% endif %}
       </div>
     </div>
@@ -60,9 +66,10 @@ layout: default
         <h1>Output & Impact</h1>
       </div>
       <div class="col-12 col-md-9 col-lg-8">
-        {{ page.impact_html }}
-        {% if page.impact_image %}
-        <img class="img-fluid mt-4" alt="Output & Impact" src="{{ page.impact_image }}" />
+        {% assign impact = page.impact %}
+        {{ impact.impact_html }}
+        {% if impact.impact_image %}
+        <img class="img-fluid mt-4" alt="Output & Impact" src="{{ impact.impact_image }}" />
         {% endif %}
       </div>
     </div>
@@ -76,9 +83,10 @@ layout: default
         <h1 class="">DIGITAL STANDARD MAPPING</h1>
       </div>
       <div class="col-12 col-md-9 col-lg-8">
-        {{ page.standard_mapping_html }}
-        {% if page.digital_standard_criteria_image_image %}
-        <img class="img-fluid mt-4" alt="DIGITAL STANDARD MAPPING" src="{{ page.digital_standard_criteria_image_image }}" />
+        {% assign mapping = page.standard_mapping %}
+        {{ mapping.standard_mapping_html }}
+        {% if mapping.digital_standard_criteria_image %}
+        <img class="img-fluid mt-4" alt="DIGITAL STANDARD MAPPING" src="{{ mapping.digital_standard_criteria_image }}" />
         {% endif %}
       </div>
     </div>
@@ -92,7 +100,8 @@ layout: default
         <h1>WHO WAS INVOLVED?</h1>
       </div>
       <div class="col-12 col-md-9 col-lg-8">
-        {{ page.who_was_involved_html }}
+        {% assign organization = page.who_was_involved %}
+        {{ organization.who_was_involved_html }}
       </div>
     </div>
   </div>
