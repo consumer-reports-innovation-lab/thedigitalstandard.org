@@ -30,8 +30,9 @@
   list-style: none;
   background-color: $dropdown-bg;
   background-clip: padding-box;
+  z-index: 99;
   border: $dropdown-border-width solid $dropdown-border-color;
-  @include border-radius($dropdown-border-radius);
+  // @include border-radius($dropdown-border-radius);
   @include box-shadow($dropdown-box-shadow);
 }
 

@@ -18,15 +18,15 @@ layout: default
   </div>
 </section>
 
-<section class="overflow-visibile">
+<section class="overflow-visible">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-md-3 col-lg-4 || d-block  text-right ">
-        <div class="sticky-top">
+      <div class="col-12 col-md-3 col-lg-4 || d-block  text-md-right ">
+        <div class="sticky-top ">
           <h1 class="">Problem</h1>
         </div>
       </div>
-      <div class="col-12 col-md-9 col-lg-8">
+      <div class="col-12 col-md-9 col-lg-8 ">
         {% assign problem = page.problem %}
         {{ problem.problem_html }}
 
@@ -39,10 +39,10 @@ layout: default
   </div>
 </section>
 
-<section class="bg-grey overflow-visibile">
+<section class="bg-grey overflow-visible">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-flex text-right flex-column">
+      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-flex text-md-right flex-column">
         <div class="sticky-top">
           <h1>Process/Method:</h1>
           {% assign process = page.process %}
@@ -63,10 +63,10 @@ layout: default
   </div>
 </section>
 
-<section class="overflow-visibile">
+<section class="overflow-visible">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-block text-right">
+      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-block text-md-right">
         <div class="sticky-top">
           <h1>Output & Impact</h1>
         </div>
@@ -82,10 +82,10 @@ layout: default
   </div>
 </section>
 
-<section class="bg-grey overflow-visibile">
+<section class="bg-grey overflow-visible">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-block text-right">
+      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-block text-md-right">
         <div class="sticky-top">
           <h1 class="">DIGITAL STANDARD MAPPING</h1>
         </div>
@@ -93,18 +93,21 @@ layout: default
       <div class="col-12 col-md-9 col-lg-8">
         {% assign mapping = page.standard_mapping %}
         {{ mapping.standard_mapping_html }}
-        {% if mapping.digital_standard_criteria_image %}
-        <img class="img-fluid mt-4" alt="DIGITAL STANDARD MAPPING" src="{{ mapping.digital_standard_criteria_image }}" />
-        {% endif %}
+
       </div>
+    </div>
+    <div class="col-12">
+              {% if mapping.digital_standard_criteria_image %}
+              <img class="img-fluid mt-4" alt="DIGITAL STANDARD MAPPING" src="{{ mapping.digital_standard_criteria_image }}" />
+              {% endif %}
     </div>
   </div>
 </section>
 
-<section class="overflow-visibile">
+<section class="overflow-visible">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-block  text-right">
+      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-block  text-md-right">
         <h1>WHO WAS INVOLVED?</h1>
       </div>
       <div class="col-12 col-md-9 col-lg-8">

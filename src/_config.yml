@@ -46,6 +46,12 @@ process_methods:
   - comparative analysis
   - qualitative interviews
 
+case_study_status_understandings:
+  - Well understood
+  - Under development
+  - Under discussion
+
+
 # Build settings
 safe: false
 sass:

@@ -1,6 +1,7 @@
 ---
 layout: case-study
 title:
+case_study_status_understanding:
 lead_organiziation:
 featured_image:
 timeline:

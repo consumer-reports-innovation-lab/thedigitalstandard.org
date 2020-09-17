@@ -1,8 +1,9 @@
 ---
 layout: case-study
 title: Connected Cameras
+case_study_status_understanding:
 lead_organiziation: Consumer Reports
-featured_image:
+featured_image: 'https://via.placeholder.com/500x500/333333/000000?text=Placeholder'
 timeline:
   first_test_date: 2019-12-03 00:00:00
   latest_update_date: 2020-06-09 00:00:00
@@ -61,7 +62,7 @@ problem:
     Hackers</a> and this <a target="_blank" rel="noopener"
     href="https://advocacy.consumerreports.org/wp-content/uploads/2020/01/CR-Letter-to-Connected-Camera-Security-and-Doorbell-Manufacturers-1.13.20.pdf">advocacy
     letter to connected camera companies</a>]</em></p>
-  problem_image:
+  problem_image: 'https://via.placeholder.com/1000x300/333333/000000?text=Placeholder'
   image_alt_text:
 process:
   process_methods:
@@ -78,7 +79,7 @@ process:
     categories. Consumer Reports also <a target="_blank" rel="noopener"
     href="https://www.consumerreports.org/wireless-security-cameras/wyze-and-guardzilla-home-security-cameras-have-security-risks/">reviewed
     cameras in 2019</a>.</p>
-  process_image:
+  process_image: 'https://via.placeholder.com/1000x300/333333/000000?text=Placeholder'
   image_alt_text:
 impact:
   impact_html: >-
@@ -97,7 +98,7 @@ impact:
     reasonable cybersecurity measures in place in order for consumers to trust
     and use their products. Specifically, we <a target="_blank" rel="noopener"
     href="https://advocacy.consumerreports.org/wp-admin/post.php?post=54328&amp;action=edit">stated</a>:&nbsp;</p><blockquote><p><em>&ldquo;...Consumer
-    Reports writes to </em><em>urge your company to raise the standard of
+    Reports writes to urge your company to raise the standard of
     security for your connected camera, doorbell, or security system. We request
     clarification on the steps you are taking to prevent hacks and unauthorized
     access to these cameras and the systems that underlie them. We also want
@@ -157,14 +158,14 @@ impact:
     the goal of informing them about what we heard back from companies and how
     we are giving greater weight to automatic security updates and requiring
     two-factor authentication.&nbsp;</p>
-  impact_image:
+  impact_image: 'https://via.placeholder.com/1000x300/333333/000000?text=Placeholder'
   image_alt_text:
 standard_mapping:
   standard_mapping_html: >-
     <p>This work incorporated several specific elements from the larger Digital
     Standard. Specifically, the comparative analysis used elements from the
     Privacy and Governance sections of the Standard:</p>
-  digital_standard_criteria_image:
+  digital_standard_criteria_image: 'https://via.placeholder.com/1920x900/333333/000000?text=Placeholder'
 who_was_involved:
   who_was_involved_html: >-
     <p>Katie McInnis, Justin Brookman were involved with leading the research,
