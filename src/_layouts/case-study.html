@@ -34,14 +34,20 @@ layout: default
   </div>
 </section>
 
-<section>
+<section class="bg-grey">
   <div class="container">
-    <div class="row">
+    <div class="row case-study-label">
       <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-flex justify-content-end text-right">
-        <h2>Process/Method</h2>
+        <h1>Process/Method</h1>
+        {% for method in page.process_methods %}
+        <h2>{{ method.process_methods }}</h2>
+        {% endfor %}
       </div>
       <div class="col-12 col-md-9 col-lg-8">
-        {{ page.problem_html }}
+        {{ page.process_html }}
+        {% if page.process_image %}
+        <img class="img-fluid mt-4" alt="" src="{{ page.process_image }}" />
+        {% endif %}
       </div>
     </div>
   </div>
@@ -49,12 +55,31 @@ layout: default
 
 <section>
   <div class="container">
-    <div class="row">
+    <div class="row case-study-label">
       <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-flex justify-content-end text-right">
-        <h2>Output & Impact</h2>
+        <h1>Output & Impact</h1>
       </div>
       <div class="col-12 col-md-9 col-lg-8">
-        {{ page.problem_html }}
+        {{ page.impact_html }}
+        {% if page.impact_image %}
+        <img class="img-fluid mt-4" alt="Output & Impact" src="{{ page.impact_image }}" />
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-grey">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-flex justify-content-end text-right">
+        <h1 class="">DIGITAL STANDARD MAPPING</h1>
+      </div>
+      <div class="col-12 col-md-9 col-lg-8">
+        {{ page.standard_mapping_html }}
+        {% if page.digital_standard_criteria_image_image %}
+        <img class="img-fluid mt-4" alt="DIGITAL STANDARD MAPPING" src="{{ page.digital_standard_criteria_image_image }}" />
+        {% endif %}
       </div>
     </div>
   </div>
@@ -62,25 +87,12 @@ layout: default
 
 <section>
   <div class="container">
-    <div class="row">
+    <div class="row case-study-label">
       <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-flex justify-content-end text-right">
-        <h2 class="">DIGITAL STANDARD MAPPING</h2>
+        <h1>WHO WAS INVOLVED?</h1>
       </div>
       <div class="col-12 col-md-9 col-lg-8">
-        {{ page.problem_html }}
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-flex justify-content-end text-right">
-        <h2>WHO WAS INVOLVED?</h2>
-      </div>
-      <div class="col-12 col-md-9 col-lg-8">
-        {{ page.problem_html }}
+        {{ page.who_was_involved_html }}
       </div>
     </div>
   </div>
