@@ -101,3 +101,7 @@ _array_structures:
 _options:
   layout:
     hidden: true
+  content:
+    format: p h2 h3 h4 pre
+    removeformat: h1 h5 h6
+    embed: true
