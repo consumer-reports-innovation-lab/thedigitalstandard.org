@@ -25,13 +25,14 @@ collections:
     permalink: /standard/:path/
   case-studies:
     output: true
-    _hide_content: true
     permalink: /case-studies/:path/
-    layout:
-      hidden: true
-    content:
-      format: p h2 h3 h4 pre
-      embed: true
+    _hide_content: true
+    _options:
+      layout:
+        hidden: true
+      content:
+        format: p h2 h3 h4 pre
+        embed: true
 
 defaults:
   - scope:
