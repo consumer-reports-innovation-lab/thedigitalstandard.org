@@ -9,6 +9,11 @@
     font-weight: 400;
     margin-top: 0.5rem;
   }
+  .process-method {
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+    color: $tds-green-200;
+  }
   p {
     opacity: 0.9;
     margin-bottom: 2rem;
