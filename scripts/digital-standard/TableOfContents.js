@@ -10,7 +10,7 @@ const TableOfContents = ({ activeSection }) => {
         <i className="ri-more-2-fill" />
       </button>
       <div id="sectionNav">
-        {activeSection && activeSection.map(area => (
+        {activeSection && activeSection.areas.map(area => (
           <div key={area.slug}>
             <h4 className="nav-link pb-0" >{area.label}</h4>
             <ul className="nav flex-column" >

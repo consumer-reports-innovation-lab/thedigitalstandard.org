@@ -173,7 +173,7 @@
   align-items: center;
   justify-content: flex-end;
   z-index: 9;
-  box-shadow: 1px 1px 2px rgba($black, 0.25);
+  // box-shadow: 1px 1px 2px rgba($black, 0.25);
   .dropdown {
     margin-left: -25px;
     .dropdown-menu {
@@ -191,7 +191,7 @@
     .btn {
       padding: 15px;
       text-transform: none;
-      border: 0px;
+      border-color: transparent;
       background-color: $gray-600;
       color: $white;
       &:active,

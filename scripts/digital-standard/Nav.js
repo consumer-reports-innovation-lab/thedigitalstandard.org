@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const StandardNav = ({ activeSection, digitalStandard }) => {
+const Nav = ({ activeSection, digitalStandard }) => {
 
   return (
     <nav id="standardnav">
@@ -15,12 +15,12 @@ const StandardNav = ({ activeSection, digitalStandard }) => {
       </div>
 
       <ul className="nav py-2">
-        {digitalStandard && Object.entries(digitalStandard).map(section => {
+        {digitalStandard && digitalStandard.map(({ section }) => {
 
           return (
-            <li key={section[0]} className="nav-item">
-              <a className={`nav-link ${activeSection === section[0] ? 'active' : ''}`} href={`/standard/${section[0]}/`}>
-                {section[0]}
+            <li key={section} className="nav-item">
+              <a className={`nav-link ${activeSection === section ? 'active' : ''}`} href={`/standard/${section}/`}>
+                {section}
               </a>
             </li>
           )
@@ -32,9 +32,9 @@ const StandardNav = ({ activeSection, digitalStandard }) => {
   )
 }
 
-StandardNav.propTypes = {
+Nav.propTypes = {
   activeSection: PropTypes.string,
   digitalStandard: PropTypes.instanceOf(Object)
 }
 
-export default StandardNav
+export default Nav

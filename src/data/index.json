@@ -2,42 +2,45 @@
 layout: none
 permalink: /data/
 ---
-{
+[
   {% for section in site.data.standards %}
-  {{ section[0] | jsonify }}: [
+  {
+    "section": {{ section[0] | jsonify }},
+    "areas": [
       {% for principle in section[1].principles %}
-        {
-          "slug": {{ principle['label'] | slugify | jsonify }},
-          "label": {{ principle['label'] | jsonify }},
-          "standards": [
-            {% for string in principle.standards %}
-              {% assign slug = string | split: '/' | slice: 1 | first %}
-              {% assign standard = site.standards | where: 'slug', slug | first %}
-              {
-                "slug": {{ slug | jsonify }},
-                "title": {{ standard['title'] | jsonify }},
-                "category": {{ standard['standard_category'] | jsonify }},
-                "status": {{ standard['standard_state'] | jsonify }},
-                "criteria": [
-                  {% for criteria in standard.criteria %}
-                    {
-                      "summary": {{ criteria['criteria_summary'] | jsonify }},
-                      "indicators": [
-                        {% for item in criteria.indicators %}
-                          {
-                            "indicator": {{ item['indicator'] | jsonify}},
-                            "procedure": {{ item['procedure_html'] | jsonify}}
-                          }{% unless forloop.last %},{% endunless %}
-                        {% endfor %}
-                      ]
-                    }{% unless forloop.last %},{% endunless %}
-                  {% endfor %}
-                ]
-              }{% unless forloop.last %},{% endunless %}
-            {% endfor %}
-          ]
-        }{% unless forloop.last %},{% endunless %}
+      {
+        "slug": {{ principle['label'] | slugify | jsonify }},
+        "label": {{ principle['label'] | jsonify }},
+        "standards": [
+          {% for string in principle.standards %}
+            {% assign slug = string | split: '/' | slice: 1 | first %}
+            {% assign standard = site.standards | where: 'slug', slug | first %}
+            {
+              "slug": {{ slug | jsonify }},
+              "title": {{ standard['title'] | jsonify }},
+              "category": {{ standard['standard_category'] | jsonify }},
+              "status": {{ standard['standard_state'] | jsonify }},
+              "criteria": [
+                {% for criteria in standard.criteria %}
+                  {
+                    "summary": {{ criteria['criteria_summary'] | jsonify }},
+                    "indicators": [
+                      {% for item in criteria.indicators %}
+                        {
+                          "indicator": {{ item['indicator'] | jsonify}},
+                          "procedure": {{ item['procedure_html'] | jsonify}}
+                        }{% unless forloop.last %},{% endunless %}
+                      {% endfor %}
+                    ]
+                  }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              ]
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }{% unless forloop.last %},{% endunless %}
       {% endfor %}
-    ]{% unless forloop.last %},{% endunless %}
+    ]
+  }{% unless forloop.last %},{% endunless %}
   {% endfor %}
-}
+]
