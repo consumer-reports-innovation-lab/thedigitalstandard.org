@@ -1,6 +1,6 @@
 ---
 title: Connected Cameras
-case_study_status_understanding:
+case_study_status_understanding: Well understood
 lead_organiziation: Consumer Reports
 featured_image: 'https://via.placeholder.com/500x500/333333/000000?text=Placeholder'
 timeline:
@@ -97,8 +97,8 @@ impact:
     reasonable cybersecurity measures in place in order for consumers to trust
     and use their products. Specifically, we <a target="_blank" rel="noopener"
     href="https://advocacy.consumerreports.org/wp-admin/post.php?post=54328&amp;action=edit">stated</a>:&nbsp;</p><blockquote><p><em>&ldquo;...Consumer
-    Reports writes to urge your company to raise the standard of
-    security for your connected camera, doorbell, or security system. We request
+    Reports writes to urge your company to raise the standard of security for
+    your connected camera, doorbell, or security system. We request
     clarification on the steps you are taking to prevent hacks and unauthorized
     access to these cameras and the systems that underlie them. We also want
     makers of connected devices to know that CR&rsquo;s ratings will continue to
