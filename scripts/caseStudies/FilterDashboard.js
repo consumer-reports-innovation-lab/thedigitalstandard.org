@@ -1,20 +1,20 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-import { ExploreProvider } from './FilterContext'
-import ExploreList from "./FilterList"
-import ExploreFilters from "./Filters"
+import { FilterProvider } from './FilterContext'
+import FilterList from "./FilterList"
+import Filters from "./Filters"
 
 const FilterDashboard = () => {
   return (
     <>
-      <ExploreProvider>
+      <FilterProvider>
         <section>
           <div className="container">
-            <ExploreFilters />
-            <ExploreList />
+            <Filters />
+            <FilterList />
           </div>
         </section>
-      </ExploreProvider>
+      </FilterProvider>
     </>
   )
 }

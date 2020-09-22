@@ -2,10 +2,10 @@ import React, { useContext } from "react"
 import SelectInput from './SelectInput'
 import BasicSelectInput from './BasicSelectInput'
 import { OrgOptions, StatusOptions } from './FilterOptions'
-import { ExploreContext } from './FilterContext'
+import { FilterContext } from './FilterContext'
 
-const ExploreFilters = () => {
-  const [state, setState] = useContext(ExploreContext)
+const Filters = () => {
+  const [state, setState] = useContext(FilterContext)
 
   return (
     <>
@@ -35,4 +35,4 @@ const ExploreFilters = () => {
   )
 }
 
-export default ExploreFilters
+export default Filters
