@@ -1,5 +1,4 @@
 ---
-layout: case-study
 title: Connected Cameras
 case_study_status_understanding:
 lead_organiziation: Consumer Reports

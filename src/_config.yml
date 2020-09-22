@@ -27,11 +27,7 @@ collections:
     output: true
     permalink: /case-studies/:path/
     _hide_content: true
-    _options:
-      content:
-        format: p h2 h3 h4 pre
-        removeformat: h1 h5 h6
-        embed: true
+
 
 defaults:
   - scope:
@@ -39,6 +35,25 @@ defaults:
     values:
       layout: standard
       # variable_name: value
+  - scope:
+      type: 'case-studies'
+    values:
+      layout: case-study
+      _options:
+        format: p h2 h3 h4 pre address div
+        bold: true
+        italic: true
+        link: true
+        numberedlist: true
+        bulletedlist: true
+        subscript: true
+        superscript: true
+        horizontalrule: true
+        right: true
+        left: true
+        center: true
+        image: true
+        embed: true
 
 process_methods:
   - full testing
@@ -104,10 +119,3 @@ _array_structures:
         indicator:
         procedure_html:
 
-_options:
-  layout:
-    hidden: true
-  content:
-    format: p h2 h3 h4 pre
-    removeformat: h1 h5 h6
-    embed: true
