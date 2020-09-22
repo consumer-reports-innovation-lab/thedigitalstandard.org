@@ -2,7 +2,7 @@
 title: Connected Cameras
 case_study_status_understanding: Well understood
 lead_organiziation: Consumer Reports
-featured_image: 'https://via.placeholder.com/500x500/333333/000000?text=Placeholder'
+featured_image: /uploads/connected-cameras.jpg
 timeline:
   first_test_date: 2019-12-03 00:00:00
   latest_update_date: 2020-06-09 00:00:00
