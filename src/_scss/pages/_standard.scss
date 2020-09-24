@@ -1,7 +1,6 @@
 .standard-layout {
   .sidebar {
     position: fixed;
-    z-index: 9;
     left: -275px;
     top: 113px;
     padding: 1.75rem;
@@ -181,6 +180,7 @@
       border-radius: 0px;
       margin-top: 6px;
       border: 0px;
+      z-index: 9999;
       a:hover,
       a:active,
       a:focus {
@@ -195,8 +195,11 @@
       background-color: $gray-600;
       color: $white;
       &:active,
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: $secondary;
+        outline: 0;
+        box-shadow: none;
       }
     }
   }

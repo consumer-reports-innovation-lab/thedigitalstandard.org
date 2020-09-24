@@ -21,6 +21,7 @@
     "bootstrap": "^4.4.1",
     "concurrently": "^5.1.0",
     "html-react-parser": "^0.14.0",
+    "query-string": "^6.13.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "remixicon": "^2.4.0"

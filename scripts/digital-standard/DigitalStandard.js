@@ -1,38 +1,120 @@
 import React, { useState, useEffect } from 'react'
 // import PropTypes from 'prop-types'
 import axios from 'axios'
-import Nav from './Nav'
 import TableOfContents from './TableOfContents'
 import Criteria from './Criteria'
 
-// const queryString = window.location.search
-// const urlParams = new URLSearchParams(queryString)
+const queryString = window.location.search
+const urlParams = new URLSearchParams(queryString)
+const urlSection = window.location.pathname.split('/').filter(str => str !== '' && str !== 'standard')[0]
 
-const section = window.location.pathname.split('/').filter(str => str !== '' && str !== 'standard')[0]
 
 const DigitalStandard = () => {
+  const [loading, setLoading] = useState(true)
+  const [releases, setReleases] = useState([])
+  const [activeRelease, setActiveRelease] = useState(urlParams.get('version'))
   const [digitalStandard, setDigitalStandard] = useState([])
   const [activeSection, setActiveSection] = useState(false)
   const [nextSection, setNextSection] = useState('')
 
   useEffect(async () => {
-    // const standard = await axios(`https://thedigitalstandard.github.io/thedigitalstandard.org/v0.0.1/`)
-    const standard = await axios(`http://localhost:4000/data/index.json`)
+    try {
+      const getReleases = await axios('https://api.github.com/repos/TheDigitalStandard/thedigitalstandard.org/releases')
+      setReleases(getReleases.data.map(release => release.tag_name))
 
-    setDigitalStandard(standard.data)
-    if (section) {
-      setActiveSection(standard.data.find(item => item.section === section))
-      const index = standard.data.findIndex(item => item.section === section)
-      const loop = standard.data.length > index + 1
-      const nextIndex = loop ? index + 1 : 0
-      setNextSection(standard.data[nextIndex].section)
+      const standard = await axios(`https://thedigitalstandard.github.io/thedigitalstandard.org/${activeRelease}/`)
+      if (!standard) {
+        setDigitalStandard(false)
+        throw error
+      }
+      if (standard) {
+        setDigitalStandard(standard.data)
+        if (urlSection) {
+          setActiveSection(standard.data.find(item => item.section === urlSection))
+          const index = standard.data.findIndex(item => item.section === urlSection)
+          const loop = standard.data.length > index + 1
+          const nextIndex = loop ? index + 1 : 0
+          setNextSection(standard.data[nextIndex].urlSection)
+        }
+      }
+
+      setLoading(false)
+    } catch (error) {
+      console.log(error)
+      // setLoading(false)
     }
 
   }, [])
 
+  if (loading) {
+    return (
+      <section className="bg-primary bg-fill">
+        <div className="container">
+          <div className="row justify-content-center text-center">
+            <div className="col-12 col-sm-8 col-md-6">
+              <div className="">
+                {!digitalStandard ? (
+                  <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                ) : (
+                    <div className="text-white">
+                      <p>
+                        <strong>Uh Oh....</strong><br />
+                        It looks like you are requesting a version of the standard that does not exist. Please select one of the following:
+                      </p>
+
+                      {releases && releases.map(release => (
+                        <a
+                          className="btn btn-block btn-dark text-nocase"
+                          href={`${window.location.pathname}?version=${release}`}>
+                          {release}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
   return (
     <div className="standard-layout">
-      <Nav activeSection={section} digitalStandard={digitalStandard} />
+      <nav id="standardnav">
+        <div className="dropdown mr-3">
+          <button className="btn btn-secondary dropdown-toggle d-none d-sm-flex align-items-center" type="button" id="versionDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {activeRelease}
+          </button>
+          <div className="dropdown-menu" aria-labelledby="versionDropDown">
+            <strong className="px-3">Choose version:</strong><br />
+            {releases && releases.map(release => (
+              <a
+                className="dropdown-item"
+                href={`${window.location.pathname}?version=${release}`}>
+                {release}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <ul className="nav py-2">
+          {digitalStandard && digitalStandard.map(({ section }) => {
+
+            return (
+              <li key={section} className="nav-item">
+                <a className={`nav-link ${activeSection === section ? 'active' : ''}`} href={`/standard/${section}/${queryString}`}>
+                  {section}
+                </a>
+              </li>
+            )
+          })}
+        </ul>
+
+        <a className="editable d-none d-md-flex" id="downloadCTA" href="/download/standard.csv">Download the Digital Standard (.csv)</a>
+      </nav>
       {activeSection && (
         <>
           <TableOfContents activeSection={activeSection} />

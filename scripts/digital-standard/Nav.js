@@ -7,10 +7,10 @@ const Nav = ({ activeSection, digitalStandard }) => {
     <nav id="standardnav">
       <div className="dropdown mr-3">
         <button className="btn btn-secondary dropdown-toggle d-none d-sm-flex align-items-center" type="button" id="versionDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          v1.0
+          v0.0.1
         </button>
         <div className="dropdown-menu" aria-labelledby="versionDropDown">
-          <a className="dropdown-item" href="#">version 0.9</a>
+          {/* <a className="dropdown-item" href="#">version 0.9</a> */}
         </div>
       </div>
 
