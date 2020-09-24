@@ -1,4 +1,7 @@
 .standard-layout {
+  #pageContent {
+    min-height: calc(100vh - 100px);
+  }
   .sidebar {
     position: fixed;
     left: -275px;
