@@ -102,7 +102,7 @@ const DigitalStandard = () => {
                 })}
               </ul>
 
-              <a className="editable d-none d-md-flex" id="downloadCTA" href="/download/standard.csv">Download the Digital Standard (.csv)</a>
+              <a className="d-none d-md-flex" id="downloadCTA" href={`https://thedigitalstandard.github.io/thedigitalstandard.org/${activeRelease}/standard.csv`}>Download the Digital Standard (.csv)</a>
             </nav>
             {activeSection && (
               <>
