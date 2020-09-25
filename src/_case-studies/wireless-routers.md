@@ -72,7 +72,7 @@ impact:
     on:&nbsp;</h3><ul><li>Privacy policies and their mentions of what
     manufacturers might collect from users such as network speeds, the name of
     an internet service provider, and how much data people are transmitting to
-    the web.</li></ul><ul><li>Disabling features not inuse (e.g. Universal Plug
+    the web.</li><li>Disabling features not inuse (e.g. Universal Plug
     and Play)</li></ul>
   impact_image:
   image_alt_text:

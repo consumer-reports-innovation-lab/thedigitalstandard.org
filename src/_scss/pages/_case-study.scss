@@ -26,6 +26,11 @@
     font-weight: 600;
     margin-top: 0.5rem;
   }
+  h3 {
+    font-family: $font-family-serif;
+    font-weight: 400;
+    margin-top: 0.5rem;
+  }
   .process-method {
     font-family: $font-family-sans-serif;
     text-transform: uppercase;
@@ -46,6 +51,16 @@
       color: $tds-orange-100;
     }
   }
+  ol,
+  ul {
+    padding: 15px;
+    font-family: $font-family-sans-serif !important;
+    font-size: 1rem;
+    margin: 25px;
+    li {
+      margin-bottom: 0.75rem;
+    }
+  }
 }
 
 blockquote {
@@ -53,14 +68,5 @@ blockquote {
   p {
     font-family: $font-family-sans-serif !important;
     font-size: 1rem;
-  }
-}
-ol {
-  padding: 15px;
-  font-family: $font-family-sans-serif !important;
-  font-size: 1rem;
-  margin: 25px;
-  li {
-    margin-bottom: 0.75rem;
   }
 }

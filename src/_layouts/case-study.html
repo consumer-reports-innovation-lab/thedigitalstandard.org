@@ -4,11 +4,11 @@ layout: default
 <section class="bg-secondary">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-3 col-lg-4">
+      <div class="col-12 col-lg-4">
         <h2 class="text-white ">Case Study</h2>
         <p class="text-large mt-4 text-thin">{{ page.title }}</p>
       </div>
-      <div class="col-12 col-md-9 col-lg-8">
+      <div class="col-12 col-lg-8">
         <h2 class="text-white">Project Timeframe</h2>
         {% assign date = page.timeline %}
         <p class="text-sans-serif mt-4">First Test Scores: {{ date.first_test_date | date: "%B %Y" }}</p>
@@ -21,12 +21,12 @@ layout: default
 <section class="overflow-visible">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-md-3 col-lg-4 || d-block  text-md-right ">
+      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
         <div class="sticky-top ">
           <h1 class="">Problem</h1>
         </div>
       </div>
-      <div class="col-12 col-md-9 col-lg-8 ">
+      <div class="col-12 col-lg-8 ">
         {% assign problem = page.problem %}
         {{ problem.problem_html }}
 
@@ -42,18 +42,18 @@ layout: default
 <section class="bg-grey overflow-visible">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-flex text-md-right flex-column">
+      <div class="col-12 col-lg-4 || case-study-label || d-flex text-lg-right flex-column">
         <div class="sticky-top">
           <h1>Process/Method:</h1>
           {% assign process = page.process %}
           {% assign methods = process.process_methods %}
           {% for method in methods %}
-          <h2 class="m-2 process-method">{{method }}</h2>
+          <h2 class="my-2 process-method">{{method }}</h2>
           {% endfor %}
         </div>
 
       </div>
-      <div class="col-12 col-md-9 col-lg-8">
+      <div class="col-12 col-lg-8">
         {{ process.process_html }}
         {% if process.process_image %}
         <img class="img-fluid mt-4" alt="{{ process.image_alt_text }}" src="{{ process.process_image }}" />
@@ -66,12 +66,12 @@ layout: default
 <section class="overflow-visible">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-block text-md-right">
+      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
         <div class="sticky-top">
           <h1>Output & Impact</h1>
         </div>
       </div>
-      <div class="col-12 col-md-9 col-lg-8">
+      <div class="col-12 col-lg-8">
         {% assign impact = page.impact %}
         {{ impact.impact_html }}
         {% if impact.impact_image %}
@@ -85,12 +85,12 @@ layout: default
 <section class="bg-grey overflow-visible">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-block text-md-right">
+      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
         <div class="sticky-top">
           <h1 class="">DIGITAL STANDARD MAPPING</h1>
         </div>
       </div>
-      <div class="col-12 col-md-9 col-lg-8">
+      <div class="col-12 col-lg-8">
         {% assign mapping = page.standard_mapping %}
         {{ mapping.standard_mapping_html }}
 
@@ -103,15 +103,15 @@ layout: default
     </div>
   </div>
 </section>
-              {% if mapping.who_was_involved_html %}
+              {% if page.who_was_involved.who_was_involved_html %}
 
 <section class="overflow-visible">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-md-3 col-lg-4 || case-study-label || d-block  text-md-right">
+      <div class="col-12 col-lg-4 || case-study-label || d-block  text-lg-right">
         <h1>WHO WAS INVOLVED?</h1>
       </div>
-      <div class="col-12 col-md-9 col-lg-8">
+      <div class="col-12 col-lg-8">
         {% assign organization = page.who_was_involved %}
         {{ organization.who_was_involved_html }}
       </div>
