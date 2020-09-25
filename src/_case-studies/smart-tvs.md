@@ -146,7 +146,7 @@ impact:
   image_alt_text:
 standard_mapping:
   standard_mapping_html:
-  digital_standard_criteria_image:
+  digital_standard_criteria_image: /uploads/mapping-3.png
 who_was_involved:
   who_was_involved_html:
 ---
