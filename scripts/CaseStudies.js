@@ -82,6 +82,9 @@ const CaseStudies = () => {
                   ))}
                 </div>
               </div>
+
+              {/*
+              Hiding Status Filters in UI
               <div className="dropdown ml-lg-3">
                 <button className="btn btn-secondary dropdown-toggle blue-button p-3 small-text" type="button" data-toggle="dropdown">
                   {state.filterByStatus || 'Filter by Status'}
@@ -92,10 +95,12 @@ const CaseStudies = () => {
                     <button className="dropdown-item" onClick={() => setState({ ...state, filterByStatus: status })}>{status}</button>
                   ))}
                 </div>
-              </div>
+              </div> */}
+
             </div>
             <div className="col-12 col-sm-6 d-flex align-items-center justify-content-end">
               {/*
+              Hiding sorting
               <a href="#" className="casestudy-sort">A - Z</a>
               <a href="#" className="ml-lg-3 casestudy-sort">Recent</a>
               */}
