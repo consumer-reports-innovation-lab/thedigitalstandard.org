@@ -61,8 +61,8 @@ problem:
     Hackers</a> and this <a target="_blank" rel="noopener"
     href="https://advocacy.consumerreports.org/wp-content/uploads/2020/01/CR-Letter-to-Connected-Camera-Security-and-Doorbell-Manufacturers-1.13.20.pdf">advocacy
     letter to connected camera companies</a>]</em></p>
-  problem_image: /uploads/mapping-01-inline.png
-  image_alt_text: Videoconferencing Services - a comparative analysis of privacy policies
+  problem_image:
+  image_alt_text:
 process:
   process_methods:
     - full testing
@@ -164,7 +164,7 @@ standard_mapping:
     <p>This work incorporated several specific elements from the larger Digital
     Standard. Specifically, the comparative analysis used elements from the
     Privacy and Governance sections of the Standard:</p>
-  digital_standard_criteria_image: /uploads/mapping-1.png
+  digital_standard_criteria_image: /uploads/mapping-2.png
 who_was_involved:
   who_was_involved_html: >-
     <p>Katie McInnis, Justin Brookman were involved with leading the research,
