@@ -1,0 +1,16 @@
+---
+layout: none
+permalink: /case-studies/data
+---
+[
+{% for study in site.case-studies %}
+  {
+    "title": {{ study['title'] | jsonify }},
+    "slug": {{ study['title'] | slugify | jsonify }},
+    "url": {{ study['url'] | jsonify }},
+    "featured_image": {{ study['featured_image'] | jsonify }},
+    "lead_organization": {{ study['lead_organization'] | jsonify }},
+    "status": {{ study['case_study_status_understanding'] | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

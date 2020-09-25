@@ -1,7 +1,7 @@
 ---
 title: Videoconferencing Services
 case_study_status_understanding: Under development
-lead_organiziation: Consumer Reports
+lead_organization: Consumer Reports
 featured_image: /uploads/videoconfrencing.jpg
 timeline:
   first_test_date: 2020-03-18 00:00:00

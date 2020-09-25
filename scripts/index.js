@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import HelloWorld from './HelloWorld'
-import DigitalStandard from 'DigitalStandard'
+import CaseStudies from './CaseStudies'
 
 const COMPONENTS = {
   HelloWorld,
-  DigitalStandard
+  CaseStudies
 }
 
 function renderComponentInElement(el) {

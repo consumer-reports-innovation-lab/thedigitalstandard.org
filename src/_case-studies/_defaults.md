@@ -1,7 +1,7 @@
 ---
 title:
 case_study_status_understanding:
-lead_organiziation:
+lead_organization:
 featured_image:
 timeline:
   first_test_date:

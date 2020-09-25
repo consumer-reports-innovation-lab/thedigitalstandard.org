@@ -1,7 +1,7 @@
 ---
 title: Smart TVs
 case_study_status_understanding: Well understood
-lead_organiziation: Consumer Reports
+lead_organization: Consumer Reports
 featured_image: /uploads/smart-tvs.jpg
 timeline:
   first_test_date: 2018-02-13 00:00:00
