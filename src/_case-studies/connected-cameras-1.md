@@ -164,7 +164,7 @@ standard_mapping:
     <p>This work incorporated several specific elements from the larger Digital
     Standard. Specifically, the comparative analysis used elements from the
     Privacy and Governance sections of the Standard:</p>
-  digital_standard_criteria_image: 'https://via.placeholder.com/1920x900/333333/000000?text=Placeholder'
+  digital_standard_criteria_image: /uploads/mapping-1.png
 who_was_involved:
   who_was_involved_html: >-
     <p>Katie McInnis, Justin Brookman were involved with leading the research,
