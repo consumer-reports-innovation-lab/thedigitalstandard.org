@@ -40,8 +40,8 @@ problem:
     href="https://medium.com/cr-digital-lab/skype-meet-webex-videoconference-privacy-845bc8360fd3">Webex:
     10 ways videoconferencing systems can better protect privacy for
     customers</a>]</em></p>
-  problem_image:
-  image_alt_text:
+  problem_image: /uploads/mapping-01-inline.png
+  image_alt_text: Videoconferencing Services - a comparative analysis of privacy policies
 process:
   process_methods:
     - comparative analysis
@@ -133,7 +133,7 @@ standard_mapping:
     <p>This work incorporated several specific elements from the larger Digital
     Standard. Specifically, the comparative analysis used elements from the
     Privacy and Governance sections of the Standard:</p>
-  digital_standard_criteria_image:
+  digital_standard_criteria_image: /uploads/mapping-1.png
 who_was_involved:
   who_was_involved_html:
 ---
