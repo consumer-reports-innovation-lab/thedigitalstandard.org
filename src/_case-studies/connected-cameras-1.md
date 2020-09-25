@@ -78,7 +78,7 @@ process:
     categories. Consumer Reports also <a target="_blank" rel="noopener"
     href="https://www.consumerreports.org/wireless-security-cameras/wyze-and-guardzilla-home-security-cameras-have-security-risks/">reviewed
     cameras in 2019</a>.</p>
-  process_image: 'https://via.placeholder.com/1000x300/333333/000000?text=Placeholder'
+  process_image:
   image_alt_text:
 impact:
   impact_html: >-
@@ -157,7 +157,7 @@ impact:
     the goal of informing them about what we heard back from companies and how
     we are giving greater weight to automatic security updates and requiring
     two-factor authentication.&nbsp;</p>
-  impact_image: 'https://via.placeholder.com/1000x300/333333/000000?text=Placeholder'
+  impact_image:
   image_alt_text:
 standard_mapping:
   standard_mapping_html: >-
