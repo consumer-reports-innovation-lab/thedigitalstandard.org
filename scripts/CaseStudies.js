@@ -76,7 +76,7 @@ const CaseStudies = () => {
                   {state.filterByOrg || 'Filter by Organization'}
                 </button>
                 <div className="dropdown-menu">
-                  <button className="dropdown-item" onClick={() => setState({ ...state, filterByOrg: false })}>All</button>
+                  <button className="dropdown-item" onClick={() => setState({ ...state, filterByOrg: '' })}>All</button>
                   {state.organizations && state.organizations.map(organization => (
                     <button className="dropdown-item" onClick={() => setState({ ...state, filterByOrg: organization })}>{organization}</button>
                   ))}
@@ -90,7 +90,7 @@ const CaseStudies = () => {
                   {state.filterByStatus || 'Filter by Status'}
                 </button>
                 <div className="dropdown-menu">
-                  <button className="dropdown-item" onClick={() => setState({ ...state, filterByStatus: false })}>All</button>
+                  <button className="dropdown-item" onClick={() => setState({ ...state, filterByStatus: '' })}>All</button>
                   {state.statuses && state.statuses.map(status => (
                     <button className="dropdown-item" onClick={() => setState({ ...state, filterByStatus: status })}>{status}</button>
                   ))}
