@@ -144,64 +144,6 @@
   }
 }
 
-#standardnav {
-  padding-left: 25px;
-  background-color: $tds-blue-300;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  .dropdown {
-    margin-left: -25px;
-    .dropdown-menu {
-      background-color: $gray-100;
-      border-radius: 0px;
-      margin-top: 6px;
-      border: 0px;
-      a:hover,
-      a:active,
-      a:focus {
-        color: $secondary;
-        background-color: transparent;
-      }
-    }
-    .btn {
-      padding: 15px;
-      text-transform: none;
-      border: 0px;
-      background-color: $gray-600;
-      color: $white;
-      &:active,
-      &:hover {
-        background-color: $secondary;
-      }
-    }
-  }
-  .nav {
-    margin-right: auto;
-  }
-  .nav-link {
-    padding: 0.5rem 0.75rem;
-    color: $gray-600;
-    border: 0;
-    font-size: 0.85rem;
-    font-family: sofia-pro, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    &.active,
-    &:hover {
-      color: $white;
-    }
-  }
-  #downloadCTA {
-    font-size: 0.85rem;
-    padding-right: 30px;
-    &.active,
-    &:hover {
-      color: $white;
-      text-decoration: none;
-    }
-  }
-}
 @media (max-width: 991px) {
   #primarynav {
     .navbar-nav {

@@ -95,8 +95,10 @@ const CaseStudies = () => {
               </div>
             </div>
             <div className="col-12 col-sm-6 d-flex align-items-center justify-content-end">
-              {/* <a href="#" className="casestudy-sort">A - Z</a>
-              <a href="#" className="ml-lg-3 casestudy-sort">Recent</a> */}
+              {/*
+              <a href="#" className="casestudy-sort">A - Z</a>
+              <a href="#" className="ml-lg-3 casestudy-sort">Recent</a>
+              */}
             </div>
           </div>
         </div>
