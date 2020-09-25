@@ -18,7 +18,10 @@
   .active {
     color: $tds-blue-300;
     border-bottom: 2px solid $tds-orange-200;
-    pointer-events: none;
+    // pointer-events: none;
+    &:before {
+      display: none !important;
+    }
   }
   #nav-the-standard {
     color: $white;
@@ -33,7 +36,7 @@
       background-color: $dark;
       color: $white;
       pointer-events: visible;
-      border-bottom: 2px solid transparent;
+      // border-bottom: 2px solid transparent;
     }
     &:hover::before {
       border-bottom: 0px;
@@ -73,6 +76,10 @@
       margin: 0 auto;
       transition: all 0.5s;
       z-index: -1;
+      border-bottom: solid 2px $secondary;
+    }
+    &:before.active {
+      width: 100%;
     }
     &:hover::before {
       border-bottom: solid 2px $secondary;

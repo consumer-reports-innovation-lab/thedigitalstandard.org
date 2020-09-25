@@ -1,0 +1,66 @@
+#caseStudyButton {
+  display: inline-block;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 25px;
+  text-transform: uppercase;
+  background-color: $tds-green-200;
+  color: $tds-blue-300;
+  box-shadow: inset 0px 0px 0px $tds-blue-300;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    box-shadow: inset 0px -80px 0px $tds-blue-300;
+  }
+}
+
+.case-study-label {
+  h1 {
+    text-transform: uppercase;
+    color: $tds-green-200;
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-family: $font-family-serif;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  .process-method {
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+    color: $tds-green-200;
+  }
+  p {
+    opacity: 0.9;
+    margin-bottom: 2rem;
+  }
+  a {
+    color: $tds-blue-200;
+    text-decoration: underline;
+    opacity: 0.9;
+    transition: 0.2s;
+    &:focus,
+    &:hover {
+      opacity: 1;
+      color: $tds-orange-100;
+    }
+  }
+}
+
+blockquote {
+  margin: 25px;
+  p {
+    font-family: $font-family-sans-serif !important;
+    font-size: 1rem;
+  }
+}
+ol {
+  padding: 15px;
+  font-family: $font-family-sans-serif !important;
+  font-size: 1rem;
+  margin: 25px;
+  li {
+    margin-bottom: 0.75rem;
+  }
+}

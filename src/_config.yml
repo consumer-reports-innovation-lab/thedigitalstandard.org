@@ -23,14 +23,49 @@ collections:
   standards:
     output: true
     permalink: /standard/:path/
+  case-studies:
+    output: true
+    permalink: /case-studies/:path/
+    _hide_content: true
+
 
 defaults:
-  -
-    scope:
+  - scope:
       type: 'standards'
     values:
       layout: standard
       # variable_name: value
+  - scope:
+      type: 'case-studies'
+    values:
+      layout: case-study
+      _options:
+        format: p h2 h3 h4 pre address div
+        bold: true
+        italic: true
+        link: true
+        numberedlist: true
+        bulletedlist: true
+        subscript: true
+        superscript: true
+        horizontalrule: true
+        right: true
+        left: true
+        center: true
+        image: true
+        embed: true
+
+process_methods:
+  - full testing
+  - full ratings
+  - comparative analysis
+  - qualitative interviews
+
+case_study_status_understandings:
+  - Well understood
+  - Under development
+  - Under discussion
+
 
 # Build settings
 safe: false

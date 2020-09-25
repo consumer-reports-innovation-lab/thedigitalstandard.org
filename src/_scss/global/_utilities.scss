@@ -53,7 +53,7 @@
 }
 
 .small-text {
-  font-size: 0.875rem;
+  font-size: 0.875rem !important;
   line-height: 1.4rem;
 }
 .large-text {
@@ -67,6 +67,22 @@
 .value-icon {
   margin: 20px 0;
   height: 40px;
+}
+
+.casestudy-sort {
+  text-transform: uppercase;
+  color: $tds-blue-300;
+  font-weight: 600;
+  padding: 8px 3px;
+
+  &:focus,
+  &:hover {
+    color: $tds-blue-300;
+    text-decoration: none;
+    border-bottom: 2px solid $tds-blue-300;
+  }
+  &:active {
+  }
 }
 
 .white-button {
@@ -89,6 +105,26 @@
     box-shadow: inset 0px -80px 0px $tds-green-100;
     color: $tds-blue-300;
   }
+}
+.blue-button {
+  color: $white;
+  border: 1px solid $tds-blue-300;
+  background-color: $tds-blue-300;
+  box-shadow: inset 0px 0px 0px $tds-blue-100;
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px -80px 0px $tds-blue-100;
+    // color: $tds-blue-300;
+    background-color: $tds-blue-200 !important;
+    color: $white !important;
+  }
+  &:active {
+    box-shadow: inset 0px -80px 0px $tds-blue-200;
+    background-color: $tds-blue-200 !important;
+  }
+}
+.overflow-visible {
+  overflow: visible !important;
 }
 
 .btn-full-width {
@@ -113,6 +149,14 @@
   &.bg-contain {
     background-size: contain;
   }
+}
+
+.bg-secondary {
+  background-color: $tds-orange-100;
+}
+
+.bg-grey {
+  background-color: $gray-100;
 }
 
 // Color utilities

@@ -1,0 +1,15 @@
+---
+layout: none
+permalink: api/filter
+---
+
+[
+  {% for study in site.caseStudies %}
+    {
+      "title": {{ study['title'] | jsonify }},
+      "lead_organization": {{ study['org'] | jsonify }},
+      "featured_image": {{ study['image'] | jsonify }},
+      "url": {{ study['url'] | jsonify }},
+    },
+  {% endfor %}
+]
