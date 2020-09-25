@@ -1,7 +1,7 @@
 ---
 title: Wireless Routers
 case_study_status_understanding:
-lead_organization: Consumer reports
+lead_organization: Consumer Reports
 featured_image: /uploads/wireless-routers.jpg
 timeline:
   first_test_date: 2019-01-06 00:00:00
