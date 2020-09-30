@@ -1,5 +1,5 @@
 ---
-title: The Digital Standard | Connected Cameras
+title: Connected Cameras
 case_study_status_understanding: Well understood
 lead_organization: Consumer Reports
 featured_image: /uploads/connected-cameras.jpg
