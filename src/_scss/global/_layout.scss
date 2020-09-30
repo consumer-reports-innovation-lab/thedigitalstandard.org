@@ -36,3 +36,13 @@
     }
   }
 }
+
+.copyright {
+  font-size: 0.875rem;
+  font-family: $font-family-sans-serif;
+  color: $tds-grey-300;
+  // text-align: center;
+  border-top: 1px solid $tds-grey-300;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
