@@ -126,8 +126,15 @@ impact:
   impact_image:
   image_alt_text:
 standard_mapping:
-  standard_mapping_html:
+  standard_mapping_html: >-
+    <ol><li>Security<ul><li>Data security</li><li>User
+    safety</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data use
+    and sharing</li><li>Data retention</li><li>Overreach - collecting too much
+    data</li></ul></li><li>Ownership<ul><li>Interoperability&nbsp;</li></ul></li><li>Governance
+    and Compliance<ul><li>Privacy Policy &amp; Terms of
+    Service</li><li>Transparency</li></ul></li></ol>
   digital_standard_criteria_image: /uploads/mapping-5.png
 who_was_involved:
   who_was_involved_html:
 ---
+
