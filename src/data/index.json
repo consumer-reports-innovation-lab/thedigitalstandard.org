@@ -20,6 +20,7 @@ permalink: /data/
               "title": {{ standard['title'] | jsonify }},
               "category": {{ standard['standard_category'] | jsonify }},
               "status": {{ standard['standard_state'] | jsonify }},
+              "github_url": {{ standard['github_url'] | jsonify }},
               "criteria": [
                 {% for criteria in standard.criteria %}
                   {

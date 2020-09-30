@@ -130,24 +130,6 @@
   .standard-content {
     min-height: calc(100vh - 610px);
     padding-top: 55px;
-    #standardBreadCrumbs {
-      margin-bottom: 25px;
-      color: $gray-600;
-      a {
-        color: $gray-600;
-        font-weight: 600;
-        font-size: 0.875rem;
-        &:active,
-        &:hover {
-          text-decoration: none;
-          color: $tds-blue-300;
-        }
-      }
-      .active {
-        color: $tds-blue-300;
-        font-weight: 600;
-      }
-    }
     h1 {
       font-size: 2rem;
     }

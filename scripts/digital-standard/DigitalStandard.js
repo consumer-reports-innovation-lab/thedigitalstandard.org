@@ -26,6 +26,7 @@ const DigitalStandard = () => {
         window.location.replace(`${window.location.pathname}?version=${getReleases.data[0].tag_name}`)
       }
       const standard = await axios(`https://thedigitalstandard.github.io/thedigitalstandard.org/${activeRelease}/`)
+      // const standard = await axios(`http://localhost:4000/data/index.json`)
       if (standard) {
         setDigitalStandard(standard.data)
         if (urlSection) {
@@ -120,6 +121,9 @@ const DigitalStandard = () => {
                         return (
                           <div key={standard.slug} id={standard.slug} className="row" >
                             <div className="col-12">
+                              <p className="text-sans-serif text-muted text-capitalize">
+                                <small>{activeSection.section} / {area.label} / <span className="text-dark">{standard.title}</span></small>
+                              </p>
                               <div className="d-flex align-items-center flex-wrap">
                                 <div>
                                   <h1 className="text-serif text-thin mr-5 mb-n1">{area.label}</h1>
@@ -147,7 +151,7 @@ const DigitalStandard = () => {
                   ))}
                   <div className="px-5">
                     <a href={`/standard/${nextSection}`} className="btn btn-full-width">Next Test Category:&nbsp;
-                <span className="font-weight-bold">{nextSection}&nbsp; &#9654;</span>
+                      <span className="font-weight-bold">{nextSection}&nbsp; &#9654;</span>
                     </a>
                   </div>
                 </div>
