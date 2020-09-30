@@ -115,8 +115,12 @@ impact:
   impact_image: /uploads/mapping-04-inline.png
   image_alt_text: 5 Period Tracker Apps
 standard_mapping:
-  standard_mapping_html:
+  standard_mapping_html: >-
+    <ol><li>Security<ul><li>Build quality</li><li>Data
+    security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
+    use and sharing</li></ul></li></ol>
   digital_standard_criteria_image: /uploads/mapping-4.png
 who_was_involved:
   who_was_involved_html:
 ---
+
