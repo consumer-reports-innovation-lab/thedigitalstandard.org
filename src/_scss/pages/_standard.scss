@@ -1,4 +1,6 @@
 .standard-layout {
+  opacity: 1;
+  @include transition(0.5s);
   #pageContent {
     min-height: calc(100vh - 100px);
   }
@@ -128,8 +130,10 @@
     }
   }
   .standard-content {
+    opacity: 1;
     min-height: calc(100vh - 610px);
     padding-top: 55px;
+    @include transition(1s);
     h1 {
       font-size: 2rem;
     }
@@ -140,6 +144,9 @@
     @include media-breakpoint-up(lg) {
       margin-left: 300px;
     }
+  }
+  &.loading {
+    opacity: 0;
   }
   #pageFooter {
     @include media-breakpoint-up(lg) {

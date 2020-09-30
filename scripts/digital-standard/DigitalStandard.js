@@ -22,15 +22,13 @@ const DigitalStandard = () => {
       const getReleases = await axios('https://api.github.com/repos/TheDigitalStandard/thedigitalstandard.org/releases')
       setReleases(getReleases.data.map(release => release.tag_name))
       if (!activeRelease) {
-        // console.log(getReleases.data[0].tag_name)
         window.location.replace(`${window.location.pathname}?version=${getReleases.data[0].tag_name}`)
       }
       const standard = await axios(`https://thedigitalstandard.github.io/thedigitalstandard.org/${activeRelease}/`)
       // const standard = await axios(`http://localhost:4000/data/index.json`)
       if (standard) {
         setDigitalStandard(standard.data)
-        console.log(standard.data)
-
+        setLoading(false)
         if (urlSection) {
           setActiveSection(standard.data.find(item => item.section === urlSection))
           const index = standard.data.findIndex(item => item.section === urlSection)
@@ -42,6 +40,7 @@ const DigitalStandard = () => {
 
     } catch (error) {
       console.log(error)
+      setLoading(false)
       setDigitalStandard(false)
     }
 
@@ -49,7 +48,7 @@ const DigitalStandard = () => {
 
 
   return (
-    <>
+    <div className={`standard-layout ${loading ? 'loading' : ''}`}>
       {!digitalStandard ? (
         <section>
           <div className="container">
@@ -74,7 +73,7 @@ const DigitalStandard = () => {
           </div>
         </section>
       ) : (
-          <div className="standard-layout">
+          <>
             <nav id="standardnav">
               <div className="dropdown mr-3">
                 <button className="btn btn-secondary dropdown-toggle d-none d-sm-flex align-items-center" type="button" id="versionDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -159,9 +158,9 @@ const DigitalStandard = () => {
                 </div>
               </>
             )}
-          </div>
+          </>
         )}
-    </>
+    </div>
   )
 }
 
