@@ -120,8 +120,13 @@ impact:
   impact_image:
   image_alt_text:
 standard_mapping:
-  standard_mapping_html:
+  standard_mapping_html: >-
+    <ol><li>Security<ul><li>Build quality</li><li>Data
+    security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
+    use and sharing</li></ul></li><li>Governance and
+    Compliance<ul><li>Transparency</li></ul></li></ol>
   digital_standard_criteria_image: /uploads/mapping-8.png
 who_was_involved:
   who_was_involved_html:
 ---
+
