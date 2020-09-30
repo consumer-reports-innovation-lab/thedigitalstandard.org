@@ -163,7 +163,12 @@ standard_mapping:
   standard_mapping_html: >-
     <p>This work incorporated several specific elements from the larger Digital
     Standard. Specifically, the comparative analysis used elements from the
-    Privacy and Governance sections of the Standard:</p>
+    Privacy and Governance sections of the
+    Standard:</p><ol><li>Security<ul><li>Build quality</li><li>Data
+    security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
+    use and sharing</li><li>Data retention</li><li>Overreach - collecting too
+    much data</li></ul></li><li>Governance and compliance<ul><li>Privacy Policy
+    and Terms of Service</li><li>Transparency</li></ul></li></ol>
   digital_standard_criteria_image: /uploads/mapping-2.png
 who_was_involved:
   who_was_involved_html: >-
@@ -172,3 +177,4 @@ who_was_involved:
     a number of individuals from teams across research and testing, policy,
     content, and more.</p>
 ---
+
