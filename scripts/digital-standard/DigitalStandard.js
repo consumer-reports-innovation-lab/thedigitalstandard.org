@@ -29,12 +29,14 @@ const DigitalStandard = () => {
       // const standard = await axios(`http://localhost:4000/data/index.json`)
       if (standard) {
         setDigitalStandard(standard.data)
+        console.log(standard.data)
+
         if (urlSection) {
           setActiveSection(standard.data.find(item => item.section === urlSection))
           const index = standard.data.findIndex(item => item.section === urlSection)
           const loop = standard.data.length > index + 1
           const nextIndex = loop ? index + 1 : 0
-          setNextSection(standard.data[nextIndex].urlSection)
+          setNextSection(standard.data[nextIndex].section)
         }
       }
 
@@ -149,7 +151,7 @@ const DigitalStandard = () => {
                       )}
                     </div>
                   ))}
-                  <div className="px-5">
+                  <div className="px-5 mb-5">
                     <a href={`/standard/${nextSection}`} className="btn btn-full-width">Next Test Category:&nbsp;
                       <span className="font-weight-bold">{nextSection}&nbsp; &#9654;</span>
                     </a>
