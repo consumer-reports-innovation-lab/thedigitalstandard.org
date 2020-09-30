@@ -12,15 +12,45 @@ title: The Digital Standard | Contact
             supporting The Digital
             Standard.</p>
           <div class="pt-md-5 mb-5">
-          <div class="cognito">
-            <script src="https://www.cognitoforms.com/s/bbN8iw1MJUqjPe6aHn-_rw"></script>
-            <script>Cognito.load("forms", { id: "81" });</script>
-            <div class="preloader ">
-              <img src="../img/Contact/spinner-1.png" />
-              <img src="../img/Contact/spinner-2.png" />
-              <img src="../img/Contact/spinner-3.png" />
-            </div>
-          </div>
+            <form method="post" action="/thanks.html">
+              <input type="hidden" name="_to" value="digitallab@cr.consumer.org">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name">
+                    <label for="name" class="">Name</label>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email">
+                    <label for="email" class="">Email</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <select class="form-control" id="subject">
+                      <option></option>
+                      <option value="I want to collaborate or provide feedback on The Digital Standard">I want to collaborate or provide feedback on The Digital Standard</option>
+                      <option value="My company wants to use The Digital Standard to evaluate products">My company wants to use The Digital Standard to evaluate products</option>
+                      <option value="Media request">Media request</option>
+                      <option value="General inquiries">General inquiries</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

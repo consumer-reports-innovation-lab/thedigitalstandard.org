@@ -116,3 +116,17 @@
     color: $dark;
   }
 }
+
+// Forms
+.form-control {
+  border-radius: 0;
+  border-color: $tds-grey-300;
+}
+.form-group {
+  label {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    color: $tds-grey-300;
+  }
+}
