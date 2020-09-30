@@ -171,10 +171,6 @@ standard_mapping:
     and Terms of Service</li><li>Transparency</li></ul></li></ol>
   digital_standard_criteria_image: /uploads/mapping-2.png
 who_was_involved:
-  who_was_involved_html: >-
-    <p>Katie McInnis, Justin Brookman were involved with leading the research,
-    strategy and policy efforts for this work. This initiative was an effort by
-    a number of individuals from teams across research and testing, policy,
-    content, and more.</p>
+  who_was_involved_html:
 ---
 
