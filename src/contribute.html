@@ -43,7 +43,7 @@ partners:
     <div class="col-12 col-lg-6 bg-light">
       <div class="content py-5 my-3 my-lg-5">
         <h2 class="mb-5 text-serif editable animate-text-fade-up">
-          
+
         </h2>
         <p class="editable animate-text-fade-up">
           The Digital Standard is maintained by researchers, developers, and advocates who believe human interests should drive the development of consumer technologies.
@@ -103,20 +103,19 @@ partners:
   </div>
 </section>
 
-<section id="current-partners">
+<section id="current-partners" class="pt-0">
+  <div class="text-center bg-light p-5 mb-5">
+    <h1 class="editable animate-text-fade-up">
+      Current Partners
+    </h1>
+  </div>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6 border-right animate-text-fade-up">
-        <div class="bg-fill text-center">
-          <h1 class="editable animate-text-fade-up">
-            Current Partners
-          </h1>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 animate-text-fade-up">
-        <nav class="nav flex-column d-flex">
+      <div class="col-12 animate-text-fade-up">
+        <nav class="nav flex-wrap d-flex">
           {% for partner in page.partners %}
-            <a class="nav-link my-3 animate-text-fade-up d-flex" href="{{ partner.url }}" target="_blank" title="{{ partner.name }}">
+            <a class="nav-link my-3 animate-text-fade-up w-50 text-center" href="{{ partner.url }}" target="_blank"
+              title="{{ partner.name }}">
               <img class="partner-logo " src="{{ partner.logo_path }}" alt="{{ partner.name }}" />
             </a>
           {% endfor %}
