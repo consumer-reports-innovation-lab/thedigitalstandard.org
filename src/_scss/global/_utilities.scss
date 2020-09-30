@@ -149,6 +149,38 @@
   &.bg-contain {
     background-size: contain;
   }
+  &.aspect-1x1 {
+    padding-top: 100%;
+    video {
+      left: -25%;
+      height: 100%;
+      max-width: none;
+      width: auto;
+      object-fit: cover;
+    }
+    video[poster] {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  &.aspect-2x1 {
+    padding-top: 50%;
+  }
+  &.aspect-3x1 {
+    padding-top: 33%;
+  }
+  &.aspect-4x3 {
+    padding-top: 75%;
+  }
+  &.aspect-5x7 {
+    padding-top: 120%;
+  }
+  &.aspect-16x9 {
+    padding-top: 56.25%;
+  }
 }
 
 .bg-secondary {
