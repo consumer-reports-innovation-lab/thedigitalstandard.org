@@ -113,13 +113,17 @@ const CaseStudies = () => {
           <div className="row">
             {state.filteredStudies && state.filteredStudies.map(study => (
               <div key={study.slug} className="col-12 col-sm-6 col-lg-4">
-                <img
-                  className="img-fluid mb-3"
-                  alt={study.title}
-                  src={study.featured_image}
-                />
-                <a href={study.url} className="text-medium">{study.title}</a>
-                <p className="mt-2 text-medium text-thin">{study.lead_organization}</p>
+                <div className="mb-5">
+                  <a href={study.url} title={study.title}>
+                    <img
+                      className="img-fluid mb-3"
+                      alt={study.title}
+                      src={study.featured_image}
+                    />
+                  </a>
+                  <a href={study.url} className="text-medium">{study.title}</a>
+                  <p className="mt-2 text-medium text-thin">{study.lead_organization}</p>
+                </div>
               </div>
             ))}
           </div>
