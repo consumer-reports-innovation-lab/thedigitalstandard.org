@@ -7,6 +7,7 @@ const CaseStudies = () => {
   const { history } = window
   const filterByOrg = urlParams.get('filterByOrg') || ''
   const filterByStatus = urlParams.get('filterByStatus') || ''
+  const [loading, setLoading] = useState(true)
   const [state, setState] = useState({
     studies: [],
     organizations: [],
@@ -31,6 +32,7 @@ const CaseStudies = () => {
       organizations: organizations,
       statuses: statuses
     })
+    setLoading(false)
   }, [])
 
   useEffect(() => {
@@ -60,8 +62,10 @@ const CaseStudies = () => {
     return filteredStudies
   }
 
+
   return (
     <>
+      <div className={`bg-loading ${loading ? '' : 'loaded'}`} />
       <section className="bg-secondary overflow-visible">
         <div className="container">
           <div className="row">
