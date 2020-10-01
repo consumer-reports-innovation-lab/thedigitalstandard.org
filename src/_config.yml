@@ -1,8 +1,8 @@
 # Site settings
 client: Consumer Reports
-title: Digital Standard
-email: dev@ocupop.com
-# url: "https://ocupop.github.io"
+title: The Digital Standard
+email: digitallab@cr.consumer.org
+# url:
 permalink: pretty
 
 # Social sharing
