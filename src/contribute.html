@@ -111,16 +111,13 @@ partners:
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-12 animate-text-fade-up">
-        <nav class="nav flex-wrap d-flex">
-          {% for partner in page.partners %}
-            <a class="nav-link my-3 animate-text-fade-up w-50 text-center" href="{{ partner.url }}" target="_blank"
-              title="{{ partner.name }}">
-              <img class="partner-logo " src="{{ partner.logo_path }}" alt="{{ partner.name }}" />
-            </a>
-          {% endfor %}
-        </nav>
+      {% for partner in page.partners %}
+      <div class="col-12 col-sm-6 col-lg-3 animate-text-fade-up">
+        <a class="bg-fill p-5 p-lg-3 my-4 animate-text-fade-up text-center" href="{{ partner.url }}" target="_blank" title="{{ partner.name }}">
+          <img class="img-fluid" src="{{ partner.logo_path }}" alt="{{ partner.name }}" />
+        </a>
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>
