@@ -76,6 +76,11 @@ plugins:
 placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
 
 standard_states: ['1: Green', '2: Yellow', '3: Red']
+sections:
+  - Security
+  - Privacy
+  - Ownership
+  - Governance
 categories:
   - Data Security
   - Build Quality
@@ -100,8 +105,8 @@ _array_structures:
       icon: folder
       value:
         label:
-        areas:
-  areas:
+        categories:
+  categories:
     - label: Standard Categories
       icon: folder
       value:
