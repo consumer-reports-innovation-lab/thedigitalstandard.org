@@ -10,9 +10,32 @@ problem: true
 process: true
 impact: true
 who: false
-
 digital_standard_criteria_image: /uploads/mapping-5.png
 sections:
+  - section: Security
+    areas:
+      - Build Quality
+      - Data Security
+      - User Safety
+  - section: Privacy
+    areas:
+      - Access and Control
+      - Data Use and Sharing
+      - Data retention
+      - Overreach - Collecting Too Much Data
+  - section: Ownership
+    areas:
+      - Ownership
+      - Permanence
+      - Right to Repair
+      - Interoperability
+  - section: Governance
+    areas:
+      - Business Model
+      - Human Rights & Corporate Social Responsibility
+      - Open
+      - Privacy Policy & Terms of Service
+      - Transparency
 ---
 
 
