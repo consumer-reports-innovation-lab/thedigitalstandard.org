@@ -95,7 +95,13 @@ categories:
 
 # Cloudcannon Configuration
 _array_structures:
-  categories:
+  sections:
+    - label: Standard Sections
+      icon: folder
+      value:
+        label:
+        areas:
+  areas:
     - label: Standard Categories
       icon: folder
       value:
