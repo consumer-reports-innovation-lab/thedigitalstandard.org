@@ -6,9 +6,29 @@ featured_image: /uploads/payment-apps.jpg
 timeline:
   first_test_date: 2016-10-07 00:00:00
   latest_update_date: 2018-08-18 00:00:00
-problem:
-  problem_html: >-
-    <h2>Unclear legal agreements:</h2><p>Peer-to-peer payment app providers
+problem: true
+process: true
+impact: true
+who_was_involved: false
+
+digital_standard_criteria_image: /uploads/mapping-5.png
+sections:
+---
+
+
+{% if page.problem %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+        <div class="sticky-top ">
+          <h2 class="editable h1">Problem</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8 ">
+        <div class="editable">
+              <h2>Unclear legal agreements:</h2><p>Peer-to-peer payment app providers
     deserve credit for designing simple and easy-to-use applications that belie
     their underlying technological and financial sophistication. But that
     simplicity smooths over more than just technical wizardry. It also hides a
@@ -34,13 +54,27 @@ problem:
     href="https://www.consumerreports.org/digital-payments/peer-to-peer-payments-are-generally-safe-but-consumers-must-be-aware-of-risks/">Peer-to-Peer
     Payments Are Generally Safe, But Consumers Must Be Aware of
     Risks</a>]</em></p>
-  problem_image:
-  image_alt_text:
-process:
-  process_methods:
-    - full testing
-  process_html: >-
-    <h2>Full testing on 5 mobile P2P services:</h2><p>In light of the quick rise
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.process %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+        <div class="sticky-top">
+          <h2 class="editable h1">Process/Method</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+              <h2>Full testing on 5 mobile P2P services:</h2><p>In light of the quick rise
     of P2P&mdash;and its potential financial and privacy risks&mdash;Consumer
     Reports tested five mobile P2P services to see how they stacked up for user
     protections. This included ratings that spanned privacy and security,
@@ -56,11 +90,27 @@ process:
     Facebook P2P Payments in Messenger, and Zelle. We rated each of the five
     services good enough to use. The ratings are visualized below:&nbsp;<br
     />&nbsp;</p>
-  process_image: /uploads/mapping-05-inline.png
-  image_alt_text: Mobile peer-to-peer payment services chart
-impact:
-  impact_html: >-
-    <h2>Consumer Reports ratings article and in-depth review:</h2><p><a
+    <p><img src="/uploads/mapping-05-inline.png" alt="Mobile peer-to-peer payment services chart"/></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.impact %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Output & Impact</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+              <h2>Consumer Reports ratings article and in-depth review:</h2><p><a
     target="_blank" rel="noopener"
     href="https://www.consumerreports.org/digital-payments/mobile-p2p-payment-services-review/">Why
     Apple Pay Is the Highest-Rated Mobile P2P Payment Service</a>. This article
@@ -123,18 +173,53 @@ impact:
     href="https://www.consumerreports.org/video/view/money/news/5850989568001/peer-to-peer-payment-apps/">shows
     how consumers can protect themselves</a> when using peer-to-peer payment
     apps.&nbsp;</p>
-  impact_image:
-  image_alt_text:
-standard_mapping:
-  standard_mapping_html: >-
-    <ol><li>Security<ul><li>Data security</li><li>User
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.sections %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Digital Standard Mapping</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+            <ol><li>Security<ul><li>Data security</li><li>User
     safety</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data use
     and sharing</li><li>Data retention</li><li>Overreach - collecting too much
     data</li></ul></li><li>Ownership<ul><li>Interoperability&nbsp;</li></ul></li><li>Governance
     and Compliance<ul><li>Privacy Policy &amp; Terms of
     Service</li><li>Transparency</li></ul></li></ol>
-  digital_standard_criteria_image: /uploads/mapping-5.png
-who_was_involved:
-  who_was_involved_html:
----
+        </div>
+      </div>
+    </div>
+    {% include standard_mapping.html %}
+  </div>
+</section>
+{% endif %}
 
+{% if page.who_was_involved %}
+  <section class="overflow-visible">
+    <div class="container">
+      <div class="row case-study-label">
+        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+          <h2 class="editable h1">Who was involved?</h2>
+          <div class="editable"></div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="editable">
+            Add details...
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

@@ -6,8 +6,28 @@ featured_image: /uploads/connected-vacuums.jpg
 timeline:
   first_test_date: 2019-08-19 00:00:00
   latest_update_date: 2019-08-19 00:00:00
-problem:
-  problem_html: >-
+problem: true
+process: true
+impact: true
+who_was_involved: false
+
+digital_standard_criteria_image: /uploads/mapping-6.png
+sections:
+---
+
+
+{% if page.problem %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+        <div class="sticky-top ">
+          <h2 class="editable h1">Problem</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8 ">
+        <div class="editable">
     <h2>Data sharing &amp; third parties:</h2><p>In an interview with Reuters
     published in July 2017, iRobot CEO Colin Angle suggested his company might
     one day share the mapping data collected by Roomba robotic vacuum cleaners
@@ -39,33 +59,97 @@ problem:
     target="_blank" rel="noopener"
     href="https://www.consumerreports.org/robotic-vacuums/can-a-robotic-vacuum-replace-your-canister-or-upright/">CR
     Article: Can a Robotic Vacuum Replace Your Upright Vacuum?]</a></em></p>
-  problem_image:
-  image_alt_text:
-process:
-  process_methods:
-    - full ratings
-  process_html: >-
-    <p>Consumer Reports highlighted their <a target="_blank" rel="noopener"
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.process %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+        <div class="sticky-top">
+          <h2 class="editable h1">Process/Method</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+              <p>Consumer Reports highlighted their <a target="_blank" rel="noopener"
     href="https://www.consumerreports.org/products/vacuum-cleaners/robotic-vacuum/view2/">vacuum
     cleaner full ratings</a> on the website, including criteria using data
     privacy and data security.&nbsp;</p>
-  process_image:
-  image_alt_text:
-impact:
-  impact_html: >-
-    <p><a target="_blank" rel="noopener"
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.impact %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Output & Impact</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+              <p><a target="_blank" rel="noopener"
     href="https://www.consumerreports.org/robotic-vacuums/can-a-robotic-vacuum-replace-your-canister-or-upright/">CR
     Article: Can a Robotic Vacuum Replace Your Upright Vacuum?</a><br
     />&nbsp;</p>
-  impact_image:
-  image_alt_text:
-standard_mapping:
-  standard_mapping_html: >-
-    <ol><li>Privacy<ul><li>Access and control</li><li>Data use and
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.sections %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Digital Standard Mapping</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+            <ol><li>Privacy<ul><li>Access and control</li><li>Data use and
     sharing</li></ul></li><li>Governance and
     Compliance<ul><li>Transparency</li></ul></li></ol>
-  digital_standard_criteria_image: /uploads/mapping-6.png
-who_was_involved:
-  who_was_involved_html:
----
+        </div>
+      </div>
+    </div>
+    {% include standard_mapping.html %}
+  </div>
+</section>
+{% endif %}
 
+{% if page.who_was_involved %}
+  <section class="overflow-visible">
+    <div class="container">
+      <div class="row case-study-label">
+        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+          <h2 class="editable h1">Who was involved?</h2>
+          <div class="editable"></div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="editable">
+            Add details...
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

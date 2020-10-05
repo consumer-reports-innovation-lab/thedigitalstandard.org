@@ -6,9 +6,30 @@ featured_image: /uploads/wireless-routers.jpg
 timeline:
   first_test_date: 2019-01-06 00:00:00
   latest_update_date: 2020-01-06 00:00:00
-problem:
-  problem_html: >-
-    <p>Today&rsquo;s home network may include a wide range of wireless devices,
+problem: true
+process: true
+impact: true
+who_was_involved: false
+
+digital_standard_criteria_image: /uploads/mapping-7.png
+sections:
+
+---
+
+
+{% if page.problem %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+        <div class="sticky-top ">
+          <h2 class="editable h1">Problem</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8 ">
+        <div class="editable">
+              <p>Today&rsquo;s home network may include a wide range of wireless devices,
     from computers and phones to IP Cameras, smart TVs, and connected
     appliances. The router usually is the center of the home network. It&rsquo;s
     a layer (even the only layer) that stays between your devices and the
@@ -21,13 +42,27 @@ problem:
     approximately 60 different indicators of good security and privacy
     practices, along with about 100 data points used to evaluate speed, ease of
     use, and other characteristics.</p>
-  problem_image:
-  image_alt_text:
-process:
-  process_methods:
-    - full ratings
-  process_html: >-
-    <p>The primary purpose is to investigate the most popular routers in the
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.process %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+        <div class="sticky-top">
+          <h2 class="editable h1">Process/Method</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+              <p>The primary purpose is to investigate the most popular routers in the
     data privacy and security aspect, to generate ratings for each router in
     accordance with criteria/indicators of the <a
     href="https://www.thedigitalstandard.org/">Digital Standard</a>.
@@ -47,11 +82,26 @@ process:
     href="https://www.consumerreports.org/wireless-routers/wireless-routers-lack-basic-security-protections/"><em>Many
     Wireless Routers Lack Basic Security Protections, Consumer Reports' Testing
     Finds</em></a><em>]</em></p>
-  process_image:
-  image_alt_text:
-impact:
-  impact_html: >-
-    <h2>Consumer Reports Article:<strong> </strong></h2><p><a
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.impact %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Output & Impact</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+              <h2>Consumer Reports Article:<strong> </strong></h2><p><a
     href="https://www.consumerreports.org/wireless-routers/wireless-routers-lack-basic-security-protections/">Many
     Wireless Routers Lack Basic Security Protections, Consumer Reports' Testing
     Finds</a>. This article highlights new testing which shows the important
@@ -74,16 +124,51 @@ impact:
     an internet service provider, and how much data people are transmitting to
     the web.</li><li>Disabling features not inuse (e.g. Universal Plug and
     Play)</li></ul>
-  impact_image:
-  image_alt_text:
-standard_mapping:
-  standard_mapping_html: >-
-    <ol><li>Security<ul><li>Build quality</li><li>Data
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.sections %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Digital Standard Mapping</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+            <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
     use and sharing</li></ul></li><li>Governance and
     Compliance<ul><li>Transparency</li></ul></li></ol>
-  digital_standard_criteria_image: /uploads/mapping-7.png
-who_was_involved:
-  who_was_involved_html:
----
+        </div>
+      </div>
+    </div>
+    {% include standard_mapping.html %}
+  </div>
+</section>
+{% endif %}
 
+{% if page.who_was_involved %}
+  <section class="overflow-visible">
+    <div class="container">
+      <div class="row case-study-label">
+        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+          <h2 class="editable h1">Who was involved?</h2>
+          <div class="editable"></div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="editable">
+            Add details...
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

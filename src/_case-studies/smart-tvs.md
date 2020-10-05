@@ -6,8 +6,28 @@ featured_image: /uploads/smart-tvs.jpg
 timeline:
   first_test_date: 2018-02-13 00:00:00
   latest_update_date: 2020-05-20 00:00:00
-problem:
-  problem_html: >-
+problem: true
+process: true
+impact: true
+who_was_involved: false
+
+digital_standard_criteria_image: /uploads/mapping-3.png
+sections:
+---
+
+
+{% if page.problem %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+        <div class="sticky-top ">
+          <h2 class="editable h1">Problem</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8 ">
+        <div class="editable">
     <h2>Smart TVs can monitor watching behavior:</h2><p>Smart TVs are sets that
     connect to the internet, making it easy to stream videos from services such
     as Hulu and Netflix. Most smart TVs are equipped with &ldquo;automated
@@ -45,12 +65,26 @@ problem:
     target="_blank" rel="noopener"
     href="https://www.consumerreports.org/privacy/how-to-turn-off-smart-tv-snooping-features/">CR
     Article: How to Turn Off Smart TV Snooping Features</a>]</em></p>
-  problem_image:
-  image_alt_text:
-process:
-  process_methods:
-    - full testing
-  process_html: >-
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.process %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+        <div class="sticky-top">
+          <h2 class="editable h1">Process/Method</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
     <h2>Full testing:</h2><p>In February 2018, we performed our first ever tests
     on TVs using the Digital Standard. In 2020, we conducted another update on
     2019 smart TVs in accordance with criteria of the <a target="_blank"
@@ -83,11 +117,26 @@ process:
     href="https://medium.com/cr-digital-lab/raw-data-release-2019-smart-tv-testing-9dc211cdb3a3">we
     published raw data</a> from our Digital Standard testing including the
     workbook, test protocol, and test summary.&nbsp;</p>
-  process_image:
-  image_alt_text:
-impact:
-  impact_html: >-
-    <h2>Consumer Reports Article:</h2><p><a target="_blank" rel="noopener"
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.impact %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Output & Impact</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+              <h2>Consumer Reports Article:</h2><p><a target="_blank" rel="noopener"
     href="https://www.consumerreports.org/televisions/samsung-roku-smart-tvs-vulnerable-to-hacking-consumer-reports-finds/">Samsung
     and Roku Smart TVs Vulnerable to Hacking, Consumer Reports Finds</a>. This
     February 2018 report highlighted that our tests found that millions of smart
@@ -142,17 +191,52 @@ impact:
     href="https://www.consumerreports.org/televisions/samsung-roku-smart-tvs-vulnerable-to-hacking-consumer-reports-finds/">CR
     Article: Samsung and Roku Smart TVs Vulnerable to Hacking, Consumer Reports
     Finds</a>]</em></p>
-  impact_image:
-  image_alt_text:
-standard_mapping:
-  standard_mapping_html: >-
-    <ol><li>Security<ul><li>Build quality</li><li>Data
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.sections %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Digital Standard Mapping</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+            <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
     use and sharing</li><li>Data retention</li><li>Overreach - collecting too
     much data</li></ul></li><li>Governance and Compliance<ul><li>Privacy Policy
     and Terms of Service</li></ul></li></ol>
-  digital_standard_criteria_image: /uploads/mapping-3.png
-who_was_involved:
-  who_was_involved_html:
----
+        </div>
+      </div>
+    </div>
+    {% include standard_mapping.html %}
+  </div>
+</section>
+{% endif %}
 
+{% if page.who_was_involved %}
+  <section class="overflow-visible">
+    <div class="container">
+      <div class="row case-study-label">
+        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+          <h2 class="editable h1">Who was involved?</h2>
+          <div class="editable"></div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="editable">
+            Add details...
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

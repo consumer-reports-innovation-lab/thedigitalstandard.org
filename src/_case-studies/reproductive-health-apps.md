@@ -6,9 +6,30 @@ featured_image: /uploads/reproductive-health-apps.jpg
 timeline:
   first_test_date: 2020-01-22 00:00:00
   latest_update_date: 2020-01-23 00:00:00
-problem:
-  problem_html: >-
-    <h2>Context:</h2><p>Fertility or menstrual cycle trackers have been used by
+problem: true
+process: true
+impact: true
+who_was_involved: false
+
+digital_standard_criteria_image: /uploads/mapping-4.png
+sections:
+
+---
+
+
+{% if page.problem %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+        <div class="sticky-top ">
+          <h2 class="editable h1">Problem</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8 ">
+        <div class="editable">
+              <h2>Context:</h2><p>Fertility or menstrual cycle trackers have been used by
     nearly a third of women in the U.S., according to a recent Kaiser Family
     Foundation <a target="_blank" rel="noopener"
     href="https://www.kff.org/other/poll-finding/kff-health-apps-and-information-survey/">survey</a>.
@@ -49,13 +70,27 @@ problem:
     rel="noopener"
     href="https://www.consumerreports.org/health-privacy/what-your-period-tracker-app-knows-about-you/">CR
     Article: What Your Period Tracker App Knows About You</a>]</em></p>
-  problem_image:
-  image_alt_text:
-process:
-  process_methods:
-    - comparative analysis
-  process_html: >-
-    <p>We conducted a comparative analysis of 5 reproductive health
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.process %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+        <div class="sticky-top">
+          <h2 class="editable h1">Process/Method</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+            <p>We conducted a comparative analysis of 5 reproductive health
     &nbsp;tracker apps: BabyCenter, Clue, Flo, My Calendar and Ovia. CR examined
     the apps and their privacy policies for clarity and comprehensiveness,
     authentication, customer service, data benefits, data privacy, security over
@@ -68,11 +103,26 @@ process:
     security experts, the standard is a set of benchmarks that companies can use
     to design digital products that are respectful of consumer privacy
     rights.</p>
-  process_image:
-  image_alt_text:
-impact:
-  impact_html: >-
-    <p>The graphic scorecard illustrates some of the top categories to highlight
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.impact %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Output & Impact</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+              <p>The graphic scorecard illustrates some of the top categories to highlight
     throughout the experience.&nbsp;</p><h2><br />Findings reported in CR
     article:</h2><p>Consumer Reports <a target="_blank" rel="noopener"
     href="https://www.consumerreports.org/health-privacy/what-your-period-tracker-app-knows-about-you/">reported
@@ -112,15 +162,53 @@ impact:
     offer multi-factor authentication (which requires that users input a code
     sent by text to their phone), or require an additional security step before
     accessing the app.&nbsp;</p>
-  impact_image: /uploads/mapping-04-inline.png
-  image_alt_text: 5 Period Tracker Apps
-standard_mapping:
-  standard_mapping_html: >-
-    <ol><li>Security<ul><li>Build quality</li><li>Data
+    <p>
+      <img src="/uploads/mapping-04-inline.png" alt="5 Period Tracker Apps"/>
+    </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.sections %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Digital Standard Mapping</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+            <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
     use and sharing</li></ul></li></ol>
-  digital_standard_criteria_image: /uploads/mapping-4.png
-who_was_involved:
-  who_was_involved_html:
----
+        </div>
+      </div>
+    </div>
+    {% include standard_mapping.html %}
+  </div>
+</section>
+{% endif %}
 
+{% if page.who_was_involved %}
+  <section class="overflow-visible">
+    <div class="container">
+      <div class="row case-study-label">
+        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+          <h2 class="editable h1">Who was involved?</h2>
+          <div class="editable"></div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="editable">
+            Add details...
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

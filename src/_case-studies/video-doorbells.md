@@ -6,8 +6,28 @@ featured_image: /uploads/video-doorbells.jpg
 timeline:
   first_test_date: 2020-08-11 00:00:00
   latest_update_date: 2020-08-28 00:00:00
-problem:
-  problem_html: >-
+problem: true
+process: true
+impact: true
+who_was_involved: false
+
+digital_standard_criteria_image: /uploads/mapping-8.png
+sections:
+---
+
+
+{% if page.problem %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+        <div class="sticky-top ">
+          <h2 class="editable h1">Problem</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8 ">
+        <div class="editable">
     <p>Video doorbells make it easy to see who&rsquo;s at your door, a
     convenience that provides a sense of security. But like any
     internet-connected security camera, they&rsquo;re also susceptible to
@@ -25,13 +45,27 @@ problem:
     four brands that can expose user data like email addresses and account
     passwords. The brands
     are:</p><ul><li>Eufy</li><li>GoControl</li><li>LaView</li><li>Netvue</li></ul>
-  problem_image:
-  image_alt_text:
-process:
-  process_methods:
-    - full ratings
-  process_html: >-
-    <p>Our experts in the Digital Lab use <a
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.process %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+        <div class="sticky-top">
+          <h2 class="editable h1">Process/Method</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+              <p>Our experts in the Digital Lab use <a
     href="https://www.thedigitalstandard.org/">The Digital Standard</a>, an
     open-source set of criteria for evaluating digital products and services
     that CR created with other organizations, to conduct our security and
@@ -60,11 +94,26 @@ process:
     href="https://www.consumerreports.org/video-doorbells/data-security-data-privacy-gaps-found-in-video-doorbells/"><em>Data
     Security and Privacy Gaps Found in Video Doorbells by Consumer Reports'
     Tests</em></a><em>]</em></p>
-  process_image:
-  image_alt_text:
-impact:
-  impact_html: >-
-    <h2>Consumer Reports Article:</h2><p><a
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.impact %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Output & Impact</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
+              <h2>Consumer Reports Article:</h2><p><a
     href="https://www.consumerreports.org/video-doorbells/data-security-data-privacy-gaps-found-in-video-doorbells/"><em>Data
     Security and Privacy Gaps Found in Video Doorbells by Consumer Reports'
     Tests</em></a>. This article highlights that Consumer Reports&rsquo; tests
@@ -117,16 +166,51 @@ impact:
     href="https://oversight.house.gov/news/press-releases/oversight-subcommittee-seeks-information-about-ring-s-agreements-with-police-and">scrutiny
     of its police partnerships</a>. But our tests, conducted from May to June,
     showed that the security of Ring devices was quite good.</p>
-  impact_image:
-  image_alt_text:
-standard_mapping:
-  standard_mapping_html: >-
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.sections %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Digital Standard Mapping</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
     <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
     use and sharing</li></ul></li><li>Governance and
     Compliance<ul><li>Transparency</li></ul></li></ol>
-  digital_standard_criteria_image: /uploads/mapping-8.png
-who_was_involved:
-  who_was_involved_html:
----
+        </div>
+      </div>
+    </div>
+    {% include standard_mapping.html %}
+  </div>
+</section>
+{% endif %}
 
+{% if page.who_was_involved %}
+  <section class="overflow-visible">
+    <div class="container">
+      <div class="row case-study-label">
+        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+          <h2 class="editable h1">Who was involved?</h2>
+          <div class="editable"></div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="editable">
+            Add details...
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

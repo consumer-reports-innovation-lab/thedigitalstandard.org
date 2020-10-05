@@ -6,8 +6,28 @@ featured_image: /uploads/videoconfrencing.jpg
 timeline:
   first_test_date: 2020-03-18 00:00:00
   latest_update_date: 2020-05-13 00:00:00
-problem:
-  problem_html: >-
+problem: true
+process: true
+impact: true
+who_was_involved: false
+
+digital_standard_criteria_image: /uploads/mapping-1.png
+sections:
+---
+
+
+{% if page.problem %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+        <div class="sticky-top ">
+          <h2 class="editable h1">Problem</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8 ">
+        <div class="editable">
     <p>As of mid-April 2020, <a target="_blank" rel="noopener"
     href="https://www.nytimes.com/interactive/2020/us/coronavirus-stay-at-home-order.html">95%
     of the American population</a> are under orders to stay home. This new
@@ -40,12 +60,29 @@ problem:
     href="https://medium.com/cr-digital-lab/skype-meet-webex-videoconference-privacy-845bc8360fd3">Webex:
     10 ways videoconferencing systems can better protect privacy for
     customers</a>]</em></p>
-  problem_image: /uploads/mapping-01-inline.png
-  image_alt_text: Videoconferencing Services - a comparative analysis of privacy policies
-process:
-  process_methods:
-    - comparative analysis
-  process_html: >-
+    <p>
+      <img src="/uploads/mapping-01-inline.png" alt="Videoconferencing Services - a comparative analysis of privacy policies"/>
+    </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.process %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+        <div class="sticky-top">
+          <h2 class="editable h1">Process/Method</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
     <p>Through <a target="_blank" rel="noopener"
     href="https://medium.com/cr-digital-lab/skype-meet-webex-videoconference-privacy-845bc8360fd3">a
     comparative analysis</a>, we examined the privacy policies for three popular
@@ -73,10 +110,25 @@ process:
     href="https://medium.com/cr-digital-lab/webex-cisco-policy-review-3608a1eafddf">Webex</a>.
     These recommendations were framed in a way that is broadly applicable to any
     platform that offers video conferencing features.&nbsp;</p>
-  process_image:
-  image_alt_text:
-impact:
-  impact_html: >-
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.impact %}
+<section class="overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Output & Impact</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
     <h2>Sent a letter to Company CEOs highlighting 10 recommendations and
     changes:</h2><p>Based on the analysis, our policy team reached out to
     Google, Cisco and Microsoft, gave them an opportunity to make needed
@@ -126,10 +178,25 @@ impact:
     videoconferencing privacy policies and clarify how they are using personal
     data</a>. The press release covered the report and highlighted the
     call-to-action letter to Cisco, Google and Microsoft.<br />&nbsp;</p>
-  impact_image:
-  image_alt_text:
-standard_mapping:
-  standard_mapping_html: >-
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.sections %}
+<section class="bg-grey overflow-visible">
+  <div class="container">
+    <div class="row case-study-label">
+      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Digital Standard Mapping</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="editable">
     <p>This work incorporated several specific elements from the larger Digital
     Standard. Specifically, the comparative analysis used elements from the
     Privacy and Governance sections of the
@@ -137,8 +204,28 @@ standard_mapping:
     sharing</li><li>Data retention</li><li>Overreach: collecting too much
     information</li></ul></li><li>Governance:<ul><li>Privacy Policy &amp; Terms
     of Service</li><li>Transparency</li></ul></li></ol>
-  digital_standard_criteria_image: /uploads/mapping-1.png
-who_was_involved:
-  who_was_involved_html:
----
+        </div>
+      </div>
+    </div>
+    {% include standard_mapping.html %}
+  </div>
+</section>
+{% endif %}
 
+{% if page.who_was_involved %}
+  <section class="overflow-visible">
+    <div class="container">
+      <div class="row case-study-label">
+        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+          <h2 class="editable h1">Who was involved?</h2>
+          <div class="editable"></div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="editable">
+            Add details...
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

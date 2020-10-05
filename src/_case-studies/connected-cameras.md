@@ -238,20 +238,7 @@ sections:
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        {% for item in page.sections %}
-          <div class="d-flex flex-column">
-            <div>
-              {{ item.section }}
-            </div>
-            {% for area in section.areas %}
-              {{ area }}
-            {% endfor %}
-          </div>
-        {% endfor %}
-      </div>
-    </div>
+    {% include standard_mapping.html %}
   </div>
 </section>
 {% endif %}
