@@ -11,7 +11,7 @@ timeline:
 problem: true
 process: true
 impact: true
-who_was_involved: false
+who: false
 
 sections:
 ---
@@ -78,7 +78,6 @@ sections:
 </section>
 {% endif %}
 
-{% if page.sections %}
 <section class="bg-grey overflow-visible">
   <div class="container">
     <div class="row case-study-label">
@@ -92,25 +91,13 @@ sections:
         <div class="editable">Enter mapping description...</div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        {% for item in page.sections %}
-          <div class="d-flex flex-column">
-            <div>
-              {{ item.section }}
-            </div>
-            {% for area in section.areas %}
-              {{ area }}
-            {% endfor %}
-          </div>
-        {% endfor %}
-      </div>
-    </div>
+    {% include mapping.html %}
+
   </div>
 </section>
-{% endif %}
 
-{% if page.who_was_involved %}
+
+{% if page.who %}
   <section class="overflow-visible">
     <div class="container">
       <div class="row case-study-label">

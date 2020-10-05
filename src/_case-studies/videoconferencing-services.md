@@ -9,7 +9,7 @@ timeline:
 problem: true
 process: true
 impact: true
-who_was_involved: false
+who: false
 
 digital_standard_criteria_image: /uploads/mapping-1.png
 sections:
@@ -185,7 +185,7 @@ sections:
 </section>
 {% endif %}
 
-{% if page.sections %}
+
 <section class="bg-grey overflow-visible">
   <div class="container">
     <div class="row case-study-label">
@@ -207,12 +207,12 @@ sections:
         </div>
       </div>
     </div>
-    {% include standard_mapping.html %}
+    {% include mapping.html %}
   </div>
 </section>
-{% endif %}
 
-{% if page.who_was_involved %}
+
+{% if page.who %}
   <section class="overflow-visible">
     <div class="container">
       <div class="row case-study-label">
