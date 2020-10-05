@@ -6,14 +6,36 @@ featured_image: /uploads/connected-cameras.jpg
 timeline:
   first_test_date: 2019-12-03 00:00:00
   latest_update_date: 2020-06-09 00:00:00
-
 problem: true
 process: true
 impact: true
-who: false
-
+who_was_involved: false
 digital_standard_criteria_image: /uploads/mapping-2.png
 sections:
+  - section: Security
+    areas:
+      - Build Quality
+      - Data Security
+      - User Safety
+  - section: Privacy
+    areas:
+      - Access and Control
+      - Data Use and Sharing
+      - Data retention
+      - Overreach - Collecting Too Much Data
+  - section: Ownership
+    areas:
+      - Ownership
+      - Permanence
+      - Right to Repair
+      - Interoperability
+  - section: Governance
+    areas:
+      - Business Model
+      - Human Rights & Corporate Social Responsibility
+      - Open
+      - Privacy Policy & Terms of Service
+      - Transparency
 ---
 
 
@@ -215,7 +237,7 @@ sections:
 </section>
 {% endif %}
 
-
+{% if page.sections %}
 <section class="bg-grey overflow-visible">
   <div class="container">
     <div class="row case-study-label">
@@ -238,12 +260,25 @@ sections:
         </div>
       </div>
     </div>
-    {% include mapping.html %}
+    <div class="row">
+      <div class="col-12">
+        {% for item in page.sections %}
+          <div class="d-flex flex-column">
+            <div>
+              {{ item.section }}
+            </div>
+            {% for area in section.areas %}
+              {{ area }}
+            {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </section>
+{% endif %}
 
-
-{% if page.who %}
+{% if page.who_was_involved %}
   <section class="overflow-visible">
     <div class="container">
       <div class="row case-study-label">
