@@ -90,6 +90,7 @@ areas:
   - Data retention
   - Overreach - Collecting Too Much Data
   - Ownership
+  - Interoperability
   - Permanence
   - Right to Repair
   - Business Model
@@ -100,12 +101,13 @@ areas:
 
 # Cloudcannon Configuration
 _array_structures:
-  sections:
+  standard_mapping:
     - label: Standard Mapping
       icon: folder
       value:
         section:
         areas:
+        tags:
   criteria:
     - label: Criteria
       icon: share
