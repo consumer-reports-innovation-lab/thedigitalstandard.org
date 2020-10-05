@@ -16,17 +16,20 @@
 }
 
 .case-study-label {
-  h1 {
+  h1,
+  .h1 {
     text-transform: uppercase;
     color: $tds-green-200;
     font-size: 1.75rem;
   }
-  h2 {
+  h2,
+  .h2 {
     font-family: $font-family-serif;
     font-weight: 600;
     margin-top: 0.5rem;
   }
-  h3 {
+  h3,
+  .h3 {
     font-family: $font-family-serif;
     font-weight: 400;
     margin-top: 0.5rem;
