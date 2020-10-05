@@ -81,7 +81,7 @@ sections:
   - Privacy
   - Ownership
   - Governance
-categories:
+areas:
   - Data Security
   - Build Quality
   - User Safety
@@ -101,17 +101,11 @@ categories:
 # Cloudcannon Configuration
 _array_structures:
   sections:
-    - label: Standard Sections
+    - label: Standard Mapping
       icon: folder
       value:
         section:
-        categories:
-  # categories:
-  #   - label: Standard Categories
-  #     icon: folder
-  #     value:
-  #       label:
-  #       standards:
+        areas:
   criteria:
     - label: Criteria
       icon: share
