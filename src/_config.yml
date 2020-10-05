@@ -107,7 +107,6 @@ _array_structures:
       value:
         section:
         areas:
-        tags:
   criteria:
     - label: Criteria
       icon: share
