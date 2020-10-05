@@ -11,7 +11,7 @@ process: true
 impact: true
 who_was_involved: false
 digital_standard_criteria_image: /uploads/mapping-2.png
-areas:
+mapping:
 sections:
   - section: Security
     areas:
