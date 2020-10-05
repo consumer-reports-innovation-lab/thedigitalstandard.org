@@ -1,6 +1,5 @@
 ---
-_layout:
-  - portfolio
+layout: portfolio
 title: Ocupop
 case_study_status_understanding: Under discussion
 lead_organization: Ocupop
