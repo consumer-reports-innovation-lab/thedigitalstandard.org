@@ -101,7 +101,7 @@ areas:
 
 # Cloudcannon Configuration
 _array_structures:
-  areas:
+  mapping:
     - label: Standard Mapping
       icon: folder
       value:
