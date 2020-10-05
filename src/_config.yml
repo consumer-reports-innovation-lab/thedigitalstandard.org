@@ -104,14 +104,14 @@ _array_structures:
     - label: Standard Sections
       icon: folder
       value:
-        label:
+        section:
         categories:
-  categories:
-    - label: Standard Categories
-      icon: folder
-      value:
-        label:
-        standards:
+  # categories:
+  #   - label: Standard Categories
+  #     icon: folder
+  #     value:
+  #       label:
+  #       standards:
   criteria:
     - label: Criteria
       icon: share
