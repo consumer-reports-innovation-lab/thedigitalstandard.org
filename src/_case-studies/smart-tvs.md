@@ -67,7 +67,6 @@ sections:
     Article: How to Turn Off Smart TV Snooping Features</a>]</em></p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
