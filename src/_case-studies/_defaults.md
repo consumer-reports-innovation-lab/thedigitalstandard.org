@@ -1,5 +1,4 @@
 ---
-_layout: "portfolio"
 title:
 case_study_status_understanding:
 lead_organization:
