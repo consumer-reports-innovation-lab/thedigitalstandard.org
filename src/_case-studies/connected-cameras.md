@@ -12,6 +12,15 @@ impact: true
 who_was_involved: false
 digital_standard_criteria_image: /uploads/mapping-2.png
 mapping:
+  - areas:
+      - Build Quality
+      - Data Security
+      - Access and Control
+      - Data Use and Sharing
+      - Data retention
+      - Overreach - Collecting Too Much Data
+      - Privacy Policy & Terms of Service
+      - Transparency
 sections:
   - section: Security
     areas:
