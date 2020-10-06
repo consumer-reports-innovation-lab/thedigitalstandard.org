@@ -220,7 +220,7 @@ areas:
 </section>
 {% endif %}
 
-<section class="bg-grey">
+<section id="mapping" class="bg-grey">
   <div class="container">
     <div class="row mb-5">
       <div class="col-12 col-lg-4 text-lg-right">

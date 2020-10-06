@@ -172,7 +172,7 @@ areas:
 {% endif %}
 
 
-<section class="bg-grey overflow-visible">
+<section id="mapping" class="bg-grey">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-4 text-lg-right">
