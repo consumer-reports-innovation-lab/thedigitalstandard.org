@@ -11,23 +11,22 @@ process: true
 impact: true
 who: false
 
-digital_standard_criteria_image: /uploads/mapping-8.png
-sections:
+areas:
 ---
 
 
 {% if page.problem %}
 <section class="overflow-visible">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right ">
         <div class="sticky-top ">
           <h2 class="editable h1">Problem</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8 ">
-        <div class="editable">
+        <div class="editable mt-3">
     <p>Video doorbells make it easy to see who&rsquo;s at your door, a
     convenience that provides a sense of security. But like any
     internet-connected security camera, they&rsquo;re also susceptible to
@@ -54,17 +53,17 @@ sections:
 {% endif %}
 
 {% if page.process %}
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Process/Method</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
               <p>Our experts in the Digital Lab use <a
     href="https://www.thedigitalstandard.org/">The Digital Standard</a>, an
     open-source set of criteria for evaluating digital products and services
@@ -102,17 +101,17 @@ sections:
 {% endif %}
 
 {% if page.impact %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Output & Impact</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
               <h2>Consumer Reports Article:</h2><p><a
     href="https://www.consumerreports.org/video-doorbells/data-security-data-privacy-gaps-found-in-video-doorbells/"><em>Data
     Security and Privacy Gaps Found in Video Doorbells by Consumer Reports'
@@ -174,17 +173,17 @@ sections:
 {% endif %}
 
 
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Digital Standard Mapping</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
     <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
     use and sharing</li></ul></li><li>Governance and
@@ -198,15 +197,15 @@ sections:
 
 
 {% if page.who %}
-  <section class="overflow-visible">
+  <section>
     <div class="container">
-      <div class="row case-study-label">
-        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-lg-right">
           <h2 class="editable h1">Who was involved?</h2>
           <div class="editable"></div>
         </div>
         <div class="col-12 col-lg-8">
-          <div class="editable">
+          <div class="editable mt-3">
             Add details...
           </div>
         </div>

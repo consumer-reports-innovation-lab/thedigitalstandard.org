@@ -11,24 +11,23 @@ process: true
 impact: true
 who: false
 
-digital_standard_criteria_image: /uploads/mapping-7.png
-sections:
+areas:
 
 ---
 
 
 {% if page.problem %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right ">
         <div class="sticky-top ">
           <h2 class="editable h1">Problem</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8 ">
-        <div class="editable">
+        <div class="editable mt-3">
               <p>Today&rsquo;s home network may include a wide range of wireless devices,
     from computers and phones to IP Cameras, smart TVs, and connected
     appliances. The router usually is the center of the home network. It&rsquo;s
@@ -51,17 +50,17 @@ sections:
 {% endif %}
 
 {% if page.process %}
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Process/Method</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
               <p>The primary purpose is to investigate the most popular routers in the
     data privacy and security aspect, to generate ratings for each router in
     accordance with criteria/indicators of the <a
@@ -90,17 +89,17 @@ sections:
 {% endif %}
 
 {% if page.impact %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Output & Impact</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
               <h2>Consumer Reports Article:<strong> </strong></h2><p><a
     href="https://www.consumerreports.org/wireless-routers/wireless-routers-lack-basic-security-protections/">Many
     Wireless Routers Lack Basic Security Protections, Consumer Reports' Testing
@@ -132,17 +131,17 @@ sections:
 {% endif %}
 
 
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Digital Standard Mapping</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
             <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
     use and sharing</li></ul></li><li>Governance and
@@ -156,15 +155,15 @@ sections:
 
 
 {% if page.who %}
-  <section class="overflow-visible">
+  <section>
     <div class="container">
-      <div class="row case-study-label">
-        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-lg-right">
           <h2 class="editable h1">Who was involved?</h2>
           <div class="editable"></div>
         </div>
         <div class="col-12 col-lg-8">
-          <div class="editable">
+          <div class="editable mt-3">
             Add details...
           </div>
         </div>

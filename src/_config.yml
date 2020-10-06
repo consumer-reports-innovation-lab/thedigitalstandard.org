@@ -36,7 +36,7 @@ defaults:
   - scope:
       type: 'case-studies'
     values:
-      layout: portfolio
+      layout: case-study
       _options:
         format: p h2 h3 h4 pre address div
         bold: true
@@ -101,17 +101,10 @@ areas:
 
 # Cloudcannon Configuration
 _array_structures:
-  mapping:
+  areas:
     - label: Standard Mapping
       icon: folder
-      value:
-        areas:
-  sections:
-    - label: Standard Mapping
-      icon: folder
-      value:
-        section:
-        areas:
+
   criteria:
     - label: Criteria
       icon: share

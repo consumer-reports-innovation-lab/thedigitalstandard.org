@@ -11,23 +11,22 @@ process: true
 impact: true
 who: false
 
-digital_standard_criteria_image: /uploads/mapping-1.png
-sections:
+areas:
 ---
 
 
 {% if page.problem %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
-        <div class="sticky-top ">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right ">
+        <div class="sticky-top">
           <h2 class="editable h1">Problem</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8 ">
-        <div class="editable">
+        <div class="editable mt-3">
     <p>As of mid-April 2020, <a target="_blank" rel="noopener"
     href="https://www.nytimes.com/interactive/2020/us/coronavirus-stay-at-home-order.html">95%
     of the American population</a> are under orders to stay home. This new
@@ -65,24 +64,23 @@ sections:
     </p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 {% endif %}
 
 {% if page.process %}
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Process/Method</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
     <p>Through <a target="_blank" rel="noopener"
     href="https://medium.com/cr-digital-lab/skype-meet-webex-videoconference-privacy-845bc8360fd3">a
     comparative analysis</a>, we examined the privacy policies for three popular
@@ -118,17 +116,17 @@ sections:
 {% endif %}
 
 {% if page.impact %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Output & Impact</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
     <h2>Sent a letter to Company CEOs highlighting 10 recommendations and
     changes:</h2><p>Based on the analysis, our policy team reached out to
     Google, Cisco and Microsoft, gave them an opportunity to make needed
@@ -186,17 +184,17 @@ sections:
 {% endif %}
 
 
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Digital Standard Mapping</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
     <p>This work incorporated several specific elements from the larger Digital
     Standard. Specifically, the comparative analysis used elements from the
     Privacy and Governance sections of the
@@ -213,15 +211,15 @@ sections:
 
 
 {% if page.who %}
-  <section class="overflow-visible">
+  <section>
     <div class="container">
-      <div class="row case-study-label">
-        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-lg-right">
           <h2 class="editable h1">Who was involved?</h2>
           <div class="editable"></div>
         </div>
         <div class="col-12 col-lg-8">
-          <div class="editable">
+          <div class="editable mt-3">
             Add details...
           </div>
         </div>

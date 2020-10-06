@@ -11,23 +11,22 @@ process: true
 impact: true
 who: false
 
-digital_standard_criteria_image: /uploads/mapping-6.png
-sections:
+areas:
 ---
 
 
 {% if page.problem %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
-        <div class="sticky-top ">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right ">
+        <div class="sticky-top">
           <h2 class="editable h1">Problem</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8 ">
-        <div class="editable">
+        <div class="editable mt-3">
     <h2>Data sharing &amp; third parties:</h2><p>In an interview with Reuters
     published in July 2017, iRobot CEO Colin Angle suggested his company might
     one day share the mapping data collected by Roomba robotic vacuum cleaners
@@ -68,17 +67,17 @@ sections:
 {% endif %}
 
 {% if page.process %}
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
     <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Process/Method</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
               <p>Consumer Reports highlighted their <a target="_blank" rel="noopener"
     href="https://www.consumerreports.org/products/vacuum-cleaners/robotic-vacuum/view2/">vacuum
     cleaner full ratings</a> on the website, including criteria using data
@@ -91,17 +90,17 @@ sections:
 {% endif %}
 
 {% if page.impact %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Output & Impact</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
               <p><a target="_blank" rel="noopener"
     href="https://www.consumerreports.org/robotic-vacuums/can-a-robotic-vacuum-replace-your-canister-or-upright/">CR
     Article: Can a Robotic Vacuum Replace Your Upright Vacuum?</a><br
@@ -114,17 +113,17 @@ sections:
 {% endif %}
 
 
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Digital Standard Mapping</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
             <ol><li>Privacy<ul><li>Access and control</li><li>Data use and
     sharing</li></ul></li><li>Governance and
     Compliance<ul><li>Transparency</li></ul></li></ol>
@@ -137,15 +136,15 @@ sections:
 
 
 {% if page.who %}
-  <section class="overflow-visible">
+  <section>
     <div class="container">
-      <div class="row case-study-label">
-        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-lg-right">
           <h2 class="editable h1">Who was involved?</h2>
           <div class="editable"></div>
         </div>
         <div class="col-12 col-lg-8">
-          <div class="editable">
+          <div class="editable mt-3">
             Add details...
           </div>
         </div>

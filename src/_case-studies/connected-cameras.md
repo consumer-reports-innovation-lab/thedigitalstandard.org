@@ -10,57 +10,30 @@ problem: true
 process: true
 impact: true
 who_was_involved: false
-digital_standard_criteria_image: /uploads/mapping-2.png
-mapping:
-  - areas:
-      - Build Quality
-      - Data Security
-      - Access and Control
-      - Data Use and Sharing
-      - Data retention
-      - Overreach - Collecting Too Much Data
-      - Privacy Policy & Terms of Service
-      - Transparency
-sections:
-  - section: Security
-    areas:
-      - Build Quality
-      - Data Security
-      - User Safety
-  - section: Privacy
-    areas:
-      - Access and Control
-      - Data Use and Sharing
-      - Data retention
-      - Overreach - Collecting Too Much Data
-  - section: Ownership
-    areas:
-      - Ownership
-      - Permanence
-      - Right to Repair
-      - Interoperability
-  - section: Governance
-    areas:
-      - Business Model
-      - Human Rights & Corporate Social Responsibility
-      - Open
-      - Privacy Policy & Terms of Service
-      - Transparency
+areas:
+  - Build Quality
+  - Data Security
+  - Access and Control
+  - Data Use and Sharing
+  - Data retention
+  - Overreach - Collecting Too Much Data
+  - Privacy Policy & Terms of Service
+  - Transparency
 ---
 
 
 {% if page.problem %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+    <div class="row">
+      <div class="col-12 col-lg-4 d-block text-lg-right">
         <div class="sticky-top ">
           <h2 class="editable h1">Problem</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8 ">
-        <div class="editable">
+        <div class="editable mt-3">
             <h2>Sensitive Data Collection</h2><p>Connected devices such as cameras are
     increasingly being used in the private sphere of the home and collect highly
     sensitive information including voice and visual recordings of the home and
@@ -122,17 +95,17 @@ sections:
 {% endif %}
 
 {% if page.process %}
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Process/Method</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
               <h2>Full Testing</h2>
               <p>Across 14 home security connected cameras, Consumer
                 Reports performed a round of full testing across these devices in accordance
@@ -154,17 +127,17 @@ sections:
 {% endif %}
 
 {% if page.impact %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Output & Impact</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
           <h2>Created campaign strategy&nbsp;</h2><p>In order to organize our efforts,
           the Consumer Reports team strategized a campaign by doing research on
           reported hacking incidents in the month of December 2019, reviewed the IP
@@ -247,57 +220,38 @@ sections:
 </section>
 {% endif %}
 
-{% if page.sections %}
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+    <div class="row mb-5">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Digital Standard Mapping</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
           <p>This work incorporated several specific elements from the larger Digital
           Standard. Specifically, the comparative analysis used elements from the
-          Privacy and Governance sections of the
-          Standard:</p><ol><li>Security<ul><li>Build quality</li><li>Data
-          security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
-          use and sharing</li><li>Data retention</li><li>Overreach - collecting too
-          much data</li></ul></li><li>Governance and compliance<ul><li>Privacy Policy
-          and Terms of Service</li><li>Transparency</li></ul></li></ol>
+          Privacy and Governance sections of the Standard:</p>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        {% for item in page.sections %}
-          <div class="d-flex flex-column">
-            <div>
-              {{ item.section }}
-            </div>
-            {% for area in section.areas %}
-              {{ area }}
-            {% endfor %}
-          </div>
-        {% endfor %}
-      </div>
-    </div>
+    {% include mapping.html %}
   </div>
 </section>
-{% endif %}
 
-{% if page.who_was_involved %}
-  <section class="overflow-visible">
+
+{% if page.who %}
+  <section>
     <div class="container">
-      <div class="row case-study-label">
-        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-lg-right">
           <h2 class="editable h1">Who was involved?</h2>
           <div class="editable"></div>
         </div>
         <div class="col-12 col-lg-8">
-          <div class="editable">
+          <div class="editable mt-3">
             Add details...
           </div>
         </div>

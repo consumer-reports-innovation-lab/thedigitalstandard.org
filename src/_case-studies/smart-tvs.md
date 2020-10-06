@@ -11,23 +11,22 @@ process: true
 impact: true
 who: false
 
-digital_standard_criteria_image: /uploads/mapping-3.png
-sections:
+areas:
 ---
 
 
 {% if page.problem %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top ">
           <h2 class="editable h1">Problem</h2>
           <div class="editable"></div>
         </div>
       </div>
-      <div class="col-12 col-lg-8 ">
-        <div class="editable">
+      <div class="col-12 col-lg-8">
+        <div class="editable mt-3">
     <h2>Smart TVs can monitor watching behavior:</h2><p>Smart TVs are sets that
     connect to the internet, making it easy to stream videos from services such
     as Hulu and Netflix. Most smart TVs are equipped with &ldquo;automated
@@ -73,17 +72,17 @@ sections:
 {% endif %}
 
 {% if page.process %}
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Process/Method</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
     <h2>Full testing:</h2><p>In February 2018, we performed our first ever tests
     on TVs using the Digital Standard. In 2020, we conducted another update on
     2019 smart TVs in accordance with criteria of the <a target="_blank"
@@ -124,17 +123,17 @@ sections:
 {% endif %}
 
 {% if page.impact %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Output & Impact</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
               <h2>Consumer Reports Article:</h2><p><a target="_blank" rel="noopener"
     href="https://www.consumerreports.org/televisions/samsung-roku-smart-tvs-vulnerable-to-hacking-consumer-reports-finds/">Samsung
     and Roku Smart TVs Vulnerable to Hacking, Consumer Reports Finds</a>. This
@@ -198,17 +197,17 @@ sections:
 {% endif %}
 
 
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Digital Standard Mapping</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
             <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
     use and sharing</li><li>Data retention</li><li>Overreach - collecting too
@@ -223,15 +222,15 @@ sections:
 
 
 {% if page.who %}
-  <section class="overflow-visible">
+  <section>
     <div class="container">
-      <div class="row case-study-label">
-        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-lg-right">
           <h2 class="editable h1">Who was involved?</h2>
           <div class="editable"></div>
         </div>
         <div class="col-12 col-lg-8">
-          <div class="editable">
+          <div class="editable mt-3">
             Add details...
           </div>
         </div>

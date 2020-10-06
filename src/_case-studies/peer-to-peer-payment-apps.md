@@ -10,47 +10,23 @@ problem: true
 process: true
 impact: true
 who: false
-digital_standard_criteria_image: /uploads/mapping-5.png
-sections:
-  - section: Security
-    areas:
-      - Build Quality
-      - Data Security
-      - User Safety
-  - section: Privacy
-    areas:
-      - Access and Control
-      - Data Use and Sharing
-      - Data retention
-      - Overreach - Collecting Too Much Data
-  - section: Ownership
-    areas:
-      - Ownership
-      - Permanence
-      - Right to Repair
-      - Interoperability
-  - section: Governance
-    areas:
-      - Business Model
-      - Human Rights & Corporate Social Responsibility
-      - Open
-      - Privacy Policy & Terms of Service
-      - Transparency
+areas:
+
 ---
 
 
 {% if page.problem %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
-        <div class="sticky-top ">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right ">
+        <div class="sticky-top">
           <h2 class="editable h1">Problem</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8 ">
-        <div class="editable">
+        <div class="editable mt-3">
               <h2>Unclear legal agreements:</h2><p>Peer-to-peer payment app providers
     deserve credit for designing simple and easy-to-use applications that belie
     their underlying technological and financial sophistication. But that
@@ -79,24 +55,23 @@ sections:
     Risks</a>]</em></p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 {% endif %}
 
 {% if page.process %}
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Process/Method</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
               <h2>Full testing on 5 mobile P2P services:</h2><p>In light of the quick rise
     of P2P&mdash;and its potential financial and privacy risks&mdash;Consumer
     Reports tested five mobile P2P services to see how they stacked up for user
@@ -122,17 +97,17 @@ sections:
 {% endif %}
 
 {% if page.impact %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Output & Impact</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
               <h2>Consumer Reports ratings article and in-depth review:</h2><p><a
     target="_blank" rel="noopener"
     href="https://www.consumerreports.org/digital-payments/mobile-p2p-payment-services-review/">Why
@@ -204,17 +179,17 @@ sections:
 {% endif %}
 
 
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Digital Standard Mapping</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
             <ol><li>Security<ul><li>Data security</li><li>User
     safety</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data use
     and sharing</li><li>Data retention</li><li>Overreach - collecting too much
@@ -230,15 +205,15 @@ sections:
 
 
 {% if page.who %}
-  <section class="overflow-visible">
+  <section>
     <div class="container">
-      <div class="row case-study-label">
-        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-lg-right">
           <h2 class="editable h1">Who was involved?</h2>
           <div class="editable"></div>
         </div>
         <div class="col-12 col-lg-8">
-          <div class="editable">
+          <div class="editable mt-3">
             Add details...
           </div>
         </div>

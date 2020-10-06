@@ -11,24 +11,23 @@ process: true
 impact: true
 who: false
 
-digital_standard_criteria_image: /uploads/mapping-4.png
-sections:
+areas:
 
 ---
 
 
 {% if page.problem %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || d-block  text-lg-right ">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right ">
         <div class="sticky-top ">
           <h2 class="editable h1">Problem</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8 ">
-        <div class="editable">
+        <div class="editable mt-3">
               <h2>Context:</h2><p>Fertility or menstrual cycle trackers have been used by
     nearly a third of women in the U.S., according to a recent Kaiser Family
     Foundation <a target="_blank" rel="noopener"
@@ -79,17 +78,17 @@ sections:
 {% endif %}
 
 {% if page.process %}
-<section class="bg-grey overflow-visible">
+<section class="bg-grey">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-flex text-lg-right flex-column">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Process/Method</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
             <p>We conducted a comparative analysis of 5 reproductive health
     &nbsp;tracker apps: BabyCenter, Clue, Flo, My Calendar and Ovia. CR examined
     the apps and their privacy policies for clarity and comprehensiveness,
@@ -111,17 +110,17 @@ sections:
 {% endif %}
 
 {% if page.impact %}
-<section class="overflow-visible">
+<section>
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 || case-study-label || d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Output & Impact</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
               <p>The graphic scorecard illustrates some of the top categories to highlight
     throughout the experience.&nbsp;</p><h2><br />Findings reported in CR
     article:</h2><p>Consumer Reports <a target="_blank" rel="noopener"
@@ -175,15 +174,15 @@ sections:
 
 <section class="bg-grey overflow-visible">
   <div class="container">
-    <div class="row case-study-label">
-      <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
         <div class="sticky-top">
           <h2 class="editable h1">Digital Standard Mapping</h2>
           <div class="editable"></div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="editable">
+        <div class="editable mt-3">
             <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
     use and sharing</li></ul></li></ol>
@@ -196,15 +195,15 @@ sections:
 
 
 {% if page.who %}
-  <section class="overflow-visible">
+  <section>
     <div class="container">
-      <div class="row case-study-label">
-        <div class="col-12 col-lg-4 case-study-label d-block text-lg-right">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-lg-right">
           <h2 class="editable h1">Who was involved?</h2>
           <div class="editable"></div>
         </div>
         <div class="col-12 col-lg-8">
-          <div class="editable">
+          <div class="editable mt-3">
             Add details...
           </div>
         </div>
