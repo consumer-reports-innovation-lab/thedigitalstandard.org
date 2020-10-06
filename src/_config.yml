@@ -37,6 +37,11 @@ defaults:
       type: 'case-studies'
     values:
       layout: case-study
+      _comments:
+        problem: The problem
+        process: The process and methods that were used
+        impact: The output & impact this had
+        who: Who was involved
       _options:
         format: p h2 h3 h4 pre address div
         bold: true
@@ -72,6 +77,8 @@ sass:
   sass_dir: _scss
 plugins:
   - jekyll-sitemap
+  - jekyll-contentblocks
+
 
 placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
 

@@ -6,27 +6,16 @@ featured_image: /uploads/wireless-routers.jpg
 timeline:
   first_test_date: 2019-01-06 00:00:00
   latest_update_date: 2020-01-06 00:00:00
-problem: true
-process: true
-impact: true
-who: false
+sections:
+  problem: true
+  process: true
+  impact: true
+  who: false
 
 areas:
 
 ---
-
-
-{% if page.problem %}
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right ">
-        <div class="sticky-top ">
-          <h2 class="editable h1">Problem</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8 ">
+{% contentfor problem %}
         <div class="editable mt-3">
               <p>Today&rsquo;s home network may include a wide range of wireless devices,
     from computers and phones to IP Cameras, smart TVs, and connected
@@ -42,24 +31,9 @@ areas:
     practices, along with about 100 data points used to evaluate speed, ease of
     use, and other characteristics.</p>
         </div>
-      </div>
+{% endcontentfor %}
 
-    </div>
-  </div>
-</section>
-{% endif %}
-
-{% if page.process %}
-<section class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Process/Method</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor process %}
         <div class="editable mt-3">
               <p>The primary purpose is to investigate the most popular routers in the
     data privacy and security aspect, to generate ratings for each router in
@@ -82,23 +56,9 @@ areas:
     Wireless Routers Lack Basic Security Protections, Consumer Reports' Testing
     Finds</em></a><em>]</em></p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-{% if page.impact %}
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Output & Impact</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor impact %}
         <div class="editable mt-3">
               <h2>Consumer Reports Article:<strong> </strong></h2><p><a
     href="https://www.consumerreports.org/wireless-routers/wireless-routers-lack-basic-security-protections/">Many
@@ -124,50 +84,19 @@ areas:
     the web.</li><li>Disabling features not inuse (e.g. Universal Plug and
     Play)</li></ul>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-
-<section id="mapping" class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Digital Standard Mapping</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor mapping %}
         <div class="editable mt-3">
             <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
     use and sharing</li></ul></li><li>Governance and
     Compliance<ul><li>Transparency</li></ul></li></ol>
         </div>
-      </div>
-    </div>
-    {% include mapping.html %}
+{% endcontentfor %}
+
+{% contentfor who %}
+  <div class="editable mt-3">
+    Add details...
   </div>
-</section>
-
-
-{% if page.who %}
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-4 text-lg-right">
-          <h2 class="editable h1">Who was involved?</h2>
-          <div class="editable"></div>
-        </div>
-        <div class="col-12 col-lg-8">
-          <div class="editable mt-3">
-            Add details...
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-{% endif %}
+{% endcontentfor %}

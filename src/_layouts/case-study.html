@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <section class="bg-secondary">
   <div class="container">
     <div class="row">
@@ -17,6 +18,91 @@ layout: default
     </div>
   </div>
 </section>
-<div class="case-study">
-  {{ content }}
-</div>
+
+{% if page.sections.problem %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right ">
+        <div class="sticky-top ">
+          <h2 class="editable h1">Problem</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8 ">
+        {% contentblock problem %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.sections.process %}
+<section class="bg-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Process/Method</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        {% contentblock process %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.sections.impact %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Output & Impact</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        {% contentblock impact %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="bg-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
+        <div class="sticky-top">
+          <h2 class="editable h1">Digital Standard Mapping</h2>
+          <div class="editable"></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        {% contentblock mapping %}
+      </div>
+    </div>
+    {% include mapping.html %}
+  </div>
+</section>
+
+
+{% if page.sections.who %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 text-lg-right">
+        <h2 class="editable h1">Who was involved?</h2>
+        <div class="editable"></div>
+      </div>
+      <div class="col-12 col-lg-8">
+        {% contentblock who %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}

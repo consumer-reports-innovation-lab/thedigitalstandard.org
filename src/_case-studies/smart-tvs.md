@@ -6,26 +6,15 @@ featured_image: /uploads/smart-tvs.jpg
 timeline:
   first_test_date: 2018-02-13 00:00:00
   latest_update_date: 2020-05-20 00:00:00
-problem: true
-process: true
-impact: true
-who: false
+sections:
+  problem: true
+  process: true
+  impact: true
+  who: false
 
 areas:
 ---
-
-
-{% if page.problem %}
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top ">
-          <h2 class="editable h1">Problem</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor problem %}
         <div class="editable mt-3">
     <h2>Smart TVs can monitor watching behavior:</h2><p>Smart TVs are sets that
     connect to the internet, making it easy to stream videos from services such
@@ -65,23 +54,9 @@ areas:
     href="https://www.consumerreports.org/privacy/how-to-turn-off-smart-tv-snooping-features/">CR
     Article: How to Turn Off Smart TV Snooping Features</a>]</em></p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-{% if page.process %}
-<section class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Process/Method</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor process %}
         <div class="editable mt-3">
     <h2>Full testing:</h2><p>In February 2018, we performed our first ever tests
     on TVs using the Digital Standard. In 2020, we conducted another update on
@@ -116,23 +91,9 @@ areas:
     published raw data</a> from our Digital Standard testing including the
     workbook, test protocol, and test summary.&nbsp;</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-{% if page.impact %}
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Output & Impact</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor impact %}
         <div class="editable mt-3">
               <h2>Consumer Reports Article:</h2><p><a target="_blank" rel="noopener"
     href="https://www.consumerreports.org/televisions/samsung-roku-smart-tvs-vulnerable-to-hacking-consumer-reports-finds/">Samsung
@@ -190,23 +151,9 @@ areas:
     Article: Samsung and Roku Smart TVs Vulnerable to Hacking, Consumer Reports
     Finds</a>]</em></p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-
-<section id="mapping" class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Digital Standard Mapping</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor mapping %}
         <div class="editable mt-3">
             <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
@@ -214,27 +161,12 @@ areas:
     much data</li></ul></li><li>Governance and Compliance<ul><li>Privacy Policy
     and Terms of Service</li></ul></li></ol>
         </div>
-      </div>
-    </div>
-    {% include mapping.html %}
+{% endcontentfor %}
+
+{% contentfor who %}
+  <div class="editable mt-3">
+    Add details...
   </div>
-</section>
+{% endcontentfor %}
 
 
-{% if page.who %}
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-4 text-lg-right">
-          <h2 class="editable h1">Who was involved?</h2>
-          <div class="editable"></div>
-        </div>
-        <div class="col-12 col-lg-8">
-          <div class="editable mt-3">
-            Add details...
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-{% endif %}

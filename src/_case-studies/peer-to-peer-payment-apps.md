@@ -6,28 +6,18 @@ featured_image: /uploads/payment-apps.jpg
 timeline:
   first_test_date: 2016-10-07 00:00:00
   latest_update_date: 2018-08-18 00:00:00
-problem: true
-process: true
-impact: true
-who: false
+sections:
+  problem: true
+  process: true
+  impact: true
+  who: false
 areas:
 
 ---
 
-
-{% if page.problem %}
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right ">
-        <div class="sticky-top">
-          <h2 class="editable h1">Problem</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8 ">
+{% contentfor problem %}
         <div class="editable mt-3">
-              <h2>Unclear legal agreements:</h2><p>Peer-to-peer payment app providers
+          <h2>Unclear legal agreements:</h2><p>Peer-to-peer payment app providers
     deserve credit for designing simple and easy-to-use applications that belie
     their underlying technological and financial sophistication. But that
     simplicity smooths over more than just technical wizardry. It also hides a
@@ -54,23 +44,9 @@ areas:
     Payments Are Generally Safe, But Consumers Must Be Aware of
     Risks</a>]</em></p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-{% if page.process %}
-<section class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Process/Method</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor process %}
         <div class="editable mt-3">
               <h2>Full testing on 5 mobile P2P services:</h2><p>In light of the quick rise
     of P2P&mdash;and its potential financial and privacy risks&mdash;Consumer
@@ -90,23 +66,9 @@ areas:
     />&nbsp;</p>
     <p><img src="/uploads/mapping-05-inline.png" alt="Mobile peer-to-peer payment services chart"/></p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-{% if page.impact %}
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Output & Impact</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor impact %}
         <div class="editable mt-3">
               <h2>Consumer Reports ratings article and in-depth review:</h2><p><a
     target="_blank" rel="noopener"
@@ -172,23 +134,9 @@ areas:
     how consumers can protect themselves</a> when using peer-to-peer payment
     apps.&nbsp;</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-
-<section id="mapping" class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Digital Standard Mapping</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor mapping %}
         <div class="editable mt-3">
             <ol><li>Security<ul><li>Data security</li><li>User
     safety</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data use
@@ -197,27 +145,12 @@ areas:
     and Compliance<ul><li>Privacy Policy &amp; Terms of
     Service</li><li>Transparency</li></ul></li></ol>
         </div>
-      </div>
-    </div>
-    {% include mapping.html %}
+{% endcontentfor %}
+
+{% contentfor who %}
+  <div class="editable mt-3">
+    Add details...
   </div>
-</section>
+{% endcontentfor %}
 
 
-{% if page.who %}
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-4 text-lg-right">
-          <h2 class="editable h1">Who was involved?</h2>
-          <div class="editable"></div>
-        </div>
-        <div class="col-12 col-lg-8">
-          <div class="editable mt-3">
-            Add details...
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-{% endif %}

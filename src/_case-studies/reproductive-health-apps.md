@@ -6,27 +6,19 @@ featured_image: /uploads/reproductive-health-apps.jpg
 timeline:
   first_test_date: 2020-01-22 00:00:00
   latest_update_date: 2020-01-23 00:00:00
-problem: true
-process: true
-impact: true
-who: false
+
+sections:
+  problem: true
+  process: true
+  impact: true
+  who: false
 
 areas:
 
 ---
 
 
-{% if page.problem %}
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right ">
-        <div class="sticky-top ">
-          <h2 class="editable h1">Problem</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8 ">
+{% contentfor problem %}
         <div class="editable mt-3">
               <h2>Context:</h2><p>Fertility or menstrual cycle trackers have been used by
     nearly a third of women in the U.S., according to a recent Kaiser Family
@@ -70,24 +62,9 @@ areas:
     href="https://www.consumerreports.org/health-privacy/what-your-period-tracker-app-knows-about-you/">CR
     Article: What Your Period Tracker App Knows About You</a>]</em></p>
         </div>
-      </div>
+{% endcontentfor %}
 
-    </div>
-  </div>
-</section>
-{% endif %}
-
-{% if page.process %}
-<section class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Process/Method</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor process %}
         <div class="editable mt-3">
             <p>We conducted a comparative analysis of 5 reproductive health
     &nbsp;tracker apps: BabyCenter, Clue, Flo, My Calendar and Ovia. CR examined
@@ -103,23 +80,9 @@ areas:
     to design digital products that are respectful of consumer privacy
     rights.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-{% if page.impact %}
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Output & Impact</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor impact %}
         <div class="editable mt-3">
               <p>The graphic scorecard illustrates some of the top categories to highlight
     throughout the experience.&nbsp;</p><h2><br />Findings reported in CR
@@ -165,49 +128,19 @@ areas:
       <img src="/uploads/mapping-04-inline.png" alt="5 Period Tracker Apps"/>
     </p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-
-<section id="mapping" class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Digital Standard Mapping</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor mapping %}
         <div class="editable mt-3">
             <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
     use and sharing</li></ul></li></ol>
         </div>
-      </div>
-    </div>
-    {% include mapping.html %}
+{% endcontentfor %}
+
+{% contentfor who %}
+  <div class="editable mt-3">
+    Add details...
   </div>
-</section>
+{% endcontentfor %}
 
-
-{% if page.who %}
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-4 text-lg-right">
-          <h2 class="editable h1">Who was involved?</h2>
-          <div class="editable"></div>
-        </div>
-        <div class="col-12 col-lg-8">
-          <div class="editable mt-3">
-            Add details...
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-{% endif %}

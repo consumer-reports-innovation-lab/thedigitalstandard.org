@@ -6,26 +6,15 @@ featured_image: /uploads/video-doorbells.jpg
 timeline:
   first_test_date: 2020-08-11 00:00:00
   latest_update_date: 2020-08-28 00:00:00
-problem: true
-process: true
-impact: true
-who: false
+sections:
+  problem: true
+  process: true
+  impact: true
+  who: false
 
 areas:
 ---
-
-
-{% if page.problem %}
-<section class="overflow-visible">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right ">
-        <div class="sticky-top ">
-          <h2 class="editable h1">Problem</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8 ">
+{% contentfor problem %}
         <div class="editable mt-3">
     <p>Video doorbells make it easy to see who&rsquo;s at your door, a
     convenience that provides a sense of security. But like any
@@ -45,24 +34,9 @@ areas:
     passwords. The brands
     are:</p><ul><li>Eufy</li><li>GoControl</li><li>LaView</li><li>Netvue</li></ul>
         </div>
-      </div>
+{% endcontentfor %}
 
-    </div>
-  </div>
-</section>
-{% endif %}
-
-{% if page.process %}
-<section class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Process/Method</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor process %}
         <div class="editable mt-3">
               <p>Our experts in the Digital Lab use <a
     href="https://www.thedigitalstandard.org/">The Digital Standard</a>, an
@@ -94,23 +68,9 @@ areas:
     Security and Privacy Gaps Found in Video Doorbells by Consumer Reports'
     Tests</em></a><em>]</em></p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-{% if page.impact %}
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Output & Impact</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor impact %}
         <div class="editable mt-3">
               <h2>Consumer Reports Article:</h2><p><a
     href="https://www.consumerreports.org/video-doorbells/data-security-data-privacy-gaps-found-in-video-doorbells/"><em>Data
@@ -166,50 +126,21 @@ areas:
     of its police partnerships</a>. But our tests, conducted from May to June,
     showed that the security of Ring devices was quite good.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-
-<section id="mapping" class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Digital Standard Mapping</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor mapping %}
         <div class="editable mt-3">
     <ol><li>Security<ul><li>Build quality</li><li>Data
     security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
     use and sharing</li></ul></li><li>Governance and
     Compliance<ul><li>Transparency</li></ul></li></ol>
         </div>
-      </div>
-    </div>
-    {% include mapping.html %}
+{% endcontentfor %}
+
+{% contentfor who %}
+  <div class="editable mt-3">
+    Add details...
   </div>
-</section>
+{% endcontentfor %}
 
 
-{% if page.who %}
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-4 text-lg-right">
-          <h2 class="editable h1">Who was involved?</h2>
-          <div class="editable"></div>
-        </div>
-        <div class="col-12 col-lg-8">
-          <div class="editable mt-3">
-            Add details...
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-{% endif %}

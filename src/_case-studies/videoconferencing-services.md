@@ -6,26 +6,15 @@ featured_image: /uploads/videoconfrencing.jpg
 timeline:
   first_test_date: 2020-03-18 00:00:00
   latest_update_date: 2020-05-13 00:00:00
-problem: true
-process: true
-impact: true
-who: false
+sections:
+  problem: true
+  process: true
+  impact: true
+  who: false
 
 areas:
 ---
-
-
-{% if page.problem %}
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right ">
-        <div class="sticky-top">
-          <h2 class="editable h1">Problem</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8 ">
+{% contentfor problem %}
         <div class="editable mt-3">
     <p>As of mid-April 2020, <a target="_blank" rel="noopener"
     href="https://www.nytimes.com/interactive/2020/us/coronavirus-stay-at-home-order.html">95%
@@ -63,23 +52,9 @@ areas:
       <img src="/uploads/mapping-01-inline.png" alt="Videoconferencing Services - a comparative analysis of privacy policies"/>
     </p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-{% if page.process %}
-<section class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Process/Method</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor process %}
         <div class="editable mt-3">
     <p>Through <a target="_blank" rel="noopener"
     href="https://medium.com/cr-digital-lab/skype-meet-webex-videoconference-privacy-845bc8360fd3">a
@@ -109,23 +84,9 @@ areas:
     These recommendations were framed in a way that is broadly applicable to any
     platform that offers video conferencing features.&nbsp;</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-{% if page.impact %}
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Output & Impact</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor impact %}
         <div class="editable mt-3">
     <h2>Sent a letter to Company CEOs highlighting 10 recommendations and
     changes:</h2><p>Based on the analysis, our policy team reached out to
@@ -177,23 +138,9 @@ areas:
     data</a>. The press release covered the report and highlighted the
     call-to-action letter to Cisco, Google and Microsoft.<br />&nbsp;</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% endcontentfor %}
 
-
-<section id="mapping" class="bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 text-lg-right">
-        <div class="sticky-top">
-          <h2 class="editable h1">Digital Standard Mapping</h2>
-          <div class="editable"></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
+{% contentfor mapping %}
         <div class="editable mt-3">
     <p>This work incorporated several specific elements from the larger Digital
     Standard. Specifically, the comparative analysis used elements from the
@@ -203,27 +150,11 @@ areas:
     information</li></ul></li><li>Governance:<ul><li>Privacy Policy &amp; Terms
     of Service</li><li>Transparency</li></ul></li></ol>
         </div>
-      </div>
-    </div>
-    {% include mapping.html %}
+{% endcontentfor %}
+
+{% contentfor who %}
+  <div class="editable mt-3">
+    Add details...
   </div>
-</section>
+{% endcontentfor %}
 
-
-{% if page.who %}
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-4 text-lg-right">
-          <h2 class="editable h1">Who was involved?</h2>
-          <div class="editable"></div>
-        </div>
-        <div class="col-12 col-lg-8">
-          <div class="editable mt-3">
-            Add details...
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-{% endif %}
