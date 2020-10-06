@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.layout }}-layout {{ page.title | slugify }}-page" data-spy="scroll" data-target="#sectionNav" data-offset="135" >
+  <body class="{{ page.title | slugify }}-page" data-spy="scroll" data-target="#sectionNav" data-offset="135" >
     {% include header.html %}
-    <main id="pageContent">
+    <main id="pageContent" class="{{ page.layout }}-layout">
       {{ content }}
     </main>
     {% include footer.html %}

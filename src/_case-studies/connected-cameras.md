@@ -6,8 +6,24 @@ featured_image: /uploads/connected-cameras.jpg
 timeline:
   first_test_date: 2019-12-03 00:00:00
   latest_update_date: 2020-06-09 00:00:00
-problem:
-  problem_html: >-
+sections:
+  problem: true
+  process: true
+  impact: true
+  who_was_involved: false
+areas:
+  - Build Quality
+  - Data Security
+  - Access and Control
+  - Data Use and Sharing
+  - Data retention
+  - Overreach - Collecting Too Much Data
+  - Privacy Policy & Terms of Service
+  - Transparency
+---
+
+{% contentfor problem %}
+  <div class="editable mt-3">
     <h2>Sensitive Data Collection</h2><p>Connected devices such as cameras are
     increasingly being used in the private sphere of the home and collect highly
     sensitive information including voice and visual recordings of the home and
@@ -61,27 +77,29 @@ problem:
     Hackers</a> and this <a target="_blank" rel="noopener"
     href="https://advocacy.consumerreports.org/wp-content/uploads/2020/01/CR-Letter-to-Connected-Camera-Security-and-Doorbell-Manufacturers-1.13.20.pdf">advocacy
     letter to connected camera companies</a>]</em></p>
-  problem_image:
-  image_alt_text:
-process:
-  process_methods:
-    - full testing
-  process_html: >-
-    <h2>Full Testing</h2><p>Across 14 home security connected cameras, Consumer
-    Reports performed a round of full testing across these devices in accordance
-    with criteria/indicators of the <a target="_blank" rel="noopener"
-    href="https://www.thedigitalstandard.org/">Digital Standard</a>. The result
-    of this testing was <a target="_blank" rel="noopener"
-    href="https://www.consumerreports.org/products/home-security-cameras-200099/wireless-security-cameras-200101/view2/">a
-    set of Consumer Reports ratings</a> for home security cameras available to
-    consumers (image left) which incorporated data privacy and security
-    categories. Consumer Reports also <a target="_blank" rel="noopener"
-    href="https://www.consumerreports.org/wireless-security-cameras/wyze-and-guardzilla-home-security-cameras-have-security-risks/">reviewed
-    cameras in 2019</a>.</p>
-  process_image:
-  image_alt_text:
-impact:
-  impact_html: >-
+  </div>
+{% endcontentfor %}
+
+{% contentfor process %}
+  <div class="editable mt-3">
+    <h2>Full Testing</h2>
+    <p>Across 14 home security connected cameras, Consumer
+      Reports performed a round of full testing across these devices in accordance
+      with criteria/indicators of the <a target="_blank" rel="noopener"
+      href="https://www.thedigitalstandard.org/">Digital Standard</a>. The result
+      of this testing was <a target="_blank" rel="noopener"
+      href="https://www.consumerreports.org/products/home-security-cameras-200099/wireless-security-cameras-200101/view2/">a
+      set of Consumer Reports ratings</a> for home security cameras available to
+      consumers (image left) which incorporated data privacy and security
+      categories. Consumer Reports also <a target="_blank" rel="noopener"
+      href="https://www.consumerreports.org/wireless-security-cameras/wyze-and-guardzilla-home-security-cameras-have-security-risks/">reviewed
+      cameras in 2019</a>.
+    </p>
+  </div>
+{% endcontentfor %}
+
+{% contentfor impact %}
+  <div class="editable mt-3">
     <h2>Created campaign strategy&nbsp;</h2><p>In order to organize our efforts,
     the Consumer Reports team strategized a campaign by doing research on
     reported hacking incidents in the month of December 2019, reviewed the IP
@@ -157,20 +175,20 @@ impact:
     the goal of informing them about what we heard back from companies and how
     we are giving greater weight to automatic security updates and requiring
     two-factor authentication.&nbsp;</p>
-  impact_image:
-  image_alt_text:
-standard_mapping:
-  standard_mapping_html: >-
+  </div>
+{% endcontentfor %}
+
+{% contentfor mapping %}
+  <div class="editable mt-3">
     <p>This work incorporated several specific elements from the larger Digital
     Standard. Specifically, the comparative analysis used elements from the
-    Privacy and Governance sections of the
-    Standard:</p><ol><li>Security<ul><li>Build quality</li><li>Data
-    security</li></ul></li><li>Privacy<ul><li>Access and control</li><li>Data
-    use and sharing</li><li>Data retention</li><li>Overreach - collecting too
-    much data</li></ul></li><li>Governance and compliance<ul><li>Privacy Policy
-    and Terms of Service</li><li>Transparency</li></ul></li></ol>
-  digital_standard_criteria_image: /uploads/mapping-2.png
-who_was_involved:
-  who_was_involved_html:
----
+    Privacy and Governance sections of the Standard:</p>
+  </div>
+{% endcontentfor %}
 
+
+{% contentfor who %}
+  <div class="editable mt-3">
+    Add details...
+  </div>
+{% endcontentfor %}

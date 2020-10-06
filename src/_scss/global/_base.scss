@@ -8,7 +8,7 @@ body {
 
 section {
   padding: 40px 0;
-  overflow: hidden;
+  overflow: visible;
   @include media-breakpoint-up(md) {
     padding: 5% 0;
   }

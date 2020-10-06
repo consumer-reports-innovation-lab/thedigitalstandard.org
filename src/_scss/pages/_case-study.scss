@@ -15,18 +15,22 @@
   }
 }
 
-.case-study-label {
-  h1 {
+.case-study-layout {
+  h1,
+  .h1 {
+    font-family: $font-family-sans-serif;
     text-transform: uppercase;
     color: $tds-green-200;
     font-size: 1.75rem;
   }
-  h2 {
+  h2,
+  .h2 {
     font-family: $font-family-serif;
     font-weight: 600;
     margin-top: 0.5rem;
   }
-  h3 {
+  h3,
+  .h3 {
     font-family: $font-family-serif;
     font-weight: 400;
     margin-top: 0.5rem;
@@ -68,5 +72,58 @@ blockquote {
   p {
     font-family: $font-family-sans-serif !important;
     font-size: 1rem;
+  }
+}
+
+.standard-mapping {
+  display: flex;
+  border-top: 1px solid $dark;
+  color: $tds-grey-300;
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+  }
+  .section {
+    display: flex;
+    flex-flow: column;
+    width: 25%;
+    border-right: 1px solid $dark;
+    &:first-of-type {
+      border-left: 1px solid $dark;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      border-left: 1px solid $dark;
+    }
+  }
+  .area,
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    height: 120px;
+    border-bottom: 1px solid $dark;
+    @include media-breakpoint-down(sm) {
+      padding: 1rem;
+      height: auto;
+      &.blank {
+        display: none;
+      }
+    }
+    &.active {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+
+  .area {
+    background-color: $dark;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    @include media-breakpoint-down(sm) {
+      background-color: $dark !important;
+    }
   }
 }

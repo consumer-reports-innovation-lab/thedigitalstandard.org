@@ -1,0 +1,39 @@
+{% assign numrows = 0 %}
+{% for section in site.data.standards %}
+  {% if section[1].principles.size > numrows %}
+    {% assign numrows = section[1].principles.size %}
+  {% endif %}
+{% endfor %}
+
+<div class="row">
+  <div class="col-12">
+    <div class="border d-sm-none">
+      <div class="area p-3 text-center">
+        <h3 class="mb-0">Digital Standard Criteria</h3>
+      </div>
+    </div>
+    <div class="standard-mapping">
+    {% for section in site.data.standards %}
+      {% assign principles = section[1].principles %}
+      <div class="section">
+        <div class="area {% cycle 'bg-dark', 'bg-mid' %}">
+          {{ section[0] }}
+        </div>
+        {% for row in (1..numrows) %}
+          {% if principles.size >= forloop.index %}
+            {% assign principle = principles[{{forloop.index0}}] %}
+            {% assign active = false %}
+            {% if page.areas contains principle['label'] %}
+              {% assign active = true %}
+            {% endif %}
+            <div class="cell {% if active %}active{% endif %}">{{ principle['label'] }}</div>
+          {% else %}
+          <div class="cell blank">&mdash;</div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+
