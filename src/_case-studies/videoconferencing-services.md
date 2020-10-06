@@ -10,8 +10,13 @@ problem: true
 process: true
 impact: true
 who: false
-
 areas:
+  - Access and Control
+  - Data Use and Sharing
+  - Data retention
+  - Overreach - Collecting Too Much Data
+  - Privacy Policy & Terms of Service
+  - Transparency
 ---
 
 
