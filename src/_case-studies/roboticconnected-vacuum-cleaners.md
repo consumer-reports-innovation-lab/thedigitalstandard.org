@@ -10,8 +10,10 @@ problem: true
 process: true
 impact: true
 who: false
-
 areas:
+  - Access and Control
+  - Data Use and Sharing
+  - Transparency
 ---
 
 
