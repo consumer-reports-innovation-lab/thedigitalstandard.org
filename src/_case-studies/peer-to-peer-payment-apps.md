@@ -11,7 +11,15 @@ process: true
 impact: true
 who: false
 areas:
-
+  - Data Security
+  - User Safety
+  - Access and Control
+  - Data Use and Sharing
+  - Data retention
+  - Overreach - Collecting Too Much Data
+  - Interoperability
+  - Privacy Policy & Terms of Service
+  - Transparency
 ---
 
 
