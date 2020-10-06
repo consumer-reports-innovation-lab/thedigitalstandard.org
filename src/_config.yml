@@ -101,10 +101,6 @@ areas:
 
 # Cloudcannon Configuration
 _array_structures:
-  areas:
-    - label: Standard Mapping
-      icon: folder
-
   criteria:
     - label: Criteria
       icon: share
