@@ -13,6 +13,9 @@ sections:
   who: false
 
 areas:
+  - Access and Control
+  - Data Use and Sharing
+  - Transparency
 ---
 
 {% contentfor problem %}

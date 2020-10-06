@@ -14,7 +14,10 @@ sections:
   who: false
 
 areas:
-
+  - Build Quality
+  - Data Security
+  - Access and Control
+  - Data Use and Sharing
 ---
 
 

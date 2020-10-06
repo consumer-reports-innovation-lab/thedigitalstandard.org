@@ -13,6 +13,11 @@ sections:
   who: false
 
 areas:
+  - Build Quality
+  - Data Security
+  - Access and Control
+  - Data Use and Sharing
+  - Transparency
 ---
 {% contentfor problem %}
         <div class="editable mt-3">
