@@ -10,8 +10,12 @@ problem: true
 process: true
 impact: true
 who: false
-
 areas:
+  - Build Quality
+  - Data Security
+  - Access and Control
+  - Data Use and Sharing
+  - Transparency
 ---
 
 
