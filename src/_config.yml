@@ -8,10 +8,10 @@ permalink: pretty
 # Social sharing
 description: The Digital Standard is a framework to evaluate consumer technologies and how they respect people’s interests and needs.
 socialshare:
-  featured_image: /img/TDS-SocialShare.png
+  featured_image: /img/socialshare.png
   twitter:
     username:
-    image: /img/TDS-SocialShare.png
+    image: /img/socialshare.png
 
 # Google Analytics
 analytics_code: UA-106357720-14
