@@ -1,11 +1,11 @@
 <meta property="og:title" content="{{ page.title | default: site.title }}" />
 <meta property="og:description" content="{{ page.description | default: site.description }}" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
 {% if page.socialshare %}
-<meta property="og:image" content="{{ page.socialshare.featured_image | absolute_url }}" />
+<meta property="og:image" content="{{ page.socialshare.featured_image | prepend: site.url }}" />
 {% else %}
-<meta property="og:image" content="{{ site.socialshare.featured_image | absolute_url }}" />
+<meta property="og:image" content="{{ site.socialshare.featured_image | prepend: site.url }}" />
 {% endif %}
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -18,8 +18,8 @@
  <meta name="twitter:description" content="{{ page.title | default: site.title }}" />
  <meta name="twitter:text:description" content="{{ page.description | default: site.description }}" />
  {% if page.socialshare %}
- <meta name="twitter:image" content="{{ page.socialshare.twitter.image | absolute_url }}" />
+ <meta name="twitter:image" content="{{ page.socialshare.twitter.image | prepend: site.url }}" />
  {% else %}
- <meta property="og:image" content="{{ site.socialshare.twitter.image | absolute_url }}" />
+ <meta property="og:image" content="{{ site.socialshare.twitter.image | prepend: site.url }}" />
  {% endif %}
  <meta name="twitter:image:alt" content="{{ site.title | default: site.title }}" />
