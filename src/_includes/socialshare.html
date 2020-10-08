@@ -20,6 +20,6 @@
  {% if page.socialshare %}
  <meta name="twitter:image" content="{{ page.socialshare.twitter.image | prepend: site.url }}" />
  {% else %}
- <meta property="og:image" content="{{ site.socialshare.twitter.image | prepend: site.url }}" />
+ <meta property="twitter:image" content="{{ site.socialshare.twitter.image | prepend: site.url }}" />
  {% endif %}
  <meta name="twitter:image:alt" content="{{ site.title | default: site.title }}" />
