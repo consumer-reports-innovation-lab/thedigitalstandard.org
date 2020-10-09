@@ -1,7 +1,7 @@
 # Site settings
 client: Consumer Reports
-title: Digital Standard
-email: dev@ocupop.com
+title: The Digital Standard
+email: digitallab@cr.consumer.org
 url: "https://polite-moon.cloudvent.net"
 permalink: pretty
 
@@ -37,6 +37,11 @@ defaults:
       type: 'case-studies'
     values:
       layout: case-study
+      _comments:
+        problem: The problem
+        process: The process and methods that were used
+        impact: The output & impact this had
+        who: Who was involved
       _options:
         format: p h2 h3 h4 pre address div
         bold: true
@@ -72,11 +77,18 @@ sass:
   sass_dir: _scss
 plugins:
   - jekyll-sitemap
+  - jekyll-contentblocks
+
 
 placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
 
 standard_states: ['1: Green', '2: Yellow', '3: Red']
-categories:
+sections:
+  - Security
+  - Privacy
+  - Ownership
+  - Governance
+areas:
   - Data Security
   - Build Quality
   - User Safety
@@ -85,6 +97,7 @@ categories:
   - Data retention
   - Overreach - Collecting Too Much Data
   - Ownership
+  - Interoperability
   - Permanence
   - Right to Repair
   - Business Model
@@ -95,12 +108,6 @@ categories:
 
 # Cloudcannon Configuration
 _array_structures:
-  categories:
-    - label: Standard Categories
-      icon: folder
-      value:
-        label:
-        standards:
   criteria:
     - label: Criteria
       icon: share

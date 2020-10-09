@@ -3,25 +3,45 @@ title:
 case_study_status_understanding:
 lead_organization:
 featured_image:
+
 timeline:
   first_test_date:
   latest_update_date:
-problem:
-  problem_html:
-  problem_image:
-  image_alt_text:
-process:
-  process_methods:
-  process_html:
-  process_image:
-  image_alt_text:
-impact:
-  impact_html:
-  impact_image:
-  image_alt_text:
-standard_mapping:
-  standard_mapping_html:
-  digital_standard_criteria_image:
-who_was_involved:
-  who_was_involved_html:
+
+sections:
+  problem: true
+  process: true
+  impact: true
+  who: false
+
+areas:
 ---
+{% contentfor problem %}
+  <div class="editable mt-3">
+    Add details...
+  </div>
+{% endcontentfor %}
+
+{% contentfor process %}
+  <div class="editable mt-3">
+    Add details...
+  </div>
+{% endcontentfor %}
+
+{% contentfor impact %}
+  <div class="editable mt-3">
+    Add details...
+  </div>
+{% endcontentfor %}
+
+{% contentfor mapping %}
+  <div class="editable mt-3">
+    Add details...
+  </div>
+{% endcontentfor %}
+
+{% contentfor who %}
+  <div class="editable mt-3">
+    Add details...
+  </div>
+{% endcontentfor %}
