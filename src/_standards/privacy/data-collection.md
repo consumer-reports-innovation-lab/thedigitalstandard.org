@@ -1,9 +1,6 @@
 ---
-title: Data collection
-standard_category: Overreach - Collecting Too Much Data
-standard_state: '1: Green'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Privacy%20(Is%20it%20private%3F)%2FOverreach%20-%20Collecting%20Too%20Much%20Data%2FData%20collection.yaml
+evaluationName: Data collection
+readinessFlag: '1'
 criteria:
   - criteria_summary: I know what user information this company is collecting and when.
     indicators:

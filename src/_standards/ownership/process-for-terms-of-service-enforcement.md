@@ -1,9 +1,6 @@
 ---
-title: Process for terms of service enforcement
-standard_category: Permanence
-standard_state: '1: Green'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Ownership%20(Is%20it%20mine%3F)%2FPermanence%2FProcess%20for%20terms%20of%20service%20enforcement.yaml
+evaluationName: Process for terms of service enforcement
+readinessFlag: '1'
 criteria:
   - criteria_summary: >-
       I know how, when, and why the company or organization unilaterally closes

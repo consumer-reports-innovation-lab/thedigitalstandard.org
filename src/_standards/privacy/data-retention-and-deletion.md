@@ -1,9 +1,6 @@
 ---
-title: Data retention and deletion
-standard_category: Data retention
-standard_state: '1: Green'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Privacy%20(Is%20it%20private%3F)%2FData%20retention%2FData%20retention%20and%20deletion.yaml
+evaluationName: Data retention and deletion
+readinessFlag: '1'
 criteria:
   - criteria_summary: >-
       The company retains data only as long as relevant and reasonably necessary

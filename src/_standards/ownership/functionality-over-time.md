@@ -1,9 +1,6 @@
 ---
-title: Functionality Over Time
-standard_category: Permanence
-standard_state: '3: Red'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Ownership%20(Is%20it%20mine%3F)%2FPermanence%2FFunctionality%20Over%20Time.yaml
+evaluationName: Functionality Over Time
+readinessFlag: '3'
 criteria:
   - criteria_summary: >-
       The company commits to maintain the intended functionality of the product

@@ -1,5 +1,5 @@
 ---
-title: Video Doorbells
+evaluationName: Video Doorbells
 case_study_status_understanding:
 lead_organization: Consumer Reports
 featured_image: /uploads/video-doorbells.jpg

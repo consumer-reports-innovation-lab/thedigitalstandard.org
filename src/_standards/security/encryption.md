@@ -1,9 +1,6 @@
 ---
-title: Encryption
-standard_category: Data Security
-standard_state: '2: Yellow'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Security%20(Is%20it%20safe%3F)%2FData%20security%2FEncryption.yaml
+evaluationName: Encryption
+readinessFlag: '2'
 criteria:
   - criteria_summary: >-
       Information I provide is encrypted so that it can't be easily read or used

@@ -75,6 +75,7 @@ safe: false
 sass:
   # style: compressed
   sass_dir: _scss
+data_dir: _standards
 plugins:
   - jekyll-sitemap
   - jekyll-contentblocks
@@ -82,7 +83,7 @@ plugins:
 
 placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
 
-standard_states: ['1: Green', '2: Yellow', '3: Red']
+readinessFlags: ['1', '2', '3']
 sections:
   - Security
   - Privacy

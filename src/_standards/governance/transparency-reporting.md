@@ -1,9 +1,6 @@
 ---
-title: Transparency reporting
-standard_category: Transparency
-standard_state: '1: Green'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Governance%20%26%20Compliance%20(Are%20they%20good%3F)%2FTransparency%2FTransparency%20reporting.yaml
+evaluationName: Transparency reporting
+readinessFlag: '1'
 criteria:
   - criteria_summary: >-
       The company is transparent about its practices for sharing user data with

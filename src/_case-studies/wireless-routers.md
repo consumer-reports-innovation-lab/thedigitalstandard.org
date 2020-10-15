@@ -1,5 +1,5 @@
 ---
-title: Wireless Routers
+evaluationName: Wireless Routers
 case_study_status_understanding:
 lead_organization: Consumer Reports
 featured_image: /uploads/wireless-routers.jpg

@@ -1,8 +1,5 @@
-# Adding this for reference in case we need to change the naming conventions
-# FROM CLIENT:
-# "section" > "principles" > "area" > "indicator"
-
 security:
+  label: Security (Is it safe?)
   principles:
     - label: Build Quality
       standards:
@@ -20,6 +17,7 @@ security:
       standards:
         - security/personal-safety
 privacy:
+  label: Privacy (Is it private?)
   principles:
     - label: Access and Control
       standards:
@@ -38,6 +36,7 @@ privacy:
         - privacy/minimal-data-collection
         - privacy/privacy-by-default
 ownership:
+  label: Ownership (Is it mine?)
   principles:
     - label: Ownership
       standards:
@@ -54,6 +53,7 @@ ownership:
         - ownership/repair-penalty
         - ownership/repair-accessibility
 governance:
+  label: Governance & Compliance (Are they good?)
   principles:
     - label: Business Model
       standards:

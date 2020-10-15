@@ -1,9 +1,6 @@
 ---
-title: Privacy by default
-standard_category: Overreach - Collecting Too Much Data
-standard_state: '2: Yellow'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Privacy%20(Is%20it%20private%3F)%2FOverreach%20-%20Collecting%20Too%20Much%20Data%2FPrivacy%20by%20default.yaml
+evaluationName: Privacy by default
+readinessFlag: '2'
 criteria:
   - criteria_summary: >-
       The default settings in this product prioritize my privacy; to give up

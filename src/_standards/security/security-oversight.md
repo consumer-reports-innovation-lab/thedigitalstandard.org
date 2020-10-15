@@ -1,9 +1,6 @@
 ---
-title: Security Oversight
-standard_category: Data Security
-standard_state: '1: Green'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Security%20(Is%20it%20safe%3F)%2FData%20security%2FSecurity%20Oversight.yaml
+evaluationName: Security Oversight
+readinessFlag: '1'
 criteria:
   - criteria_summary: The company is a responsible caretaker of my data.
     indicators:

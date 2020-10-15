@@ -1,9 +1,6 @@
 ---
-title: Product Stablity
-standard_category: Build Quality
-standard_state: '2: Yellow'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Security%20(Is%20it%20safe%3F)%2FBuild%20Quality%2FProduct%20stability.yaml
+evaluationName: Product Stablity
+readinessFlag: '2'
 criteria:
   - criteria_summary: The software is reliable.
     indicators:

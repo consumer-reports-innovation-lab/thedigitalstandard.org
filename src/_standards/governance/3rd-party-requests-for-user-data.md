@@ -1,9 +1,6 @@
 ---
-title: 3rd party requests for user data
-standard_category: Transparency
-standard_state: '1: Green'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Governance%20%26%20Compliance%20(Are%20they%20good%3F)%2FTransparency%2F3rd%20party%20requests%20for%20user%20data.yaml
+evaluationName: 3rd party requests for user data
+readinessFlag: '1'
 criteria:
   - criteria_summary: >-
       The company complies only with legal and ethical third-party requests for

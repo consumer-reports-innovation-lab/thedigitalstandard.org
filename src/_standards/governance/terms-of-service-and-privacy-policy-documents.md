@@ -1,9 +1,6 @@
 ---
-title: Terms of Service and Privacy Policy documents
-standard_category: Privacy Policy & Terms of Service
-standard_state: '1: Green'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Governance%20%26%20Compliance%20(Are%20they%20good%3F)%2FPrivacy%20Policy%20%26%20Terms%20of%20Service%2FTerms%20of%20Service%20and%20Privacy%20Policy%20documents.yaml
+evaluationName: Terms of Service and Privacy Policy documents
+readinessFlag: '1'
 criteria:
   - criteria_summary: >-
       I can easily find, read, and understand the privacy policy and/or terms of

@@ -1,5 +1,5 @@
 ---
-title: Connected Cameras
+evaluationName: Connected Cameras
 case_study_status_understanding: Well understood
 lead_organization: Consumer Reports
 featured_image: /uploads/connected-cameras.jpg

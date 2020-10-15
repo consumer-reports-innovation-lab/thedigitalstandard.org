@@ -1,9 +1,6 @@
 ---
-title: Security Over Time
-standard_category: Data Security
-standard_state: '2: Yellow'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Security%20(Is%20it%20safe%3F)%2FData%20security%2FSecurity%20over%20time.yaml
+evaluationName: Security Over Time
+readinessFlag: '2'
 criteria:
   - criteria_summary: >-
       The product is kept protected with software updates for a clearly defined

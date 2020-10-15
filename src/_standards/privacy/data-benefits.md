@@ -1,9 +1,6 @@
 ---
-title: Data benefits
-standard_category: Overreach - Collecting Too Much Data
-standard_state: '3: Red'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Privacy%20(Is%20it%20private%3F)%2FOverreach%20-%20Collecting%20Too%20Much%20Data%2FData%20benefits.yaml
+evaluationName: Data benefits
+readinessFlag: '3'
 criteria:
   - criteria_summary: >-
       Every piece of data I share brings me a benefit; it doesn't just help the

@@ -1,9 +1,6 @@
 ---
-title: Repair Penalty
-standard_category: Right to Repair
-standard_state: '3: Red'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Ownership%20(Is%20it%20mine%3F)%2FRight%20to%20Repair%2FRepair%20Penalty.yaml
+evaluationName: Repair Penalty
+readinessFlag: '3'
 criteria:
   - criteria_summary: >-
       I am not penalized for getting the product properly repaired by a third

@@ -1,9 +1,6 @@
 ---
-title: Data Use
-standard_category: Data Use and Sharing
-standard_state: '1: Green'
-github_url: >-
-  https://github.com/TheDigitalStandard/TheDigitalStandard/blob/master/Privacy%20(Is%20it%20private%3F)%2FData%20Use%20and%20Sharing%2FData%20use.yaml
+evaluationName: Data Use
+readinessFlag: '1'
 criteria:
   - criteria_summary: >-
       Data usage is consistent with the context of the relationship with the
