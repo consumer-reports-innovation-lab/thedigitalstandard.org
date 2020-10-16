@@ -12,9 +12,9 @@
   min-height: calc(100vh - 500px);
 }
 #pageFooter {
+  padding: 50px 0;
   display: flex;
   align-items: center;
-  height: 500px;
   background-color: $tds-blue-300;
   color: $white;
   .footer-links {
@@ -33,6 +33,11 @@
         color: $white;
         text-decoration: none;
       }
+    }
+  }
+  &.standard-layout {
+    @include media-breakpoint-up(lg) {
+      padding-left: 300px;
     }
   }
 }

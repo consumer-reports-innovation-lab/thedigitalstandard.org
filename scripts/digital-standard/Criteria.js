@@ -4,6 +4,7 @@ import parse from 'html-react-parser'
 
 const Criteria = ({ criteria }) => {
   const { summary, indicators } = criteria
+
   return (
     <>
       <div className="row standard-wrapper">
@@ -24,7 +25,7 @@ const Criteria = ({ criteria }) => {
                 {item.procedure && (
                   <div className="procedure-wrapper">
                     <h4 className="text-uppercase text-black-50 mr-4 mb-2">Procedure</h4>
-                    <div className="pl-3">{parse(item.procedure, {})}</div>
+                    <div className="pl-3">{item.procedure}</div>
                   </div>
                 )}
                 {index !== indicators.length - 1 && <hr className="my-5" />}
