@@ -19,13 +19,13 @@ const DigitalStandard = () => {
 
   useEffect(async () => {
     try {
-      const getReleases = await axios('https://api.github.com/repos/TheDigitalStandard/thedigitalstandard.org/releases')
+      const getReleases = await axios('https://api.github.com/repos/ocupop/TheDigitalStandard/releases')
       setReleases(getReleases.data.map(release => release.tag_name))
       if (!activeRelease) {
         window.location.replace(`${window.location.pathname}?version=${getReleases.data[0].tag_name}`)
       }
-      // const standard = await axios(`https://thedigitalstandard.github.io/thedigitalstandard.org/${activeRelease}/`)
-      const standard = await axios(`http://localhost:4000/data/index.json`)
+      const standard = await axios(`https://ocupop.github.io/TheDigitalStandard/${activeRelease}/`)
+      // const standard = await axios(`http://localhost:4000/data/index.json`)
       if (standard) {
         setDigitalStandard(standard.data)
         setLoading(false)
@@ -104,7 +104,7 @@ const DigitalStandard = () => {
                 })}
               </ul>
 
-              <a className="d-none d-md-flex" id="downloadCTA" href={`https://thedigitalstandard.github.io/thedigitalstandard.org/${activeRelease}/standard.csv`}>Download the Digital Standard (.csv)</a>
+              <a className="d-none d-md-flex" id="downloadCTA" href={`https://ocupop.github.io/TheDigitalStandard/${activeRelease}/standard.csv`}>Download the Digital Standard (.csv)</a>
             </nav>
             {activeSection && (
               <>
