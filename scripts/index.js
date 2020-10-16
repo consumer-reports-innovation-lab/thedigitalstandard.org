@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import DigitalStandard from './digital-standard/DigitalStandard'
-import CaseStudies from './CaseStudies'
+import CaseStudies from './case-studies/CaseStudies'
+import CaseStudyMap from './case-studies/CaseStudyMap'
 
 const COMPONENTS = {
   DigitalStandard,
-  CaseStudies
+  CaseStudies,
+  CaseStudyMap
 }
 
 function renderComponentInElement(el) {

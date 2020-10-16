@@ -3,11 +3,8 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import TableOfContents from './TableOfContents'
 import Criteria from './Criteria'
+import { organization, repository, api_url, release_url } from '../config'
 
-const organization = 'ocupop'
-const repository = 'TheDigitalStandard'
-const api_url = `https://${organization}.github.io/${repository}/`
-const release_url = `https://api.github.com/repos/${organization}/${repository}/releases`
 
 const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)

@@ -76,4 +76,20 @@ plugins:
 
 placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
 
-
+areas:
+  - Data Security
+  - Build Quality
+  - User Safety
+  - Access and Control
+  - Data Use and Sharing
+  - Data retention
+  - Overreach - Collecting Too Much Data
+  - Ownership
+  - Interoperability
+  - Permanence
+  - Right to Repair
+  - Business Model
+  - Human Rights & Corporate Social Responsibility
+  - Open
+  - Privacy Policy & Terms of Service
+  - Transparency

@@ -11,6 +11,7 @@ sections:
   process: true
   impact: true
   who_was_involved: false
+release: v1.2
 areas:
   - Build Quality
   - Data Security

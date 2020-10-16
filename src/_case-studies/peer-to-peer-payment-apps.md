@@ -11,6 +11,7 @@ sections:
   process: true
   impact: true
   who: false
+release: v1.2
 areas:
   - Data Security
   - User Safety

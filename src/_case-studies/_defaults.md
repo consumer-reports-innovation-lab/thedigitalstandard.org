@@ -14,6 +14,7 @@ sections:
   impact: true
   who: false
 
+release:
 areas:
 ---
 {% contentfor problem %}
