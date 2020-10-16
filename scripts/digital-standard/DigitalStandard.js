@@ -4,8 +4,10 @@ import axios from 'axios'
 import TableOfContents from './TableOfContents'
 import Criteria from './Criteria'
 
-const api_url = 'https://ocupop.github.io/TheDigitalStandard/'
-const release_url = 'https://api.github.com/repos/ocupop/TheDigitalStandard/releases'
+const organization = 'ocupop'
+const repository = 'TheDigitalStandard'
+const api_url = `https://${organization}.github.io/${repository}/`
+const release_url = `https://api.github.com/repos/${organization}/${repository}/releases`
 
 const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)
@@ -136,7 +138,7 @@ const DigitalStandard = () => {
                                   <div className="d-flex align-items-center">
                                     <span className={`bg-status mr-2 ${status[standard.status]}`}></span>
                                     <h2 className="blue text-uppercase m-0 text-nowrap">{standard.title}</h2>
-                                    <a href={`#`} target="_blank" className="social-link">
+                                    <a href={`https://github.com/${organization}/${repository}/blob/${activeRelease}/evaluations/${activeSection.section}/${standard.slug}.yaml`} target="_blank" className="social-link">
                                       <i className="ri-github-fill  text-medium ml-2" />
                                     </a>
 
