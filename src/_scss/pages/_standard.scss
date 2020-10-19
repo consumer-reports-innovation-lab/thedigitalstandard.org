@@ -280,6 +280,7 @@
       background-color: $white;
       padding: 15px;
       border-left: 5px solid $gray-600;
+      white-space: pre-wrap;
       p {
         font-family: $font-family-sans-serif;
         font-size: 1rem;
