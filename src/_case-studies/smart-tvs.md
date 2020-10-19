@@ -1,5 +1,5 @@
 ---
-title: Smart TVs
+evaluationName: Smart TVs
 case_study_status_understanding: Well understood
 lead_organization: Consumer Reports
 featured_image: /uploads/smart-tvs.jpg
@@ -11,7 +11,7 @@ sections:
   process: true
   impact: true
   who: false
-
+release: v1.2
 areas:
   - Build Quality
   - Data Security

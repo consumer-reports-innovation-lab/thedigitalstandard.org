@@ -1,5 +1,5 @@
 ---
-title: Peer-to-Peer Payment Apps
+evaluationName: Peer-to-Peer Payment Apps
 case_study_status_understanding:
 lead_organization: Consumer Reports
 featured_image: /uploads/payment-apps.jpg
@@ -11,6 +11,7 @@ sections:
   process: true
   impact: true
   who: false
+release: v1.2
 areas:
   - Data Security
   - User Safety

@@ -1,5 +1,5 @@
 ---
-title: Connected Cameras
+evaluationName: Connected Cameras
 case_study_status_understanding: Well understood
 lead_organization: Consumer Reports
 featured_image: /uploads/connected-cameras.jpg
@@ -11,6 +11,7 @@ sections:
   process: true
   impact: true
   who_was_involved: false
+release: v1.2
 areas:
   - Build Quality
   - Data Security

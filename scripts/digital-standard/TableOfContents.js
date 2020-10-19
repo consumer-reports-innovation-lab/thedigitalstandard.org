@@ -14,7 +14,7 @@ const TableOfContents = ({ activeSection }) => {
           <div key={area.slug}>
             <h4 className="nav-link pb-0" >{area.label}</h4>
             <ul className="nav flex-column" >
-              {area.standards && area.standards.map(standard => {
+              {area.evaluations && area.evaluations.map(standard => {
                 const { slug, title } = standard
                 return (
                   <li key={slug} className="nav-item">

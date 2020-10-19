@@ -1,5 +1,5 @@
 ---
-title: Robotic/Connected Vacuum Cleaners
+evaluationName: Robotic/Connected Vacuum Cleaners
 case_study_status_understanding:
 lead_organization: Consumer Reports
 featured_image: /uploads/connected-vacuums.jpg
@@ -11,7 +11,7 @@ sections:
   process: true
   impact: true
   who: false
-
+release: v1.2
 areas:
   - Access and Control
   - Data Use and Sharing

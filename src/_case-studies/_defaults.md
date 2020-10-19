@@ -1,5 +1,5 @@
 ---
-title:
+evaluationName:
 case_study_status_understanding:
 lead_organization:
 featured_image:
@@ -14,6 +14,7 @@ sections:
   impact: true
   who: false
 
+release:
 areas:
 ---
 {% contentfor problem %}

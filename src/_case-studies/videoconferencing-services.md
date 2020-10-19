@@ -1,5 +1,5 @@
 ---
-title: Videoconferencing Services
+evaluationName: Videoconferencing Services
 case_study_status_understanding: Under development
 lead_organization: Consumer Reports
 featured_image: /uploads/videoconfrencing.jpg
@@ -11,7 +11,7 @@ sections:
   process: true
   impact: true
   who: false
-
+release: v1.2
 areas:
   - Access and Control
   - Data Use and Sharing

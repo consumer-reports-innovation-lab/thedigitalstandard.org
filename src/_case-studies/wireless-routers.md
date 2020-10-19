@@ -1,5 +1,5 @@
 ---
-title: Wireless Routers
+evaluationName: Wireless Routers
 case_study_status_understanding:
 lead_organization: Consumer Reports
 featured_image: /uploads/wireless-routers.jpg
@@ -11,7 +11,7 @@ sections:
   process: true
   impact: true
   who: false
-
+release: v1.2
 areas:
   - Build Quality
   - Data Security

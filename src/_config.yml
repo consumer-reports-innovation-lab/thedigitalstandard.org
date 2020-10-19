@@ -19,9 +19,6 @@ analytics_code: UA-106357720-14
 
 # Collections
 collections:
-  standards:
-    output: true
-    permalink: /standard/:path/
   case-studies:
     output: true
     permalink: /case-studies/:path/
@@ -29,10 +26,6 @@ collections:
 
 
 defaults:
-  - scope:
-      type: 'standards'
-    values:
-      layout: standard
   - scope:
       type: 'case-studies'
     values:
@@ -75,6 +68,7 @@ safe: false
 sass:
   # style: compressed
   sass_dir: _scss
+
 plugins:
   - jekyll-sitemap
   - jekyll-contentblocks
@@ -82,12 +76,6 @@ plugins:
 
 placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
 
-standard_states: ['1: Green', '2: Yellow', '3: Red']
-sections:
-  - Security
-  - Privacy
-  - Ownership
-  - Governance
 areas:
   - Data Security
   - Build Quality
@@ -105,22 +93,3 @@ areas:
   - Open
   - Privacy Policy & Terms of Service
   - Transparency
-
-# Cloudcannon Configuration
-_array_structures:
-  criteria:
-    - label: Criteria
-      icon: share
-      _options:
-        content:
-          bold: true
-      value:
-        criteria_summary:
-        indicators:
-  indicators:
-    - label: Indicators
-      icon: share
-      value:
-        indicator:
-        procedure_html:
-

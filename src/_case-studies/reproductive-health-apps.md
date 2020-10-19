@@ -1,5 +1,5 @@
 ---
-title: Reproductive Health Apps
+evaluationName: Reproductive Health Apps
 case_study_status_understanding:
 lead_organization: Consumer Reports
 featured_image: /uploads/reproductive-health-apps.jpg
@@ -12,7 +12,7 @@ sections:
   process: true
   impact: true
   who: false
-
+release: v1.2
 areas:
   - Build Quality
   - Data Security

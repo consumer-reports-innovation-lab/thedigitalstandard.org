@@ -7,11 +7,11 @@
   .sidebar {
     position: fixed;
     left: -275px;
-    top: 113px;
-    padding: 1.75rem;
+    top: 112px;
+    padding: 0 1.75rem;
     width: 300px;
     min-width: 300px;
-    min-height: calc(100vh);
+    min-height: calc(100vh - 112px);
     height: 100%;
     background-color: $tds-blue-100;
     color: $white;
@@ -23,9 +23,10 @@
     @include media-breakpoint-up(lg) {
       // position: relative;
       left: 0;
-      padding-top: 1.5rem;
+      // padding-top: 1.5rem;
     }
     #sectionNav {
+      margin-top: 1.5rem;
       padding-bottom: 100px;
     }
     .sidebar-toggle {
@@ -148,16 +149,13 @@
   &.loading {
     opacity: 0;
   }
-  #pageFooter {
-    @include media-breakpoint-up(lg) {
-      padding-left: 300px;
-    }
-  }
 }
 
 #standardnav {
   position: fixed;
   width: 100%;
+  height: 56px;
+  top: 56px;
   padding-left: 25px;
   background-color: $tds-blue-300;
   display: flex;

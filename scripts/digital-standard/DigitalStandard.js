@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import TableOfContents from './TableOfContents'
 import Criteria from './Criteria'
+import { organization, repository, api_url, release_url } from '../config'
+
 
 const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)
@@ -19,13 +21,13 @@ const DigitalStandard = () => {
 
   useEffect(async () => {
     try {
-      const getReleases = await axios('https://api.github.com/repos/TheDigitalStandard/thedigitalstandard.org/releases')
+      const getReleases = await axios(release_url)
       setReleases(getReleases.data.map(release => release.tag_name))
       if (!activeRelease) {
         window.location.replace(`${window.location.pathname}?version=${getReleases.data[0].tag_name}`)
       }
-      const standard = await axios(`https://thedigitalstandard.github.io/thedigitalstandard.org/${activeRelease}/`)
-      // const standard = await axios(`http://localhost:4000/data/index.json`)
+      const standard = await axios(`${api_url}${activeRelease}/`)
+
       if (standard) {
         setDigitalStandard(standard.data)
         setLoading(false)
@@ -104,7 +106,7 @@ const DigitalStandard = () => {
                 })}
               </ul>
 
-              <a className="d-none d-md-flex" id="downloadCTA" href={`https://thedigitalstandard.github.io/thedigitalstandard.org/${activeRelease}/standard.csv`}>Download the Digital Standard (.csv)</a>
+              <a className="d-none d-md-flex" id="downloadCTA" href={`${api_url}${activeRelease}/standard.csv`}>Download the Digital Standard (.csv)</a>
             </nav>
             {activeSection && (
               <>
@@ -112,11 +114,11 @@ const DigitalStandard = () => {
                 <div className="standard-content">
                   {activeSection && activeSection.areas.map(area => (
                     <div key={area.slug} className="m-5">
-                      {area && area.standards.map(standard => {
+                      {area && area.evaluations.map(standard => {
                         const status = {
-                          "1: Green": "bg-success",
-                          "2: Yellow": "bg-warning",
-                          "3: Red": "bg-danger"
+                          "1": "bg-success",
+                          "2": "bg-warning",
+                          "3": "bg-danger"
                         }
 
                         return (
@@ -133,11 +135,10 @@ const DigitalStandard = () => {
                                   <div className="d-flex align-items-center">
                                     <span className={`bg-status mr-2 ${status[standard.status]}`}></span>
                                     <h2 className="blue text-uppercase m-0 text-nowrap">{standard.title}</h2>
-                                    {standard.github_url && (
-                                      <a href={standard.github_url} target="_blank" className="social-link">
-                                        <i className="ri-github-fill  text-medium ml-2" />
-                                      </a>
-                                    )}
+                                    <a href={`https://github.com/${organization}/${repository}/blob/${activeRelease}/evaluations/${activeSection.section}/${standard.slug}.yaml`} target="_blank" className="social-link">
+                                      <i className="ri-github-fill  text-medium ml-2" />
+                                    </a>
+
                                   </div>
                                 </div>
                               </div>
