@@ -11,7 +11,7 @@ sections:
   process: true
   impact: true
   who: false
-release: v1.2
+release: v1.2.1
 areas:
   - Access and Control
   - Data Use and Sharing
