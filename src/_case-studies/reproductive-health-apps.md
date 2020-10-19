@@ -6,13 +6,12 @@ featured_image: /uploads/reproductive-health-apps.jpg
 timeline:
   first_test_date: 2020-01-22 00:00:00
   latest_update_date: 2020-01-23 00:00:00
-
 sections:
   problem: true
   process: true
   impact: true
   who: false
-release: v1.2
+release: v1.2.1
 areas:
   - Build Quality
   - Data Security
