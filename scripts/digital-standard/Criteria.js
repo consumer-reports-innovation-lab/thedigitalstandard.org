@@ -6,19 +6,6 @@ import gfm from 'remark-gfm'
 
 const Criteria = ({ criteria }) => {
   const { summary, indicators } = criteria
-  const markdown = `A paragraph with *emphasis* and **strong importance**.
-
-  > A block quote with ~strikethrough~ and a URL: https://reactjs.org.
-
-  * Lists
-  * [ ] todo
-  * [x] done
-
-  A table:
-
-  | a | b |
-  | - | - |
-  `
 
   return (
     <>
@@ -40,7 +27,6 @@ const Criteria = ({ criteria }) => {
                 {item.procedure && (
                   <div className="procedure-wrapper">
                     <h4 className="text-uppercase text-black-50 mr-4 mb-2">Procedure</h4>
-                    {/* <ReactMarkdown plugins={[gfm]} children={markdown} className="md" /> */}
                     <div className="pl-3">{item.procedure}</div>
                   </div>
                 )}
