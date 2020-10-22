@@ -298,7 +298,7 @@
         font-size: 1rem;
         font-family: $font-family-serif;
         padding: 10px 0;
-        list-style-type: square;
+        list-style-type: none;
         &::before {
           transform: rotate(45deg);
         }
