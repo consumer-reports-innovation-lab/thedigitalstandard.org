@@ -81,30 +81,11 @@ areas:
   </div>
 {% endcontentfor %}
 
-{% contentfor process %}
-  <div class="editable mt-3">
-    <h2>Full Testing</h2>
-    <p>Across 14 home security connected cameras, Consumer
-      Reports performed a round of full testing across these devices in accordance
-      with criteria/indicators of the <a target="_blank" rel="noopener"
-      href="https://www.thedigitalstandard.org/">Digital Standard</a>. The result
-      of this testing was <a target="_blank" rel="noopener"
-      href="https://www.consumerreports.org/products/home-security-cameras-200099/wireless-security-cameras-200101/view2/">a
-      set of Consumer Reports ratings</a> for home security cameras available to
-      consumers (image left) which incorporated data privacy and security
-      categories. Consumer Reports also <a target="_blank" rel="noopener"
-      href="https://www.consumerreports.org/wireless-security-cameras/wyze-and-guardzilla-home-security-cameras-have-security-risks/">reviewed
-      cameras in 2019</a>.
-    </p>
-  </div>
-{% endcontentfor %}
-
 
 {% contentfor process %}
   <div class="editable mt-3">
     <h2>Chart Test</h2>
     <p>Stuff in p tags</p>
-    Stuff outside of p tags
   </div>
 {% endcontentfor %}
 
