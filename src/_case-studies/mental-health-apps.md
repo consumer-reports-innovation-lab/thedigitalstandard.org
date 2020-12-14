@@ -54,29 +54,7 @@ areas:
     2019, it was also reported that <a target="_blank" rel="noopener"
     href="https://www.cnn.com/2019/12/30/tech/wyze-data-breach/index.html">Wyze
     had suffered a breach</a> of their customer data, leaving customers open to
-    unauthorized access of their cameras.</p><h2>Security
-    breaches:</h2><p>Attackers have openly viewed home security systems and baby
-    monitor feeds, and have even spoken with residents, including young
-    children. In December 2019, Consumer Reports reported on a <a
-    target="_blank" rel="noopener"
-    href="https://www.consumerreports.org/hacking/ring-doorbell-accounts-may-be-vulnerable-to-hackers/">series
-    of security breaches</a>. The news mainly on Amazon Ring products, where
-    hackers compromised devices, harassed homeowners and sometimes children.
-    While much news coverage was focused on Ring, it was possible that other
-    popular connected camera brands could have similar
-    vulnerabilities.&nbsp;</p><p>These issues don&rsquo;t just plague Ring
-    devices either. In January 2020, t<a target="_blank" rel="noopener"
-    href="https://www.washingtonpost.com/technology/2019/04/23/how-nest-designed-keep-intruders-out-peoples-homes-effectively-allowed-hackers-get/">here
-    were reports of Nest cameras being hacked</a>, again through credential
-    stuffing. In response to the number of hacks and vulnerabilities, Consumer
-    Reports initiated product testing across 14 connected camera
-    products.</p><p><em>[Excerpts gathered from <a target="_blank"
-    rel="noopener"
-    href="https://www.consumerreports.org/hacking/ring-doorbell-accounts-may-be-vulnerable-to-hackers/">CR
-    Article: 3,000 Ring Doorbell and Camera Accounts May Be Vulnerable to
-    Hackers</a> and this <a target="_blank" rel="noopener"
-    href="https://advocacy.consumerreports.org/wp-content/uploads/2020/01/CR-Letter-to-Connected-Camera-Security-and-Doorbell-Manufacturers-1.13.20.pdf">advocacy
-    letter to connected camera companies</a>]</em></p>
+    unauthorized access of their cameras.</p>
   </div>
 {% endcontentfor %}
 
