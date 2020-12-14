@@ -1,5 +1,5 @@
 ---
-evaluationName: Connected Cameras
+evaluationName: Mental Health Apps
 case_study_status_understanding: Well understood
 lead_organization: Consumer Reports
 featured_image: /uploads/connected-cameras.jpg
@@ -22,7 +22,6 @@ areas:
   - Privacy Policy & Terms of Service
   - Transparency
 ---
-
 {% contentfor problem %}
   <div class="editable mt-3">
     <h2>Sensitive Data Collection</h2><p>Connected devices such as cameras are
