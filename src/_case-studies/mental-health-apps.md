@@ -1,4 +1,4 @@
----
+th---
 evaluationName: Connected Cameras
 case_study_status_understanding: Well understood
 lead_organization: Consumer Reports
@@ -98,6 +98,16 @@ areas:
     </p>
   </div>
 {% endcontentfor %}
+
+
+{% contentfor process %}
+  <div class="editable mt-3">
+    <h2>Chart Test</h2>
+    <p>Stuff in p tags</p>
+    Stuff outside of p tags
+  </div>
+{% endcontentfor %}
+
 
 {% contentfor impact %}
   <div class="editable mt-3">
