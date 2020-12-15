@@ -54,6 +54,10 @@ Data leaks: In addition to rising harms with communities of color and youth, the
 
 
 
+<!-- =============================================================== -->
+<!-- ========================== chart start ======================== -->
+<!-- =============================================================== -->
+
 <style>
 
 /* -------------- full chart -------------- */
@@ -90,7 +94,7 @@ Data leaks: In addition to rising harms with communities of color and youth, the
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100%;
-  min-height: 60px;
+  min-height: 80px;
   border-bottom: dashed 1px #ccc;
 }
 
@@ -113,7 +117,6 @@ Data leaks: In addition to rising harms with communities of color and youth, the
   font-family: sofia-pro,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 30px;
   padding-top: 15px;
-  padding-bottom: 15px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -410,6 +413,9 @@ function hideModal() {
 
 </script>
 
+<!-- =============================================================== -->
+<!-- =========================== chart end ========================= -->
+<!-- =============================================================== -->
 
 
 
