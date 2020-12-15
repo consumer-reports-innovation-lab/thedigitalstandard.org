@@ -54,7 +54,6 @@ Data leaks: In addition to rising harms with communities of color and youth, the
 
 
 
-
 <style>
 
 /* -------------- full chart -------------- */
@@ -114,6 +113,7 @@ Data leaks: In addition to rising harms with communities of color and youth, the
   font-family: sofia-pro,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 30px;
   padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -409,6 +409,7 @@ function hideModal() {
 
 
 </script>
+
 
 
 
