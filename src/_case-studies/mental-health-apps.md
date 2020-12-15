@@ -54,6 +54,7 @@ Data leaks: In addition to rising harms with communities of color and youth, the
 
 
 
+
 <!-- =============================================================== -->
 <!-- ========================== chart start ======================== -->
 <!-- =============================================================== -->
@@ -94,7 +95,7 @@ Data leaks: In addition to rising harms with communities of color and youth, the
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100%;
-  min-height: 80px;
+  min-height: 79px;
   border-bottom: dashed 1px #ccc;
 }
 
