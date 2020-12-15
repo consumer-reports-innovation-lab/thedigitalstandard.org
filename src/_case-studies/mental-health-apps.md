@@ -11,8 +11,14 @@ sections:
   process: true
   impact: true
   who: false
-release:
+release: v.1.2.1
 areas:
+  - Data Security
+  - Access and Control
+  - Data Use and Sharing
+  - Overreach - Collecting Too Much Data
+  - Privacy Policy & Terms of Service
+  - Transparency
 ---
 
 {% contentfor problem %}
