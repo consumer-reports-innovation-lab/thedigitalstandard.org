@@ -96,7 +96,45 @@ process_html: >-
   design review and through document review.</li><li>Can you opt-out of data
   research projects? We found the answer to this through Privacy Policy and
   Terms of Service and a manual, UX/UI design review.</li></ul>
-impact_html: <p>Add details...</p>
+impact_html: >-
+  <p>CR sent a letter on December 17, 2020 to seven companies that operate
+  mental health applications: BetterHelp, Moodpath, Sanity &amp; Self,
+  Talkspace, Wysa, Youper and 7 Cups. Based on a review of the policies of these
+  applications, CR is urging the companies to raise the standard of privacy and
+  transparency for their services.</p><p>We provided the four recommendations
+  below to the companies:&nbsp;</p><p><strong>1. Clearly explain procedures used
+  for de-identification of data used for research. Identifiable data should not
+  be shared except at the consumer&rsquo;s direction.</strong></p><p>We advocate
+  for companies to improve clarity on research for data sharing especially
+  around how they define &ldquo;anonymized data.&rdquo; Companies should be
+  explicit about what processes they use to de-identify data. We highlight this
+  to help prevent people from being reidentified.&nbsp;</p><p><strong>2. Ensure
+  that privacy awareness and clear explanations how data is being used should be
+  part of important decision points so the user is made aware that the data is
+  aware of potential consequences.</strong></p><p>Companies should not overwhelm
+  people with superfluous information or choices. Wherever possible, app default
+  settings should be that your privacy is protected and users should not have to
+  worry about managing this on their own. However, if there are choices to be
+  made or information someone should be aware of, they should be presented in a
+  clear and straightforward way.</p><p><strong>3. Adhere to platform guidelines
+  that are in place to protect people&rsquo;s privacy.&nbsp;</strong></p><p>App
+  developers should ensure that their apps meet the guidelines laid out in
+  Android developer documentation, such as <a
+  href="https://developer.android.com/training/articles/user-data-ids"><em>Best
+  Practices for Unique Identifiers</em></a> which recommends avoiding the use of
+  identifiers like the Android ID (SSAID). App developers should also make sure
+  that the libraries (SDKs) they embed within their apps meet their own
+  expectations for data collection, and that they are configured
+  accordingly.</p><p><strong>4. Transparently disclose the service providers
+  that receive data when people use your apps.</strong></p><p>We recommend that
+  companies are more transparent in their privacy policies about the service
+  providers that receive data as a way to increase company accountability. It
+  may not be feasible to list every service provider or institution they share
+  anonymized data with, but more transparency will contribute to a healthier
+  ecosystem by allowing external parties to analyze and verify companies&rsquo;
+  actions.</p><p>The full study, letter, and one pager can be downloaded using
+  the links above. We also published a blog post, scorecard, and case study that
+  provides additional information about our investigation.&nbsp;</p>
 mapping_html: <p>Add details...</p>
 who_html: <p>Add details...</p>
 release: v.1.2.1
