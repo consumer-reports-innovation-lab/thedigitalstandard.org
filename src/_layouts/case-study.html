@@ -29,12 +29,15 @@ layout: default
             Problem
           </h2>
           <div class="editable">
-            
+
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-8 ">
-        {% contentblock problem %}
+        <div data-cms-editor-link="cloudcannon:#problem_html" data-cms-editor-link-style="modal" class="cms-editor-link mt-3">
+          {{ page.problem_html }}
+          {% contentblock problem %}
+        </div>
       </div>
     </div>
   </div>
@@ -51,12 +54,15 @@ layout: default
             Process/Method
           </h2>
           <div class="editable">
-            
+
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        {% contentblock process %}
+        <div data-cms-editor-link="cloudcannon:#process_html" data-cms-editor-link-style="modal" class="cms-editor-link mt-3">
+          {{ page.process_html }}
+          {% contentblock process %}
+        </div>
       </div>
     </div>
   </div>
@@ -73,12 +79,15 @@ layout: default
             Output &amp; Impact
           </h2>
           <div class="editable">
-            
+
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        {% contentblock impact %}
+        <div data-cms-editor-link="cloudcannon:#impact_html" data-cms-editor-link-style="modal" class="cms-editor-link mt-3">
+          {{ page.impact_html }}
+          {% contentblock impact %}
+        </div>
       </div>
     </div>
   </div>
@@ -94,12 +103,15 @@ layout: default
             Digital Standard Mapping
           </h2>
           <div class="editable">
-            
+
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        {% contentblock mapping %}
+        <div data-cms-editor-link="cloudcannon:#mapping_html" data-cms-editor-link-style="modal" class="cms-editor-link mt-3">
+          {{ page.mapping_html }}
+          {% contentblock mapping %}
+        </div>
       </div>
     </div>
     {% include components/CaseStudyMap.html %}
@@ -116,7 +128,10 @@ layout: default
         <div class="editable"></div>
       </div>
       <div class="col-12 col-lg-8">
-        {% contentblock who %}
+        <div data-cms-editor-link="cloudcannon:#who_html" data-cms-editor-link-style="modal" class="cms-editor-link mt-3">
+          {{ page.who_html }}
+          {% contentblock who %}
+        </div>
       </div>
     </div>
   </div>
