@@ -2,7 +2,7 @@
 evaluationName: Mental Health Apps
 case_study_status_understanding: Under development
 lead_organization: Consumer Reports
-featured_image: /uploads/mhapps.png
+featured_image: /uploads/Cover_Square.jpg
 timeline:
   first_test_date: 2020-08-01 00:00:00
   latest_update_date: 2020-12-17 00:00:00
@@ -13,7 +13,7 @@ sections:
   who: false
 problem_html: >-
   <p>Sensitive data collection: The mental health app industry was documented as a growing industry with an expected revenue of $3.9 billion by 2027. In parallel to this market growth, COVID-19 triggered immense social, financial and economic impacts which has negatively affected many people’s mental health and created barriers for access to help regarding mental illness and depression. The pandemic has highlighted that suicide and self-harm tips are on the rise due to new social distancing norms and exposed disparities in the U.S. mental health system, reported the Center for American Progress.</p>
-  <p>Damaging impacts on people’s lives: Mental health applications collect sensitive health information that can create damaging, irreversible impacts on individuals including social stigmatization and barriers to access or future opportunities. People with mental health disabilities face “disproportionately high rates of poverty”, “housing and employment discrimination”, and criminalization. They can include sharing data around topics such as anxiety disorders, depression bipolar disorders, eating disorders, and post-traumatic stress disorders.</p>
+  <p>Damaging impacts on people’s lives: Mental health applications collect sensitive health information that can create damaging, irreversible impacts on individuals including social stigmatization and barriers to access or future opportunities. People with mental health disabilities face “disproportionately high rates of poverty”, “housing and employment discrimination”, and criminalization. They can include sharing data around topics such as anxiety disorders, depression bipolar disorders, eating disorders, and post-traumatic stress disorders. </p>
   <p>Data leaks: In addition to rising harms with communities of color and youth, there are documented data leaks with mental health applications. Investigative journalists have highlighted issues around excessive data sharing due to flawed business models with the argument that apps can either sell subscriptions to services or sell data. Some have called for improved regulation on these apps, marketed to people with anxiety, autism and depression. Other research highlighted how “the majority of the top-ranked mental health apps for depression and smoking cessation” share user data without disclosing the practice in privacy policies.</p>
 process_html: >-
   <p>Add details...</p>
@@ -110,14 +110,31 @@ areas:
   border-radius: 10px;
 }
 
+/* -------------- chart header -------------- */
+
 .chartHeaderCell {
   position: relative;
   display: inline-block;
   width: 10%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.chartHeaderIcon {
+  position: relative;
+  display: inline-block;
+  width: 70%;
+}
+
+.chartHeaderText {
+  position: relative;
+  display: inline-block;
+  width: 100%;
   height: 30px;
   font-family: sofia-pro,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 14px;
-  line-height: 16px;
+  line-height: 30px;
+  margin-bottom: 10px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -251,12 +268,18 @@ areas:
 
 
 @media only screen and (max-width: 1440px) {
-  .chartHeaderCell { font-size: 13px; line-height: 16px; }
+  .chartHeaderText { font-size: 13px; line-height: 28px; }
 }
 
 @media only screen and (max-width: 1200px) {
   .chartHeadline { text-align: center; }
-  .chartHeaderCell { transform: rotate(-90deg); text-align: left; margin-left: 27px; margin-right: -27px; height: 75px; font-size: 15px; line-height: 18px; }
+  .chartHeaderCell { transform: rotate(-90deg); margin-bottom: 20px; margin-top: 10px; margin-left: 27px; margin-right: -27px; height: 75px; }
+  .chartHeaderText { text-align: left; font-size: 15px; line-height: 18px; }
+  .chartHeaderIcon { display: none; }
+}
+
+@media only screen and (max-width: 700px) {
+  .chartHeaderCell { margin-bottom: 5px; }
 }
 
 </style>
@@ -267,8 +290,9 @@ areas:
 
 // ------------------- chart data -------------------
 
-var chartQuestions = ["Is it clear who your data is shared with in the privacy policy?","Does the app share data ONLY with companies named in the privacy policy?","Does the policy define a right to delete your data?","Can you easily delete your data through the app?","Does the app ask permission before using your data for research?","Can you opt-out of research?"];
+var chartQuestions = ["Is it clear who your data is shared with in the privacy policy?","Does the app share data ONLY with companies named in the privacy policy?","Does the policy define a right to delete your data?","Can you easily delete your data through the app?","Does the app ask permission before using your data for research?","Can you opt out of research?"];
 var chartPlatforms = ["7 Cups","BetterHelp","MindDoc","Sanity & Self","Talkspace","Wysa","Youper"];
+var chartIcons = ["7-cups","bettter-help","minddoc","sanity-self","talk-space","wysa","youper"];
 var chartEntry = new Array();
 
 chartEntry[0] = [0,0,'no','There were no third-party names related to data sharing present in the privacy policy. ','https://www.7cups.com/Documents/PrivacyPolicy'];
@@ -278,10 +302,10 @@ chartEntry[3] = [0,3,'yes','In the privacy policy, the third-party names shared 
 chartEntry[4] = [0,4,'no','There were no third-party names related to data sharing present in the privacy policy.','https://www.talkspace.com/public/privacy-policy'];
 chartEntry[5] = [0,5,'yes','In the privacy policy, the third-party names shared are Google Analytics, Facebook Anayltics, Firebase, and Branch.io.','https://beta.touchkin.com/privatepolicy.html'];
 chartEntry[6] = [0,6,'no','During our test window, the Android App was removed from the Play store. The results summarized here are from Version 8.04.000, updated July 28, 2020. This legacy app still functions for people who have a copy on their phone.','https://www.youper.ai/privacy-policy'];
-chartEntry[7] = [1,0,'yes','The terms of service mention third-party cookies, but both static and dynamic analysis did not show any calls to third-parties. It is unclear if the company is reserving the right to use third-parties in the future, or if its terms intentionally do not align with their service.','https://www.7cups.com/Documents/PrivacyPolicy'];
+chartEntry[7] = [1,0,'yes','The terms of service mention third-party cookies, but both static and dynamic analysis did not show any calls to third-parties. It is unclear if the company is reserving the right to use third-parties in the future or if its terms intentionally do not align with their service.','https://www.7cups.com/Documents/PrivacyPolicy'];
 chartEntry[8] = [1,1,'no','Static analysis of BetterHelp&apos;s android app identified these third parties: AppsFlyer, Facebook Login, Facebook Places, Facebook Share, Google Analytics, Google Firebase Analytics, MixPanel.','https://www.betterhelp.com/privacy/'];
 chartEntry[9] = [1,2,'yes','This service clearly defines the third-parties who get data.','https://mymoodpath.com/en/privacy-policy/'];
-chartEntry[10] = [1,3,'no','The privacy policy does not provide details on third-parties, but static analysis showed references to these third party services: AppsFlyer, Facebook Analytics, Facebook Login, Facebook Places, Facebook Share, Google AdMob, Google CrashLytics, Google Firebase Analytics, Instabug, and MixPanel.','https://www.sanityandself.com/privacy/'];
+chartEntry[10] = [1,3,'no','The privacy policy does not provide details on third-parties, but static analysis showed references to these third-party services: AppsFlyer, Facebook Analytics, Facebook Login, Facebook Places, Facebook Share, Google AdMob, Google CrashLytics, Google Firebase Analytics, Instabug, and MixPanel.','https://www.sanityandself.com/privacy/'];
 chartEntry[11] = [1,4,'no','The privacy policy does not mention several third-parties we observed during dynamic analysis, including Firebase Remote Configuration, Mixpanel, AppsFlyer, and Braze.','https://www.talkspace.com/public/privacy-policy'];
 chartEntry[12] = [1,5,'no','OneSignal is not listed in the privacy policy, yet OneSignal received location data during dynamic analysis. ','https://beta.touchkin.com/privatepolicy.html'];
 chartEntry[13] = [1,6,'no','Static analysis identified these trackers; they were not explictly referenced in the privacy policy: Adjust, Google AdMob, Google Analytics, Google CrashLytics, Google Firebase Analytics, Google Tag Manager, and MixPanel.','https://www.youper.ai/privacy-policy'];
@@ -330,10 +354,15 @@ function drawChart() {
   chartHTML += "<div class='chartHeadline'>Mental Health Apps: Evaluation of Privacy Practices</div>";
 
   // header row
+  chartHTML += "<div class='chartRow'>";
   chartHTML += "<div class='chartQuestion'></div>";
   for (platform = 0; platform < chartPlatforms.length; platform++) {
-    chartHTML += "<div class='chartHeaderCell'>"+chartPlatforms[platform]+"</div>";
+    chartHTML += "<div class='chartHeaderCell'>";
+    chartHTML += "<div class='chartHeaderIcon'><img src='https://thedigitalstandard.org/uploads/"+chartIcons[platform]+".png' width='100%' /></div>"
+    chartHTML += "<div class='chartHeaderText'>"+chartPlatforms[platform]+"</div>";
+    chartHTML += "</div>";
   }
+  chartHTML += "</div>"; // end row
 
   // loop through all entries
   var currentQuestion = -1;
