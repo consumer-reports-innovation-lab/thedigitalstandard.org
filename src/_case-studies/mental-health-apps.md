@@ -2,7 +2,7 @@
 evaluationName: Mental Health Apps
 case_study_status_understanding: Under development
 lead_organization: Consumer Reports
-featured_image: /uploads/mhapps.png
+featured_image: /uploads/Cover_Square.jpg
 timeline:
   first_test_date: 2020-08-01 00:00:00
   latest_update_date: 2020-12-17 00:00:00
@@ -20,7 +20,6 @@ areas:
   - Privacy Policy & Terms of Service
   - Transparency
 ---
-
 {% contentfor problem %}
 
 <div class="editable mt-3">
