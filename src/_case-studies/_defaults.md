@@ -16,33 +16,16 @@ sections:
 
 release:
 areas:
+
+problem_html: >-
+  <p>Add details...</p>
+process_html: >-
+  <p>Add details...</p>
+impact_html: >-
+  <p>Add details...</p>
+mapping_html: >-
+  <p>Add details...</p>
+who_html: >-
+  <p>Add details...</p>
+
 ---
-{% contentfor problem %}
-  <div class="editable mt-3">
-    Add details...
-  </div>
-{% endcontentfor %}
-
-{% contentfor process %}
-  <div class="editable mt-3">
-    Add details...
-  </div>
-{% endcontentfor %}
-
-{% contentfor impact %}
-  <div class="editable mt-3">
-    Add details...
-  </div>
-{% endcontentfor %}
-
-{% contentfor mapping %}
-  <div class="editable mt-3">
-    Add details...
-  </div>
-{% endcontentfor %}
-
-{% contentfor who %}
-  <div class="editable mt-3">
-    Add details...
-  </div>
-{% endcontentfor %}
