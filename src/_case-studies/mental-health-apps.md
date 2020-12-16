@@ -51,6 +51,7 @@ Data leaks: In addition to rising harms with communities of color and youth, the
 
 
 
+
 <!-- =============================================================== -->
 <!-- ========================== chart start ======================== -->
 <!-- =============================================================== -->
@@ -124,14 +125,31 @@ Data leaks: In addition to rising harms with communities of color and youth, the
   border-radius: 10px;
 }
 
+/* -------------- chart header -------------- */
+
 .chartHeaderCell {
   position: relative;
   display: inline-block;
   width: 10%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.chartHeaderIcon {
+  position: relative;
+  display: inline-block;
+  width: 70%;
+}
+
+.chartHeaderText {
+  position: relative;
+  display: inline-block;
+  width: 100%;
   height: 30px;
   font-family: sofia-pro,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 14px;
-  line-height: 16px;
+  line-height: 30px;
+  margin-bottom: 10px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -265,12 +283,18 @@ Data leaks: In addition to rising harms with communities of color and youth, the
 
 
 @media only screen and (max-width: 1440px) {
-  .chartHeaderCell { font-size: 13px; line-height: 16px; }
+  .chartHeaderText { font-size: 13px; line-height: 28px; }
 }
 
 @media only screen and (max-width: 1200px) {
   .chartHeadline { text-align: center; }
-  .chartHeaderCell { transform: rotate(-90deg); text-align: left; margin-left: 27px; margin-right: -27px; height: 75px; font-size: 15px; line-height: 18px; }
+  .chartHeaderCell { transform: rotate(-90deg); margin-bottom: 20px; margin-top: 10px; margin-left: 27px; margin-right: -27px; height: 75px; }
+  .chartHeaderText { text-align: left; font-size: 15px; line-height: 18px; }
+  .chartHeaderIcon { display: none; }
+}
+
+@media only screen and (max-width: 700px) {
+  .chartHeaderCell { margin-bottom: 5px; }
 }
 
 </style>
@@ -283,6 +307,7 @@ Data leaks: In addition to rising harms with communities of color and youth, the
 
 var chartQuestions = ["Is it clear who your data is shared with in the privacy policy?","Does the app share data ONLY with companies named in the privacy policy?","Does the policy define a right to delete your data?","Can you easily delete your data through the app?","Does the app ask permission before using your data for research?","Can you opt out of research?"];
 var chartPlatforms = ["7 Cups","BetterHelp","MindDoc","Sanity & Self","Talkspace","Wysa","Youper"];
+var chartIcons = ["7-cups","bettter-help","minddoc","sanity-self","talk-space","wysa","youper"];
 var chartEntry = new Array();
 
 chartEntry[0] = [0,0,'no','There were no third-party names related to data sharing present in the privacy policy. ','https://www.7cups.com/Documents/PrivacyPolicy'];
@@ -344,10 +369,15 @@ function drawChart() {
   chartHTML += "<div class='chartHeadline'>Mental Health Apps: Evaluation of Privacy Practices</div>";
 
   // header row
+  chartHTML += "<div class='chartRow'>";
   chartHTML += "<div class='chartQuestion'></div>";
   for (platform = 0; platform < chartPlatforms.length; platform++) {
-    chartHTML += "<div class='chartHeaderCell'>"+chartPlatforms[platform]+"</div>";
+    chartHTML += "<div class='chartHeaderCell'>";
+    chartHTML += "<div class='chartHeaderIcon'><img src='https://thedigitalstandard.org/uploads/"+chartIcons[platform]+".png' width='100%' /></div>"
+    chartHTML += "<div class='chartHeaderText'>"+chartPlatforms[platform]+"</div>";
+    chartHTML += "</div>";
   }
+  chartHTML += "</div>"; // end row
 
   // loop through all entries
   var currentQuestion = -1;
