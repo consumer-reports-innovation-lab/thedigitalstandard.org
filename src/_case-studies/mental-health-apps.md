@@ -267,10 +267,13 @@ Data leaks: In addition to rising harms with communities of color and youth, the
 }
 
 
+@media only screen and (max-width: 1440px) {
+  .chartHeaderCell { font-size: 13px; line-height: 16px; }
+}
+
 @media only screen and (max-width: 1200px) {
   .chartHeadline { text-align: center; }
   .chartHeaderCell { transform: rotate(-90deg); text-align: left; margin-left: 27px; margin-right: -27px; height: 75px; font-size: 15px; line-height: 18px; }
-
 }
 
 </style>
@@ -416,7 +419,6 @@ function hideModal() {
 <!-- =============================================================== -->
 <!-- =========================== chart end ========================= -->
 <!-- =============================================================== -->
-
 
 
 
