@@ -12,45 +12,51 @@ sections:
   impact: true
   who: false
 problem_html: >-
-  <p><strong>Sensitive data collection: </strong>The mental health app industry
-  was <a
-  href="https://www.prnewswire.com/news-releases/mental-health-apps-market-accounted-for-us-587-9-mn-in-2018-and-is-expected-to-generate-a-revenue-of-us-3-918-40-mn-by-2027--at-a-growth-rate-of-23-7-from-2019--2027--300997559.html">documented</a>
-  as a growing industry with an expected revenue of $3.9 billion by 2027. In
-  parallel to this market growth, COVID-19 <a
-  href="https://www.kff.org/coronavirus-covid-19/issue-brief/the-implications-of-covid-19-for-mental-health-and-substance-use/">triggered</a>
-  immense social, financial and economic impacts which has negatively affected
-  many people&rsquo;s mental health and created barriers for access to help
-  regarding <a
-  href="https://www.nbcnews.com/health/mental-health/map-anxiety-depression-your-state-compares-united-states-n1248473">mental
-  illness and depression</a>. The pandemic has highlighted that suicide and
-  self-harm tips are on the rise <a
-  href="https://www.attorneygeneral.gov/wp-content/uploads/2020/08/2019-2020-S2SS-Annual-Report-FINAL.pdf">due
-  to new social distancing norms</a> and exposed disparities in the U.S. mental
-  health system, <a
-  href="https://www.americanprogress.org/issues/disability/reports/2020/09/10/490221/mental-health-care-severely-inequitable-came-coronavirus-crisis/">reported
-  the Center for American Progress</a>.&nbsp;</p><p><strong>Damaging impacts on
-  people&rsquo;s lives: </strong>Mental health applications collect sensitive
-  health information that can create damaging, irreversible impacts on
-  individuals including social stigmatization and barriers to access or future
-  opportunities. People with mental health disabilities face
-  &ldquo;disproportionately high rates of poverty&rdquo;, &ldquo;housing and
-  employment discrimination&rdquo;, and criminalization. They can include
-  sharing data around topics such as anxiety disorders, depression bipolar
-  disorders, eating disorders, and post-traumatic stress
-  disorders.&nbsp;</p><p><strong>Data leaks: </strong>In addition to rising
-  harms with communities of color and youth, there are documented data leaks
-  with mental health applications. Investigative journalists have highlighted
-  issues around excessive data sharing due to <a
-  href="https://www.theverge.com/2019/4/20/18508382/apps-mental-health-smoking-cessation-data-sharing-privacy-facebook-google-advertising">flawed
-  business models</a> with the argument that apps can either sell subscriptions
-  to services or sell data. Some have called for <a
-  href="https://www.spectrumnews.org/news/mental-health-apps-highlight-need-for-regulation/">improved
-  regulation</a> on these apps, marketed to people with anxiety, autism and
-  depression. Other research highlighted how &ldquo;the majority of the
-  top-ranked mental health apps for depression and smoking cessation&rdquo;
-  share user data <a
+  <p><strong>Mental health apps growing in popularity: </strong>&nbsp;App-based
+  mental health counseling is a large and growing industry. These apps accounted
+  for $587.9 million in 2018 and are expected to generate up to $3.9 billion in
+  annual revenue by 2027, according to <a
+  href="https://www.prnewswire.com/news-releases/mental-health-apps-market-accounted-for-us-587-9-mn-in-2018-and-is-expected-to-generate-a-revenue-of-us-3-918-40-mn-by-2027--at-a-growth-rate-of-23-7-from-2019--2027--300997559.html">Absolute
+  Markets Insights</a>, a consumer demand and trends firm. Due to greater
+  awareness related to the significance of mental health, U.S. and Canadian
+  consumers made up the majority of the global market in
+  2018.&nbsp;</p><p><strong>Increased anxiety and tumult, harms not evenly
+  distributed: </strong>Recent events like the global coronavirus pandemic, the
+  resulting economic crisis, and large scale protests related to the Black Lives
+  Matter movement, have spotlighted rising mental health related harms with
+  marginalized and vulnerable populations. And increased anxiety and upheaval
+  causes both physical and psychological symptoms and <a
+  href="https://www.medicalnewstoday.com/articles/322510#:~:text=Outlook,health%20conditions%2C%20such%20as%20depression">can
+  be very distressing</a>. Mental health applications collect sensitive
+  information that can create damaging, irreversible impacts on individuals if
+  shared with third parties, including social stigmatization and additional
+  barriers to future opportunities. These applications can collect data around
+  topics such as anxiety disorders, depression, bipolar disorders, eating
+  disorders, and post-traumatic stress disorders. Finally, the pandemic has
+  exposed disparities in the U.S. mental health system, <a
+  href="https://www.americanprogress.org/issues/disability/reports/2020/09/10/490221/mental-health-care-severely-inequitable-came-coronavirus-crisis/">reported&nbsp;
+  the Center for American Progress</a>. People with mental health disabilities
+  face &ldquo;<a
+  href="https://www.samhsa.gov/data/sites/default/files/report_2720/Spotlight-2720.html">disproportionately
+  high rates of poverty</a>&rdquo;, &ldquo;<a
+  href="https://www.huduser.gov/portal/sites/default/files/pdf/MentalDisabilities-FinalPaper.pdf">housing
+  and</a> <a
+  href="https://www.huduser.gov/portal/sites/default/files/pdf/MentalDisabilities-FinalPaper.pdf">employment
+  discrimination</a>&rdquo;, and <a
+  href="https://journals.sagepub.com/doi/abs/10.1177/0896920511430864">criminalization</a>.&nbsp;&nbsp;</p><p><strong>Data
+  leaks: </strong>In addition, there are documented data leaks with mental
+  health applications. Investigative journalists have highlighted issues around
+  excessive data sharing with the argument that apps<a
+  href="https://www.theverge.com/2019/4/20/18508382/apps-mental-health-smoking-cessation-data-sharing-privacy-facebook-google-advertising">
+  can either sell subscriptions to services or sell data</a>. Privacy concerns
+  about mental health apps <a
+  href="https://www.spectrumnews.org/news/mental-health-apps-highlight-need-for-regulation/">have
+  highlighted the need for improved regulation</a> on these apps, marketed to
+  people with anxiety, autism and depression. Other research highlighted how
+  &ldquo;the majority of the top-ranked mental health apps for depression and
+  smoking cessation&rdquo; share user data <a
   href="https://healthitsecurity.com/news/mental-health-apps-may-share-user-data-without-clear-privacy-policies">without
-  disclosing the practice in privacy policies</a>.</p>
+  disclosing the practice in privacy policies</a>.&nbsp;</p>
 process_html: >-
   <p><strong>(1) Data Testing: </strong>We worked with AppCensus, a company that
   does app testing, to do an automated analysis of the apps. This research
