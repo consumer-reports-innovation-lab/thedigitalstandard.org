@@ -51,7 +51,51 @@ problem_html: >-
   share user data <a
   href="https://healthitsecurity.com/news/mental-health-apps-may-share-user-data-without-clear-privacy-policies">without
   disclosing the practice in privacy policies</a>.</p>
-process_html: <p>Add details...</p>
+process_html: >-
+  <p><strong>(1) Data Testing: </strong>We worked with AppCensus, a company that
+  does app testing, to do an automated analysis of the apps. This research
+  process involved an inspection of the following items: permissions, third
+  party SDKs, data recipients and personal information
+  sharing.</p><ul><li>Permissions: What access to data and features was
+  requested, and what was actually used?</li><li>Third Party SDKs: What
+  third-party software is bundled with the app when a user installs it, and what
+  role does it play in app behavior?&nbsp;</li><li>Data recipients: Which
+  entities (companies, services, etc.) receive information from the app, and
+  which security and privacy methods / policies do they observe or
+  not?</li><li>Personal information: What identifiers (Android ID, Advertising
+  ID, etc) from the phone are transmitted by the app, and where are these
+  identifiers sent?&nbsp;</li></ul><p><strong>(2) Design (UX + UI)
+  analysis:</strong> The user experience, user interface design analysis
+  involved a manual, thorough review of all of the user-interfacing elements of
+  the applications. More specifically, the purpose of this work is
+  to:&nbsp;</p><ul><li>Show how the company empowers and informs users, in
+  support of and/or beyond what they say in the documents (Terms of Service and
+  Privacy Policy)</li><li>Understand how the app works, who this is positioned
+  to.</li><li>Understand how privacy / security are integrated and positioned
+  (including privacy policy and terms of service documentation), including app
+  defaults and permissions</li><li>Identify what the core components of the
+  application featured are in order to do more testing, where
+  necessary.&nbsp;</li><li>Identify areas for sensitive data collection, and
+  potentially cross reference that with app data collection and 3rd party
+  sharing happening simultaneously.</li><li>Capture which app permissions are
+  requested, and if/when these permissions are accessed while using the
+  app.&nbsp;</li></ul><p><strong>(3) Policy review: </strong>Third, the team
+  reviewed the privacy policy and terms of service documents of the applications
+  based on a framework we created specific to the nature of the mental health
+  apps. The key questions are the following and resulted in a comparative table
+  showing the differences across the apps.&nbsp;</p><ul><li>Does the app name
+  any of the companies they share your data with? We found the answer to this
+  through Privacy Policy and Terms of Service</li><li>Did we see the app share
+  data ONLY with companies named in the privacy policy? We used the AppCensus
+  service and performed static analysis with MobSF to collect this
+  information.&nbsp;</li><li>Can you delete your data?We found the answer to
+  this through the Privacy Policy and Terms of Service</li><li>Can you delete
+  your data easily, right from the app? We found the answer to this through a
+  manual, UX/UI design review</li><li>Does the app ask permission before using
+  your data for research? We found the answer to this through a manual, UX/UI
+  design review and through document review.</li><li>Can you opt-out of data
+  research projects? We found the answer to this through Privacy Policy and
+  Terms of Service and a manual, UX/UI design review.</li></ul>
 impact_html: <p>Add details...</p>
 mapping_html: <p>Add details...</p>
 who_html: <p>Add details...</p>
