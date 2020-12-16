@@ -54,7 +54,6 @@ Data leaks: In addition to rising harms with communities of color and youth, the
 
 
 
-
 <!-- =============================================================== -->
 <!-- ========================== chart start ======================== -->
 <!-- =============================================================== -->
@@ -268,7 +267,7 @@ Data leaks: In addition to rising harms with communities of color and youth, the
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1200px) {
   .chartHeadline { text-align: center; }
   .chartHeaderCell { transform: rotate(-90deg); text-align: left; margin-left: 27px; margin-right: -27px; height: 75px; font-size: 15px; line-height: 18px; }
 
@@ -286,34 +285,34 @@ var chartQuestions = ["Is it clear who your data is shared with in the privacy p
 var chartPlatforms = ["7 Cups","BetterHelp","MindDoc","Sanity & Self","Talkspace","Wysa","Youper"];
 var chartEntry = new Array();
 
-chartEntry[0] = [0,0,'no','There were no third party names related to data sharing present in the privacy policy. ','https://www.7cups.com/Documents/PrivacyPolicy'];
-chartEntry[1] = [0,1,'no','The CCPA disclosures for California residents list the types of third parties, but no specific third parties are listed.','https://www.betterhelp.com/privacy/'];
-chartEntry[2] = [0,2,'yes','In the privacy policy, the third party names shared are: Firebase Crashlytics and Remote Config, Mailgun, OneSignal, and Branch Metrics','https://mymoodpath.com/en/privacy-policy/'];
-chartEntry[3] = [0,3,'yes','In the privacy policy, the third party names shared are: Google Analytics and Apple Healthkit','https://www.sanityandself.com/privacy/'];
-chartEntry[4] = [0,4,'no','There were no third party names related to data sharing present in the privacy policy.','https://www.talkspace.com/public/privacy-policy'];
-chartEntry[5] = [0,5,'yes','In the privacy policy, the third party names shared are: Google Analytics, Facebook Anayltics, Firebase, and Branch.io','https://beta.touchkin.com/privatepolicy.html'];
-chartEntry[6] = [0,6,'no','During our test window, the Android App was removed from the Play store. The results summarized here are from  Version 8.04.000,  updated July 28, 2020. This legacy app still functions for people who have a copy on their phone.','https://www.youper.ai/privacy-policy'];
-chartEntry[7] = [1,0,'yes','The terms of service mention third party cookies, but both static and dynamic analysis did not show any calls to third parties. It is unclear if the company is reserving the right to use third parties in the future, or if their terms intentionally do not align with their service.','https://www.7cups.com/Documents/PrivacyPolicy'];
-chartEntry[8] = [1,1,'no','Static analysis of BetterHelp&apos;s android app identified these third parties: AppsFlyer, Facebook Login, Facebook Places, Facebook Share, Google Analytics, Google Firebase Analytics, MixPanel','https://www.betterhelp.com/privacy/'];
-chartEntry[9] = [1,2,'yes','This service clearly defines the third parties who get data.','https://mymoodpath.com/en/privacy-policy/'];
-chartEntry[10] = [1,3,'no','The privacy policy does not provide details on third parties, but static analysis showed references to these third party services: AppsFlyer, Facebook Analytics, Facebook Login, Facebook Places, Facebook Share, Google AdMob, Google CrashLytics, Google Firebase Analytics, Instabug, and MixPanel.','https://www.sanityandself.com/privacy/'];
-chartEntry[11] = [1,4,'no','The privacy policy does not mention several third parties we observed during dynamic analysis, including Firebase Remote Configuration, Mixpanel, AppsFlyer, and Braze.','https://www.talkspace.com/public/privacy-policy'];
+chartEntry[0] = [0,0,'no','There were no third-party names related to data sharing present in the privacy policy. ','https://www.7cups.com/Documents/PrivacyPolicy'];
+chartEntry[1] = [0,1,'no','The CCPA disclosures for California residents list the types of third parties, but no specific third-parties are listed.','https://www.betterhelp.com/privacy/'];
+chartEntry[2] = [0,2,'yes','In the privacy policy, the third-party names shared are Firebase Crashlytics and Remote Config, Mailgun, OneSignal, and Branch Metrics.','https://mymoodpath.com/en/privacy-policy/'];
+chartEntry[3] = [0,3,'yes','In the privacy policy, the third-party names shared are Google Analytics and Apple Healthkit.','https://www.sanityandself.com/privacy/'];
+chartEntry[4] = [0,4,'no','There were no third-party names related to data sharing present in the privacy policy.','https://www.talkspace.com/public/privacy-policy'];
+chartEntry[5] = [0,5,'yes','In the privacy policy, the third-party names shared are Google Analytics, Facebook Anayltics, Firebase, and Branch.io.','https://beta.touchkin.com/privatepolicy.html'];
+chartEntry[6] = [0,6,'no','During our test window, the Android App was removed from the Play store. The results summarized here are from Version 8.04.000, updated July 28, 2020. This legacy app still functions for people who have a copy on their phone.','https://www.youper.ai/privacy-policy'];
+chartEntry[7] = [1,0,'yes','The terms of service mention third-party cookies, but both static and dynamic analysis did not show any calls to third-parties. It is unclear if the company is reserving the right to use third-parties in the future, or if its terms intentionally do not align with their service.','https://www.7cups.com/Documents/PrivacyPolicy'];
+chartEntry[8] = [1,1,'no','Static analysis of BetterHelp&apos;s android app identified these third parties: AppsFlyer, Facebook Login, Facebook Places, Facebook Share, Google Analytics, Google Firebase Analytics, MixPanel.','https://www.betterhelp.com/privacy/'];
+chartEntry[9] = [1,2,'yes','This service clearly defines the third-parties who get data.','https://mymoodpath.com/en/privacy-policy/'];
+chartEntry[10] = [1,3,'no','The privacy policy does not provide details on third-parties, but static analysis showed references to these third party services: AppsFlyer, Facebook Analytics, Facebook Login, Facebook Places, Facebook Share, Google AdMob, Google CrashLytics, Google Firebase Analytics, Instabug, and MixPanel.','https://www.sanityandself.com/privacy/'];
+chartEntry[11] = [1,4,'no','The privacy policy does not mention several third-parties we observed during dynamic analysis, including Firebase Remote Configuration, Mixpanel, AppsFlyer, and Braze.','https://www.talkspace.com/public/privacy-policy'];
 chartEntry[12] = [1,5,'no','OneSignal is not listed in the privacy policy, yet OneSignal received location data during dynamic analysis. ','https://beta.touchkin.com/privatepolicy.html'];
 chartEntry[13] = [1,6,'no','Static analysis identified these trackers; they were not explictly referenced in the privacy policy: Adjust, Google AdMob, Google Analytics, Google CrashLytics, Google Firebase Analytics, Google Tag Manager, and MixPanel.','https://www.youper.ai/privacy-policy'];
-chartEntry[14] = [2,0,'no','The terms state that a user may have the right to delete Personal Information "in certain situations" but the terms do not guarantee that all users have that right. In addition, the terms state that data will be retained if retention is permitted by law.','https://www.7cups.com/Documents/PrivacyPolicy'];
+chartEntry[14] = [2,0,'no','The terms state that a user may have the right to delete personal information "in certain situations" but the terms do not guarantee that all users have that right. In addition, the terms state that data will be retained if retention is permitted by law.','https://www.7cups.com/Documents/PrivacyPolicy'];
 chartEntry[15] = [2,1,'no','According to the terms, California residents can request deletion of data, but the terms do not guarantee that any requests will be respected.','https://www.betterhelp.com/privacy/'];
-chartEntry[16] = [2,2,'yes','The policies define a right to delete your data.','https://mymoodpath.com/en/privacy-policy/'];
+chartEntry[16] = [2,2,'yes','The policies define the right to delete your data.','https://mymoodpath.com/en/privacy-policy/'];
 chartEntry[17] = [2,3,'no','Any rights to deletion appear to be tied to California residency, or for people under the age of 13.','https://www.sanityandself.com/privacy/'];
 chartEntry[18] = [2,4,'no','The ability to cancel an account is implied, but not guaranteed, in the terms. The terms also define that people to whom GDPR applies might have the right to be forgotten, but that it might conflict with medical records retention requirements.','https://www.talkspace.com/public/privacy-policy'];
-chartEntry[19] = [2,5,'yes','The terms contain language that describe a "Right to be forgotten" and implies that the ability to access the "right to be forgotten" is exposed in the app or service.','https://beta.touchkin.com/privatepolicy.html'];
+chartEntry[19] = [2,5,'yes','The terms contain language that describes a "Right to be forgotten" and implies that the ability to access that right is exposed in the app or service.','https://beta.touchkin.com/privatepolicy.html'];
 chartEntry[20] = [2,6,'yes','The policies define a right to delete your data.','https://www.youper.ai/privacy-policy'];
 chartEntry[21] = [3,0,'no','There is no option for deleting data, only "Start Self-Care Break" and "Deactivate Account" via desktop. We did not find an option to delete data via the mobile app. ','https://www.7cups.com/Documents/PrivacyPolicy'];
-chartEntry[22] = [3,1,'yes','BetterHelp allows users to "request erasure of personal data". This action, which also deletes a user&apos;s account, is noted as permanent and cannot be reversed. The user will also receive a confirmation email that the request is processed.','https://www.betterhelp.com/privacy/'];
-chartEntry[23] = [3,2,'yes','We found the option to delete on the mobile app, but not via desktop. The option describes "delete all stored data" which means it will be"deleted irretrievably from your device and the server." The user can also send MindDoc an email to do this.','https://mymoodpath.com/en/privacy-policy/'];
-chartEntry[24] = [3,3,'yes','While the privacy policy limits deletion to California residents under CCPA, the app appears to allow people outside California to delete their account. Our testing indicates that account deletion works for people outside CA.','https://www.sanityandself.com/privacy/'];
+chartEntry[22] = [3,1,'yes','BetterHelp allows users to "request erasure of personal data." This action, which also deletes a user&apos;s account, is noted as permanent and cannot be reversed. The user will also receive a confirmation email that the request was processed.','https://www.betterhelp.com/privacy/'];
+chartEntry[23] = [3,2,'yes','We found the option to delete on the mobile app but not via the desktop. The option allows you to "delete all stored data" which, means it will be "deleted irretrievably from your device and the server." The user can also send MindDoc an email to do this.','https://mymoodpath.com/en/privacy-policy/'];
+chartEntry[24] = [3,3,'yes','While the privacy policy limits deletion to California residents under CCPA, the app appears to allow people outside the state to delete their account. Our testing indicates it will work.','https://www.sanityandself.com/privacy/'];
 chartEntry[25] = [3,4,'no','We were unable to find any delete data options through the mobile or desktop user interface. ','https://www.talkspace.com/public/privacy-policy'];
 chartEntry[26] = [3,5,'no','We were unable to find any delete data options through the mobile or desktop user interface. ','https://beta.touchkin.com/privatepolicy.html'];
-chartEntry[27] = [3,6,'yes','In the app, users can delete their data by opening the app, clicking on the “Me” bottom menu item, clicking on the gear icon (top right corner), then clicking “Delete my account”. To confirm and verify their request, they need to enter their account password. This will irrevocably delete all your data from our databases.','https://www.youper.ai/privacy-policy'];
+chartEntry[27] = [3,6,'yes','Users can delete their data by opening the app, clicking on the “Me” bottom menu item, clicking on the gear icon (top right corner), then clicking “Delete my account.” To confirm their request, enter the account password. This will "irrevocably delete" their data. ','https://www.youper.ai/privacy-policy'];
 chartEntry[28] = [4,0,'no','We did not find evidence of any permissions or notifications to inform users of research. ','https://www.7cups.com/Documents/PrivacyPolicy'];
 chartEntry[29] = [4,1,'unclear','The terms do not guarantee the company will ask for consent before using data for research purposes. However, according to BetterHelp spokesperson Alon Matas, "Whenever a member&apos;s information would be used for research purposes this would be done with permission."','https://www.betterhelp.com/privacy/'];
 chartEntry[30] = [4,2,'no','Through the AI chat, MindDoc asks the user to agree to "processing of [your] data." It is not clear for the average end user to understand that they are consenting to having their data used indefinitely for research purposes. ','https://mymoodpath.com/en/privacy-policy/'];
@@ -342,7 +341,7 @@ function drawChart() {
   chartHTML += "<div id='chartBlocker'></div><div id='chartModal'><div id='chartModalClose' onclick=\"hideModal()\">CLOSE</div><div id='chartModalText'></div></div>";
 
   /// headline
-  chartHTML += "<div class='chartHeadline'>Mental Health Apps Scorecard</div>";
+  chartHTML += "<div class='chartHeadline'>Mental Health Apps: Evaluation of Privacy Practices</div>";
 
   // header row
   chartHTML += "<div class='chartQuestion'></div>";
@@ -417,8 +416,6 @@ function hideModal() {
 <!-- =============================================================== -->
 <!-- =========================== chart end ========================= -->
 <!-- =============================================================== -->
-
-
 
 
 
