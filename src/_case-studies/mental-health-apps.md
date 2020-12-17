@@ -94,9 +94,10 @@ impact_html: >-
   may not be feasible to list every service provider or institution they share
   anonymized data with, but more transparency will contribute to a healthier
   ecosystem by allowing external parties to analyze and verify companies&rsquo;
-  actions.</p><p>The full study, letter, and one pager can be downloaded using
-  the links above. We also published a blog post, scorecard, and case study that
-  provides additional information about our investigation.&nbsp;</p>
+  actions.</p><p>We published a <strong>full research study</strong> that
+  provides additional information about our investigation. We also published a
+  <strong>letter to the companies</strong>, a <strong>short memo of findings and
+  recommendations</strong> and a <strong>blog post</strong>.</p>
 mapping_html: <p>Add details...</p>
 who_html: <p>Add details...</p>
 release: v.1.2.1
