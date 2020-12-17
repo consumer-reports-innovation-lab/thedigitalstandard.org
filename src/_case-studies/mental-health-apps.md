@@ -64,43 +64,49 @@ impact_html: >-
   Talkspace, Wysa, Youper and 7 Cups. Based on a review of the policies of these
   applications, CR is urging the companies to raise the standard of privacy and
   transparency for their services.</p><p>We provided the four recommendations
-  below to the companies:&nbsp;</p><p><strong>1. Clearly explain procedures used
-  for de-identification of data used for research. Identifiable data should not
-  be shared except at the consumer&rsquo;s direction.</strong></p><p>We advocate
-  for companies to improve clarity on research for data sharing especially
-  around how they define &ldquo;anonymized data.&rdquo; Companies should be
-  explicit about what processes they use to de-identify data. We highlight this
-  to help prevent people from being reidentified.&nbsp;</p><p><strong>2. Ensure
-  that privacy awareness and clear explanations how data is being used should be
-  part of important decision points so the user is made aware that the data is
-  aware of potential consequences.</strong></p><p>Companies should not overwhelm
-  people with superfluous information or choices. Wherever possible, app default
-  settings should be that your privacy is protected and users should not have to
-  worry about managing this on their own. However, if there are choices to be
-  made or information someone should be aware of, they should be presented in a
-  clear and straightforward way.</p><p><strong>3. Adhere to platform guidelines
-  that are in place to protect people&rsquo;s privacy.&nbsp;</strong></p><p>App
-  developers should ensure that their apps meet the guidelines laid out in
-  Android developer documentation, such as <a
+  below to the companies:&nbsp;</p><p><strong>Recommendation 1: Clearly explain
+  procedures used for de-identification of data used for research. Identifiable
+  data should not be shared except at the consumer&rsquo;s
+  direction.</strong></p><p>We advocate for companies to improve clarity on
+  research for data sharing especially around how they define &ldquo;anonymized
+  data.&rdquo; Companies should be explicit about what processes they use to
+  de-identify data. We highlight this to help prevent people from being
+  reidentified. Mental health applications collect sensitive information that
+  can create damaging, irreversible impacts on individuals if shared with third
+  parties, including social stigmatization and additional barriers to future
+  opportunities.&nbsp;</p><p><strong>Recommendation 2: Provide clear and
+  contextually-appropriate explanations of how user-provided data will be used,
+  so users are aware of potential consequences before they
+  share.</strong></p><p>Companies should not overwhelm people with superfluous
+  information or choices. Wherever possible, app default settings should be that
+  your privacy is protected and users should not have to worry about managing
+  this on their own. However, if there are choices to be made or information
+  someone should be aware of, they should be presented in a clear and
+  straightforward way.</p><p><strong>Recommendation 3: Adhere to platform
+  guidelines that are in place to protect people&rsquo;s
+  privacy.</strong></p><p>App developers should ensure that their apps meet the
+  guidelines laid out in Android developer documentation, such as <a
   href="https://developer.android.com/training/articles/user-data-ids"><em>Best
   Practices for Unique Identifiers</em></a> which recommends avoiding the use of
   identifiers like the Android ID (SSAID). App developers should also make sure
   that the libraries (SDKs) they embed within their apps meet their own
   expectations for data collection, and that they are configured
-  accordingly.</p><p><strong>4. Transparently disclose the service providers
-  that receive data when people use your apps.</strong></p><p>We recommend that
-  companies are more transparent in their privacy policies about the service
-  providers that receive data as a way to increase company accountability. It
-  may not be feasible to list every service provider or institution they share
-  anonymized data with, but more transparency will contribute to a healthier
-  ecosystem by allowing external parties to analyze and verify companies&rsquo;
-  actions.</p><p>We published a <a
-  href="https://advocacy.consumerreports.org/wp-content/uploads/2020/12/cr_mentalhealthreport_121720_vf.pdf"><strong>full
+  accordingly.</p><p><strong>Recommendation 4: Transparently disclose the
+  service providers that receive data when people use your
+  apps.</strong></p><p>We recommend that companies are more transparent in their
+  privacy policies about the service providers that receive data. Although it is
+  not legally required or common practice in the U.S. to list every service
+  provider or institution receiving data, we recommend companies proactively
+  disclose this information.</p><p>We published a <a
+  href="https://advocacy.consumerreports.org/wp-content/uploads/2020/12/cr_mentalhealth_fullreport_121720.pdf"><strong>full
   research study</strong></a> that provides additional information about our
-  investigation. We also published a <strong>letter to the companies</strong>, a
-  <a
-  href="https://advocacy.consumerreports.org/wp-content/uploads/2020/12/cr_mentalhealth_2page_121720_vf.pdf"><strong>2-page
-  brief</strong></a>&nbsp;and a <strong>blog post</strong>.</p>
+  investigation. We also published a <a
+  href="https://advocacy.consumerreports.org/wp-content/uploads/2020/12/cr_mentalhealth_letter-1.pdf"><strong>letter
+  to the companies</strong></a>, a <a
+  href="https://advocacy.consumerreports.org/wp-content/uploads/2020/12/cr_mentalhealth_2page.pdf"><strong>2-page
+  brief</strong></a>&nbsp;and a <a
+  href="https://medium.com/@stephtngu_CR/cr-digital-lab-investigates-privacy-practices-of-mental-health-apps-85b6f710853a"><strong>blog
+  post</strong></a>.</p>
 mapping_html: <p>Add details...</p>
 who_html: <p>Add details...</p>
 release: v1.2.1
