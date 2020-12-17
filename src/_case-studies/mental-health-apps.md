@@ -94,10 +94,13 @@ impact_html: >-
   may not be feasible to list every service provider or institution they share
   anonymized data with, but more transparency will contribute to a healthier
   ecosystem by allowing external parties to analyze and verify companies&rsquo;
-  actions.</p><p>We published a <strong>full research study</strong> that
-  provides additional information about our investigation. We also published a
-  <strong>letter to the companies</strong>, a <strong>short memo of findings and
-  recommendations</strong> and a <strong>blog post</strong>.</p>
+  actions.</p><p>We published a <a
+  href="https://advocacy.consumerreports.org/wp-content/uploads/2020/12/cr_mentalhealthreport_121720_vf.pdf"><strong>full
+  research study</strong></a> that provides additional information about our
+  investigation. We also published a <strong>letter to the companies</strong>, a
+  <a
+  href="https://advocacy.consumerreports.org/wp-content/uploads/2020/12/cr_mentalhealth_2page_121720_vf.pdf"><strong>2-page
+  brief</strong></a>&nbsp;and a <strong>blog post</strong>.</p>
 mapping_html: <p>Add details...</p>
 who_html: <p>Add details...</p>
 release: v.1.2.1
