@@ -103,7 +103,7 @@ impact_html: >-
   brief</strong></a>&nbsp;and a <strong>blog post</strong>.</p>
 mapping_html: <p>Add details...</p>
 who_html: <p>Add details...</p>
-release: v.1.2.1
+release: v1.2.1
 areas:
   - Data Security
   - Access and Control
