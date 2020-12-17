@@ -113,6 +113,7 @@ areas:
 
 <br /><br /><br /><br />
 
+
 <!-- =============================================================== -->
 <!-- ========================== chart start ======================== -->
 <!-- =============================================================== -->
@@ -380,10 +381,10 @@ chartEntry[5] = [0,5,'yes','In the privacy policy, the third-party names shared 
 chartEntry[6] = [0,6,'no','During our test window, the Android App was removed from the Play store. The results summarized here are from Version 8.04.000, updated July 28, 2020. This legacy app still functions for people who have a copy on their phone.','https://www.youper.ai/privacy-policy'];
 chartEntry[7] = [1,0,'yes','The terms of service mention third-party cookies, but both static and dynamic analysis did not show any calls to third-parties. It is unclear if the company is reserving the right to use third-parties in the future or if its terms intentionally do not align with their service.','https://www.7cups.com/Documents/PrivacyPolicy'];
 chartEntry[8] = [1,1,'no','Static analysis of BetterHelp&apos;s android app identified these third parties: AppsFlyer, Facebook Login, Facebook Places, Facebook Share, Google Analytics, Google Firebase Analytics, MixPanel.','https://www.betterhelp.com/privacy/'];
-chartEntry[9] = [1,2,'yes','This service clearly defines the third-parties who get data.','https://mymoodpath.com/en/privacy-policy/'];
+chartEntry[9] = [1,2,'yes','This service clearly defines the third-parties who get data','https://mymoodpath.com/en/privacy-policy/'];
 chartEntry[10] = [1,3,'no','The privacy policy does not provide details on third-parties, but static analysis showed references to these third-party services: AppsFlyer, Facebook Analytics, Facebook Login, Facebook Places, Facebook Share, Google AdMob, Google CrashLytics, Google Firebase Analytics, Instabug, and MixPanel.','https://www.sanityandself.com/privacy/'];
 chartEntry[11] = [1,4,'no','The privacy policy does not mention several third-parties we observed during dynamic analysis, including Firebase Remote Configuration, Mixpanel, AppsFlyer, and Braze.','https://www.talkspace.com/public/privacy-policy'];
-chartEntry[12] = [1,5,'no','OneSignal is not listed in the privacy policy, yet OneSignal received location data during dynamic analysis. ','https://beta.touchkin.com/privatepolicy.html'];
+chartEntry[12] = [1,5,'yes','This service clearly defines the third-parties who get data.','https://beta.touchkin.com/privatepolicy.html'];
 chartEntry[13] = [1,6,'no','Static analysis identified these trackers; they were not explictly referenced in the privacy policy: Adjust, Google AdMob, Google Analytics, Google CrashLytics, Google Firebase Analytics, Google Tag Manager, and MixPanel.','https://www.youper.ai/privacy-policy'];
 chartEntry[14] = [2,0,'no','The terms state that a user may have the right to delete personal information "in certain situations" but the terms do not guarantee that all users have that right. In addition, the terms state that data will be retained if retention is permitted by law.','https://www.7cups.com/Documents/PrivacyPolicy'];
 chartEntry[15] = [2,1,'no','According to the terms, California residents can request deletion of data, but the terms do not guarantee that any requests will be respected.','https://www.betterhelp.com/privacy/'];
@@ -507,6 +508,7 @@ function hideModal() {
 <!-- =============================================================== -->
 <!-- =========================== chart end ========================= -->
 <!-- =============================================================== -->
+
 
 
 {% endcontentfor %}
