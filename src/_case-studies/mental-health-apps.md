@@ -16,16 +16,15 @@ problem_html: >-
   mental health counseling is a large and growing industry. These apps accounted
   for $587.9 million in 2018 and are expected to generate up to $3.9 billion in
   annual revenue by 2027, according to <a
-  href="https://www.prnewswire.com/news-releases/mental-health-apps-market-accounted-for-us-587-9-mn-in-2018-and-is-expected-to-generate-a-revenue-of-us-3-918-40-mn-by-2027--at-a-growth-rate-of-23-7-from-2019--2027--300997559.html">Absolute
-  Markets Insights</a>, a consumer demand and trends firm. Due to greater
-  awareness related to the significance of mental health, U.S. and Canadian
-  consumers made up the majority of the global market in
-  2018.&nbsp;</p><p><strong>Increased anxiety and tumult, harms not evenly
+  href="https://www.prnewswire.com/news-releases/mental-health-apps-market-accounted-for-us-587-9-mn-in-2018-and-is-expected-to-generate-a-revenue-of-us-3-918-40-mn-by-2027--at-a-growth-rate-of-23-7-from-2019--2027--300997559.html">some
+  estimates</a>. Due to greater awareness related to the significance of mental
+  health, U.S. and Canadian consumers made up the majority of the global market
+  in 2018.&nbsp;</p><p><strong>Increased anxiety and tumult, harms not evenly
   distributed: </strong>Recent events like the global coronavirus pandemic, the
   resulting economic crisis, and large scale protests related to the Black Lives
   Matter movement, have spotlighted rising mental health related harms with
-  marginalized and vulnerable populations. And increased anxiety and upheaval
-  causes both physical and psychological symptoms and <a
+  marginalized and vulnerable populations. Increased anxiety and upheaval causes
+  both physical and psychological symptoms and <a
   href="https://www.medicalnewstoday.com/articles/322510#:~:text=Outlook,health%20conditions%2C%20such%20as%20depression">can
   be very distressing</a>. Mental health applications collect sensitive
   information that can create damaging, irreversible impacts on individuals if
@@ -118,7 +117,6 @@ areas:
   - Privacy Policy & Terms of Service
   - Transparency
 ---
-
 {% contentfor impact %}
 
 <br /><br /><br /><br />
