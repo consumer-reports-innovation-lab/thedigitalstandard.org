@@ -106,7 +106,7 @@ impact_html: >-
   brief</strong></a>&nbsp;and a <a
   href="https://medium.com/@stephtngu_CR/cr-digital-lab-investigates-privacy-practices-of-mental-health-apps-85b6f710853a"><strong>blog
   post</strong></a>.</p>
-mapping_html: <p>Add details...</p>
+mapping_html: <p>.</p>
 who_html: <p>Add details...</p>
 release: v1.2.1
 areas:
@@ -121,7 +121,3 @@ areas:
 % contentfor impact %}
 
 <br /><br /><br /><br />
-
-
-
-
