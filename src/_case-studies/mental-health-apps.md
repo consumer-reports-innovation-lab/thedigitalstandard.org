@@ -19,7 +19,7 @@ problem_html: >-
   href="https://www.prnewswire.com/news-releases/mental-health-apps-market-accounted-for-us-587-9-mn-in-2018-and-is-expected-to-generate-a-revenue-of-us-3-918-40-mn-by-2027--at-a-growth-rate-of-23-7-from-2019--2027--300997559.html">some
   estimates</a>. Due to greater awareness related to the significance of mental
   health, U.S. and Canadian consumers made up the majority of the global market
-  in 2018.&nbsp;</p><p><strong>Increased anxiety and tumult, harms not evenly
+  in 2018.</p><p><strong>Increased anxiety and tumult, harms not evenly
   distributed: </strong>Recent events like the global coronavirus pandemic, the
   resulting economic crisis, and large scale protests related to the Black Lives
   Matter movement, have spotlighted rising mental health related harms with
@@ -116,7 +116,9 @@ areas:
   - Overreach - Collecting Too Much Data
   - Privacy Policy & Terms of Service
   - Transparency
----{% contentfor impact %}
+---
+
+% contentfor impact %}
 
 <br /><br /><br /><br />
 
