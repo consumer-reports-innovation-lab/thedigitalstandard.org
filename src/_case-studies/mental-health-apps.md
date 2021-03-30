@@ -97,7 +97,7 @@ impact_html: >-
   not legally required or common practice in the U.S. to list every service
   provider or institution receiving data, we recommend companies proactively
   disclose this information.</p><p>We published a <a
-  href="https://advocacy.consumerreports.org/wp-content/uploads/2020/12/cr_mentalhealth_fullreport_121720.pdf"><strong>full
+  href="https://advocacy.consumerreports.org/wp-content/uploads/2020/12/CR_mentalhealth_full-report_VF.pdf"><strong>full
   research study</strong></a> that provides additional information about our
   investigation. We also published a <a
   href="https://advocacy.consumerreports.org/wp-content/uploads/2020/12/cr_mentalhealth_letter-1.pdf"><strong>letter
