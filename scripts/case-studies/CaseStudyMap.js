@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios'
-import { organization, repository, api_url, release_url } from '../config'
+import { organization, repository, api_url, release_url } from '../digital-standard/config'
 
 const CaseStudyMap = ({ release, areas }) => {
   const [loading, setLoading] = useState(true)

@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Criteria = ({ criteria }) => {
-  const { summary, indicators } = criteria
+const Criteria = ({ title_criteria, indicator: indicators }) => {
 
   return (
     <>
@@ -10,32 +9,25 @@ const Criteria = ({ criteria }) => {
         <div className="col-12 col-lg-4 criteria-wrapper ">
           <div className="sticky-top">
             <h3 className="text-uppercase text-black-50 mr-4 mb-2">Criteria</h3>
-            <p className="mt-3">{summary}</p>
+            <p className="mt-3">{title_criteria}</p>
           </div>
         </div>
         <div className="col-12 col-lg-8 indicator-wrapper">
-          {indicators && indicators.map((item, index) => {
-            const filteredIndicators = item.indicator.split(`\n`).filter(v => v != '')
-            const procedures = item.procedure.filter(v => v != ' ')
+          {indicators && indicators.map(({ id, title_ind, procedure }, index) => {
+            const procedures = procedure.filter(v => v != ' ')
 
             return (
-              <div className="row">
+              <div key={id} className="row">
                 <div className="col-12">
-                  <h4 className="text-uppercase text-black-50 mr-4 mb-2">Indicators</h4>
+                  <h4 className="text-uppercase text-black-50 mr-4 mb-2">Indicator</h4>
                   <ul className="pt-3 ml-n3">
-                    {filteredIndicators.length ? (
-                      filteredIndicators.map(indicator => {
-                        return indicator === '' ? <li>tbd</li> : <li>{indicator}</li>
-                      })
-                    ) : (
-                        <li>TBD</li>
-                      )}
+                    <li>{title_ind}</li>
                   </ul>
-                  {item.procedure && (
+                  {procedures && (
                     <div className="procedure-wrapper">
                       <h4 className="text-uppercase text-black-50 mr-4 mb-2">Procedure</h4>
                       <ul className="pl-3">
-                        {procedures.map(procedure => <li>{procedure}</li>)}
+                        {procedures.map(({ id, title_proc }) => <li key={id}>{title_proc}</li>)}
                       </ul>
                     </div>
                   )}
@@ -51,7 +43,8 @@ const Criteria = ({ criteria }) => {
 }
 
 Criteria.propTypes = {
-  criteria: PropTypes.instanceOf(Object)
+  title_criteria: PropTypes.string,
+  indicator: PropTypes.instanceOf(Array),
 }
 
 export default Criteria
