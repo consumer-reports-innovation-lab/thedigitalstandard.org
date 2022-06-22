@@ -4,6 +4,7 @@ import axios from 'axios'
 import TableOfContents from './TableOfContents'
 import { api_url } from './config'
 import Section from './Section'
+import DownloadCSV from './DownloadCSV'
 
 
 const queryString = window.location.search
@@ -31,7 +32,6 @@ const DigitalStandard = () => {
         // const standard = await axios(`${api_url}${activeRelease}/`)
         const { data: { section: standard } } = await axios(`${api_url}${activeRelease}.json`)
         if (standard) {
-          console.log('digitalStandard:', standard)
           setDigitalStandard(standard)
           setLoading(false)
           if (urlSection) {
@@ -112,7 +112,8 @@ const DigitalStandard = () => {
               })}
             </ul>
 
-            <a className="d-none d-md-flex" id="downloadCTA" href={`${api_url}${activeRelease}/standard.csv`}>Download the Digital Standard (.csv)</a>
+            {digitalStandard && digitalStandard.length && <DownloadCSV data={digitalStandard} />}
+
           </nav>
 
           {activeSection && activeSection.title_sect && <Section activeSection={activeSection} nextSectionTitle={nextSection.title_sect} />}
