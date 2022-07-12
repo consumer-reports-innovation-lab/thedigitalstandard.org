@@ -13,30 +13,24 @@ export default function DownloadCSV({ data }) {
   const removeKeys = (data, keys) => data !== Object(data)
     ? data
     : Array.isArray(data)
-    ? data.map((item) => removeKeys(item, keys))
-    : Object.keys(data)
-        .filter((k) => !keys.includes(k))
-        .reduce(
-          (acc, x) => Object.assign(acc, { [x]: removeKeys(data[x], keys) }),
-          {}
-        )
+      ? data.map((item) => removeKeys(item, keys))
+      : Object.keys(data)
+          .filter((k) => !keys.includes(k))
+          .reduce(
+            (acc, x) => Object.assign(acc, { [x]: removeKeys(data[x], keys) }),
+            {}
+          )
 
   
 
   const options = {
     rename: [
       "Title",
-      // "ID",
       "Area",
-      // "Area ID",
       "Category",
-      // "Category ID",
       "Criteria",
-      // "Criteria ID",
       "Indicator",
-      // "Indicator ID",
-      "Procedure",
-      // "Procedure ID"
+      "Procedure"
     ]
  
   }; 
@@ -44,7 +38,7 @@ export default function DownloadCSV({ data }) {
   useEffect(() => {
     if (data) {
       const cleanData = removeKeys(data, ['id'])
-      console.log(data, cleanData)
+      // console.log(data, cleanData)
 
       jsonexport(cleanData, options, function (err, csv) {
         if (err) return console.error(err)
