@@ -10,9 +10,58 @@ DownloadCSV.propTypes = {
 export default function DownloadCSV({ data }) {
   const [downloadFile, setDownloadFile] = useState(false)
 
+  console.log("data",data)
+
+  /**
+   * area
+   * category
+   * criteria
+   * indicator
+   * procedure
+   */
+
+
+  // const cleanData = data.map((titles) => {
+  //   delete titles.id
+  //   return titles
+  //   // return {area: titles.area.map((area) => {
+  //   //   delete area.id
+  //   //   return {category: area.category.map((cat) => {
+  //   //     delete cat.id
+  //   //     return cat
+  //   //     // return {criteria: cat.criteria.map((crit) => {
+  //   //     //   delete crit.id
+  //   //     //   return crit
+  //   //     // }), ...cat}
+  //   //   }), ...area}
+  //   // }), ...titles}
+    
+  // })
+
+  // console.log("cleanData",cleanData)
+
+
+  const options = {
+    rename: [
+      "Title",
+      "ID",
+      "Area",
+      "Area ID",
+      "Category",
+      "Category ID",
+      "Criteria",
+      "Criteria ID",
+      "Indicator",
+      "Indicator ID",
+      "Procedure",
+      "Procedure ID"
+    ]
+ 
+  }; 
+
   useEffect(() => {
     if (data) {
-      jsonexport(data, function (err, csv) {
+      jsonexport(data, options, function (err, csv) {
         if (err) return console.error(err)
         setDownloadFile(csv)
       })

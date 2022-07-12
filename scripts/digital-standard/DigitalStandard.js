@@ -116,7 +116,7 @@ const DigitalStandard = () => {
 
           </nav>
 
-          {activeSection && activeSection.title_sect && <Section activeSection={activeSection} nextSectionTitle={nextSection.title_sect} />}
+          {activeSection && activeSection.title_sect && <Section activeSection={activeSection} nextSectionTitle={nextSection.title_sect} urlParams={urlParams} />}
         </>
       )}
     </div>
