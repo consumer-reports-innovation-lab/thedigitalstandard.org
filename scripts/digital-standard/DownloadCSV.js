@@ -46,7 +46,7 @@ export default function DownloadCSV({ data }) {
       const cleanData = removeKeys(data, ['id'])
       console.log(data, cleanData)
 
-      jsonexport(data, options, function (err, csv) {
+      jsonexport(cleanData, options, function (err, csv) {
         if (err) return console.error(err)
         setDownloadFile(csv)
       })
