@@ -10,58 +10,43 @@ DownloadCSV.propTypes = {
 export default function DownloadCSV({ data }) {
   const [downloadFile, setDownloadFile] = useState(false)
 
-  console.log("data",data)
+  const removeKeys = (data, keys) => data !== Object(data)
+    ? data
+    : Array.isArray(data)
+    ? data.map((item) => removeKeys(item, keys))
+    : Object.keys(data)
+        .filter((k) => !keys.includes(k))
+        .reduce(
+          (acc, x) => Object.assign(acc, { [x]: removeKeys(data[x], keys) }),
+          {}
+        )
 
-  /**
-   * area
-   * category
-   * criteria
-   * indicator
-   * procedure
-   */
-
-
-  // const cleanData = data.map((titles) => {
-  //   delete titles.id
-  //   return titles
-  //   // return {area: titles.area.map((area) => {
-  //   //   delete area.id
-  //   //   return {category: area.category.map((cat) => {
-  //   //     delete cat.id
-  //   //     return cat
-  //   //     // return {criteria: cat.criteria.map((crit) => {
-  //   //     //   delete crit.id
-  //   //     //   return crit
-  //   //     // }), ...cat}
-  //   //   }), ...area}
-  //   // }), ...titles}
-    
-  // })
-
-  // console.log("cleanData",cleanData)
-
+  
 
   const options = {
     rename: [
       "Title",
-      "ID",
+      // "ID",
       "Area",
-      "Area ID",
+      // "Area ID",
       "Category",
-      "Category ID",
+      // "Category ID",
       "Criteria",
-      "Criteria ID",
+      // "Criteria ID",
       "Indicator",
-      "Indicator ID",
+      // "Indicator ID",
       "Procedure",
-      "Procedure ID"
+      // "Procedure ID"
     ]
  
   }; 
 
   useEffect(() => {
     if (data) {
-      jsonexport(data, options, function (err, csv) {
+      const cleanData = removeKeys(data, ['id'])
+      console.log(data, cleanData)
+
+      jsonexport(data, function (err, csv) {
         if (err) return console.error(err)
         setDownloadFile(csv)
       })
