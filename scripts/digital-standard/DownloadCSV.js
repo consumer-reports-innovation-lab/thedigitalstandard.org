@@ -40,13 +40,13 @@ export default function DownloadCSV({ data }) {
     ]
  
   }; 
-
+ 
   useEffect(() => {
     if (data) {
       const cleanData = removeKeys(data, ['id'])
       console.log(data, cleanData)
 
-      jsonexport(data, function (err, csv) {
+      jsonexport(data, options, function (err, csv) {
         if (err) return console.error(err)
         setDownloadFile(csv)
       })
