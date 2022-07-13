@@ -4416,11 +4416,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bab
 /*!********************************************!*\
   !*** ./scripts/digital-standard/config.js ***!
   \********************************************/
-/*! exports provided: organization, repository, api_url, release_url */
+/*! exports provided: api_url */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"organization\", function() { return organization; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"repository\", function() { return repository; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"api_url\", function() { return api_url; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"release_url\", function() { return release_url; });\n// export const organization = 'consumer-reports-digital-lab'\n// export const repository = 'TheDigitalStandard'\n// export const api_url = `https://${organization}.github.io/${repository}/`\nvar organization = 'ocupop';\nvar repository = 'ds-test';\nvar api_url = \"https://\".concat(organization, \".github.io/\").concat(repository, \"/data/\");\nvar release_url = \"https://api.github.com/repos/\".concat(organization, \"/\").concat(repository, \"/releases\");\n\n//# sourceURL=webpack:///./scripts/digital-standard/config.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"api_url\", function() { return api_url; });\n// export const organization = 'consumer-reports-digital-lab'\n// export const repository = 'TheDigitalStandard'\n// export const api_url = `https://${organization}.github.io/${repository}/`\nvar api_url = \"/data/\"; // TODO:\n// Commented the next four lines out when changed to local .json file 7/13/22 ~pstroot\n// export const api_url = `https://${organization}.github.io/${repository}/data/`  \n// export const organization = 'ocupop'\n// export const repository = 'ds-test'\n// export const release_url = `https://api.github.com/repos/${organization}/${repository}/releases`\n\n//# sourceURL=webpack:///./scripts/digital-standard/config.js?");
 
 /***/ }),
 
