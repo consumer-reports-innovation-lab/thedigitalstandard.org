@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react'
 // import PropTypes from 'prop-types'
 import axios from 'axios'
 import TableOfContents from './TableOfContents'
-import { api_url } from './config'
+import { api_url, release_url } from './config'
 import Section from './Section'
-import DownloadCSV from './DownloadCSV'
 
 
 const queryString = window.location.search
@@ -23,14 +22,13 @@ const DigitalStandard = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        // const getReleases = await axios(release_url)
-        const getReleases = { data: [{ tag_name: 'v1.3.0' }] }
+        const getReleases = await axios(release_url)
         setReleases(getReleases.data.map(release => release.tag_name))
         if (!activeRelease) {
           window.location.replace(`${window.location.pathname}?version=${getReleases.data[0].tag_name}`)
         }
-        // const standard = await axios(`${api_url}${activeRelease}/`)
-        const { data: { section: standard } } = await axios(`${api_url}${activeRelease}.json`)
+        const { data: { section: standard } } = await axios(`${api_url}${activeRelease}/standard.json`)
+        // const { data: { section: standard } } = await axios(`${api_url}${activeRelease}.json`)
         if (standard) {
           setDigitalStandard(standard)
           setLoading(false)
@@ -111,9 +109,11 @@ const DigitalStandard = () => {
                 )
               })}
             </ul>
-
-            {digitalStandard && digitalStandard.length && <DownloadCSV data={digitalStandard} />}
-
+            {activeRelease && (
+              <>
+                <a href={`${api_url}${activeRelease}/standard.csv`} className="d-none d-md-flex" id="downloadCTA">Download the Digital Standard (.csv)</a>
+              </>
+            )}
           </nav>
 
           {activeSection && activeSection.title_sect && <Section activeSection={activeSection} nextSectionTitle={nextSection.title_sect} urlParams={urlParams} />}
