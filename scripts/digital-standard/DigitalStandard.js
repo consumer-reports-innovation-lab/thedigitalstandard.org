@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 // import PropTypes from 'prop-types'
 import axios from 'axios'
 import TableOfContents from './TableOfContents'
-import Criteria from './Criteria'
-import { organization, repository, api_url, release_url } from '../config'
+import { api_url, release_url } from './config'
+import Section from './Section'
 
 
 const queryString = window.location.search
@@ -16,36 +16,39 @@ const DigitalStandard = () => {
   const [releases, setReleases] = useState([])
   const [activeRelease, setActiveRelease] = useState(urlParams.get('version'))
   const [digitalStandard, setDigitalStandard] = useState([])
-  const [activeSection, setActiveSection] = useState(false)
+  const [activeSection, setActiveSection] = useState(urlSection)
   const [nextSection, setNextSection] = useState('')
 
-  useEffect(async () => {
-    try {
-      const getReleases = await axios(release_url)
-      setReleases(getReleases.data.map(release => release.tag_name))
-      if (!activeRelease) {
-        window.location.replace(`${window.location.pathname}?version=${getReleases.data[0].tag_name}`)
-      }
-      const standard = await axios(`${api_url}${activeRelease}/`)
-
-      if (standard) {
-        setDigitalStandard(standard.data)
-        setLoading(false)
-        if (urlSection) {
-          setActiveSection(standard.data.find(item => item.section === urlSection))
-          const index = standard.data.findIndex(item => item.section === urlSection)
-          const loop = standard.data.length > index + 1
-          const nextIndex = loop ? index + 1 : 0
-          setNextSection(standard.data[nextIndex].section)
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const getReleases = await axios(release_url)
+        setReleases(getReleases.data.map(release => release.tag_name))
+        if (!activeRelease) {
+          window.location.replace(`${window.location.pathname}?version=${getReleases.data[0].tag_name}`)
         }
-      }
+        const { data: { section: standard } } = await axios(`${api_url}${activeRelease}/standard.json`)
+        // const { data: { section: standard } } = await axios(`${api_url}${activeRelease}.json`)
+        if (standard) {
+          setDigitalStandard(standard)
+          setLoading(false)
+          if (urlSection) {
+            setActiveSection(standard.find(({ title_sect }) => title_sect.toLowerCase() === urlSection))
+            const index = standard.findIndex(({ title_sect }) => title_sect.toLowerCase() === urlSection)
+            const loop = standard.length > index + 1
+            const nextIndex = loop ? index + 1 : 0
+            setNextSection(standard[nextIndex])
+          }
+        }
 
-    } catch (error) {
-      console.log(error)
-      setLoading(false)
-      setDigitalStandard(false)
+      } catch (error) {
+        console.log(error)
+        setLoading(false)
+        setDigitalStandard(false)
+      }
     }
 
+    fetchData()
   }, [])
 
 
@@ -59,8 +62,8 @@ const DigitalStandard = () => {
                 <div className="text-dark">
                   <p>
                     <strong>Uh Oh....</strong><br />
-                  It looks like you are requesting a version of the standard that does not exist. Please select one of the following:
-                </p>
+                    It looks like you are requesting a version of the standard that does not exist. Please select one of the following:
+                  </p>
 
                   {releases && releases.map(release => (
                     <a
@@ -75,92 +78,47 @@ const DigitalStandard = () => {
           </div>
         </section>
       ) : (
-          <>
-            <nav id="standardnav">
-              <div className="dropdown mr-3">
-                <button className="btn btn-secondary dropdown-toggle d-none d-sm-flex align-items-center" type="button" id="versionDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  {activeRelease}
-                </button>
-                <div className="dropdown-menu" aria-labelledby="versionDropDown">
-                  <strong className="px-3">Choose version:</strong><br />
-                  {releases && releases.map(release => (
-                    <a
-                      className="dropdown-item"
-                      href={`${window.location.pathname}?version=${release}`}>
-                      {release}
-                    </a>
-                  ))}
-                </div>
+        <>
+          <nav id="standardnav">
+            <div className="dropdown mr-3">
+              <button className="btn btn-secondary dropdown-toggle d-none d-sm-flex align-items-center" type="button" id="versionDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {activeRelease}
+              </button>
+              <div className="dropdown-menu" aria-labelledby="versionDropDown">
+                <strong className="px-3">Choose version:</strong><br />
+                {releases && releases.map(release => (
+                  <a
+                    key={release}
+                    className="dropdown-item"
+                    href={`${window.location.pathname}?version=${release}`}>
+                    {release}
+                  </a>
+                ))}
               </div>
+            </div>
 
-              <ul className="nav py-2">
-                {digitalStandard && digitalStandard.map(({ section }) => {
-
-                  return (
-                    <li key={section} className="nav-item">
-                      <a className={`nav-link ${activeSection === section ? 'active' : ''}`} href={`/standard/${section}/${queryString}`}>
-                        {section}
-                      </a>
-                    </li>
-                  )
-                })}
-              </ul>
-
-              <a className="d-none d-md-flex" id="downloadCTA" href={`${api_url}${activeRelease}/standard.csv`}>Download the Digital Standard (.csv)</a>
-            </nav>
-            {activeSection && (
-              <>
-                <TableOfContents activeSection={activeSection} />
-                <div className="standard-content">
-                  {activeSection && activeSection.areas.map(area => (
-                    <div key={area.slug} className="m-5">
-                      {area && area.evaluations.map(standard => {
-                        const status = {
-                          "1": "bg-success",
-                          "2": "bg-warning",
-                          "3": "bg-danger"
-                        }
-
-                        return (
-                          <div key={standard.slug} id={standard.slug} className="row" >
-                            <div className="col-12">
-                              <p className="text-sans-serif text-muted text-capitalize">
-                                <small>{activeSection.section} / {area.label} / <span className="text-dark">{standard.title}</span></small>
-                              </p>
-                              <div className="d-flex align-items-center flex-wrap">
-                                <div>
-                                  <h1 className="text-serif text-thin mr-5 mb-n1">{area.label}</h1>
-                                </div>
-                                <div>
-                                  <div className="d-flex align-items-center">
-                                    <span className={`bg-status mr-2 ${status[standard.status]}`}></span>
-                                    <h2 className="blue text-uppercase m-0 text-nowrap">{standard.title}</h2>
-                                    <a href={`https://github.com/${organization}/${repository}/blob/${activeRelease}/evaluations/${activeSection.section}/${standard.slug}.yaml`} target="_blank" className="social-link">
-                                      <i className="ri-github-fill  text-medium ml-2" />
-                                    </a>
-
-                                  </div>
-                                </div>
-                              </div>
-                              <hr />
-                              {standard.criteria && standard.criteria.map(criteria => <Criteria criteria={criteria} />)}
-                            </div>
-                          </div>
-                        )
-                      }
-                      )}
-                    </div>
-                  ))}
-                  <div className="px-5 mb-5">
-                    <a href={`/standard/${nextSection}`} className="btn btn-full-width">Next Test Category:&nbsp;
-                      <span className="font-weight-bold">{nextSection}&nbsp; &#9654;</span>
+            <ul className="nav py-2">
+              {digitalStandard && digitalStandard.map(({ id, title_sect }) => {
+                title_sect = title_sect.toLowerCase()
+                return (
+                  <li key={id} className="nav-item">
+                    <a className={`nav-link ${activeSection === title_sect ? 'active' : ''}`} href={`/standard/${title_sect}/${queryString}`}>
+                      {title_sect}
                     </a>
-                  </div>
-                </div>
+                  </li>
+                )
+              })}
+            </ul>
+            {activeRelease && (
+              <>
+                <a href={`${api_url}${activeRelease}/standard.csv`} className="d-none d-md-flex" id="downloadCTA">Download the Digital Standard (.csv)</a>
               </>
             )}
-          </>
-        )}
+          </nav>
+
+          {activeSection && activeSection.title_sect && <Section activeSection={activeSection} nextSectionTitle={nextSection.title_sect} urlParams={urlParams} />}
+        </>
+      )}
     </div>
   )
 }

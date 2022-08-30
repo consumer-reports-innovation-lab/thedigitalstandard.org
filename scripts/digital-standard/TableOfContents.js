@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import { makeKey } from '../helpers'
 
-const TableOfContents = ({ activeSection }) => {
+const TableOfContents = ({ section }) => {
   const [sidebarActive, setSidebarActive] = useState(false)
-
+  const { area: areas } = section
   return (
     <div className={`sidebar ${sidebarActive ? 'active' : ''}`}>
       <button className="sidebar-toggle" onClick={() => setSidebarActive(!sidebarActive)}>
         <i className="ri-more-2-fill" />
       </button>
       <div id="sectionNav">
-        {activeSection && activeSection.areas.map(area => (
-          <div key={area.slug}>
-            <h4 className="nav-link pb-0" >{area.label}</h4>
+        {section && areas.map(({ id: areaId, title_area, category: categories }) => (
+          <div key={areaId}>
+            <h4 className="nav-link pb-0" >{title_area}</h4>
             <ul className="nav flex-column" >
-              {area.evaluations && area.evaluations.map(standard => {
-                const { slug, title } = standard
+              {categories && categories.map(({ title_cat }, i) => {
+                const slug = makeKey(title_cat)
                 return (
-                  <li key={slug} className="nav-item">
-                    <a className="nav-link py-1" href={`#${slug}`}>{title}</a>
+                  <li key={`${slug}_${i}`} className="nav-item">
+                    <a className="nav-link py-1" href={`#${slug}`}>{title_cat}</a>
                   </li>
                 )
               })}
