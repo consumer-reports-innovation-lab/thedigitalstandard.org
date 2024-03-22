@@ -46,7 +46,7 @@ pipeline {
                   env.DEPLOYMENT_ENVIRONMENT = 'dev'
                   env.DEPLOYMENT_ENABLED = true
                   break
-              case ~/(?i)^main$/:
+              case ~/(?i)^master$/:
                   env.DEPLOYMENT_ENVIRONMENT = 'stage'
                   env.DEPLOYMENT_ENABLED = true
                   break
