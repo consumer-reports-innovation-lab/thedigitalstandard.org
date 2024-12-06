@@ -1,5 +1,9 @@
 FROM ubuntu:22.04
 
+ARG USER=digitalstandard
+ENV user=${USER}
+
+
 ENV NODE_MAJOR=18
 ENV NODE_OPTIONS=--openssl-legacy-provider
 
@@ -54,11 +58,19 @@ RUN echo 'source /etc/profile.d/rvm.sh' >> /etc/profile && \
     gem install bundler -v 2.4.22
 RUN rvm --version && ruby --version
 
-COPY . /app
+RUN groupadd -g 1000 ${USER} && \
+    useradd -m -u 1000 -g ${USER} -s /bin/bash ${USER} && \
+    chown -R ${USER}:${USER} \
+    /app
+
+COPY --chown=${USER}:${USER} . /app
+RUN chmod +x /app/docker/entrypoint.sh
+
+USER ${USER}
 
 # Initialize & install dependencies
 RUN yarn && \
     npx browserslist@latest --update-db --yes
 
-RUN chmod +x /app/docker/entrypoint.sh
+
 CMD ["/app/docker/entrypoint.sh"]
