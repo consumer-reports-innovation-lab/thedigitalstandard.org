@@ -58,7 +58,8 @@ RUN echo 'source /etc/profile.d/rvm.sh' >> /etc/profile && \
     gem install bundler -v 2.4.22
 RUN rvm --version && ruby --version
 
-RUN useradd -m -u 1000 -g 1000 -s /bin/bash ${USER} && \
+RUN groupadd -g 1001 ${USER} && \
+    useradd -m -u 1001 -g ${USER} -s /bin/bash ${USER} && \
     chown -R ${USER}:${USER} \
     /app
 
