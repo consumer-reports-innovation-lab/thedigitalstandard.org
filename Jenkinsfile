@@ -134,6 +134,7 @@ pipeline {
           script {
             Slack.slackSendDeployment(this, [status: 'start'])
             Kubectl.showClusterInfo(this, env.KUBECTL_CONTEXT)
+            Utility.replaceStringInFile(this, 'APP_VERSION', env.DOCKER_IMAGE_TAG, "${BUILD_CODE_SUB_DIR}/kustomize/overlays/${DEPLOYMENT_ENVIRONMENT}/deployment.yaml")
             Kustomize.deployKustomize(
               this, [
               kubectlContext        : env.KUBECTL_CONTEXT,
