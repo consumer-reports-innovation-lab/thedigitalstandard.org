@@ -17,7 +17,7 @@
   "author": "Ocupop",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.30.2",
     "bootstrap": "^4.4.1",
     "change-case": "^4.1.2",
     "concurrently": "^5.1.0",
